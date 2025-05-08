@@ -20,17 +20,6 @@ const Footer = () => {
 					width='lg'
 					className={cn('pt-20 lg:pt-28 pb-8 lg:pb-12')}
 				>
-					<div className='w-full space-y-8 md:space-y-12 xl:space-y-16'>
-						<Newsletter />
-						<Affiliates />
-					</div>
-
-					<Divider
-						size='full'
-						color='indigo-600'
-						className='h-px my-8 md:my-12'
-					/>
-
 					<Flex align='start' justify='between' gap='2xl' wrap>
 						<Brand />
 
@@ -48,8 +37,8 @@ const Footer = () => {
 			<section>
 				<Container className='py-6 text-blue-50' layout='flex'>
 					<p className='__2xs'>
-						&copy; {new Date().getFullYear()} Terrezza Optical Group.
-						All rights reserved.
+						&copy; {new Date().getFullYear()} Renalus Center for
+						Kidney Care. All rights reserved.
 					</p>
 					<p className='__2xs'>
 						Terms and Conditions • Privacy Policy • Disclaimer
@@ -94,7 +83,7 @@ const Newsletter = () => (
 				<input
 					type='hidden'
 					name='ref'
-					value='https://terrezzaoptical.com/'
+					value='https://renalusoptical.com/'
 				/>
 				<div className='flex gap-x-2'>
 					<label htmlFor='emailAddr' className='sr-only'>
@@ -136,15 +125,16 @@ const Brand = () => (
 
 		{/* Brand Statement */}
 		<p className='__sm'>
-			Doctors of Optometry bringing clear vision across Northwest
-			Florida and Southeast Alabama.
+			We are a leading provider of comprehensive kidney care
+			solutions, offering expert consultation, personalized treatment
+			plans, and dialysis services.
 		</p>
 	</div>
 )
 
 const Sitemap = () => (
 	<nav className={spaceY.xs}>
-		<h4 className='__xs text-blue-50'>Explore Terrezza</h4>
+		<h4 className='__xs text-blue-50'>Explore Renalus</h4>
 		<Divider color='blue-50' className='h-px' />
 		<NavItems
 			links={NAV.primary.map(({ text, href }) => ({ text, href }))}
@@ -157,7 +147,7 @@ const Sitemap = () => (
 
 const Locations = () => (
 	<nav className={spaceY.xs}>
-		<h4 className='__xs text-blue-50'>Terrezza Locations</h4>
+		<h4 className='__xs text-blue-50'>Renalus Locations</h4>
 		<Divider color='blue-50' className='h-px' />
 		<DynamicItems type='location'>
 			{({ results }) => (
@@ -176,7 +166,7 @@ const Appointment = () => (
 		<div className={spaceY['4xs']}>
 			<h3 className='__sm'>Get In Touch</h3>
 			<p className='__sm'>
-				Questions • Concerns • Ready for eye care now?
+				Questions • Concerns • Appointment Request?
 			</p>
 		</div>
 		<Button
@@ -184,7 +174,7 @@ const Appointment = () => (
 			cta={true}
 			link={{
 				href: '/contact',
-				text: 'Request Appointment',
+				text: 'Contact Us',
 			}}
 			arrow={{
 				direction: 'upRight',

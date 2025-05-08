@@ -12,7 +12,7 @@ const Articles = async () => {
 		<>
 			{/* Hero — Featured Post */}
 			<FeaturedArticle
-				subtitle='Latest Terrezza Posts'
+				subtitle='Latest Renalus Posts'
 				color='stone-200'
 				{...featured}
 			/>

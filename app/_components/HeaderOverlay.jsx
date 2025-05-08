@@ -21,7 +21,7 @@ import { cn, kn } from '@/lib/utils'
 // import Mark from '@public/logo/mark.svg'
 
 const img =
-	'https://images.prismic.io/terrezza/Z8_WHhsAHJWomTrT_optometry-vision-and-optometrist-hand-with-glasse-2023-11-27-05-18-45-utc.jpg?auto=format,compress'
+	'https://images.prismic.io/renalus/Z8_WHhsAHJWomTrT_optometry-vision-and-optometrist-hand-with-glasse-2023-11-27-05-18-45-utc.jpg?auto=format,compress'
 
 const NavOverlay = ({ offset }) => {
 	// Path
@@ -87,7 +87,7 @@ const NavOverlay = ({ offset }) => {
 									<div className='aspect-w-16 aspect-h-6' />
 									<Button
 										as='button'
-										text='Request Appointment'
+										text='Contact Us'
 										variant='stroke'
 										size='lg'
 										color='accent'

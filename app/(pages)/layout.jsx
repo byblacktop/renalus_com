@@ -1,4 +1,3 @@
-import { Banner } from '@/components/Banner'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { GSAP } from '@/components/Interactive'
@@ -10,8 +9,6 @@ export default function Layout({ children }) {
 		<>
 			<Providers>
 				{/* Header */}
-
-				<Banner />
 				<Header />
 
 				{/* Main Page Content */}

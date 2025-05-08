@@ -22,7 +22,7 @@
 					{
 						"type": "heading5",
 						"content": {
-							"text": "Terrezza Values",
+							"text": "Renalus Values",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -286,7 +286,7 @@
 					{
 						"type": "heading5",
 						"content": {
-							"text": "Terrezza Values",
+							"text": "Renalus Values",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -666,7 +666,7 @@
 										{
 											"type": "heading6",
 											"content": {
-												"text": "01 Terrezza Values",
+												"text": "01 Renalus Values",
 												"spans": []
 											},
 											"direction": "ltr"
@@ -787,7 +787,7 @@
 										{
 											"type": "heading6",
 											"content": {
-												"text": "02 Terrezza Values",
+												"text": "02 Renalus Values",
 												"spans": []
 											},
 											"direction": "ltr"
@@ -838,7 +838,7 @@
 					{
 						"type": "heading5",
 						"content": {
-							"text": "The Terrezza Difference",
+							"text": "The Renalus Difference",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -882,7 +882,7 @@
 										{
 											"type": "heading6",
 											"content": {
-												"text": "Terrezza Values",
+												"text": "Renalus Values",
 												"spans": []
 											},
 											"direction": "ltr"

@@ -74,7 +74,7 @@
 												"__TYPE__": "ExternalLink",
 												"url": "#",
 												"target": "_blank",
-												"text": "Follow Terrezza"
+												"text": "Follow Renalus"
 											}
 										},
 										{
@@ -120,7 +120,7 @@
 						{
 							"__TYPE__": "FieldContent",
 							"type": "Text",
-							"value": "contact@terrezzaoptical.com"
+							"value": "contact@renalusoptical.com"
 						}
 					],
 					[
@@ -130,7 +130,7 @@
 							"__TYPE__": "LinkContent",
 							"value": {
 								"__TYPE__": "ExternalLink",
-								"url": "mailto:contact@terrezzaoptical.com",
+								"url": "mailto:contact@renalusoptical.com",
 								"target": ""
 							}
 						}
