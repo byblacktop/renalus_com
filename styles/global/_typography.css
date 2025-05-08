@@ -1,0 +1,365 @@
+/**
+ * Available vars:
+ * @var --fluid-min: <number> - Number in pixels without the unit. Required if `--font-size` is not exist.
+ * @var --fluid-max: <number> - Number in pixels without the unit. Required if `--font-size` is not exist.
+ * @var --font-size-from: <number> - Number in pixels without the unit. Required if `--font-size` and `--font-min` is not exist.
+ * @var --font-size-to: <number> - Number in pixels without the unit. Required if `--font-size` and `--font-max` is not exist.
+ * @var --font-max: <number> - Number in pixels without the unit. Optional.
+ * @var --font-min: <number> - Number in pixels without the unit. Optional.
+ * @var --vw-scale: 1vw | 1vh | 1vmin | 1vmax - Optional. Default: 1vw.
+ * @var --font-size: <length> | <percentage> | <absolute-size> | <relative-size> | Global values - Optional.
+ *
+ *
+ * Ref: https://dev.to/ixkaito/fluid-typography-using-css-custom-properties-css-variables-3lcn
+ * Demo: https://codepen.io/ixkaito/pen/bGoPaEQ?editors=0100
+**/
+
+*,
+::before,
+::after {
+	--vw-scale: 1vw;
+	--fz-from: var(--font-size-from, var(--font-min));
+	--fz-to: var(--font-size-to, var(--font-max));
+	--fz-slope: (var(--fz-to) - var(--fz-from)) /
+		(var(--fluid-max) - var(--fluid-min)) * 100;
+	--fz-intercept: (
+			var(--fluid-max) * var(--fz-from) - var(--fluid-min) *
+				var(--fz-to)
+		) /
+		(var(--fluid-max) - var(--fluid-min));
+
+	--font-size: calc(
+		var(--fz-slope) * var(--vw-scale) + var(--fz-intercept) * 1px
+	);
+
+	--min-fz-px: calc(var(--font-min) * 1px);
+	--max-fz-px: calc(var(--font-max) * 1px);
+	--clamp: clamp(
+		var(--min-fz-px),
+		var(--font-size),
+		var(--max-fz-px)
+	);
+	--max: var(--has-max, var(--min));
+	--min: var(--has-min, var(--font-size));
+	--has-max: min(var(--max-fz-px), var(--font-size));
+	--has-min: max(var(--min-fz-px), var(--font-size));
+
+	font-size: var(--clamp, var(--max));
+}
+
+/* 
+ * Override Tailwind's override
+ * it resets font-size to inherit 
+ * which breaks fluid formula above
+*/
+:--headings,
+:--body,
+:--fields,
+button {
+	@apply relative;
+	font-size: var(--clamp, var(--max));
+}
+
+/* Set default typography by tag
+-------------------------------------------------------------- */
+:--headings {
+	@apply font-semibold;
+}
+
+:--titles {
+	@apply font-heading;
+}
+
+:--subtitles {
+	@apply font-subheading;
+}
+
+/* /////// Display helpers */
+.d1 {
+	&:where(:--headings) {
+		@apply leading-none
+			fs-9xl;
+	}
+}
+
+.d2 {
+	&:where(:--headings) {
+		@apply leading-2xs
+			fs-8xl;
+	}
+}
+
+/* /////// Headings */
+h1,
+.h1 {
+	@apply leading-sm
+		fs-7xl;
+}
+
+h2,
+.h2 {
+	@apply leading-tight
+		fs-6xl;
+
+	&.__xs,
+	.__lead.__xs &,
+	.__prose.__xs &,
+	.__body.__xs & {
+		@apply leading-tight
+			fs-2xl;
+	}
+
+	&.__sm,
+	.__lead.__sm &,
+	.__prose.__sm &,
+	.__body.__sm & {
+		@apply leading-tight
+			fs-5xl;
+	}
+
+	&.__lg,
+	.__lead.__lg &,
+	.__prose.__lg &,
+	.__body.__lg & {
+		@apply fs-7xl;
+	}
+}
+
+h3,
+.h3 {
+	@apply leading-snug
+		md:leading-tight
+		fs-4xl;
+
+	&.__xs,
+	.__lead.__xs &,
+	.__prose.__xs &,
+	.__body.__xs & {
+		@apply leading-tight
+			fs-2xl;
+	}
+
+	&.__sm,
+	.__lead.__sm &,
+	.__prose.__sm &,
+	.__body.__sm & {
+		@apply leading-tight
+			fs-3xl;
+	}
+
+	&.__lg,
+	.__lead.__lg &,
+	.__prose.__lg &,
+	.__body.__lg & {
+		@apply leading-tight
+			fs-5xl;
+	}
+
+	&.__xl,
+	.__lead.__xl &,
+	.__prose.__xl &,
+	.__body.__xl & {
+		@apply leading-tight
+			fs-6xl;
+	}
+}
+
+h4,
+.h4 {
+	@apply leading-snug
+		fs-xl;
+
+	&.__2xs,
+	.__lead.__2xs &,
+	.__prose.__2xs &,
+	.__body.__2xs & {
+		@apply fs-sm;
+	}
+
+	&.__xs,
+	.__lead.__xs &,
+	.__prose.__xs &,
+	.__body.__xs & {
+		@apply leading-tight
+			fs-base;
+	}
+
+	&.__sm,
+	.__lead.__sm &,
+	.__prose.__sm &,
+	.__body.__sm & {
+		@apply leading-tight
+			fs-lg;
+	}
+
+	&.__lg,
+	.__lead.__lg &,
+	.__prose.__lg &,
+	.__body.__lg & {
+		@apply fs-2xl;
+	}
+
+	&.__xl,
+	.__lead.__xl &,
+	.__prose.__xl &,
+	.__body.__xl & {
+		@apply fs-3xl;
+	}
+}
+
+h5,
+.h5 {
+	@apply leading-snug
+		font-semibold
+		fs-xs;
+
+	&.__xs,
+	.__lead.__xs &,
+	.__prose.__xs &,
+	.__body.__xs & {
+		@apply fs-3xs;
+	}
+
+	&.__sm,
+	.__lead.__sm &,
+	.__prose.__sm &,
+	.__body.__sm & {
+		@apply fs-2xs;
+	}
+}
+
+h6,
+.h6 {
+	@apply leading-snug
+		md:leading-tight
+		font-medium
+		fs-3xs;
+
+	&.__xs,
+	.__lead.__xs &,
+	.__prose.__xs &,
+	.__body.__xs & {
+		@apply fs-5xs;
+	}
+
+	&.__sm,
+	.__lead.__sm &,
+	.__prose.__sm &,
+	.__body.__sm & {
+		@apply fs-4xs;
+	}
+}
+
+/* ////// Paragraph and body */
+body,
+p,
+li {
+	@apply font-main
+	font-normal
+	leading-prose
+	fs-sm;
+}
+
+p,
+.p,
+li {
+	/* sizes */
+	@apply prose;
+
+	&.__2xs,
+	.__lead.__2xs &,
+	.__prose.__2xs &,
+	.__body.__2xs & {
+		@apply fs-4xs;
+	}
+
+	&.__xs,
+	.__lead.__xs &,
+	.__prose.__xs &,
+	.__body.__xs & {
+		@apply fs-3xs;
+	}
+
+	&.__sm,
+	.__lead.__sm &,
+	.__prose.__sm &,
+	.__body.__sm & {
+		@apply fs-2xs;
+	}
+
+	&.__md,
+	.__lead.__md &,
+	.__prose.__md &,
+	.__body.__md & {
+		@apply fs-sm;
+	}
+
+	&.__lg,
+	.__lead.__lg &,
+	.__prose.__lg &,
+	.__body.__lg & {
+		@apply fs-base;
+	}
+
+	&.__xl,
+	.__lead.__xl &,
+	.__prose.__xl &,
+	.__body.__xl & {
+		@apply fs-lg;
+	}
+
+	&.__2xl,
+	.__lead.__2xl &,
+	.__prose.__2xl &,
+	.__body.__2xl & {
+		@apply fs-xl;
+	}
+}
+
+.__label {
+	@apply uppercase
+		tracking-widest
+		font-medium;
+}
+
+/* /////// Buttons and links */
+.label {
+	@apply label;
+}
+
+.cite {
+	@apply label;
+}
+
+/* Body
+--------------------------------------------------------------*/
+body {
+	@apply antialiased;
+
+	/* optimizelegibility */
+	/* geometricPrecision */
+	text-rendering: optimizelegibility;
+	backface-visibility: hidden;
+}
+
+/* :is() maintains specifity of tag */
+:--headings {
+	text-rendering: geometricPrecision;
+	backface-visibility: hidden;
+}
+
+/* Elements
+--------------------------------------------------------------*/
+strong,
+.strong {
+	@apply font-semibold;
+}
+
+figcaption,
+.figcaption {
+	@apply font-semibold
+		leading-tight;
+
+	--font-max: 16;
+	--font-min: 14;
+}

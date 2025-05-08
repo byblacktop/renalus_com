@@ -1,0 +1,881 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Helpful Resources",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=1920&h=1280",
+				"alt": "black framed eyeglasses",
+				"origin": {
+					"id": "tRIx_NfMNYA",
+					"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5472,
+					"height": 3648
+				},
+				"width": 1920,
+				"height": 1280,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85&rect=912,0,3648,3648&w=16&h=16",
+						"alt": "black framed eyeglasses",
+						"origin": {
+							"id": "tRIx_NfMNYA",
+							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 912,
+								"y": 0
+							}
+						},
+						"credits": null
+					}
+				}
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Learn more about what to expect so you get the most out of your visit",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Patient Information",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "665f21e8-c35c-4497-a6ef-bc4f3baf0197",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "Learn More"
+									}
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "Yellow"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Media",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Podcasts and videos packed with insights from our experienced team",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "0a34f98b-a265-464f-819e-08fa1b769f0b",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "Learn More"
+									}
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "Blue"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "split",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "How We Help",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"img": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+					"width": 4016,
+					"height": 6016
+				},
+				"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+				"width": 4016,
+				"height": 6016,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "2",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85&rect=0,1,3487,5228&w=655&h=982",
+									"alt": "adult black pug",
+									"origin": {
+										"id": "pOUA8Xay514",
+										"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3487,
+										"height": 5230
+									},
+									"width": 655,
+									"height": 982,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 1
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"md": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3487,5230&w=492&h=738",
+											"alt": "adult black pug",
+											"origin": {
+												"id": "pOUA8Xay514",
+												"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85",
+												"width": 3487,
+												"height": 5230
+											},
+											"width": 492,
+											"height": 738,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3487,5230&w=328&h=492",
+											"alt": "adult black pug",
+											"origin": {
+												"id": "pOUA8Xay514",
+												"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85",
+												"width": 3487,
+												"height": 5230
+											},
+											"width": 328,
+											"height": 492,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85&rect=0,872,3487,3487&w=16&h=16",
+											"alt": "adult black pug",
+											"origin": {
+												"id": "pOUA8Xay514",
+												"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM5MDI4MzZ8MA&ixlib=rb-4.0.3&q=85",
+												"width": 3487,
+												"height": 5230
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 872
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "Steel 100"
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Media",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "42c5aa06-dc20-4cc0-b741-88296315f498",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "Learn More"
+									}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Podcasts and videos packed with insights from our experienced team",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1546914782-96b636ea44e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxnbGFzc2VzfGVufDB8fHx8MTc0MzkwMjgzNnww&ixlib=rb-4.0.3&q=85&rect=2,0,5180,3456&w=655&h=437",
+									"alt": "woman wearing eyeglasses with black frame",
+									"origin": {
+										"id": "LHaqQkG_mgQ",
+										"url": "https://images.unsplash.com/photo-1546914782-96b636ea44e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxnbGFzc2VzfGVufDB8fHx8MTc0MzkwMjgzNnww&ixlib=rb-4.0.3&q=85",
+										"width": 5184,
+										"height": 3456
+									},
+									"width": 655,
+									"height": 437,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 2,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"md": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1546914782-96b636ea44e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxnbGFzc2VzfGVufDB8fHx8MTc0MzkwMjgzNnww&ixlib=rb-4.0.3&q=85&rect=0,0,5184,3456&w=492&h=328",
+											"alt": "woman wearing eyeglasses with black frame",
+											"origin": {
+												"id": "LHaqQkG_mgQ",
+												"url": "https://images.unsplash.com/photo-1546914782-96b636ea44e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxnbGFzc2VzfGVufDB8fHx8MTc0MzkwMjgzNnww&ixlib=rb-4.0.3&q=85",
+												"width": 5184,
+												"height": 3456
+											},
+											"width": 492,
+											"height": 328,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1546914782-96b636ea44e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxnbGFzc2VzfGVufDB8fHx8MTc0MzkwMjgzNnww&ixlib=rb-4.0.3&q=85&rect=4,0,5176,3456&w=328&h=219",
+											"alt": "woman wearing eyeglasses with black frame",
+											"origin": {
+												"id": "LHaqQkG_mgQ",
+												"url": "https://images.unsplash.com/photo-1546914782-96b636ea44e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxnbGFzc2VzfGVufDB8fHx8MTc0MzkwMjgzNnww&ixlib=rb-4.0.3&q=85",
+												"width": 5184,
+												"height": 3456
+											},
+											"width": 328,
+											"height": 219,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 4,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1546914782-96b636ea44e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxnbGFzc2VzfGVufDB8fHx8MTc0MzkwMjgzNnww&ixlib=rb-4.0.3&q=85&rect=864,0,3456,3456&w=16&h=16",
+											"alt": "woman wearing eyeglasses with black frame",
+											"origin": {
+												"id": "LHaqQkG_mgQ",
+												"url": "https://images.unsplash.com/photo-1546914782-96b636ea44e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxnbGFzc2VzfGVufDB8fHx8MTc0MzkwMjgzNnww&ixlib=rb-4.0.3&q=85",
+												"width": 5184,
+												"height": 3456
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 864,
+													"y": 0
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Learn more about what to expect so you get the most out of your visit",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Patient Information",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "Indigo"
+								}
+							],
+							[
+								"link",
+								{
+									"key": "ae7c980c-61f6-4728-aacf-be966f346438",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "Contact Us"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "With a passion for precision and a commitment to excellence, we transform your vision into a clear picture perfect reality to enrich your world.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"key": "c33b440b-cfb1-4eeb-abb7-8709f80bce35",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Industries We Serve"
+						}
+					],
+					[
+						"img",
+						{
+							"url": "https://images.unsplash.com/photo-1523292864699-4dcfd824dae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGlsbGFyc3xlbnwwfHx8fDE3MTE5NTI3Mzh8MA&ixlib=rb-4.0.3&q=85&rect=0%2C146%2C3840%2C5468&w=460&h=655",
+							"alt": "white concrete building hallway",
+							"origin": {
+								"id": "9jNcTRncjgM",
+								"url": "https://images.unsplash.com/photo-1523292864699-4dcfd824dae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGlsbGFyc3xlbnwwfHx8fDE3MTE5NTI3Mzh8MA&ixlib=rb-4.0.3&q=85",
+								"width": 3840,
+								"height": 5760
+							},
+							"width": 460,
+							"height": 655,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 146
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {
+								"md": {
+									"url": "https://images.unsplash.com/photo-1523292864699-4dcfd824dae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGlsbGFyc3xlbnwwfHx8fDE3MTE5NTI3Mzh8MA&ixlib=rb-4.0.3&q=85&rect=0%2C142%2C3840%2C5476&w=345&h=492",
+									"alt": "white concrete building hallway",
+									"origin": {
+										"id": "9jNcTRncjgM",
+										"url": "https://images.unsplash.com/photo-1523292864699-4dcfd824dae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGlsbGFyc3xlbnwwfHx8fDE3MTE5NTI3Mzh8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3840,
+										"height": 5760
+									},
+									"width": 345,
+									"height": 492,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 142
+										}
+									},
+									"credits": null
+								},
+								"sm": {
+									"url": "https://images.unsplash.com/photo-1523292864699-4dcfd824dae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGlsbGFyc3xlbnwwfHx8fDE3MTE5NTI3Mzh8MA&ixlib=rb-4.0.3&q=85&rect=0%2C142%2C3840%2C5476&w=230&h=328",
+									"alt": "white concrete building hallway",
+									"origin": {
+										"id": "9jNcTRncjgM",
+										"url": "https://images.unsplash.com/photo-1523292864699-4dcfd824dae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGlsbGFyc3xlbnwwfHx8fDE3MTE5NTI3Mzh8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3840,
+										"height": 5760
+									},
+									"width": 230,
+									"height": 328,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 142
+										}
+									},
+									"credits": null
+								},
+								"blur": {
+									"url": "https://images.unsplash.com/photo-1523292864699-4dcfd824dae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGlsbGFyc3xlbnwwfHx8fDE3MTE5NTI3Mzh8MA&ixlib=rb-4.0.3&q=85&rect=0%2C960%2C3840%2C3840&w=16&h=16",
+									"alt": "white concrete building hallway",
+									"origin": {
+										"id": "9jNcTRncjgM",
+										"url": "https://images.unsplash.com/photo-1523292864699-4dcfd824dae2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGlsbGFyc3xlbnwwfHx8fDE3MTE5NTI3Mzh8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3840,
+										"height": 5760
+									},
+									"width": 16,
+									"height": 16,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 960
+										}
+									},
+									"credits": null
+								}
+							}
+						}
+					],
+					[
+						"title",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Searching for experts though a different lens",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Meet Our Team"
+						}
+					],
+					[
+						"link",
+						{
+							"key": "5c4336e4-59b3-403e-bf91-78aadac7791a",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "#",
+								"target": ""
+							}
+						}
+					],
+					[
+						"color",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "Blue"
+						}
+					],
+					[
+						"title",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Searching for experts though a different lens",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"body",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Our years of experience have provided a wealth of perspectives.",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Beyond outdated directories and cumbersome databases; We provide a different approach.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"img",
+						{
+							"url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8YXJjaGl0ZWN0dXJlfGVufDB8fHx8MTcxMTk1MjgzOHww&ixlib=rb-4.0.3&q=85&rect=1185%2C0%2C1780%2C2535&w=460&h=655",
+							"alt": "architectural photography of modern building",
+							"origin": {
+								"id": "opFPVxMRpP8",
+								"url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8YXJjaGl0ZWN0dXJlfGVufDB8fHx8MTcxMTk1MjgzOHww&ixlib=rb-4.0.3&q=85",
+								"width": 4150,
+								"height": 2535
+							},
+							"width": 460,
+							"height": 655,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 1185,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {
+								"md": {
+									"url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8YXJjaGl0ZWN0dXJlfGVufDB8fHx8MTcxMTk1MjgzOHww&ixlib=rb-4.0.3&q=85&rect=1186%2C0%2C1778%2C2535&w=345&h=492",
+									"alt": "architectural photography of modern building",
+									"origin": {
+										"id": "opFPVxMRpP8",
+										"url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8YXJjaGl0ZWN0dXJlfGVufDB8fHx8MTcxMTk1MjgzOHww&ixlib=rb-4.0.3&q=85",
+										"width": 4150,
+										"height": 2535
+									},
+									"width": 345,
+									"height": 492,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 1186,
+											"y": 0
+										}
+									},
+									"credits": null
+								},
+								"sm": {
+									"url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8YXJjaGl0ZWN0dXJlfGVufDB8fHx8MTcxMTk1MjgzOHww&ixlib=rb-4.0.3&q=85&rect=1186%2C0%2C1778%2C2535&w=230&h=328",
+									"alt": "architectural photography of modern building",
+									"origin": {
+										"id": "opFPVxMRpP8",
+										"url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8YXJjaGl0ZWN0dXJlfGVufDB8fHx8MTcxMTk1MjgzOHww&ixlib=rb-4.0.3&q=85",
+										"width": 4150,
+										"height": 2535
+									},
+									"width": 230,
+									"height": 328,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 1186,
+											"y": 0
+										}
+									},
+									"credits": null
+								},
+								"blur": {
+									"url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8YXJjaGl0ZWN0dXJlfGVufDB8fHx8MTcxMTk1MjgzOHww&ixlib=rb-4.0.3&q=85&rect=808%2C0%2C2535%2C2535&w=16&h=16",
+									"alt": "architectural photography of modern building",
+									"origin": {
+										"id": "opFPVxMRpP8",
+										"url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8YXJjaGl0ZWN0dXJlfGVufDB8fHx8MTcxMTk1MjgzOHww&ixlib=rb-4.0.3&q=85",
+										"width": 4150,
+										"height": 2535
+									},
+									"width": 16,
+									"height": 16,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 808,
+											"y": 0
+										}
+									},
+									"credits": null
+								}
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,19 @@
+/* 
+ * Global Animations -- Utilities, Helpers, & Defaults
+*/
+
+/* Default setup */
+[class*='duration-']:not([class*='ease-']) {
+	@apply ease-out-smooth;
+}
+
+[class*='transition']:not([class*='duration-']) {
+	@apply duration-400;
+}
+
+/* GSAP SplitText -- hide letters off canvas */
+.__l {
+	@apply overflow-hidden
+	pb-2
+	-mb-2;
+}

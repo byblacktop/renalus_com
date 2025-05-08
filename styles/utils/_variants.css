@@ -1,0 +1,130 @@
+/** Variations */
+@utility variants {
+	--v-color: var(--color-blue-500);
+	--v-contrast: var(--color-steel-50);
+	--v-hover: var(--color-blue-300);
+	--v-bg: transparent;
+	--v-fg: transparent;
+	--v-border: transparent;
+	background-color: var(--v-bg);
+	border-color: var(--v-border);
+	color: var(--v-fg);
+
+	&[class*='-primary'] {
+		--v-color: var(--color-blue-500);
+		--v-contrast: var(--color-steel-50);
+		--v-hover: var(--color-blue-300);
+	}
+
+	&[class*='-soft'] {
+		--v-color: var(--color-indigo-25);
+		--v-contrast: var(--color-indigo-800);
+		--v-hover: var(--color-indigo-50);
+	}
+
+	/***********
+		Actions
+	***********/
+	/* Secondary */
+	&[class*='-secondary'] {
+		--v-color: var(--color-indigo);
+		--v-contrast: var(--color-white);
+		--v-hover: var(--color-indigo-600);
+	}
+
+	/* Info */
+	&[class*='-info'] {
+		--v-color: var(--color-blue-300);
+		--v-contrast: var(--color-blue-800);
+		--v-hover: var(--color-blue-200);
+	}
+
+	/* Accent */
+	&[class*='-accent'] {
+		--v-color: var(--color-green-100);
+		--v-contrast: var(--color-green-800);
+		--v-hover: var(--color-green-50);
+	}
+
+	/* Highlight */
+	&[class*='-highlight'] {
+		--v-color: var(--color-yellow-200);
+		--v-contrast: var(--color-indigo-800);
+		--v-hover: var(--color-yellow-400);
+	}
+
+	/* Notice */
+	&[class*='-notice'] {
+		--v-color: var(--color-yellow);
+		--v-contrast: var(--color-indigo-800);
+		--v-hover: var(--color-yellow-400);
+	}
+
+	/***********
+		Neutrals
+	***********/
+	/* White */
+	&[class*='-white'] {
+		--v-color: var(--color-white);
+		--v-contrast: var(--color-blue-800);
+		--v-hover: theme('colors.white/70');
+	}
+
+	/* Gray */
+	&[class*='-gray'] {
+		--v-color: var(--color-gray-500);
+		--v-contrast: var(--color-gray-100);
+		--v-hover: var(--color-gray-600);
+	}
+
+	/* Light */
+	&[class*='-light'] {
+		--v-color: var(--color-blue-100);
+		--v-contrast: var(--color-blue-800);
+		--v-hover: var(--color-blue-600);
+	}
+
+	/* Dark */
+	&[class*='-steel'] {
+		--v-color: var(--color-steel-700);
+		--v-contrast: var(--color-gray-100);
+		--v-hover: var(--color-steel-600);
+	}
+
+	/* Indigo */
+	&[class*='-indigo'] {
+		--v-color: var(--color-indigo-800);
+		--v-contrast: var(--color-steel-50);
+		--v-hover: var(--color-indigo-900);
+	}
+
+	/* Ghost */
+	&[class*='-ghost'] {
+		--v-color: rgba(255, 255, 255, 0.1);
+		--v-hover: rgba(255, 255, 255, 0.2);
+	}
+
+	/***********
+		Feedback 
+	***********/
+	/* Success */
+	&[class*='-success'] {
+		--v-color: var(--color-success-500);
+		--v-contrast: var(--color-gray-100);
+		--v-hover: var(--color-success-600);
+	}
+
+	/* Warning */
+	&[class*='-warning'] {
+		--v-color: var(--color-warning-500);
+		--v-contrast: var(--color-gray-100);
+		--v-hover: var(--color-warning-600);
+	}
+
+	/* Danger / Error */
+	&[class*='-danger'] {
+		--v-color: var(--color-danger-500);
+		--v-contrast: var(--color-gray-100);
+		--v-hover: var(--color-danger-600);
+	}
+}

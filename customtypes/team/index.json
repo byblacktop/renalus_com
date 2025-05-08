@@ -1,0 +1,201 @@
+{
+  "format": "page",
+  "id": "team",
+  "label": "Team",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
+      "img": {
+        "type": "Image",
+        "config": {
+          "label": "Headshot",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": "Full Name"
+        }
+      },
+      "bio": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Bio",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item,heading3"
+        }
+      },
+      "media": {
+        "type": "Group",
+        "config": {
+          "label": "Featured Video",
+          "repeat": false,
+          "fields": {
+            "video": {
+              "type": "Embed",
+              "config": {
+                "label": "Featured Video",
+                "placeholder": ""
+              }
+            },
+            "img": {
+              "type": "Image",
+              "config": {
+                "label": "Video Poster Image",
+                "constraint": {},
+                "thumbnails": [
+                  {
+                    "name": "md",
+                    "width": 770,
+                    "height": 434
+                  },
+                  {
+                    "name": "sm",
+                    "width": 480,
+                    "height": 270
+                  },
+                  {
+                    "name": "blur",
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "Info": {
+      "position": {
+        "type": "Text",
+        "config": {
+          "label": "Position",
+          "placeholder": ""
+        }
+      },
+      "start": {
+        "type": "Text",
+        "config": {
+          "label": "Start",
+          "placeholder": "Industry Start"
+        }
+      },
+      "education": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Education",
+          "placeholder": "List Doctor's Academic Credentials",
+          "allowTargetBlank": false,
+          "single": "list-item"
+        }
+      }
+    },
+    "Meta": {
+      "priority": {
+        "type": "Number",
+        "config": {
+          "label": "Sort Order",
+          "placeholder": ""
+        }
+      },
+      "team": {
+        "type": "Select",
+        "config": {
+          "label": "Team",
+          "placeholder": "Team Member Group",
+          "options": [
+            "Doctor",
+            "Staff"
+          ],
+          "default_value": "Doctor"
+        }
+      },
+      "locations": {
+        "type": "Group",
+        "config": {
+          "label": "Locations",
+          "repeat": true,
+          "fields": {
+            "location": {
+              "type": "Link",
+              "config": {
+                "label": "Location",
+                "select": "document",
+                "repeat": false,
+                "customtypes": [
+                  "location"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "specialties": {
+        "type": "Group",
+        "config": {
+          "label": "Specialties",
+          "repeat": true,
+          "fields": {
+            "specialty": {
+              "type": "Link",
+              "config": {
+                "label": "Specialty",
+                "select": "document",
+                "repeat": false,
+                "customtypes": [
+                  "page"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      },
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}

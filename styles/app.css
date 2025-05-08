@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@import './_theme.css' layer(theme);
+@import './_base.css' layer(base);
+@import './_brand.css' layer(components);
+
+@import './utils/index.css';
+
+@plugin '@tailwindcss/aspect-ratio';
+/* @plugin '@tailwindcss/forms'; */
+
+@layer base {
+	/* Text */
+	@custom-selector :--titles h1, h2, h3, h4;
+	@custom-selector :--subtitles h5, h6;
+	@custom-selector :--headings :--titles, :--subtitles;
+	@custom-selector :--body .main, p, li, dd;
+	@custom-selector :--fields input, textarea, select, optgroup, label;
+
+	/* Media */
+	@custom-selector :--vectors path, circle, rect, polygon, ellipse;
+
+	/* Prose */
+	@custom-selector :--content
+		.__hero,
+		.__prose,
+		.__lead,
+		.__body,
+		.__cta,
+		.__nav;
+}

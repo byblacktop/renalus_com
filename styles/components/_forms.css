@@ -1,0 +1,41 @@
+input:not([type]),
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'],
+input[type='url'],
+input[type='date'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='search'],
+input[type='tel'],
+select,
+select[multiple],
+textarea {
+	@apply input;
+
+	&:-internal-autofill-selected {
+		@apply bg-white! 
+			text-steel!;
+	}
+
+	&.error,
+	.error & {
+		@apply border-danger
+			placeholder:text-danger;
+	}
+}
+
+textarea {
+	@apply min-h-24;
+}
+
+input:checked + svg {
+	display: block;
+}
+
+.required {
+	@apply text-danger-400;
+}

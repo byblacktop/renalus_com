@@ -1,0 +1,36 @@
+{
+	"include": [
+		"**/*.js",
+		"**/*.jsx",
+		"postcss.config.mjs",
+		"next.config.mjs",
+		"lib/static.mjs"
+	],
+	"exclude": ["node_modules"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"target": "esnext",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"paths": {
+			"@/*": ["./*"],
+			"@/actions/*": ["app/_actions/*"],
+			"@/components/*": ["components/*", "app/_components/*"],
+			"@/helpers/*": ["lib/helpers/*"],
+			"@/locations/*": ["app/(pages)/location/_components/*"],
+			"@/posts/*": ["app/(pages)/post/_components/*"],
+			"@/team/*": ["app/(pages)/team/_components/*"],
+			"@/img/*": ["public/img/*"],
+			"@/icons/*": ["public/icons/*"]
+		}
+	}
+}

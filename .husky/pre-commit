@@ -1,0 +1,3 @@
+#!/bin/sh
+
+pnpm lint:write && npx lint-staged

@@ -1,0 +1,316 @@
+:root {
+	/* X-axis (Horizontal) */
+	--px-min: 24;
+	--px-max: 60;
+
+	/* X - Smaller */
+	--px-3xs-min: 8;
+	--px-3xs-max: 16;
+
+	--px-2xs-min: 10;
+	--px-2xs-max: 24;
+
+	--px-xs-min: 12;
+	--px-xs-max: 32;
+
+	--px-sm-min: 16;
+	--px-sm-max: 48;
+
+	/* X - Larger */
+	--px-lg-min: 32;
+	--px-lg-max: 72;
+
+	--px-xl-min: 36;
+	--px-xl-max: 88;
+
+	--px-2xl-min: 40;
+	--px-2xl-max: 100;
+
+	--px-3xl-min: 48;
+	--px-3xl-max: 120;
+
+	/* Y-axis (Vertical) */
+	--py-min: 50;
+	--py-max: 100;
+
+	/* Y - Smaller */
+	--py-3xs-min: 25;
+	--py-3xs-max: 50;
+
+	--py-2xs-min: 35;
+	--py-2xs-max: 60;
+
+	--py-xs-min: 45;
+	--py-xs-max: 70;
+
+	--py-sm-min: 60;
+	--py-sm-max: 80;
+
+	/* Y - Larger */
+	--py-lg-min: 65;
+	--py-lg-max: 130;
+
+	--py-xl-min: 80;
+	--py-xl-max: 160;
+
+	--py-2xl-min: 100;
+	--py-2xl-max: 200;
+
+	--py-3xl-min: 125;
+	--py-3xl-max: 250;
+}
+
+/** Section Spacing */
+@utility px__config {
+	--px-from: calc(var(--px-min) * 1px);
+	--px-to: calc(var(--px-max) * 1px);
+
+	/**********
+		Output
+	**********/
+
+	/* Min viewport */
+	--px: var(--px-from);
+
+	/* Scaled viewport */
+	@media (width >= theme(--breakpoint-xs)) {
+		--px: calc(
+			var(--px-from) + calc(var(--px-max) - var(--px-min)) *
+				(100vw - var(--screen-from)) / var(--fluid-diff)
+		);
+	}
+
+	/* Max viewport */
+	@media (width >= theme(--breakpoint-3xl)) {
+		--px: var(--px-to);
+	}
+}
+
+@utility px__variants {
+	&.__3xs {
+		--px-min: var(--px-3xs-min);
+		--px-max: var(--px-3xs-max);
+	}
+
+	&.__2xs {
+		--px-min: var(--px-2xs-min);
+		--px-max: var(--px-2xs-max);
+	}
+
+	&.__xs {
+		--px-min: var(--px-xs-min);
+		--px-max: var(--px-xs-max);
+	}
+
+	&.__sm {
+		--px-min: var(--px-sm-min);
+		--px-max: var(--px-sm-max);
+	}
+
+	/* Larger */
+	&.__lg {
+		--px-min: var(--px-lg-min);
+		--px-max: var(--px-lg-max);
+	}
+
+	&.__xl {
+		--px-min: var(--px-xl-min);
+		--px-max: var(--px-xl-max);
+	}
+
+	&.__2xl {
+		--px-min: var(--px-2xl-min);
+		--px-max: var(--px-2xl-max);
+	}
+
+	&.__3xl {
+		--px-min: var(--px-3xl-min);
+		--px-max: var(--px-3xl-max);
+	}
+}
+
+@utility py__config {
+	&.__3xs {
+		--py-min: var(--py-3xs-min);
+		--py-max: var(--py-3xs-max);
+	}
+
+	&.__2xs {
+		--py-min: var(--py-2xs-min);
+		--py-max: var(--py-2xs-max);
+	}
+
+	&.__xs {
+		--py-min: var(--py-xs-min);
+		--py-max: var(--py-xs-max);
+	}
+
+	&.__sm {
+		--py-min: var(--py-sm-min);
+		--py-max: var(--py-sm-max);
+	}
+
+	/* Larger */
+	&.__lg {
+		--py-min: var(--py-lg-min);
+		--py-max: var(--py-lg-max);
+	}
+
+	&.__xl {
+		--py-min: var(--py-xl-min);
+		--py-max: var(--py-xl-max);
+	}
+
+	&.__2xl {
+		--py-min: var(--py-2xl-min);
+		--py-max: var(--py-2xl-max);
+	}
+
+	&.__3xl {
+		--py-min: var(--py-3xl-min);
+		--py-max: var(--py-3xl-max);
+	}
+
+	--py-from: calc(var(--py-min) * 1px);
+	--py-to: calc(var(--py-max) * 1px);
+
+	/* Min viewport */
+	--py: var(--py-from);
+
+	/* Scaled viewport */
+	@media (width >= theme(--breakpoint-xs)) {
+		--py: calc(
+			var(--py-from) + calc(var(--py-max) - var(--py-min)) *
+				(100vw - var(--screen-from)) / var(--fluid-diff)
+		);
+	}
+
+	/* Max viewport */
+	@media (width >= theme(--breakpoint-3xl)) {
+		--py: var(--py-to);
+	}
+}
+
+@utility pt {
+	@apply py__config;
+	padding-top: var(--py);
+}
+
+@utility pb {
+	@apply py__config;
+	padding-bottom: var(--py);
+}
+
+@utility pl {
+	@apply px__config;
+	padding-left: var(--px);
+}
+
+@utility pr {
+	@apply px__config;
+	padding-right: var(--px);
+}
+
+@utility py {
+	@apply pt;
+	@apply pb;
+}
+
+@utility px {
+	@apply pl;
+	@apply pr;
+}
+
+@utility pxy {
+	@apply pt;
+	@apply pb;
+	@apply pl;
+	@apply pr;
+}
+
+@utility p-fluid-* {
+	@apply px__config;
+	@apply py__config;
+}
+
+@utility pt-fluid {
+	@apply pt;
+}
+
+@utility pt-fluid-x {
+	padding-top: var(--px);
+}
+
+@utility pb-fluid {
+	@apply pb;
+}
+
+@utility pb-fluid-x {
+	padding-bottom: var(--px);
+}
+
+@utility pl-fluid {
+	@apply px__variants;
+	@apply pl;
+}
+
+@utility pl-fluid-y {
+	padding-left: var(--py);
+}
+
+@utility pr-fluid {
+	@apply px__variants;
+	@apply pr;
+}
+
+@utility pr-fluid-y {
+	padding-right: var(--py);
+}
+
+@utility px-fluid {
+	@apply px__variants;
+	@apply px;
+}
+
+@utility px-fluid-y {
+	padding-left: var(--py);
+	padding-right: var(--py);
+}
+
+@utility py-fluid {
+	@apply py;
+}
+
+@utility py-fluid-x {
+	padding-top: var(--px);
+	padding-bottom: var(--px);
+}
+
+@utility p-fluid {
+	@apply pxy;
+}
+
+@utility p-fluid-x {
+	padding: var(--px);
+}
+
+@utility p-fluid-y {
+	padding: var(--py);
+}
+
+/* TODO: Review if necessary */
+@utility w-stretch {
+	width: var(--w-stretch);
+}
+
+@utility w-stretch-sm {
+	width: var(--w-stretch-sm);
+}
+
+@utility m-pull {
+	margin-left: var(--m-pull);
+}
+
+@utility m-pull-sm {
+	margin-left: var(--m-pull-sm);
+}

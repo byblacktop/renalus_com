@@ -1,0 +1,397 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"type": {
+				"__TYPE__": "FieldContent",
+				"value": "News",
+				"type": "Select"
+			},
+			"tags": {
+				"__TYPE__": "FieldContent",
+				"value": "block",
+				"type": "Text"
+			},
+			"links": {
+				"key": "8ca619c4-a7df-470e-8629-26857dc043a7",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev",
+					"text": "studying",
+					"variant": "Default"
+				}
+			},
+			"feed": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Locations",
+									"type": "Select"
+								}
+							],
+							[
+								"tags",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "song",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "list",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Trunk"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Farmer"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Eiusmod ad cillum aliqua anim non occaecat."
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Indigo",
+				"type": "Select"
+			},
+			"img": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+					"width": 3456,
+					"height": 3456
+				},
+				"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+				"width": 3456,
+				"height": 3456,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "blew",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"links": {
+				"key": "6babb6f2-8ee0-4939-8be5-938620997e90",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "quick",
+					"variant": "Call To Action"
+				}
+			},
+			"feed": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Posts",
+									"type": "Select"
+								}
+							],
+							[
+								"tags",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "eager",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "featured",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Moving"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Remember"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Et proident culpa nulla voluptate adipisicing commodo commodo elit irure et veniam non. Id excepteur fugiat consequat amet est eu ex proident do qui sunt est. Non minim veniam duis nostrud."
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"item",
+								{
+									"key": "50757bb5-2478-47e8-919c-ee6bdaf29c3b",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "DocumentLink",
+										"id": "mock_document_id"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"links": {
+				"key": "6c0be9e8-b1a9-4343-8663-9df09e3cfa28",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com",
+					"text": "tea",
+					"variant": "Default"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "team",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Our Doctors",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Since 1975, the experienced professionals at Terrezza Optical Group have provided adult and pediatric patients across the Gulf Coast with comprehensive eye care service.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Steel 100"
+			},
+			"team": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Doctor"
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"value": "4",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "gallery",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Mother"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Welcome"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laborum sunt officia eiusmod esse consectetur amet amet magna occaecat ea irure ad cupidatat proident. Officia magna ipsum dolor sit elit irure consequat adipisicing reprehenderit exercitation do aliqua ea veniam. Aliquip commodo proident quis sunt laborum labore et irure deserunt officia ipsum nulla."
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "None",
+				"type": "Select"
+			},
+			"feed": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"tags",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "waste",
+									"type": "Text"
+								}
+							],
+							[
+								"img",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+										"width": 5616,
+										"height": 3744
+									},
+									"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+									"width": 5616,
+									"height": 3744,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "fort",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

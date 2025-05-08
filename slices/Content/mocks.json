@@ -1,0 +1,651 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Facilitating seamless collaborations between attorneys and top-tier experts is paramount to instill confidence in nuanced technical legal cases. Through an experienced lens, we understand the intricacies of complex legal battles and the true value of precise, informed insights necessary for attorneys and expert witnesses to collaborate both effectively and efficiently. Above all sharing in mutually assured clarity and peace of mind.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Deep understanding of intricate technical concepts and nuanced legal matters is a must to empower attorneys to navigate complex challenges with confidence and precision. Our specialty lied in connecting attorneys with elite experts across a wide spectrum of technical fields",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading6",
+						"content": {
+							"text": "Ensuring that every case is fortified with unparalleled expertise.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Elevating Legal Strategy Across Diverse Technical Frontiers.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "None",
+				"type": "Select"
+			},
+			"flow": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"key": "fc21694d-2dc4-41a2-9e83-e418f94f04e2",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://google.com",
+								"target": "_blank"
+							}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "split",
+		"primary": {
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Legal battles often present a labyrinth of uncertainties. We help attorneys find the expert that will guide them through the maze with clarity and confidence. ",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Legal battles often present a labyrinth of uncertainties. We help attorneys find the expert that will guide them through the maze with clarity and confidence. Legal battles often present a labyrinth of uncertainties. We help attorneys find the expert that will guide them through the maze with clarity and confidence.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Personally Vetted Expert Witnesses",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Simplify Complex Legal Challenges with Expert Guidance",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"img": {
+				"url": "https://images.unsplash.com/photo-1493612276216-ee3925520721?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxrZXklMjBob2xkfGVufDB8fHx8MTcwODMzODQwNnww&ixlib=rb-4.0.3&q=85",
+				"alt": "person holding light bulb",
+				"origin": {
+					"id": "fIq0tET6llw",
+					"url": "https://images.unsplash.com/photo-1493612276216-ee3925520721?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxrZXklMjBob2xkfGVufDB8fHx8MTcwODMzODQwNnww&ixlib=rb-4.0.3&q=85",
+					"width": 3308,
+					"height": 4135
+				},
+				"width": 3308,
+				"height": 4135,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "splitProse",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Where Skill, Precision, and Compassion Combine",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "There are a lot of surgical specialists out there. They share the same medical degrees, the same knowledge of surgical solutions, and maybe even the same technologies, but what sets us apart is how we utilize our experience, knowledge and drive for improved patient experiences and outcomes. \n\nHere, skill, precision and compassion combine to create one-of-a-kind healthcare experiences each and every day. These are just a few of the ways we set ourselves apart from other surgical groups.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo"
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "The Terrezza Difference",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"position": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Right"
+			},
+			"group": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Title"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"key": "53e3c23c-d1fa-4d3e-90aa-b2c75935ebae",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Learn More"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "highlight",
+		"primary": {
+			"img": {
+				"origin": {
+					"id": "KJgkqQcdynQ",
+					"url": "https://images.unsplash.com/photo-1649653084130-06638e40ca25?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOXx8bGVnYWwlMjBqdXN0aWNlfGVufDB8fHx8MTcxMDczNjc0Nnww&ixlib=rb-4.0.3&q=85",
+					"width": 5622,
+					"height": 3748
+				},
+				"url": "https://images.unsplash.com/photo-1649653084130-06638e40ca25?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOXx8bGVnYWwlMjBqdXN0aWNlfGVufDB8fHx8MTcxMDczNjc0Nnww&ixlib=rb-4.0.3&q=85&rect=1312%2C0%2C2998%2C3748&w=1200&h=1500",
+				"width": 1200,
+				"height": 1500,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 1312,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"alt": "a statue of a lady justice holding a scale",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Who We Are",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading4",
+						"content": {
+							"text": "About Us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Aute consectetur cillum magna velit exercitation Lorem occaecat. Reprehenderit labore do incididunt ad sint et sint in pariatur eiusmod officia culpa."
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo"
+			},
+			"accent": {
+				"origin": {
+					"id": "tGYrlchfObE",
+					"url": "https://images.unsplash.com/photo-1486825586573-7131f7991bdd?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8bGFifGVufDB8fHx8MTcxMDczNjc2OHww&ixlib=rb-4.0.3&q=85",
+					"width": 3238,
+					"height": 4857
+				},
+				"url": "https://images.unsplash.com/photo-1486825586573-7131f7991bdd?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8bGFifGVufDB8fHx8MTcxMDczNjc2OHww&ixlib=rb-4.0.3&q=85&rect=0%2C266%2C3238%2C4325&w=584&h=780",
+				"width": 584,
+				"height": 780,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 266
+					}
+				},
+				"credits": null,
+				"alt": "person holding round clear container",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"caption": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "A fresh perspective from our team of experienced researchers.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"key": "2ea39e1b-f04d-4f64-8bc1-f199ba9e501b",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "perhaps",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "feature",
+		"primary": {
+			"img": {
+				"url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsZWdhbHxlbnwwfHx8fDE3MTA3Nzk2MTF8MA&ixlib=rb-4.0.3&q=85&rect=1367%2C0%2C3218%2C3969&w=1200&h=1480",
+				"alt": "book lot on black wooden shelf",
+				"origin": {
+					"id": "zeH-ljawHtg",
+					"url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsZWdhbHxlbnwwfHx8fDE3MTA3Nzk2MTF8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5953,
+					"height": 3969
+				},
+				"width": 1200,
+				"height": 1480,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 1367,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Helping Law Firms Connect With Highly Specialized Experts",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "At Expert Research Group, we specialize in facilitating seamless collaborations between attorneys and top-tier experts, ensuring that every case is fortified with unparalleled expertise. We understand the intricacies of complex legal battles and the paramount importance of precise, informed insights.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading4",
+						"content": {
+							"text": "What We Do",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Yellow"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"key": "2e244ae5-347d-406d-9dd8-7e598a0bcbf4",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "#",
+								"target": ""
+							}
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Our Industries"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"key": "74d6242d-35f7-43b9-994d-1db001e20e80",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "#",
+								"target": ""
+							}
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Learn More"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "banner",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Helping Law Firms Connect With Highly Specialized Experts",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"overlay": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Yellow"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Yellow"
+			},
+			"img": {
+				"url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxsYWJ8ZW58MHx8fHwxNzEwNzM2NzY4fDA&ixlib=rb-4.0.3&q=85&rect=0%2C0%2C5184%2C3455&w=2000&h=1333",
+				"alt": "refill of liquid on tubes",
+				"origin": {
+					"id": "pwcKF7L4-no",
+					"url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxsYWJ8ZW58MHx8fHwxNzEwNzM2NzY4fDA&ixlib=rb-4.0.3&q=85",
+					"width": 5184,
+					"height": 3456
+				},
+				"width": 2000,
+				"height": 1333,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "At Expert Research Group, we specialize in facilitating seamless collaborations between attorneys and top-tier experts. At Expert Research Group, we specialize in facilitating seamless collaborations between attorneys and top-tier experts.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading4",
+						"content": {
+							"text": "Our Mission",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "statement",
+		"primary": {
+			"img": {
+				"url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsZWdhbHxlbnwwfHx8fDE3MTA3Nzk2MTF8MA&ixlib=rb-4.0.3&q=85&rect=1367%2C0%2C3218%2C3969&w=1200&h=1480",
+				"alt": "book lot on black wooden shelf",
+				"origin": {
+					"id": "zeH-ljawHtg",
+					"url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsZWdhbHxlbnwwfHx8fDE3MTA3Nzk2MTF8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5953,
+					"height": 3969
+				},
+				"width": 1200,
+				"height": 1480,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 1367,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Fostering trust through genuine connections and mutual respect, ensuring our clients feel secure and valued in every interaction.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

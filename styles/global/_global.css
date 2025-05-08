@@ -1,0 +1,146 @@
+:root {
+	font-size: 16px;
+
+	/* Colors */
+	--bg: var(--color-stone-50);
+	--fg: var(--color-steel);
+	--fg-h: var(--color-indigo-700);
+	--accent: var(--color-blue);
+
+	/* Widths */
+	--w-container: 1560px;
+	--w-stretch: calc(100% + (100vw - 100%) / 2);
+	--w-stretch-sm: calc(100% + (100vw - 100%) / 4);
+	--m-stretch: calc((100vw - 100%) / 2);
+	--m-stretch-sm: calc((100vw - 100%) / 4);
+
+	/* Heights */
+	--h-banner: 0px;
+	--h-hero: 85vh;
+	--h-hero-sm: 350px;
+	--h-header: 95px;
+
+	/* Fluid defaults */
+	--fluid-min: 576;
+	--fluid-max: 1780;
+	--fluid-diff: calc(var(--fluid-max) - var(--fluid-min));
+	--screen-from: calc(var(--fluid-min) * 1px);
+	--screen-to: calc(var(--fluid-max) * 1px);
+}
+
+/* TODO: See if body position: relative; has negative implecations... such as sticky children, overflow, etc */
+/* TODO: Test body w-screen vs w-full combined with max-w- and overflow-x- properties... Always visible scrollbars may cause (obviously) unwanted tiny horizontal scroll */
+body {
+	color-scheme: light;
+	background-color: var(--bg);
+	color: var(--fg);
+	@apply relative
+		w-screen
+    max-w-full
+    min-h-screen
+    overflow-x-clip
+		flex
+		flex-col;
+
+	.overflow-x-auto,
+	.overflow-x-scroll {
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+}
+
+/** Global Color Mods */
+.__bg {
+	background-color: var(--bg);
+}
+
+.__dark {
+	--fg: var(--color-stone-50);
+	--fg-h: var(--color-steel-25);
+}
+
+/** Layout and baseline */
+div,
+main,
+section,
+article {
+	@apply bg-cover
+		bg-center;
+}
+
+main {
+	@apply rounded-b-4xl
+		overflow-clip;
+}
+
+.main,
+.slice-simulator {
+	background-color: var(--bg);
+	@apply relative
+		z-20
+		h-full;
+
+	/* .__banner & {
+		@apply rounded-t-4xl
+			pb-24;
+	} */
+}
+
+.__banner ~ main {
+	@apply -mt-8
+		rounded-t-4xl
+		overflow-clip;
+}
+
+header.header {
+	@apply z-90;
+
+	* {
+		@apply z-199;
+	}
+}
+
+footer.footer {
+	@apply relative
+		z-10
+		-mt-12;
+}
+
+/* TODO: Validate this doesn't break position: sticky the same way that overflow-x-hidden does */
+section {
+	@apply overflow-x-clip;
+}
+
+/** Headings */
+:--headings {
+	color: var(--fg-h);
+}
+
+:--body {
+	color: var(--fg);
+}
+
+[class*='*:text-'] :--headings,
+[class*='*:text-'] :--body {
+	color: inherit;
+}
+
+/** Links */
+a,
+button,
+.btn {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
+	@apply relative
+		no-underline
+		ease-in-out;
+
+	/* Animations/Transitions (prevent intro animated butotns) */
+	&:not(.__gs) {
+		@apply transition
+		duration-300;
+	}
+}

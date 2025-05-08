@@ -1,0 +1,39 @@
+/* Normalize Sections */
+main > section {
+	@apply relative;
+
+	> article {
+		@apply relative
+			z-1;
+	}
+}
+
+/* Heros */
+.__hero {
+	padding-top: var(--h-header);
+	@apply bg-bg;
+}
+
+/* Sections */
+.__container {
+	@apply relative
+		max-w-(--breakpoint-2xl)
+		mx-auto
+		z-1
+		px;
+
+	:where(&) {
+		@apply py;
+	}
+
+	&:empty {
+		@apply hidden;
+	}
+}
+
+.stack + .stack,
+.stack:has(+ .stack) {
+	> .__container {
+		--pt: 0;
+	}
+}

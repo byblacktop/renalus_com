@@ -1,0 +1,134 @@
+{
+  "format": "page",
+  "id": "location",
+  "label": "Location",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Body",
+          "placeholder": "Location Description",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading4,heading5,heading6,strong,o-list-item,list-item,hyperlink"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "Info": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "phone": {
+        "type": "Text",
+        "config": {
+          "label": "Phone",
+          "placeholder": "Phone Number"
+        }
+      },
+      "fax": {
+        "type": "Text",
+        "config": {
+          "label": "Fax",
+          "placeholder": "Fax Number"
+        }
+      },
+      "address": {
+        "type": "Link",
+        "config": {
+          "label": "Address",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": false
+        }
+      },
+      "hours": {
+        "type": "Table",
+        "config": {
+          "label": "Hours"
+        }
+      },
+      "rid": {
+        "type": "Text",
+        "config": {
+          "label": "Reviews ID",
+          "placeholder": "Doctible Review ID"
+        }
+      }
+    },
+    "Gallery": {
+      "imgs": {
+        "type": "Group",
+        "config": {
+          "label": "Image Gallery",
+          "repeat": true,
+          "fields": {
+            "img": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      },
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}

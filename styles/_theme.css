@@ -1,0 +1,331 @@
+/* THEME */
+@theme {
+	/* Breakpoints */
+	--breakpoint-*: initial;
+	--breakpoint-xs: 576px;
+	--breakpoint-sm: 640px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1280px;
+	--breakpoint-2xl: 1440px;
+	--breakpoint-3xl: 1560px;
+	--breakpoint-4xl: 1780px;
+	--breakpoint-5xl: 1920px;
+	--breakpoint-6xl: 2080px;
+	/* Fonts */
+	--font-*: initial;
+	--font-heading: var(--font-nib);
+	--font-subheading: var(--font-geist);
+	--font-main: var(--font-geist);
+	--font-label: var(--font-geist);
+
+	/* Colors */
+	--color-*: initial;
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-ghost: rgba(255, 255, 255, 0.5);
+	--color-transparent: transparent;
+	--color-current: currentColor;
+	--color-accent: var(--accent);
+	--color-bg: var(--bg);
+	--color-fg: var(--fg);
+
+	--color-gray: hsl(225, 2%, 48%);
+	--color-gray-25: hsl(225, 2%, 98%);
+	--color-gray-50: hsl(225, 2%, 96%);
+	--color-gray-100: hsl(225, 2%, 92%);
+	--color-gray-200: hsl(225, 2%, 88%);
+	--color-gray-300: hsl(225, 2%, 78%);
+	--color-gray-400: hsl(225, 2%, 68%);
+	--color-gray-500: hsl(225, 2%, 48%);
+	--color-gray-600: hsl(225, 2%, 28%);
+	--color-gray-700: hsl(225, 2%, 18%);
+	--color-gray-800: hsl(225, 2%, 13%);
+	--color-gray-900: hsl(225, 2%, 10%);
+	--color-gray-950: hsl(225, 2%, 7%);
+	--color-gray-1000: hsl(225, 2%, 5%);
+
+	--color-steel: hsl(214, 15%, 30%);
+	--color-steel-25: hsl(214, 15%, 97%);
+	--color-steel-50: hsl(214, 15%, 94%);
+	--color-steel-100: hsl(214, 15%, 90%);
+	--color-steel-200: hsl(214, 15%, 80%);
+	--color-steel-300: hsl(214, 15%, 70%);
+	--color-steel-400: hsl(214, 15%, 45%);
+	--color-steel-500: hsl(214, 15%, 30%);
+	--color-steel-600: hsl(214, 15%, 25%);
+	--color-steel-700: hsl(214, 15%, 20%);
+	--color-steel-800: hsl(214, 15%, 15%);
+	--color-steel-900: hsl(214, 15%, 12%);
+	--color-steel-950: hsl(214, 15%, 8%);
+	--color-steel-1000: hsl(214, 15%, 4%);
+
+	--color-stone: hsl(35, 7%, 52%);
+	--color-stone-25: hsl(35, 7%, 98%);
+	--color-stone-50: hsl(35, 7%, 96%);
+	--color-stone-100: hsl(35, 7%, 94%);
+	--color-stone-200: hsl(35, 7%, 90%);
+	--color-stone-300: hsl(35, 7%, 78%);
+	--color-stone-400: hsl(35, 7%, 68%);
+	--color-stone-500: hsl(35, 7%, 52%);
+	--color-stone-600: hsl(35, 7%, 48%);
+	--color-stone-700: hsl(35, 7%, 35%);
+	--color-stone-800: hsl(35, 7%, 25%);
+	--color-stone-900: hsl(35, 7%, 15%);
+	--color-stone-950: hsl(35, 7%, 10%);
+	--color-stone-1000: hsl(35, 7%, 5%);
+
+	--color-indigo: hsl(202, 60%, 12%);
+	--color-indigo-25: hsl(202, 60%, 86%);
+	--color-indigo-50: hsl(202, 60%, 76%);
+	--color-indigo-100: hsl(202, 60%, 66%);
+	--color-indigo-200: hsl(202, 60%, 56%);
+	--color-indigo-300: hsl(202, 60%, 46%);
+	--color-indigo-400: hsl(202, 60%, 36%);
+	--color-indigo-500: hsl(202, 60%, 26%);
+	--color-indigo-600: hsl(202, 60%, 20%);
+	--color-indigo-700: hsl(202, 60%, 16%);
+	--color-indigo-800: hsl(202, 60%, 12%);
+	--color-indigo-900: hsla(202, 60%, 10%);
+	--color-indigo-950: hsla(202, 60%, 8%);
+	--color-indigo-1000: hsla(202, 60%, 6%);
+
+	--color-blue: hsl(214, 67%, 34%);
+	--color-blue-25: hsl(214, 67%, 94%);
+	--color-blue-50: hsl(214, 67%, 84%);
+	--color-blue-100: hsl(214, 67%, 76%);
+	--color-blue-200: hsl(214, 67%, 64%);
+	--color-blue-300: hsl(214, 67%, 52%);
+	--color-blue-400: hsl(214, 67%, 44%);
+	--color-blue-500: hsl(214, 67%, 34%);
+	--color-blue-600: hsl(214, 77%, 30%);
+	--color-blue-700: hsl(214, 87%, 26%);
+	--color-blue-800: hsl(214, 87%, 22%);
+	--color-blue-900: hsl(214, 87%, 18%);
+	--color-blue-950: hsl(214, 87%, 16%);
+	--color-blue-1000: hsl(214, 87%, 12%);
+
+	--color-yellow: hsl(40, 100%, 67%);
+	--color-yellow-25: hsl(40, 100%, 94%);
+	--color-yellow-50: hsl(40, 100%, 90%);
+	--color-yellow-100: hsl(40, 100%, 84%);
+	--color-yellow-200: hsl(40, 100%, 80%);
+	--color-yellow-300: hsl(40, 100%, 78%);
+	--color-yellow-400: hsl(40, 100%, 73%);
+	--color-yellow-500: hsl(40, 100%, 67%);
+	--color-yellow-600: hsl(40, 100%, 62%);
+	--color-yellow-700: hsl(40, 100%, 58%);
+	--color-yellow-800: hsl(40, 100%, 54%);
+	--color-yellow-900: hsl(40, 100%, 50%);
+	--color-yellow-950: hsl(40, 100%, 44%);
+	--color-yellow-1000: hsl(40, 100%, 40%);
+
+	--color-green: hsl(170, 33%, 50%);
+	--color-green-25: hsl(170, 33%, 95%);
+	--color-green-50: hsl(170, 33%, 90%);
+	--color-green-100: hsl(170, 33%, 82%);
+	--color-green-200: hsl(170, 33%, 75%);
+	--color-green-300: hsl(170, 33%, 70%);
+	--color-green-400: hsl(170, 33%, 60%);
+	--color-green-500: hsl(170, 33%, 50%);
+	--color-green-600: hsl(170, 33%, 40%);
+	--color-green-700: hsl(170, 33%, 36%);
+	--color-green-800: hsl(170, 33%, 29%);
+	--color-green-900: hsl(170, 33%, 16%);
+	--color-green-950: hsl(170, 33%, 10%);
+	--color-green-1000: hsl(170, 33%, 6%);
+
+	--color-red: hsl(356, 64%, 42%);
+	--color-red-25: hsl(356, 64%, 90%);
+	--color-red-50: hsl(356, 64%, 80%);
+	--color-red-100: hsl(356, 64%, 70%);
+	--color-red-200: hsl(356, 64%, 60%);
+	--color-red-300: hsl(356, 64%, 50%);
+	--color-red-400: hsl(356, 64%, 46%);
+	--color-red-500: hsl(356, 64%, 42%);
+	--color-red-600: hsl(356, 64%, 38%);
+	--color-red-700: hsl(356, 64%, 34%);
+	--color-red-800: hsl(356, 64%, 32%);
+	--color-red-900: hsl(356, 64%, 28%);
+	--color-red-950: hsl(356, 64%, 24%);
+	--color-red-1000: hsl(356, 64%, 20%);
+
+	--color-success: hsl(123, 60%, 37%);
+	--color-success-100: hsl(123, 60%, 86%);
+	--color-success-200: hsl(123, 60%, 76%);
+	--color-success-300: hsl(123, 60%, 61%);
+	--color-success-400: hsl(123, 60%, 46%);
+	--color-success-500: hsl(123, 60%, 37%);
+	--color-success-600: hsl(123, 60%, 30%);
+	--color-success-700: hsl(123, 60%, 23%);
+	--color-success-800: hsl(123, 60%, 15%);
+	--color-success-900: hsl(123, 60%, 8%);
+
+	--color-warning: hsl(36, 70%, 54%);
+	--color-warning-100: hsl(36, 70%, 91%);
+	--color-warning-200: hsl(36, 70%, 76%);
+	--color-warning-300: hsl(36, 70%, 61%);
+	--color-warning-400: hsl(36, 70%, 46%);
+	--color-warning-500: hsl(36, 70%, 54%);
+	--color-warning-600: hsl(36, 70%, 43%);
+	--color-warning-700: hsl(36, 70%, 32%);
+	--color-warning-800: hsl(36, 70%, 21%);
+	--color-warning-900: hsl(36, 70%, 11%);
+
+	--color-danger: hsl(348, 70%, 61%);
+	--color-danger-100: hsl(348, 70%, 94%);
+	--color-danger-200: hsl(348, 70%, 88%);
+	--color-danger-300: hsl(348, 70%, 82%);
+	--color-danger-400: hsl(348, 70%, 76%);
+	--color-danger-500: hsl(348, 70%, 61%);
+	--color-danger-600: hsl(348, 70%, 49%);
+	--color-danger-700: hsl(348, 70%, 37%);
+	--color-danger-800: hsl(348, 70%, 25%);
+	--color-danger-900: hsl(348, 70%, 13%);
+
+	/* Container */
+	--container-8xl: 1440px;
+	--container-9xl: 1560px;
+	--container-10xl: 1680px;
+
+	/* Font Sizes */
+	--text-2xs: 0.625rem;
+
+	/* Line Heights */
+	--leading-shrink: 0.9em;
+	--leading-2xs: 1.05;
+	--leading-xs: 1.11;
+	--leading-sm: 1.15;
+	--leading-md: 1.47;
+	--leading-prose: 1.65em;
+	--leading-prose-sm: 1.33em;
+	--leading-prose-lg: 1.77em;
+
+	/* Letter Spacing */
+	--tracking-sm: 0.02em;
+	--tracking-md: 0.066667em;
+	--tracking-lg: 0.091em;
+	--tracking-xl: 0.166667em;
+	--tracking-2xl: 0.178333em;
+	--tracking-3xl: 0.25em;
+
+	/* Radius */
+	--radius-base: 0.6rem;
+	--radius-4xl: clamp(1.5rem, 1.666vw, 2rem); /* 2 —— 24-32px */
+	--radius-5xl: clamp(2rem, 2.5vw, 3rem); /* 3 —— 32-48px */
+	--radius-6xl: clamp(3rem, 3.333vw, 4rem); /* 4 —— 48-64px */
+	--radius-7xl: clamp(4.5rem, 5vw, 6rem); /* 6 —— 72-96px */
+	--radius-8xl: clamp(6rem, 6.666vw, 8rem); /* 8 —— 96-128px */
+	--radius-9xl: clamp(8rem, 10vw, 12rem); /* 12 —— 128-192px */
+	--radius-10xl: clamp(12rem, 13.3333vw, 16rem); /* 16 —— 192-256px */
+	--radius-11xl: clamp(14rem, 16vw, 20rem); /* 20 —— 256-364px */
+	--radius-12xl: clamp(16rem, 18vw, 24rem); /* 24 —— 364-512px */
+
+	/* Flex Grow */
+	--flex-grow-2: 2;
+	--flex-grow-3: 3;
+	--flex-grow-4: 4;
+	--flex-grow-5: 5;
+	--flex-grow-6: 6;
+
+	/* Z-Index */
+	--z-index-1: 1;
+	--z-index-2: 2;
+	--z-index-60: 60;
+	--z-index-70: 70;
+	--z-index-80: 80;
+	--z-index-90: 90;
+	--z-index-99: 99;
+	--z-index-100: 100;
+	--z-index-101: 101;
+	--z-index-199: 199;
+	--z-index-200: 200;
+	--z-index-201: 201;
+
+	/* Shadows */
+	--shadow-up:
+		0 -1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+	--shadow-up-md:
+		0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--shadow-up-lg:
+		0 -10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+	--shadow-up-xl:
+		0 -20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1);
+	--shadow-up-2xl: 0 -5px 50px -12px rgb(0 0 0 / 0.25);
+
+	/* Filters */
+	--saturate-25: 0.25;
+	--saturate-75: 0.75;
+
+	/* Scale */
+	--scale-120: 1.2;
+	--scale-175: 1.75;
+	--scale-200: 2;
+	--scale-250: 2.5;
+
+	/* Transitions */
+	--transition-duration-250: 250ms;
+	--transition-duration-400: 400ms;
+	--transition-duration-800: 800ms;
+	--transition-duration-1200: 1200ms;
+	--transition-duration-1500: 1500ms;
+	--transition-duration-1750: 1750ms;
+	--transition-duration-2000: 2000ms;
+	--transition-duration-2500: 2500ms;
+	--transition-duration-3000: 3000ms;
+
+	/* Easing */
+	--ease-out-smooth: cubic-bezier(0.23, 1, 0.32, 1);
+	--ease-in-out-dramatic: cubic-bezier(0.77, 0, 0.175, 1);
+	--ease-in-out-intro: cubic-bezier(0.73, 0, 0.13, 1);
+
+	/* Animations */
+	--animate-loader: loader 1.4s linear infinite both;
+	--animate-loader-delay-200: loader 1.4s linear 200ms infinite both;
+	--animate-loader-delay-400: loader 1.4s linear 400ms infinite both;
+	--animate-loader-delay-600: loader 1.4s linear 600ms infinite both;
+	--animate-loop: loop 0.7s cubic-bezier(0.18, 0.18, 0.25, 1);
+	--animate-loop-back: loop 0.7s cubic-bezier(0.75, 0, 0.82, 0.82)
+		reverse;
+	--animate-loop-around: loop-around 1s var(--ease-in-out-dramatic);
+
+	@keyframes loader {
+		0% {
+			opacity: 0.2;
+		}
+		20% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0.2;
+		}
+	}
+
+	@keyframes loop {
+		0%,
+		100% {
+			transform: translateX(0);
+		}
+		49.99% {
+			transform: translateX(200%);
+		}
+		50% {
+			transform: translateX(-200%);
+		}
+	}
+
+	@keyframes loop-around {
+		0%,
+		100% {
+			transform: translate(0, 0);
+		}
+		49.99% {
+			transform: translate(200%, -200%);
+		}
+		50% {
+			transform: translate(-200%, 200%);
+		}
+	}
+}

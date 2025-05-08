@@ -1,0 +1,48 @@
+/* Images
+-------------------------------------------------------------- */
+img,
+figure,
+picture,
+svg {
+}
+
+/* SVG
+-------------------------------------------------------------- */
+svg {
+	@apply max-w-full
+		pointer-events-none;
+
+	&:not([class*='size-']) {
+		&:not([class*='w-']) {
+			&:not([class*='h-full']) {
+				@apply w-full;
+			}
+		}
+
+		&:not([class*='h-']) {
+			@apply h-auto;
+		}
+	}
+
+	/* SVG vvector elements */
+	:--vectors {
+		&[fill='none'] {
+			@apply stroke-current;
+		}
+		&[class*='fill-accent'] {
+			@apply fill-accent;
+		}
+	}
+}
+
+/* Videos
+-------------------------------------------------------------- */
+
+/* iFrame
+-------------------------------------------------------------- */
+.__frame {
+	iframe {
+		@apply w-full
+			h-full;
+	}
+}

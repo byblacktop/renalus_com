@@ -1,0 +1,5 @@
+/* Blurs */
+[class*='blur-'] {
+	/* Safari hack to avoid performance issues */
+	transform: translate3d(0, 0, 0);
+}

@@ -1,0 +1,835 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "We transform your vision into clear reality.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "With a passion for precision and a commitment to excellence, we transform your vision into a clear picture perfect reality to enrich your world.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "b22019e7-9d0a-472a-82cc-2e278563f383",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://prismic.io",
+							"text": "About  Us"
+						}
+					},
+					{
+						"key": "d4f01725-7521-4693-8bf7-0083ce997b2c",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "#next",
+							"text": "Learn More"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading6",
+						"content": {
+							"text": "Surrounded"
+						}
+					}
+				]
+			},
+			"img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=1920&h=1280",
+				"alt": "black framed eyeglasses",
+				"origin": {
+					"id": "tRIx_NfMNYA",
+					"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5472,
+					"height": 3648
+				},
+				"width": 1920,
+				"height": 1280,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"lg": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=1440&h=960",
+						"alt": "black framed eyeglasses",
+						"origin": {
+							"id": "tRIx_NfMNYA",
+							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 1440,
+						"height": 960,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							}
+						},
+						"credits": null
+					},
+					"md": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=960&h=640",
+						"alt": "black framed eyeglasses",
+						"origin": {
+							"id": "tRIx_NfMNYA",
+							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 960,
+						"height": 640,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							}
+						},
+						"credits": null
+					},
+					"sm": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=480&h=320",
+						"alt": "black framed eyeglasses",
+						"origin": {
+							"id": "tRIx_NfMNYA",
+							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 480,
+						"height": 320,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							}
+						},
+						"credits": null
+					},
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=912,0,3648,3648&w=16&h=16",
+						"alt": "black framed eyeglasses",
+						"origin": {
+							"id": "tRIx_NfMNYA",
+							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 912,
+								"y": 0
+							}
+						},
+						"credits": null
+					}
+				}
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "lead",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Simplify Complex Legal Challenges with Expert Guidance",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Grown"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Legal battles often present a labyrinth of uncertainties. We help attorneys find the expert that will guide them through the maze with clarity and confidence.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"img": {
+				"url": "https://images.unsplash.com/photo-1454006639960-af9b6a303eae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxqdXN0aWNlfGVufDB8fHx8MTcxMTkyOTEyNXww&ixlib=rb-4.0.3&q=85&rect=0%2C0%2C6000%2C4000&w=1920&h=1280",
+				"alt": "worm eye view of white concrete pillar during day time",
+				"origin": {
+					"id": "PbN_Gl_ZoMk",
+					"url": "https://images.unsplash.com/photo-1454006639960-af9b6a303eae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxqdXN0aWNlfGVufDB8fHx8MTcxMTkyOTEyNXww&ixlib=rb-4.0.3&q=85",
+					"width": 6000,
+					"height": 4000
+				},
+				"width": 1920,
+				"height": 1280,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"lg": {
+						"url": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxzY2llbmNlfGVufDB8fHx8MTcxMTkyOTA4OXww&ixlib=rb-4.0.3&q=85&rect=0%2C191%2C4096%2C2731&w=1440&h=960",
+						"alt": "blue and green peacock feather",
+						"origin": {
+							"id": "58Z17lnVS4U",
+							"url": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxzY2llbmNlfGVufDB8fHx8MTcxMTkyOTA4OXww&ixlib=rb-4.0.3&q=85",
+							"width": 4096,
+							"height": 3112
+						},
+						"width": 1440,
+						"height": 960,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 191
+							}
+						},
+						"credits": null
+					},
+					"md": {
+						"url": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxzY2llbmNlfGVufDB8fHx8MTcxMTkyOTA4OXww&ixlib=rb-4.0.3&q=85&rect=0%2C191%2C4096%2C2731&w=480&h=320",
+						"alt": "blue and green peacock feather",
+						"origin": {
+							"id": "58Z17lnVS4U",
+							"url": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxzY2llbmNlfGVufDB8fHx8MTcxMTkyOTA4OXww&ixlib=rb-4.0.3&q=85",
+							"width": 4096,
+							"height": 3112
+						},
+						"width": 480,
+						"height": 320,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 191
+							}
+						},
+						"credits": null
+					},
+					"blur": {
+						"url": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxzY2llbmNlfGVufDB8fHx8MTcxMTkyOTA4OXww&ixlib=rb-4.0.3&q=85&rect=492%2C0%2C3112%2C3112&w=16&h=16",
+						"alt": "blue and green peacock feather",
+						"origin": {
+							"id": "58Z17lnVS4U",
+							"url": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxzY2llbmNlfGVufDB8fHx8MTcxMTkyOTA4OXww&ixlib=rb-4.0.3&q=85",
+							"width": 4096,
+							"height": 3112
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 492,
+								"y": 0
+							}
+						},
+						"credits": null
+					}
+				}
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "None",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "split",
+		"primary": {
+			"img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,955,3487,3321&w=1260&h=1200",
+				"alt": "adult black pug",
+				"origin": {
+					"id": "pOUA8Xay514",
+					"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3487,
+					"height": 5230
+				},
+				"width": 1260,
+				"height": 1200,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 955
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"md": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,955,3487,3321&w=840&h=800",
+						"alt": "adult black pug",
+						"origin": {
+							"id": "pOUA8Xay514",
+							"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+							"width": 3487,
+							"height": 5230
+						},
+						"width": 840,
+						"height": 800,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 955
+							}
+						},
+						"credits": null
+					},
+					"sm": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,955,3487,3321&w=420&h=400",
+						"alt": "adult black pug",
+						"origin": {
+							"id": "pOUA8Xay514",
+							"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+							"width": 3487,
+							"height": 5230
+						},
+						"width": 420,
+						"height": 400,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 955
+							}
+						},
+						"credits": null
+					},
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,872,3487,3487&w=16&h=16",
+						"alt": "adult black pug",
+						"origin": {
+							"id": "pOUA8Xay514",
+							"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+							"width": 3487,
+							"height": 5230
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 872
+							}
+						},
+						"credits": null
+					}
+				}
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "About Us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "We transform your vision into clear reality.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "With a passion for precision and a commitment to excellence, we transform your vision into breathtaking realities that stand the test of time.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "58424868-32ed-47c0-a26e-f4f9547a6278",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://slicemachine.dev",
+							"text": "Learn More"
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Steel 100"
+			},
+			"size": {
+				"__TYPE__": "FieldContent",
+				"value": "Default",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "highlight",
+		"primary": {
+			"img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,955,3487,3321&w=1260&h=1200",
+				"alt": "adult black pug",
+				"origin": {
+					"id": "pOUA8Xay514",
+					"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3487,
+					"height": 5230
+				},
+				"width": 1260,
+				"height": 1200,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 955
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"md": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,955,3487,3321&w=840&h=800",
+						"alt": "adult black pug",
+						"origin": {
+							"id": "pOUA8Xay514",
+							"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+							"width": 3487,
+							"height": 5230
+						},
+						"width": 840,
+						"height": 800,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 955
+							}
+						},
+						"credits": null
+					},
+					"sm": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,955,3487,3321&w=420&h=400",
+						"alt": "adult black pug",
+						"origin": {
+							"id": "pOUA8Xay514",
+							"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+							"width": 3487,
+							"height": 5230
+						},
+						"width": 420,
+						"height": 400,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 955
+							}
+						},
+						"credits": null
+					},
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,872,3487,3487&w=16&h=16",
+						"alt": "adult black pug",
+						"origin": {
+							"id": "pOUA8Xay514",
+							"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+							"width": 3487,
+							"height": 5230
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 872
+							}
+						},
+						"credits": null
+					}
+				}
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "About Us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "We transform your vision into clear reality.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "With a passion for precision and a commitment to excellence, we transform your vision into breathtaking realities that stand the test of time.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "58424868-32ed-47c0-a26e-f4f9547a6278",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://slicemachine.dev",
+							"text": "Learn More"
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo"
+			},
+			"size": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Large"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "contained",
+		"primary": {
+			"img": {
+				"__TYPE__": "ImageContent",
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnbGFzc2VzfGVufDB8fHx8MTc0Mzk5NjI0OHww&ixlib=rb-4.0.3&q=85&rect=785,0,3665,3490&w=1260&h=1200",
+				"alt": "person holding eyeglasses",
+				"origin": {
+					"id": "qmnpqDwla_E",
+					"url": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnbGFzc2VzfGVufDB8fHx8MTc0Mzk5NjI0OHww&ixlib=rb-4.0.3&q=85",
+					"width": 5235,
+					"height": 3490
+				},
+				"width": 1260,
+				"height": 1200,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 785,
+						"y": 0
+					}
+				},
+				"thumbnails": {
+					"md": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnbGFzc2VzfGVufDB8fHx8MTc0Mzk5NjI0OHww&ixlib=rb-4.0.3&q=85&rect=785,0,3665,3490&w=840&h=800",
+						"alt": "person holding eyeglasses",
+						"origin": {
+							"id": "qmnpqDwla_E",
+							"url": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnbGFzc2VzfGVufDB8fHx8MTc0Mzk5NjI0OHww&ixlib=rb-4.0.3&q=85",
+							"width": 5235,
+							"height": 3490
+						},
+						"width": 840,
+						"height": 800,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 785,
+								"y": 0
+							}
+						}
+					},
+					"sm": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnbGFzc2VzfGVufDB8fHx8MTc0Mzk5NjI0OHww&ixlib=rb-4.0.3&q=85&rect=785,0,3665,3490&w=420&h=400",
+						"alt": "person holding eyeglasses",
+						"origin": {
+							"id": "qmnpqDwla_E",
+							"url": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnbGFzc2VzfGVufDB8fHx8MTc0Mzk5NjI0OHww&ixlib=rb-4.0.3&q=85",
+							"width": 5235,
+							"height": 3490
+						},
+						"width": 420,
+						"height": 400,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 785,
+								"y": 0
+							}
+						}
+					},
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnbGFzc2VzfGVufDB8fHx8MTc0Mzk5NjI0OHww&ixlib=rb-4.0.3&q=85&rect=872,0,3490,3490&w=16&h=16",
+						"alt": "person holding eyeglasses",
+						"origin": {
+							"id": "qmnpqDwla_E",
+							"url": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnbGFzc2VzfGVufDB8fHx8MTc0Mzk5NjI0OHww&ixlib=rb-4.0.3&q=85",
+							"width": 5235,
+							"height": 3490
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 872,
+								"y": 0
+							}
+						}
+					}
+				}
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Our Services",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Contact Lens Fittings",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Whether you're new to contacts or looking for the best fit, our expert fittings ensure optimal comfort and clear vision. We’ll help you find the right lenses for your lifestyle, from daily disposables to specialty lenses.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "1c25777a-787c-468a-a7bb-4e84415f7151",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://slicemachine.dev",
+							"text": "Learn More"
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "None"
+			},
+			"size": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Small"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

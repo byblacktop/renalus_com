@@ -1,0 +1,274 @@
+/** Components / Resets */
+/* TODO: Maybe find alternative to .__nav... seems unnecessary */
+:--content {
+	@apply relative
+		w-full
+		z-1;
+}
+
+:--content[data-gs-ready='false'],
+[data-gs-ready='false'] :--content,
+[data-gs-ready='false'] .__backdrop,
+[data-gs-ready='false'] [data-gs] {
+	@apply invisible;
+}
+
+/** List */
+ul,
+ol,
+li {
+	@apply relative;
+}
+
+/**
+	Prose/Body Content (Inside <Thread />, <Prose />, and <Body /> Components)
+*/
+:is(.prose, .__prose, .__body):not([role='nav']) {
+	/* Links */
+	a:not(.btn) {
+		@apply link;
+	}
+
+	/* TODO: See if we can avoid setting and then unsetting properties */
+	&.clean a {
+		@apply no-underline;
+	}
+
+	&.accent-yellow {
+		/* Set the default color for h1, h2, and h3 */
+		:--headings {
+			--fg-h: var(--color-yellow-400);
+		}
+
+		/* Reset the color for h1, h2, h3 if preceeded by h4, h5, h6 */
+		:--subtitles + :--titles {
+			--fg-h: initial;
+		}
+	}
+
+	&.accent-blue {
+		:--headings {
+			--fg-h: var(--color-blue);
+		}
+
+		:--subtitles + :--titles {
+			--fg-h: initial;
+		}
+	}
+
+	/* Sizes (Disclaimer) */
+	&.__2xs {
+		h4,
+		h5 {
+			@apply normal-case
+				tracking-normal;
+		}
+
+		h4 {
+			@apply fs-2xs
+				font-semibold;
+		}
+
+		h5 {
+			@apply fs-xs
+				font-medium
+				tracking-wide;
+		}
+	}
+}
+
+.prose,
+.__prose {
+	/* Base Typography */
+	h2,
+	h3 {
+	}
+
+	p,
+	h4,
+	h5,
+	h6 {
+	}
+
+	/* Lists */
+	ul,
+	ol {
+		&:not(:first-child) {
+			@apply mt-4
+				md:mt-6
+				xl:mt-8;
+		}
+
+		&:not(:last-child) {
+			@apply mb-4
+				md:mb-6
+				xl:mb-8;
+		}
+	}
+
+	li {
+		@apply leading-snug;
+	}
+
+	ul {
+	}
+
+	ol {
+		@apply space-y-8
+			xl:space-y-12;
+
+		li:not(ul li) {
+			counter-increment: ol-counter;
+			@apply pl-16!;
+
+			&:before {
+				content: counter(ol-counter);
+				@apply absolute
+					top-0
+					left-0
+					flex
+					items-center
+					justify-center;
+			}
+		}
+	}
+}
+
+.__body {
+	:--subtitles {
+		&:not(:first-child) {
+			@apply mt-4
+					md:mt-6
+					xl:mt-8;
+		}
+
+		&:not(:last-child) {
+			@apply mb-1
+				md:mb-2
+				xl:mb-2.5;
+		}
+	}
+
+	&[class*='accent-'] {
+		:--subtitles {
+			@apply mb-1;
+
+			+ p {
+				@apply mt-2.5;
+			}
+		}
+
+		em {
+			font-size: 0.5em;
+			@apply not-italic
+				align-super
+				leading-none;
+		}
+	}
+
+	/* Columns */
+	&[class*='columns-'] ul {
+		li {
+			@apply my-1
+				xl:my-2;
+
+			&:first-child {
+				@apply mt-0;
+			}
+		}
+	}
+
+	&:not([class*='columns-']) ul {
+		@apply flex
+			flex-col
+			gap-1.5
+			xl:gap-2
+			ml-2
+			xl:ml-4;
+	}
+
+	/* Bullets */
+	&:not([role]) ul:not([role]) {
+		li {
+			@apply pl-7;
+
+			&:before {
+				content: '•';
+				@apply absolute
+					block
+					top-0
+					left-0;
+			}
+		}
+	}
+}
+
+[role='nav'] {
+	> ul {
+		@apply !gap-0;
+	}
+
+	a {
+		@apply relative
+			py-2
+			flex
+			items-center
+			justify-between
+			text-indigo-600
+			hover:text-indigo;
+
+		&:after {
+			content: '';
+			@apply relative
+				block
+				size-7
+				border
+				border-steel-200
+				rounded-full
+				transition-all
+				duration-150
+				ease-in-out;
+
+			background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 40 40' stroke-width='1.5' stroke='hsl(214, 67%, 34%)'><path stroke-linecap='round' stroke-linejoin='round' d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path></svg>");
+			background-repeat: no-repeat;
+			background-position: 5px 5px;
+		}
+
+		&:hover:after {
+			background-position: 7.5px 2.5px;
+		}
+	}
+
+	li:first-child a {
+		@apply pt-0;
+	}
+
+	li:not(:has(a)) {
+		@apply py-2;
+	}
+}
+
+.quote {
+	@apply relative
+		text-yellow-500
+		pt-10
+		pl-20
+		fs-xl;
+
+	em {
+		@apply relative
+			z-2;
+	}
+
+	&:before {
+		content: '“';
+		@apply absolute
+			-top-1
+			-left-4
+			font-label
+			text-[9.4em]
+			leading-none
+			opacity-10
+			pointer-events-none;
+	}
+}

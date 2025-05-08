@@ -1,0 +1,4711 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Our Foundational Core Values",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Terrezza Values",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "These foundational values define who we are—as surgeons and as individuals. It’s our commitment to leaving the most positive, lasting impressions we can with every patient, through every care experience.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"position": {
+				"__TYPE__": "FieldContent",
+				"value": "Right",
+				"type": "Select"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "None",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "01",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Build Trust",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We build trusted relationships for the best possible solutions, for the best possible outcomes.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "72aeb541-e9a3-49d3-8c77-34ec1bad6a43",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "degree"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We build trusted relationships for the best possible solutions, for the best possible outcomes.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "02",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Service with Heart",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "4936a528-277e-4a78-9c72-620f1796df26",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "AnyLink",
+										"kind": "any",
+										"text": "Learn More"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "03",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Family",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We build trusted relationships for the best possible solutions, for the best possible outcomes.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "175c0c88-012c-4621-a8a2-627d33a5fe81",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "http://twitter.com",
+							"text": "difficulty"
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "cards",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Our Foundational Core Values",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Terrezza Values",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "These foundational values define who we are—as surgeons and as individuals. It’s our commitment to leaving the most positive, lasting impressions we can with every patient, through every care experience."
+						}
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"value": "2",
+				"type": "Select"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Built Trust",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Commodo ipsum nostrud ullamco nostrud."
+											}
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Service with Heart",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Eu laborum fugiat eu aliquip non elit. Adipisicing aute ea mollit officia qui exercitation sunt. Nostrud dolore occaecat culpa magna et do consectetur ullamco elit culpa ad laboris anim cillum."
+											}
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Esse cupidatat tempor ipsum dolore nisi. Aliquip cupidatat consectetur laboris cupidatat qui in. Irure eu nulla pariatur do nisi nisi consectetur labore minim sunt sint est aliqua qui."
+											}
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Family",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Elit occaecat anim adipisicing elit enim veniam deserunt labore adipisicing. Voluptate sit irure eiusmod aute et excepteur laboris enim esse do veniam consectetur reprehenderit sint."
+											}
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Teamwork",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Aliquip aute consectetur culpa reprehenderit ullamco voluptate nulla commodo irure excepteur et laborum."
+											}
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Exceed Expectatioons",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"links": {
+				"key": "d2dc50ae-4539-4978-8803-1d2fb17ee1c3",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"text": "Learn More",
+					"variant": "Default"
+				}
+			},
+			"img": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+					"width": 4000,
+					"height": 6000
+				},
+				"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?rect=0%2C0%2C4000%2C6000&w=1920&h=2880",
+				"width": 1920,
+				"height": 2880,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "snake",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"lg": {
+						"origin": {
+							"id": "lg",
+							"url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+							"width": 3199,
+							"height": 3199
+						},
+						"url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?rect=0%2C0%2C3199%2C3199&w=1600&h=1600",
+						"width": 1600,
+						"height": 1600,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							},
+							"background": "transparent"
+						},
+						"alt": "education",
+						"credits": null
+					},
+					"md": {
+						"origin": {
+							"id": "md",
+							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+							"width": 3648,
+							"height": 4560
+						},
+						"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?rect=0%2C0%2C3648%2C4560&w=800&h=1000",
+						"width": 800,
+						"height": 1000,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							},
+							"background": "transparent"
+						},
+						"alt": "sun",
+						"credits": null
+					},
+					"blur": {
+						"origin": {
+							"id": "blur",
+							"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+							"width": 12288,
+							"height": 16384
+						},
+						"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?rect=0%2C2048%2C12288%2C12288&w=16&h=16",
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 2048
+							},
+							"background": "transparent"
+						},
+						"alt": "fellow",
+						"credits": null
+					}
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "list",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "About Us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "2"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "None",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "01 Terrezza Values",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Quis consequat incididunt nulla nisi et incididunt cupidatat cillum Lorem aliqua cupidatat."
+											}
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "1"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Laboris magna id aliquip aliquip aliquip laboris."
+											}
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "02 Terrezza Values",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "2"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "columns",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Where Skill, Precision, and Compassion Combine",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "The Terrezza Difference",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "There are a lot of surgical specialists out there. They share the same medical degrees, the same knowledge of surgical solutions, and maybe even the same technologies, but what sets us apart is how we utilize our experience, knowledge and drive for improved patient experiences and outcomes. ",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "3"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Terrezza Values",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "a352b274-cf2f-41f8-a437-9c79244b3216",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "http://twitter.com",
+							"text": "Learn More"
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "featured",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Whistle"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Courage"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Culpa tempor consectetur nostrud minim. Ad minim ut et tempor quis amet et duis nulla quis consectetur minim. Velit adipisicing tempor ex."
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Steel 50",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Length"
+											}
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fugiat elit labore aliqua exercitation aliqua do labore."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"img": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+					"width": 5848,
+					"height": 3899
+				},
+				"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+				"width": 5848,
+				"height": 3899,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "understanding",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"accent": {
+				"__TYPE__": "FieldContent",
+				"value": "Gray 25",
+				"type": "Select"
+			},
+			"links": {
+				"key": "cc29a494-5eb8-4c22-9af4-eff4450211e7",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev",
+					"text": "bound",
+					"variant": "Default"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "toggles",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Patient Information",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Learn more about what to expect for your visit with us.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "How can I schedule an appointment?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Call our office or request an appointment online for a staff member to call you and schedule a visit. Visit our Locations page to find the most convenient office to call. You can also submit our quick Online Appointment Request Form and a staff member will contact you.",
+												"spans": [
+													{
+														"type": "hyperlink",
+														"start": 112,
+														"end": 121,
+														"data": {
+															"__TYPE__": "ExternalLink",
+															"url": "#",
+															"target": "_self"
+														}
+													},
+													{
+														"type": "strong",
+														"start": 112,
+														"end": 121
+													},
+													{
+														"type": "hyperlink",
+														"start": 201,
+														"end": 232,
+														"data": {
+															"__TYPE__": "ExternalLink",
+															"url": "#",
+															"target": "_self"
+														}
+													},
+													{
+														"type": "strong",
+														"start": 201,
+														"end": 232
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"links",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"key": "4ea7e9f1-311e-48d3-976c-ebf68756caf5",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "#",
+												"text": "Learn More",
+												"variant": "Call to Action"
+											}
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Scheduling & Appointments"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Please bring a valid picture ID, insurance card(s), a list of your current medications, and your previous prescription for glasses or contact lenses.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What should I bring to my eye exam?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Scheduling & Appointments"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "A routine eye exam typically takes 45 minutes to an hour.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "How long does an eye exam typically take?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Scheduling & Appointments"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We accept VSP, Davis Vision, EYEMED, Medicare, Spectera, Avesis, Superior, Tricare, Alabama Medicaid, VCP, BCBS, CIGNA, and Healthspring. VCI and FCE Members may only be seen in Florida locations. If your insurance is not listed, please call the office to inquire.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Insurance & Payment Options"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What insurance plans do you accept?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Insurance & Payment Options"
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Our self-pay eye exams start at $99, and eyeglass packages start at $89. We offer a variety of frames to fit almost any budget.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What is the cost of an eye exam without insurance?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Insurance & Payment Options"
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We accept cash, debit cards, Visa, MasterCard, Discover, American Express, and CareCredit at all locations.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What types of payments do you accept?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "The Patient Portal gives you access to your records, orders, prescriptions, receipts, and more. ",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 4,
+														"end": 18
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "New Patients: Use the username and temporary password given at your appointment to log in.",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 13
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Existing Patients: Use the credentials provided when scheduling. If you don’t have an appointment, call the office where you were last seen to receive your login details.",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 18
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Username Format: First 3 letters of your first name (first letter capitalized) + first letter of your last name (capitalized) + birth year (4 digits).\nExample: John Doe, born in 1970 → JohD1970",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 16
+													},
+													{
+														"type": "strong",
+														"start": 185,
+														"end": 193
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "If you have trouble logging in, call the location where you were last seen for assistance.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Patient Portal & Online Access"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "How do I log in to the Patient Portal?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"toggles": {
+				"__TYPE__": "TableContent",
+				"content": [
+					{
+						"key": "973bff9d-1309-473c-8ab6-7964af5ac171",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "472a1e36-af09-4f8a-b867-6d1d9c11bede",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "How can I schedule an appointment?",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 34
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "609d79a9-0610-4143-9bdb-7a138e294b09",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "FAQs",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "gallery",
+		"primary": {
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"value": "4",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3558,3558&w=1920&h=1920",
+									"alt": "gold-colored framed hippie sunglasses on white surface",
+									"origin": {
+										"id": "1-nx1QR5dTE",
+										"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3558,
+										"height": 3558
+									},
+									"width": 1920,
+									"height": 1920,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"md": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3558,3558&w=1200&h=1200",
+											"alt": "gold-colored framed hippie sunglasses on white surface",
+											"origin": {
+												"id": "1-nx1QR5dTE",
+												"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 3558,
+												"height": 3558
+											},
+											"width": 1200,
+											"height": 1200,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3558,3558&w=480&h=480",
+											"alt": "gold-colored framed hippie sunglasses on white surface",
+											"origin": {
+												"id": "1-nx1QR5dTE",
+												"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 3558,
+												"height": 3558
+											},
+											"width": 480,
+											"height": 480,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3558,3558&w=16&h=16",
+											"alt": "gold-colored framed hippie sunglasses on white surface",
+											"origin": {
+												"id": "1-nx1QR5dTE",
+												"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 3558,
+												"height": 3558
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=0,0,5184,3456&w=1920&h=1280",
+									"alt": "clear eyeglasses on book",
+									"origin": {
+										"id": "d05w6_7FaPM",
+										"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
+										"width": 5184,
+										"height": 3456
+									},
+									"width": 1920,
+									"height": 1280,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"md": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=0,0,5184,3456&w=1200&h=800",
+											"alt": "clear eyeglasses on book",
+											"origin": {
+												"id": "d05w6_7FaPM",
+												"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
+												"width": 5184,
+												"height": 3456
+											},
+											"width": 1200,
+											"height": 800,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=864,0,3456,3456&w=480&h=480",
+											"alt": "clear eyeglasses on book",
+											"origin": {
+												"id": "d05w6_7FaPM",
+												"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
+												"width": 5184,
+												"height": 3456
+											},
+											"width": 480,
+											"height": 480,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 864,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=864,0,3456,3456&w=16&h=16",
+											"alt": "clear eyeglasses on book",
+											"origin": {
+												"id": "d05w6_7FaPM",
+												"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
+												"width": 5184,
+												"height": 3456
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 864,
+													"y": 0
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,6000&w=1920&h=1920",
+									"alt": "shallow focus photo of black Ray-Ban wayfarer sunglasses",
+									"origin": {
+										"id": "K62u25Jk6vo",
+										"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 6000,
+										"height": 6000
+									},
+									"width": 1920,
+									"height": 1920,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"md": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,6000&w=1200&h=1200",
+											"alt": "shallow focus photo of black Ray-Ban wayfarer sunglasses",
+											"origin": {
+												"id": "K62u25Jk6vo",
+												"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 6000,
+												"height": 6000
+											},
+											"width": 1200,
+											"height": 1200,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,6000&w=480&h=480",
+											"alt": "shallow focus photo of black Ray-Ban wayfarer sunglasses",
+											"origin": {
+												"id": "K62u25Jk6vo",
+												"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 6000,
+												"height": 6000
+											},
+											"width": 480,
+											"height": 480,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,6000&w=16&h=16",
+											"alt": "shallow focus photo of black Ray-Ban wayfarer sunglasses",
+											"origin": {
+												"id": "K62u25Jk6vo",
+												"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 6000,
+												"height": 6000
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3999,5999&w=1920&h=2880",
+									"alt": "black framed eyeglasses on brown wooden table",
+									"origin": {
+										"id": "bSjqyqukCjY",
+										"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3999,
+										"height": 5999
+									},
+									"width": 1920,
+									"height": 2880,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"md": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3999,5999&w=1200&h=1800",
+											"alt": "black framed eyeglasses on brown wooden table",
+											"origin": {
+												"id": "bSjqyqukCjY",
+												"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 3999,
+												"height": 5999
+											},
+											"width": 1200,
+											"height": 1800,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,1000,3999,3999&w=480&h=480",
+											"alt": "black framed eyeglasses on brown wooden table",
+											"origin": {
+												"id": "bSjqyqukCjY",
+												"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 3999,
+												"height": 5999
+											},
+											"width": 480,
+											"height": 480,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 1000
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,1000,3999,3999&w=16&h=16",
+											"alt": "black framed eyeglasses on brown wooden table",
+											"origin": {
+												"id": "bSjqyqukCjY",
+												"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 3999,
+												"height": 5999
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 1000
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=0,0,4608,3456&w=1920&h=1440",
+									"alt": "eyeglasses on white table",
+									"origin": {
+										"id": "WeCoLo0Rxp4",
+										"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
+										"width": 4608,
+										"height": 3456
+									},
+									"width": 1920,
+									"height": 1440,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"md": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=0,0,4608,3456&w=1200&h=900",
+											"alt": "eyeglasses on white table",
+											"origin": {
+												"id": "WeCoLo0Rxp4",
+												"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
+												"width": 4608,
+												"height": 3456
+											},
+											"width": 1200,
+											"height": 900,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=576,0,3456,3456&w=480&h=480",
+											"alt": "eyeglasses on white table",
+											"origin": {
+												"id": "WeCoLo0Rxp4",
+												"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
+												"width": 4608,
+												"height": 3456
+											},
+											"width": 480,
+											"height": 480,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 576,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=576,0,3456,3456&w=16&h=16",
+											"alt": "eyeglasses on white table",
+											"origin": {
+												"id": "WeCoLo0Rxp4",
+												"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
+												"width": 4608,
+												"height": 3456
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 576,
+													"y": 0
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,4000&w=1920&h=1280",
+									"alt": "black-framed eyeglasses",
+									"origin": {
+										"id": "e8TtkC5xyv4",
+										"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 6000,
+										"height": 4000
+									},
+									"width": 1920,
+									"height": 1280,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"md": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,4000&w=1200&h=800",
+											"alt": "black-framed eyeglasses",
+											"origin": {
+												"id": "e8TtkC5xyv4",
+												"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 6000,
+												"height": 4000
+											},
+											"width": 1200,
+											"height": 800,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=1000,0,4000,4000&w=480&h=480",
+											"alt": "black-framed eyeglasses",
+											"origin": {
+												"id": "e8TtkC5xyv4",
+												"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 6000,
+												"height": 4000
+											},
+											"width": 480,
+											"height": 480,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 1000,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=1000,0,4000,4000&w=16&h=16",
+											"alt": "black-framed eyeglasses",
+											"origin": {
+												"id": "e8TtkC5xyv4",
+												"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
+												"width": 6000,
+												"height": 4000
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 1000,
+													"y": 0
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "spread",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Provide"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Possibly"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Eiusmod reprehenderit dolor laborum."
+						}
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "a970f1aa-1294-4214-a0e3-655381d87454",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://prismic.io",
+							"text": "population"
+						}
+					}
+				]
+			},
+			"position": {
+				"__TYPE__": "FieldContent",
+				"value": "Right",
+				"type": "Select"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Stove"
+											}
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Office"
+											}
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Quis magna laborum id tempor consequat. Tempor sit deserunt ea nisi qui. Aute quis laborum commodo consequat."
+											}
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "e14f0893-de2b-45d8-8792-c8334f2815e2",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "tomorrow"
+									}
+								}
+							],
+							[
+								"img",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+										"width": 3648,
+										"height": 4560
+									},
+									"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?rect=304%2C0%2C3040%2C4560&w=400&h=600",
+									"width": 400,
+									"height": 600,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 304,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "radio",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"lg": {
+											"origin": {
+												"id": "lg",
+												"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
+												"width": 3500,
+												"height": 2338
+											},
+											"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?rect=873%2C0%2C1754%2C2338&w=600&h=800",
+											"width": 600,
+											"height": 800,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 873,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "medicine",
+											"credits": null
+										},
+										"sm": {
+											"origin": {
+												"id": "sm",
+												"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+												"width": 8640,
+												"height": 8640
+											},
+											"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?rect=1440%2C0%2C5760%2C8640&w=200&h=300",
+											"width": 200,
+											"height": 300,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 1440,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "purple",
+											"credits": null
+										},
+										"blur": {
+											"origin": {
+												"id": "blur",
+												"url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef",
+												"width": 4000,
+												"height": 6000
+											},
+											"url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?rect=0%2C1000%2C4000%2C4000&w=16&h=16",
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 1000
+												},
+												"background": "transparent"
+											},
+											"alt": "happy",
+											"credits": null
+										}
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "previews",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Under"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Pride"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem mollit sit quis ullamco veniam incididunt laboris et et et voluptate."
+						}
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "1"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Steel 100",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Fairfield",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ann Taylor",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Anne Klein",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BCBGMAXAZRIA",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BEBE",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Betsey Johnson",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Boss",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Calvin Klein Jeans",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Carrera",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Champion",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Coach",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cole Haan",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cool Clip",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Costa",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Danny Gokey",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dilli Dalli",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dragon",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Draper James",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ducks Unlimited",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "FYSH",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "IZOD",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Jimmy Crystal",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Joseph Abboud",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Karl Lagerfeld",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kate Spade",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kensie",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "L.A.M.B.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lacoste",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lenton and Rusby",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Life is Good",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lilly Pulitzer",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Longchamp",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lulu Guiness",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Maui Jim",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Michael Kors",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nautica",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nike",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Oakley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Paradigm",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Penguin",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Polo Ralph Lauren",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Rayban",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Silhouette",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Steve Madden",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Superflex",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Takumi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ted Baker",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Tommy Hilfiger",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Under Armour",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Bradley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Wang",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Wiley X",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "XOXO",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Zac Posen",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Luxury Brands",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 13
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Fendi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Gucci",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Marc Jacobs",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Saint Laurent",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "4"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ann Taylor",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Anne Klein",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BCBGMAXAZRIA",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BEBE",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Betsey Johnson",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Boss",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Calvin Klein Jeans",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Carrera",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Champion",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Coach",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cole Haan",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cool Clip",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Costa",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Danny Gokey",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dilli Dalli",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dragon",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Draper James",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ducks Unlimited",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "FYSH",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "IZOD",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Jimmy Crystal",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Joseph Abboud",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Karl Lagerfeld",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kate Spade",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kensie",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "L.A.M.B.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lacoste",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lenton and Rusby",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Life is Good",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lilly Pulitzer",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Longchamp",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lulu Guiness",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Maui Jim",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Michael Kors",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nautica",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nike",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Oakley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Paradigm",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Penguin",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Polo Ralph Lauren",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Rayban",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Silhouette",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Steve Madden",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Superflex",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Takumi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ted Baker",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Tommy Hilfiger",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Under Armour",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Bradley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Wang",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Wiley X",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "XOXO",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Zac Posen",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Luxury Brands",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 13
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Fendi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Gucci",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Marc Jacobs",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Saint Laurent",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "4"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Nine Mile Crossing",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "popovers",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Brother"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Exclaimed"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sint irure laborum eu."
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "None",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Missing"
+											}
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Voluptate adipisicing id cupidatat voluptate est."
+											}
+										}
+									]
+								}
+							],
+							[
+								"img",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+										"width": 6000,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?rect=0%2C0%2C6000%2C4000&w=480&h=320",
+									"width": 480,
+									"height": 320,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "perhaps",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"sm": {
+											"origin": {
+												"id": "sm",
+												"url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+												"width": 3199,
+												"height": 3199
+											},
+											"url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?rect=0%2C0%2C3199%2C3199&w=340&h=340",
+											"width": 340,
+											"height": 340,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "fully",
+											"credits": null
+										},
+										"blur": {
+											"origin": {
+												"id": "blur",
+												"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+												"width": 6597,
+												"height": 4398
+											},
+											"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?rect=1100%2C0%2C4398%2C4398&w=16&h=16",
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 1100,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "brick",
+											"credits": null
+										}
+									}
+								}
+							],
+							[
+								"links",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"key": "68a75acb-d604-4f4a-9ae2-7fc6dfe3ad79",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "http://google.com",
+												"text": "treated"
+											}
+										}
+									]
+								}
+							],
+							[
+								"cta",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "offer",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "alpha",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Our Brands",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Mollit dolore sunt nostrud mollit laborum laborum."
+						}
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"value": "3",
+				"type": "Select"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Steel 200"
+			},
+			"items": {
+				"__TYPE__": "TableContent",
+				"content": [
+					{
+						"key": "ea1dedd3-a27d-4ced-a11b-074c0031e5f6",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "11ecb161-9189-4937-80be-6e5f46f6bd9e",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Adensco",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "bda02a90-a413-4693-879c-e50c06c1a1f3",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fairfield",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "a0749228-1e86-4ed4-9ee4-bd9fcd72223c",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "757bd4b3-6be4-446f-b3a8-52e438e685da",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Adidas",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "0f15ce13-b572-47cd-8632-1a936ea410e7",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Milton",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "5451240a-29eb-4174-b5a3-c7af2ea7e683",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "2f4a5f01-5294-4153-be32-1b028f1e5437",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Adria",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "1a64056a-b4d6-4ff5-a8a4-adc542d2cd72",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fairfield",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "7a9db8fe-3fe5-453c-85c9-ec6795ca2810",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "ac5be2dc-0456-4702-9804-4339e30b3377",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ann Taylor",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "89c8453e-7228-41bd-baa2-d3b982ba5179",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Foley",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "4c5e1cfe-c67d-48ea-99b8-6b854ffc5c4d",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "9a4b4f2b-a5e8-49a2-b673-c92fcb94aa59",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Anne Klein",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "e7fb0ca6-5fe0-4b08-84e2-887864a8e33c",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Foley, Nine Mile Crossing, Fairhope, Milton, Navarre",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "e3be5382-c22d-4b2d-88af-d65c35777090",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "9e3e6fde-77ec-45a5-956c-e1a3e1e63604",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Aristar",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "3f018eaf-f48d-4500-9a77-03ad2484d195",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fairfield, Palafox, Fairhope, Baptist Hospital",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "a942693f-f80a-4908-97ae-ac943824c7b4",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "2033be5c-daa7-44ee-9760-734919a1aea3",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Armani Exchange",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "65519af9-79c0-4b12-bf75-f90f2fb7086a",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fairfield",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "57b7b1bd-784c-4f58-99e2-d9b6187b31d6",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "3509391e-294a-4262-bb4a-4e6789b56922",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Autoflex/Flexon",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "2c4f3f3e-37a7-4a84-a4fc-fa2896d54774",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fairfield",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "d48db315-ae43-45de-b9fb-2b2c66ab3682",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "d77f1320-8b3e-4f1f-8e15-eea2445ecb02",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Bajio",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "3ae0f5ba-6c8e-446d-af4e-8af0c19f6f3c",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Baptist Hospital",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "854c2097-66e1-430b-bd47-f62dbff0ac0a",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "af7f2707-c25a-46a9-b14e-8f37829595e0",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Bajio Sunglasses",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "e8e099cd-09d8-4e13-8971-e4c3719e1a53",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Palafox",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "154cf754-39b1-424c-bf81-6acfec775bc8",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "59283f09-5a75-471e-b58d-d068d6503a62",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "BCBG Max Azria",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "5e9f21ee-9d9f-4171-b47f-0b2341af7e42",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Palafox, Milton",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "8ff628d0-0594-4619-8373-4c21c866edf3",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "0388fd06-64bd-4034-8363-fb85fbc0d304",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "BCBGMAXAZRIA",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "53769929-0411-4456-a036-423f0c7e7174",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Foley, Nine Mile Crossing",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "9942b45b-d230-4676-aea4-d1cebc819dcd",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "5ea4ebf8-e437-4f59-9e27-900331049b06",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Bebe",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "f2eb353e-e83f-493b-9ea2-55da82aa9be3",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fairhope",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "9c71caab-18d4-439e-b2d4-79295cc65493",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "bdfa0d6c-959f-45d8-8b9e-1f974a1e59ef",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "BEBE",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "2c1c85df-42d0-4665-8010-461a07966f26",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Foley, Fairfield, Nine Mile Crossing, Palafox, Milton, Baptist Hospital, Navarre",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "05426e3a-51ec-4b9d-a27f-73e6178a0fc0",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "50579f24-fc4e-4a59-a9e6-872d0a328a3e",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Betsey Johnson",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "d31f3f81-3155-4ae3-8c5f-c2c7f9ba76e4",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Foley, Palafox, Fairhope, Milton, Navarre",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "402ef2c2-325b-42d0-820c-3b4b57236215",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "f4bd8b02-d263-430a-ab9c-cd9233ea5a20",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Big Mens Eyewear Club",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "f7794cf8-c2e2-458f-9ea6-bf7749a53f56",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Navarre",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "c097b532-a83c-4a2c-866d-f4cb7b216b23",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "2346d77c-d200-4754-be1e-76870b4ee44c",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Bontaniq",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "7f01b3ca-4774-4d9e-a253-d1733f518d37",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Baptist Hospital",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "4eee17fd-31a7-4ea8-85fb-eb5801e3964a",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "dbac3065-3496-4856-888c-2dedd7951e0b",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Boss",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "1a8e59e2-31e7-49cc-a870-be1f1848b966",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Foley, Palafox",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "df54f110-cf08-43dc-986c-5a95de754433",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "f3649e71-9107-40a1-ac80-205c0756eaf7",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Brooks Brothers",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "21f1a139-c331-490a-874b-e64888fdb4ee",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Palafox, Navarre",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "ca5f2cf3-78de-4142-bb3c-abb92f16aa5b",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "c460bee7-30ac-43ef-9d0c-4e7da40faf51",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Burberry",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "12ff00c9-7824-40b6-a4fa-57088121a541",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Palafox",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"key": "67b81099-cd33-43f8-a370-713b71190edd",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "890489a8-4b35-4962-b164-669974ed1133",
+								"type": "tableHeader",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "AAA",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "004d56cb-93a5-4048-953a-81bc31026b6a",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Foley, Palafox, Fairhope, Milton, Navarre",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Looks good on you",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"featured": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
+										"width": 4024,
+										"height": 4024
+									},
+									"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?rect=0%2C0%2C4024%2C4024&w=300&h=300",
+									"width": 300,
+									"height": 300,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "strong",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"blur": {
+											"origin": {
+												"id": "blur",
+												"url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b",
+												"width": 3560,
+												"height": 5340
+											},
+											"url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?rect=0%2C890%2C3560%2C3560&w=16&h=16",
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 890
+												},
+												"background": "transparent"
+											},
+											"alt": "tail",
+											"credits": null
+										}
+									}
+								}
+							],
+							[
+								"link",
+								{
+									"key": "af685f8b-6137-4ee2-8109-64c674ad5254",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev",
+										"text": "silly"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

@@ -1,0 +1,190 @@
+.btn {
+	/* Variant setup */
+	@apply variants;
+	--v-fg: var(--v-color);
+
+	/* Button Core Styles */
+	@apply /* Typography */
+		font-label
+		font-semibold
+		tracking-sm
+		fs-3xs
+
+		/* Spacing */
+		px-4
+		py-2.5
+		lg:px-5
+		lg:py-3.5
+
+		/* Layout */
+    inline-flex
+		justify-between
+		gap-2
+    place-items-center
+    place-content-center
+		min-w-max
+
+		/* Shape */
+		rounded-full
+
+		/* Decoration */
+		border
+		no-underline
+		whitespace-nowrap;
+
+	/* Collapse text line height */
+	.btn__text {
+		@apply leading-4;
+	}
+
+	/* Sizes */
+	&.btn-\32 xs {
+		@apply label__2xs;
+
+		@apply px-2.5
+			py-1;
+	}
+
+	&.btn-xs {
+		@apply label__xs;
+
+		@apply px-2.5
+			py-1.5
+			lg:px-3
+			lg:py-2;
+	}
+
+	&.btn-sm {
+		@apply label__sm;
+
+		@apply px-3.5
+			py-2
+			lg:px-4
+			lg:py-3;
+	}
+
+	&.btn-lg {
+		@apply label__lg;
+
+		@apply px-5
+			py-3
+			lg:px-6
+			lg:py-4;
+	}
+
+	&.btn-xl {
+		@apply label__xl;
+
+		@apply px-6
+			py-4
+			lg:px-7
+			lg:py-5;
+	}
+
+	/* Variants */
+	&.btn-solid {
+		--v-bg: var(--v-color);
+		--v-fg: var(--v-contrast);
+
+		.group:hover &,
+		&:hover {
+			background-color: var(--v-hover);
+		}
+	}
+
+	/* Outline */
+	&.btn-outline {
+		--v-border: var(--v-color);
+
+		.group:hover &:not(.btn-reveal),
+		&:not(.btn-reveal):hover {
+			--v-fg: var(--v-contrast);
+			background-color: var(--v-color);
+		}
+
+		.__dark:not(:has(.__base)) & {
+			--v-fg: var(--color-stone-50);
+
+			.group:hover &,
+			&:hover {
+				--v-fg: var(--v-contrast);
+			}
+		}
+	}
+
+	/* Stroke */
+	&.btn-stroke {
+		--v-border: var(--v-color);
+		@apply border-transparent 
+			p-0;
+
+		.btn__text {
+			border-color: var(--v-border);
+			@apply border-b-2
+				pb-1.5
+				lg:pb-2;
+		}
+
+		&.btn-2xs .btn__text {
+			@apply border-b
+				pb-0.5;
+		}
+
+		&.btn-xs .btn__text {
+			@apply pb-0.5
+					lg:pb-1;
+		}
+
+		&.btn-sm .btn__text {
+			@apply pb-1
+					lg:pb-1.5;
+		}
+
+		&.btn-lg .btn__text {
+			@apply pb-2
+					lg:pb-2.5;
+		}
+
+		&.btn-xl .btn__text {
+			@apply pb-2.5
+					lg:pb-3;
+		}
+
+		.group:hover &,
+		&:hover {
+			--v-fg: var(--v-hover);
+			--v-border: var(--v-hover);
+		}
+	}
+
+	&.btn-flat,
+	&.btn-nav {
+		.group:hover &,
+		&:hover {
+			--v-fg: var(--v-hover);
+		}
+	}
+
+	&.btn-nav {
+		@apply px-3
+			py-2
+			lg:px-4
+			lg:py-3;
+	}
+
+	&.btn-link {
+		@apply px-0
+			underline-offset-4 
+			hover:underline;
+	}
+
+	&.btn-cta {
+		@apply p-1
+			pl-5;
+	}
+
+	/* States */
+	&[disabled] {
+		@apply cursor-wait!;
+	}
+}

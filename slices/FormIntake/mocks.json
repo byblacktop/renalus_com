@@ -1,0 +1,216 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Contact Us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Helping Law Firms Connect With Highly Specialized",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"link",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"key": "c2a0958b-6f57-4c91-951d-b56012ef059e",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "https://slicemachine.dev",
+												"text": "nest"
+											}
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Facebook"
+								}
+							],
+							[
+								"links",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"__TYPE__": "LinkContent",
+											"key": "a70b9711-5309-49b6-9b86-1f34838b008b",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "#",
+												"target": "_blank",
+												"text": "Follow Terrezza"
+											}
+										},
+										{
+											"__TYPE__": "LinkContent",
+											"key": "7a399d7b-8d8c-49fb-9f6a-4111b86f269b",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "#",
+												"target": "_blank",
+												"text": "Follow Cobb"
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"type",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "Text"
+						}
+					],
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "soil",
+							"type": "Text"
+						}
+					],
+					[
+						"linkText",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "contact@terrezzaoptical.com"
+						}
+					],
+					[
+						"link",
+						{
+							"key": "87bb59ea-fe0c-4917-b051-327811a19ddc",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "mailto:contact@terrezzaoptical.com",
+								"target": ""
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "pretty",
+							"type": "Text"
+						}
+					],
+					[
+						"linkText",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "8507231076"
+						}
+					],
+					[
+						"link",
+						{
+							"key": "dfac3995-f758-4859-931e-0a8718739430",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "tel:8507231076",
+								"target": "_blank"
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "service",
+							"type": "Text"
+						}
+					],
+					[
+						"linkText",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Meet the Team"
+						}
+					],
+					[
+						"link",
+						{
+							"key": "deb4b208-205e-4107-85eb-24b9b03c82d0",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "#",
+								"target": ""
+							}
+						}
+					],
+					[
+						"type",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "Button"
+						}
+					]
+				]
+			}
+		]
+	}
+]

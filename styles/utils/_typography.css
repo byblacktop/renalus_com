@@ -1,0 +1,144 @@
+/* Fluid Font Scale */
+@utility fs-6xs {
+	--font-max: 11;
+	--font-min: 9;
+}
+@utility fs-5xs {
+	--font-max: 12;
+	--font-min: 10;
+}
+@utility fs-4xs {
+	--font-max: 13;
+	--font-min: 11;
+}
+@utility fs-3xs {
+	--font-max: 14;
+	--font-min: 12;
+}
+@utility fs-2xs {
+	--font-max: 16;
+	--font-min: 14;
+}
+@utility fs-xs {
+	--font-max: 17;
+	--font-min: 15;
+}
+@utility fs-sm {
+	--font-max: 18;
+	--font-min: 16;
+}
+@utility fs-base {
+	--font-max: 20;
+	--font-min: 17;
+}
+@utility fs-lg {
+	--font-max: 22;
+	--font-min: 18;
+}
+@utility fs-xl {
+	--font-max: 24;
+	--font-min: 20;
+}
+@utility fs-2xl {
+	--font-max: 28;
+	--font-min: 20;
+}
+@utility fs-3xl {
+	--font-max: 30;
+	--font-min: 22;
+}
+@utility fs-4xl {
+	--font-max: 32;
+	--font-min: 24;
+}
+@utility fs-5xl {
+	--font-max: 36;
+	--font-min: 28;
+}
+@utility fs-6xl {
+	--font-max: 40;
+	--font-min: 30;
+}
+@utility fs-7xl {
+	--font-max: 48;
+	--font-min: 36;
+}
+@utility fs-8xl {
+	--font-max: 54;
+	--font-min: 38;
+}
+@utility fs-9xl {
+	--font-max: 60;
+	--font-min: 44;
+}
+
+/* Main */
+@utility prose {
+	@apply fs-sm;
+}
+
+/* Forms */
+@utility input {
+	@apply fs-2xs
+		leading-normal
+		bg-transparent
+		block
+		w-full
+		px-0
+		py-2
+
+		md:pt-3
+		border-0
+		border-b
+		border-steel/30
+		placeholder-steel/50
+		focus:border-steel
+
+		ring-0 
+		ring-transparent
+		focus:ring-0
+		focus-within:ring-1
+		focus:outline-hidden;
+}
+
+@utility label {
+	@apply font-label
+		font-medium
+		tracking-wider
+		fs-3xs;
+}
+
+@utility label__2xs {
+	@apply fs-6xs;
+}
+
+@utility label__xs {
+	@apply fs-5xs;
+}
+
+@utility label__sm {
+	@apply fs-4xs;
+}
+
+@utility label__lg {
+	@apply fs-2xs;
+}
+
+@utility label__xl {
+	@apply fs-xs;
+}
+
+@utility label__2xl {
+	@apply fs-sm;
+}
+
+@utility link {
+	@apply inline-block
+		border-b-2
+		border-blue-50
+		border-spacing-4
+		transition-all
+		duration-250
+		ease-out-smooth
+		hover:border-blue;
+}

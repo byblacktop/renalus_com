@@ -1,0 +1,79 @@
+[class*='space-'] > .absolute {
+	@apply m-0!;
+}
+
+[class*='space-y-'] > .absolute + :not(.absolute) {
+	@apply mt-0!;
+}
+
+.space {
+	&__x {
+		&__md {
+			@apply space-x-4
+				md:space-x-8
+				xl:space-x-16;
+		}
+	}
+
+	&__y {
+		&__md {
+			@apply space-y-4
+				md:space-y-8
+				xl:space-y-16;
+		}
+	}
+}
+
+.padd {
+	&__x {
+		&__xs {
+			@apply px-2
+				md:px-4
+				xl:px-8;
+		}
+
+		&__sm {
+			@apply px-3
+				md:px-6
+				xl:px-12;
+		}
+
+		&__md {
+			@apply px-4
+				md:px-8
+				xl:px-16;
+		}
+
+		&__lg {
+			@apply px-6
+				md:px-12
+				xl:px-24;
+		}
+	}
+
+	&__y {
+		&__xs {
+			@apply py-2
+				md:py-4
+				xl:py-8;
+		}
+
+		&__sm {
+			@apply py-3
+				md:py-6
+				xl:py-12;
+		}
+
+		&__md {
+			@apply py-4
+				md:py-8
+				xl:py-16;
+		}
+
+		&__lg {
+			@apply py-6
+				md:py-12
+				xl:py-24;
+		}
+	}
+}

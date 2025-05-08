@@ -1,0 +1,10 @@
+/* 
+ * Section Animations -- Section intro typically applied when entering viewport
+*/
+/* TODO: Test z-index with <Cover /> children */
+.__reveal {
+	background-color: inherit;
+	@apply absolute
+			inset-0
+			z-50;
+}
