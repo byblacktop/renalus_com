@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
-import Script from 'next/script'
 import {
 	createStore,
 	Provider as StoreProvider,
@@ -11,11 +10,7 @@ import {
 
 import { useHash } from '@/lib/hooks/useHash'
 import { useWatchToolbar } from '@/lib/hooks/useLayout'
-import {
-	getHashAnchor,
-	normalizeDocs,
-	safeCatchArray,
-} from '@/lib/helpers'
+import { getHashAnchor, normalizeDocs } from '@/lib/helpers'
 import { locationsAtom, podcastAtom, videoAtom } from '@/lib/store'
 import { createClient } from '@/prismicio'
 
@@ -28,8 +23,6 @@ const Providers = ({ children }) => {
 	return (
 		<StoreProvider store={store}>
 			<Globals>{children}</Globals>
-
-			<Script src='https://open.spotify.com/embed/iframe-api/v1' />
 		</StoreProvider>
 	)
 }
@@ -45,6 +38,12 @@ const Globals = ({ children }) => {
 	try {
 		client
 			.getAllByType('location', {
+				orderings: [
+					{
+						field: 'my.location.priority',
+						direction: 'asc',
+					},
+				],
 				fetch: [
 					'location.title',
 					'location.address',
@@ -67,7 +66,7 @@ const Globals = ({ children }) => {
 		setTimeout(() => {
 			const anchor = getHashAnchor(hash)
 			if (anchor) anchor.scrollIntoView({ behavior: 'smooth' })
-		}, 500)
+		}, 400)
 	}, [hash])
 
 	useEffect(() => {

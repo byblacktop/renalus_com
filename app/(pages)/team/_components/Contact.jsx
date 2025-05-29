@@ -24,8 +24,8 @@ const Contact = ({ locations = [] }) => {
 const Location = ({ location, sep }) => {
 	return (
 		<>
-			{!!sep && <span className='fs-3xs text-blue-200'>•</span>}
-			<PrismicLink field={location} className='fs-3xs text-blue-200'>
+			{!!sep && <span className='fs-3xs text-slate-200'>•</span>}
+			<PrismicLink field={location} className='fs-3xs text-slate-200'>
 				{unslug(location.uid)}
 			</PrismicLink>
 		</>

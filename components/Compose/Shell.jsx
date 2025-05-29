@@ -3,16 +3,21 @@ import { forwardRef, Fragment } from 'react'
 import { ButtonLink } from '@/components/UI'
 import { invalidLink } from '@/lib/helpers'
 
-const Shell = forwardRef(({ as = 'div', ...props }, ref) => {
-	// Render children only
-	if ([false, null].includes(as))
-		return <Fragment>{props.children}</Fragment>
+const Shell = forwardRef(
+	({ as = 'div', render = true, ...props }, ref) => {
+		// Conditional render
+		if (render === false) return
 
-	// Component/Element to rendering
-	const Component = as
+		// Render children only
+		if ([false, null].includes(as))
+			return <Fragment>{props.children}</Fragment>
 
-	return <Component ref={ref} {...props} />
-})
+		// Component/Element to rendering
+		const Component = as
+
+		return <Component ref={ref} {...props} />
+	},
+)
 
 const LinkShell = forwardRef(({ href, link, ...fields }, ref) => {
 	const linked = href || link

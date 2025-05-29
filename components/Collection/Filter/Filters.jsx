@@ -67,7 +67,7 @@ const FilterGroups = ({ filters, active, setActive }) => (
 	<ul
 		className={cn(
 			'sticky top-24 space-y-1 *:fs-2xs',
-			'divide-y divide-steel-200',
+			'divide-y divide-slate-200',
 		)}
 	>
 		{Object.entries(filters).map(([label, items], idx) => (
@@ -116,7 +116,7 @@ const FilterGroup = ({ label, items, active, setActive }) => {
 						key={kn(item)}
 						className={cn(
 							'group relative cursor-pointer',
-							'text-steel-400 hover:text-indigo duration-750',
+							'text-slate-400 hover:text-indigo duration-750',
 							active.includes(item) && 'text-green-700 font-medium',
 						)}
 						props={{

@@ -78,7 +78,7 @@ const Item = ({ img, cta, ...contentProps }) => {
 					'p-4 pb-7.25 md:p-8 md:pb-14.5',
 					'rounded-2xl overflow-hidden',
 					'transition-colors duration-500 ease-in-out',
-					'bg-steel-50 hover:bg-steel-100/90',
+					'bg-slate-50 hover:bg-slate-100/90',
 					'cursor-pointer',
 					gap.sm,
 				)}
@@ -99,7 +99,7 @@ const Item = ({ img, cta, ...contentProps }) => {
 						'h6 __label __xs',
 						'absolute inset-0 top-auto',
 						' text-center',
-						'border-t border-steel-200',
+						'border-t border-slate-200',
 					)}
 				>
 					<Button
@@ -131,7 +131,7 @@ const Item = ({ img, cta, ...contentProps }) => {
 							group: cn(
 								'grid md:grid-cols-2 justify-items-start',
 								'mt-1.5 md:mt-3 pt-2 md:pt-4',
-								'border-t border-steel-200',
+								'border-t border-slate-200',
 							),
 						},
 					}}

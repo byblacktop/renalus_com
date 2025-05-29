@@ -45,7 +45,7 @@ const CtaCards = ({
 					className={{
 						thread: 'col-span-5',
 						title: 'text-white',
-						subtitle: '__label text-yellow',
+						subtitle: '__label text-slate',
 					}}
 					{...contentProps}
 				/>

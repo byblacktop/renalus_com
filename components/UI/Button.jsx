@@ -24,6 +24,12 @@ const variants = getVariants('btn', {
 	},
 })
 
+const isCurrentPageAnchor = (link) => {
+	if (!link?.href.includes('#')) return false
+
+	return link.href.startsWith(window.location.pathname + '#')
+}
+
 // TODO: Resolve "Reference Error: Cannot access before initialazation" error with tree shaking imports
 // Ref: <Video /> for alternate, but equally as unideal handling
 function Button({
@@ -84,6 +90,16 @@ const ButtonLink = ({ as, link, type, children, ...atts }) => {
 			<NavLink field={link} {...atts} data-type='prismic-link'>
 				{children}
 			</NavLink>
+		)
+	}
+
+	const hash = typeof window !== 'undefined' && link?.href?.includes(window.location.pathname + '#') ? link.href.split('#')[1] : null
+
+	if (hash) {
+		return (
+			<Link {...getLink({ ...link, href: `#${hash}` })} {...atts} data-hash={`#${hash}`} data-type='next-link'>
+				{children}
+			</Link>
 		)
 	}
 

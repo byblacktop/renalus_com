@@ -69,7 +69,7 @@ const CollectionList = ({
 							className={cn(
 								'pb-4 md:pb-8 mb-4 md:mb-8 border-b',
 								getTheme(color).isDark
-									? 'border-steel-200/20'
+									? 'border-slate-200/20'
 									: 'border-indigo-200/20',
 							)}
 						/>
@@ -79,8 +79,8 @@ const CollectionList = ({
 							className={cn(
 								'duration-400',
 								getTheme(color).isDark
-									? 'text-steel-300 hover:text-steel-200'
-									: 'text-steel-500 hover:text-steel-700',
+									? 'text-slate-300 hover:text-slate-200'
+									: 'text-slate-500 hover:text-slate-700',
 							)}
 						/>
 

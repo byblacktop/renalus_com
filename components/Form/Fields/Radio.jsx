@@ -31,7 +31,7 @@ const Radio = ({
 						className={cn(
 							'w-full flex items-center gap-3 rounded-lg border-2 duration-300',
 							selected === value
-								? 'border-blue bg-blue-100/50'
+								? 'border-slate bg-slate-100/50'
 								: 'border-gray-200 bg-transparent',
 						)}
 					>

@@ -18,7 +18,7 @@ textarea {
 
 	&:-internal-autofill-selected {
 		@apply bg-white! 
-			text-steel!;
+			text-slate!;
 	}
 
 	&.error,

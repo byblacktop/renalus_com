@@ -56,7 +56,7 @@ const FeatureBanner = ({
 					}}
 					className={{
 						prose: 'col-span-5 col-start-2 text-balance max-w-none',
-						subtitle: 'text-yellow-600 __xs',
+						subtitle: 'text-slate-600 __xs',
 						lead: 'max-w-none',
 						title: 'd2',
 						body: '__xl',

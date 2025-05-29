@@ -139,8 +139,8 @@ const Group = ({ label, tags, heading }) => {
 	return (
 		<>
 			{heading && (
-				<dd className='border-b border-blue-100 pb-2 mb-2 not-first:mt-8'>
-					<h4 className='text-blue'>{heading}</h4>
+				<dd className='border-b border-slate-100 pb-2 mb-2 not-first:mt-8'>
+					<h4 className='text-slate'>{heading}</h4>
 				</dd>
 			)}
 
@@ -149,7 +149,7 @@ const Group = ({ label, tags, heading }) => {
 					className={cn(
 						'group w-[calc(100%+1rem)] -mx-2 px-2 py-0.5',
 						'rounded-lg whitespace-nowrap',
-						'bg-steel-50/0 hover:bg-steel-50',
+						'bg-slate-50/0 hover:bg-slate-50',
 						'flex items-center justify-between',
 						gap['2xs'],
 					)}
@@ -182,7 +182,7 @@ const Group = ({ label, tags, heading }) => {
 							className={cn(
 								'grid md:grid-cols-2 justify-items-start',
 								'mt-1.5 md:mt-3 pt-2 md:pt-4',
-								'border-t border-steel-200',
+								'border-t border-slate-200',
 							)}
 						/>
 					</div>

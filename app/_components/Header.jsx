@@ -7,11 +7,11 @@ import { useAtomValue } from 'jotai'
 import { Logo } from '@/components/Media'
 import { NavItems } from '@/components/NavItems'
 import { Button } from '@/components/UI'
-import { throttle } from '@/lib/hooks/useObserver'
 import {
 	useBelowBreakpoint,
 	useViewport,
 } from '@/lib/hooks/useScreen'
+import { throttle } from '@/lib/helpers'
 import { useLenis } from '@/lib/lenis'
 import { NAV } from '@/lib/sitemap'
 import { bannerOpen, navOpen } from '@/lib/store'
@@ -168,7 +168,7 @@ const HeaderNav = ({ theme, hasScrolled }) => {
 			{/* Logo */}
 			<Logo
 				variant={hasScrolled || navActive ? 'primary' : theme.logo}
-				size={hasScrolled ? 'w-18 md:w-22 xl:w-30' : undefined}
+				size={hasScrolled ? 'w-40 md:w-44 xl:w-52' : undefined}
 				className={{
 					figure: 'basis-0 grow-1',
 				}}
@@ -183,7 +183,7 @@ const HeaderNav = ({ theme, hasScrolled }) => {
 					'relative z-2',
 					'p-1 xl:p-1.75 rounded-l-full',
 					'border border-r-0',
-					theme.isDark ? 'border-white/15' : 'border-steel-200',
+					theme.isDark ? 'border-white/15' : 'border-slate-200',
 					hasScrolled && 'bg-white/60 backdrop-blur',
 				)}
 			/>
@@ -207,7 +207,7 @@ const NavSecondary = ({ isDark, hasScrolled, breakpoint }) => {
 				'max-lg:pl-4 max-sm:pr-4',
 				'border lg:border-l-0',
 				'rounded-full lg:rounded-l-none',
-				isDark ? 'border-white/15' : 'border-steel-200',
+				isDark ? 'border-white/15' : 'border-slate-200',
 				hasScrolled && 'bg-white/60 backdrop-blur',
 			)}
 		>
@@ -215,18 +215,27 @@ const NavSecondary = ({ isDark, hasScrolled, breakpoint }) => {
 				show={breakpoint}
 				className={isDark && !hasScrolled && 'text-white'}
 			/>
-
 			{!breakpoint && (
-				<li>
-					<Button
-						link={NAV.cta.portal}
-						color='info'
-						variant='stroke'
-						target='_blank'
-					/>
-				</li>
-			)}
+				<>
+					<li>
+						<Button
+							link={NAV.cta.pay}
+							color='secondary'
+							variant='stroke'
+							target='_blank'
+						/>
+					</li>
 
+					<li>
+						<Button
+							link={NAV.cta.portal}
+							color='info'
+							variant='stroke'
+							target='_blank'
+						/>
+					</li>
+				</>
+			)}
 			<li className='max-sm:hidden'>
 				<Button
 					link={NAV.cta.primary}

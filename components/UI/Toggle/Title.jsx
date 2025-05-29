@@ -7,7 +7,7 @@ const ToggleTitle = ({ title, subtitle }) => (
 		<Title
 			title={subtitle}
 			as={typeof subtitle === 'string' && 'h6'}
-			className='__label __sm text-blue'
+			className='__label __sm text-slate'
 		/>
 
 		{/* Trigger Title */}

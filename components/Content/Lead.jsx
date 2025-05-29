@@ -110,10 +110,10 @@ const Intro = ({ title, body, isDark = false }) => (
 		className={{
 			lead: 'self-start text-pretty',
 			title: cn(
-				isDark && 'text-steel-300',
+				isDark && 'text-slate-300',
 				'after:absolute after:-bottom-5 after:left-0',
 				'after:w-16 after:h-1',
-				isDark ? 'after:bg-steel-300' : 'after:bg-indigo',
+				isDark ? 'after:bg-slate-300' : 'after:bg-indigo',
 			),
 			subtitle: '__sm',
 		}}

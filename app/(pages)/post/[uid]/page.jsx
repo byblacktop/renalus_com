@@ -5,8 +5,8 @@ import { PodcastPlayer } from '@/posts/Podcast'
 import { Related } from '@/posts/Related'
 
 const links = {
-	media: [{ href: '/media', text: 'Back to All Media' }],
-	article: [{ href: '/latest', text: 'Back to Latest News' }],
+	media: [{ href: '/articles', text: 'Back to All' }],
+	article: [{ href: '/articles', text: 'Back to Latest' }],
 }
 
 const post = async ({ params }) => {

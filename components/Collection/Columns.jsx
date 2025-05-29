@@ -57,8 +57,8 @@ const CollectionColumns = ({
 								className={cn(
 									'duration-400',
 									getTheme(color).isDark
-										? 'text-steel-300 hover:text-steel-200'
-										: 'text-steel-500 hover:text-steel-700',
+										? 'text-slate-300 hover:text-slate-200'
+										: 'text-slate-500 hover:text-slate-700',
 								)}
 							/>
 						</dd>

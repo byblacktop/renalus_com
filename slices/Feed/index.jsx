@@ -74,7 +74,7 @@ const Feed = ({
 
 				<div className={type === 'post' ? spaceY.xs : undefined}>
 					<Shell
-						as={layouts[variation] ?? DynamicFeed}
+						as={layouts[type] ?? DynamicFeed}
 						type={type}
 						img={primary?.img}
 						qry={qry[type]}

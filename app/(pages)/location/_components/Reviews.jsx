@@ -17,7 +17,7 @@ const Reviews = ({ title, rid }) => {
 						as={{ title: 'h3', subtitle: 'h5' }}
 						className={{
 							lead: 'flex-4',
-							subtitle: '__label __sm text-blue',
+							subtitle: '__label __sm text-slate',
 						}}
 					/>
 

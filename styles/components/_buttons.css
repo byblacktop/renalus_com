@@ -187,4 +187,26 @@
 	&[disabled] {
 		@apply cursor-wait!;
 	}
+
+	/* Utility */
+
+	/* Utility */
+	&.btn-util {
+		@apply gap-2
+		!p-0
+		!text-gray-800
+		!normal-case
+		!tracking-normal;
+	}
+
+	/* Trigger */
+	&.btn-trigger {
+		@apply tracking-normal
+			!border
+			!border-gray-400
+			!text-gray-600
+			!rounded
+			hover:!border-gray-800
+			hover:!text-gray-800;
+	}
 }

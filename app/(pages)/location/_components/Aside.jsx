@@ -50,7 +50,7 @@ const Contact = ({ title, address, phone, fax, link }) => {
 				color='accent'
 				link={{
 					href: `/contact?location=${slugify(title)}`,
-					text: 'Contact Us',
+					text: 'Request Appointment',
 				}}
 				arrow={{
 					direction: 'upRight',

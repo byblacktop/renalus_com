@@ -104,11 +104,11 @@ const Panels = ({ items, children }) => {
 					tw.spaceY['3xl'],
 				)}
 			>
-				<h5 className='text-blue-300'>Services</h5>
+				<h5 className='text-slate-300'>Services</h5>
 				<dl
 					className={cn(
 						'max-w-2xl mx-auto',
-						'divide-y divide-blue-100',
+						'divide-y divide-slate-100',
 					)}
 				>
 					{items.map(item => (

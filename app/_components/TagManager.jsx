@@ -13,6 +13,8 @@ const GOOGLE_TAG_MANAGER_ID = process.env.NEXT_PUBLIC_GTM_CONTAINER_ID
 const TagManager = () => {
 	if (process.env.NODE_ENV === 'development') return
 
+	const isStaging = process.env.NODE_ENV === 'staging'
+
 	// const referer = headers().get('referer')
 	// const showToolbar = !referer?.includes(
 	// 	process.env.NEXT_PUBLIC_SITE_URL,
@@ -31,7 +33,7 @@ const TagManager = () => {
 
 			{/* Vercel — Analytics & Toolbar */}
 			<Analytics />
-			<VercelToolbar />
+			{isStaging && <VercelToolbar />}
 		</>
 	)
 }

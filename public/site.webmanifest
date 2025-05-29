@@ -1,5 +1,5 @@
 {
-	"name": "Renalus Optical",
+	"name": "Renalus Center for Kidney Care",
 	"short_name": "Renalus",
 	"icons": [
 		{
@@ -15,7 +15,7 @@
 			"purpose": "maskable"
 		}
 	],
-	"theme_color": "#05244D",
-	"background_color": "#05244D",
+	"theme_color": "#F05A69",
+	"background_color": "#F05A69",
 	"display": "standalone"
 }

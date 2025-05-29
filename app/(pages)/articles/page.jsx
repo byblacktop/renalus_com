@@ -1,4 +1,3 @@
-import { notFound } from 'next/navigation'
 import { filter } from '@prismicio/client'
 
 import { Section } from '@/components/Compose'
@@ -7,7 +6,6 @@ import { DynamicFeed } from '@/app/_components/Feed'
 import { FeaturedArticle } from '@/posts//Featured'
 
 const Articles = async () => {
-	return notFound()
 	const featured = await getLatestDoc('post', 'articles')
 
 	return (

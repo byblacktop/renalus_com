@@ -33,7 +33,7 @@ const getHours = hours => {
 const List = ({ results, img }) => {
 	return (
 		<Grid cols={2} gap='lg' className='items-start'>
-			<Locations results={results} />
+			<Locations locations={results} />
 
 			<div className='relative h-full'>
 				<CoverImage
@@ -45,10 +45,12 @@ const List = ({ results, img }) => {
 	)
 }
 
-const Locations = ({ results }) => {
+const Locations = ({ locations = [] }) => {
+	if (invalidArr(locations)) return
+
 	return (
 		<Grid cols={1} gap='0'>
-			{results.map(r => (
+			{locations?.map(r => (
 				<Card key={kn(r)} {...r} />
 			))}
 		</Grid>
@@ -67,69 +69,74 @@ const Card = ({
 	const img = getFeaturedImg(imgs)
 
 	return (
-		<dd className='group relative z-1 px-2.5'>
-			<LinkShell
-				href={link}
-				className={cn(
-					'py-2.5',
-					'relative z-1 flex flex-wrap',
-					'border-b border-gray-300',
-					'group-hover:border-gray-300/0',
-					variant === 'default' && 'group-last-of-type:border-b-0',
-					gap.sm,
-				)}
-			>
-				{variant === 'default' && (
-					<div>
-						<AspectImage
-							img={img}
-							w={5}
-							h={4}
-							className={cn('w-24', 'rounded-lg overflow-hidden')}
-						/>
-					</div>
-				)}
-
-				<Flex layout='stack' gap='3xs' className='grow'>
-					<Label
-						title={title}
-						address={variant === 'default' ? address : null}
-					/>
-
-					<Flex className='whitespace-nowrap'>
-						<Phone phone={phone} />
-
-						<Hours hours={getHours(hours)} />
-					</Flex>
-				</Flex>
-
-				<div
+		<dd className='group relative z-1 p-1'>
+			<div className='px-2.5'>
+				<LinkShell
+					href={link}
 					className={cn(
-						'absolute ',
-						variant === 'default'
-							? 'top-2 md:top-3 right-2 md:right-3'
-							: 'top-1 -right-1.5',
+						'py-2.5',
+						'relative z-1 flex flex-wrap',
+						'border-b border-gray-300',
+						'group-hover:border-gray-300/0',
+						variant === 'default' && 'group-last-of-type:border-b-0',
+						gap.sm,
 					)}
 				>
-					<LinkArrow
-						loop
-						cta
-						size={variant === 'default' ? 'sm' : 'xs'}
-						direction='upRight'
+					{variant === 'default' && (
+						<div>
+							<AspectImage
+								img={img}
+								w={5}
+								h={4}
+								className={cn('w-24', 'rounded-lg overflow-hidden')}
+							/>
+						</div>
+					)}
+
+					<Flex layout='stack' gap='3xs' className='grow'>
+						<Label
+							title={title}
+							address={variant === 'default' ? address : null}
+						/>
+
+						<Flex
+							justify={variant === 'default' ? 'start' : 'between'}
+							className='whitespace-nowrap'
+						>
+							<Phone phone={phone} />
+
+							<Hours hours={getHours(hours)} />
+						</Flex>
+					</Flex>
+
+					<div
 						className={cn(
-							'transition-all duration-300',
-							'text-blue',
+							'absolute ',
 							variant === 'default'
-								? 'group-hover:text-blue-25 bg-blue-25/70 group-hover:bg-blue'
-								: 'bg-white group-hover:bg-white',
+								? 'top-2 md:top-3.5 right-2 md:right-3.5'
+								: 'top-1 -right-1.5',
 						)}
-					/>
-				</div>
-			</LinkShell>
+					>
+						<LinkArrow
+							loop
+							cta
+							size={variant === 'default' ? 'sm' : 'xs'}
+							direction='upRight'
+							className={cn(
+								'transition-all duration-300',
+								'text-slate',
+								variant === 'default'
+									? 'group-hover:text-slate-25 bg-slate-25/70 group-hover:bg-slate'
+									: 'bg-white group-hover:bg-white',
+							)}
+						/>
+					</div>
+				</LinkShell>
+			</div>
 			<div
 				className={cn(
-					'absolute -inset-0.5 z-0 rounded-xl overflow-hidden',
-					'bg-steel-100/0 group-hover:bg-steel-50',
+					'absolute inset-0 z-0 rounded-xl overflow-hidden',
+					'bg-slate-100/0 group-hover:bg-slate-50',
 					'scale-95 group-hover:scale-100',
 					'transition duration-300',
 					'pointer-events-none',
@@ -162,7 +169,7 @@ const Phone = ({ phone }) => {
 
 	return (
 		<Flex align='center' gap='3xs'>
-			<PhoneIcon className='size-4 shrink-0 text-blue' />
+			<PhoneIcon className='size-4 shrink-0 text-slate' />
 			<p className='__xs'>{phone}</p>
 		</Flex>
 	)
@@ -173,7 +180,7 @@ const Hours = ({ hours }) => {
 
 	return (
 		<Flex align='center' gap='3xs'>
-			<ClockIcon className='size-4 shrink-0 text-blue' />
+			<ClockIcon className='size-4 shrink-0 text-slate' />
 			{hours.map(h => (
 				<Body key={kn(h)} body={h.content} className='__xs' />
 			))}

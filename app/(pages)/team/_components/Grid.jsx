@@ -24,10 +24,10 @@ const TeamGrid = ({ title, body, color, team, cols, dataset }) => {
 						className={{
 							lead: 'self-start',
 							title: cn(
-								isDark && 'text-steel-300',
+								isDark && 'text-slate-300',
 								'after:absolute after:-bottom-5 after:left-0',
 								'after:w-16 after:h-1',
-								isDark ? 'after:bg-steel-300' : 'after:bg-indigo',
+								isDark ? 'after:bg-slate-300' : 'after:bg-indigo',
 							),
 							subtitle: '__sm',
 						}}
@@ -82,7 +82,7 @@ const Card = ({ name, img, link }) => {
 					className={cn(
 						'absolute inset-0',
 						'opacity-0 group-hover:opacity-100',
-						'bg-gradient-to-t from-blue/100 via-blue/30 to-blue/0',
+						'bg-gradient-to-t from-slate/100 via-slate/30 to-slate/0',
 						'transition-opacity duration-500 ease-out-smooth',
 					)}
 				>
@@ -126,7 +126,7 @@ const Avatar = ({ name, position, img }) => (
 			as={{ title: 'h4', subtitle: 'h6' }}
 			className={{
 				title: '__xs',
-				subtitle: '__label __xs text-steel-300',
+				subtitle: '__label __xs text-slate-300',
 			}}
 		/>
 	</Flex>

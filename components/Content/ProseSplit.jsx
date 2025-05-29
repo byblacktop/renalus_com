@@ -65,13 +65,13 @@ const ProseSplit = ({
 					position === 'Right' &&
 						group === 'Title' &&
 						'place-self-end',
-					getTheme(color).isDark ? 'text-blue-100' : 'text-blue',
+					getTheme(color).isDark ? 'text-slate-100' : 'text-slate',
 					cp(className, 'subtitle'),
 				),
 			}}
 		>
 			{accent && (
-				<div className='max-sm:hidden w-20 h-1 bg-yellow-200' />
+				<div className='max-sm:hidden w-20 h-1 bg-slate-200' />
 			)}
 			{children}
 		</Lead>

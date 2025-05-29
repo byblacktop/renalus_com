@@ -16,7 +16,7 @@ const defaultMessage = {
 }
 
 const FormMessage = ({ message, cta, type = 'success', close }) => {
-	const bg = type === 'success' ? 'bg-success-50' : 'bg-danger-100'
+	const bg = type === 'success' ? 'bg-success-25' : 'bg-danger-100'
 	const color =
 		type === 'success' ? 'text-success-600/90' : 'text-danger-700/90'
 	const colorTitle =

@@ -60,7 +60,7 @@ const MediaTriggers = ({ podcast, video }) => {
 			as='ul'
 			items='center'
 			className={cn(
-				'bg-blue-100/10 backdrop-blur-sm',
+				'bg-slate-100/10 backdrop-blur-sm',
 				'rounded-full overflow-hidden',
 				'p-2 md:p-3 -mt-12',
 			)}
@@ -87,8 +87,8 @@ const Trigger = ({ icon, title }) => (
 		title={title}
 		className={{
 			info: cn(
-				'*:text-blue cursor-pointer',
-				'hover:*:text-blue-800 ',
+				'*:text-slate cursor-pointer',
+				'hover:*:text-slate-800 ',
 			),
 			icon: cn(
 				'size-6 transition-all duration-300',

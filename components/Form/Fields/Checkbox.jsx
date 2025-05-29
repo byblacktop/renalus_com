@@ -42,7 +42,7 @@ const Checkbx = ({
 						type='checkbox'
 						aria-describedby={`${id}__description`}
 						className={cn(
-							'h-4 w-4 text-blue rounded relative top-0.5',
+							'h-4 w-4 text-slate rounded relative top-0.5',
 							className,
 							errors[name] && 'error',
 						)}
@@ -101,7 +101,7 @@ const Checkbox = ({
 						id={id}
 						type='checkbox'
 						className={cn(
-							'h-4 w-4 text-blue rounded relative top-0.5',
+							'h-4 w-4 text-slate rounded relative top-0.5',
 							className,
 							errors[name] && 'error',
 						)}

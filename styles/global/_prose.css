@@ -34,10 +34,10 @@ li {
 		@apply no-underline;
 	}
 
-	&.accent-yellow {
+	&.accent-blue {
 		/* Set the default color for h1, h2, and h3 */
 		:--headings {
-			--fg-h: var(--color-yellow-400);
+			--fg-h: var(--color-blue-400);
 		}
 
 		/* Reset the color for h1, h2, h3 if preceeded by h4, h5, h6 */
@@ -223,7 +223,7 @@ li {
 				block
 				size-7
 				border
-				border-steel-200
+				border-slate-200
 				rounded-full
 				transition-all
 				duration-150
@@ -250,7 +250,7 @@ li {
 
 .quote {
 	@apply relative
-		text-yellow-500
+		text-blue-500
 		pt-10
 		pl-20
 		fs-xl;

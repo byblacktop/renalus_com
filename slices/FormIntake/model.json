@@ -65,6 +65,66 @@
               }
             }
           }
+        },
+        "fields": {
+          "type": "Group",
+          "config": {
+            "label": "Fields",
+            "repeat": true,
+            "fields": {
+              "type": {
+                "config": {
+                  "label": "Type",
+                  "placeholder": "",
+                  "options": [
+                    "text",
+                    "textarea",
+                    "select",
+                    "checkbox"
+                  ],
+                  "default_value": "text"
+                },
+                "type": "Select"
+              },
+              "label": {
+                "config": {
+                  "label": "Label",
+                  "placeholder": "Field label"
+                },
+                "type": "Text"
+              },
+              "placeholder": {
+                "type": "Text",
+                "config": {
+                  "label": "Placeholder",
+                  "placeholder": ""
+                }
+              },
+              "options": {
+                "config": {
+                  "label": "Options — Manual",
+                  "placeholder": "Select Dropdown Field Options"
+                },
+                "type": "Text"
+              },
+              "required": {
+                "config": {
+                  "label": "Required",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": false
+                },
+                "type": "Boolean"
+              },
+              "uid": {
+                "type": "Text",
+                "config": {
+                  "label": "Unique ID (Optional)",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
         }
       },
       "items": {}

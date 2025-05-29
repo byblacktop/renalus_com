@@ -1,0 +1,76 @@
+.table-data {
+	@apply block
+		relative
+		overflow-hidden;
+}
+
+.table-data--container {
+	@apply w-full
+		overflow-auto;
+}
+
+.table-data--table {
+	@apply w-full
+		caption-bottom;
+}
+
+.table-data--cell {
+	@apply fs-3xs
+		px-2
+		py-3
+		align-top;
+	/* 
+			TODO: See if we need these
+			[&:has([role=checkbox])]:pr-0
+			[&>[role=checkbox]]:translate-y-[2px] 
+		*/
+}
+
+.table-data--header {
+	@apply border-b
+		border-indigo-200/50;
+}
+
+.table-data--head {
+	@apply whitespace-nowrap
+		p-2
+		text-left
+		align-middle
+		uppercase
+		text-indigo;
+	/* 
+			TODO: See if we need these
+			[&:has([role=checkbox])]:pr-0
+			[&>[role=checkbox]]:translate-y-[2px]
+		*/
+}
+
+.table-data--body {
+	.table-data--row {
+		@apply transition-colors
+			border-b
+			border-indigo-100/50
+			hover:bg-indigo-25/25;
+
+		&[data-link] {
+			@apply cursor-pointer;
+		}
+
+		&[data-state='selected'] {
+			@apply bg-gray-300/50;
+		}
+	}
+}
+
+.table-data--footer {
+}
+
+.table-data--caption {
+	@apply mt-4
+		text-xs
+		text-gray-500;
+}
+
+.table-data--pagination {
+	@apply fs-3xs;
+}

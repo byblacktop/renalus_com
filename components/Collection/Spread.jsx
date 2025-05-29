@@ -36,7 +36,7 @@ const CollectionSpread = ({ items, dataset, ...contentProps }) => {
 			<Container
 				className={
 					cn()
-					// 'border-t border-t-steel-200'
+					// 'border-t border-t-slate-200'
 				}
 			>
 				<ProseSplit align='end' {...contentProps} />
@@ -73,11 +73,11 @@ const CollectionSpread = ({ items, dataset, ...contentProps }) => {
 								onClick={() => scrollTo(idx)}
 								data-active={activeIndex === idx ? true : undefined}
 								className={cn(
-									'size-2.5 rounded-full bg-steel-300',
+									'size-2.5 rounded-full bg-slate-300',
 									'border border-transparent',
 									'transition',
-									'data-active:bg-steel-400 data-hover:bg-steel-400',
-									'forced-colors:data-active:bg-steel forced-colors:data-focus:outline-offset-4',
+									'data-active:bg-slate-400 data-hover:bg-slate-400',
+									'forced-colors:data-active:bg-slate forced-colors:data-focus:outline-offset-4',
 								)}
 							/>
 						))}
@@ -137,7 +137,7 @@ const Card = ({ img, bounds, title, body, link }) => {
 						className='__xl text-balance text-white'
 					/>
 					<Divider color='Steel 200' />
-					<Title title={body} className='text-steel-100' />
+					<Title title={body} className='text-slate-100' />
 				</figcaption>
 
 				<CoverImage

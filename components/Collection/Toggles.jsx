@@ -1,6 +1,12 @@
 import { Section } from '@/components/Compose'
 import { Body, ContentSplitProse } from '@/components/Content'
-import { ButtonLink, Divider, Flex, Toggle } from '@/components/UI'
+import {
+	ButtonGroup,
+	ButtonLink,
+	Divider,
+	Flex,
+	Toggle,
+} from '@/components/UI'
 import {
 	hashify,
 	invalidArrObjectData,
@@ -44,7 +50,7 @@ const ToggleGroups = ({ groups }) => {
 				<dd key={kn(group)} id={slugify(group)}>
 					<ToggleGroupHeader group={group} idx={idx} />
 
-					{items.map(({ title, body }, iidx) => (
+					{items.map(({ title, body, links }, iidx) => (
 						<Toggle
 							key={kn({ title })}
 							title={title}
@@ -54,8 +60,15 @@ const ToggleGroups = ({ groups }) => {
 								body={body}
 								className={cn(
 									'__sm pb-4',
-									'*:text-steel group-hover:*:text-indigo',
+									'*:text-slate group-hover:*:text-indigo',
 								)}
+							/>
+							<ButtonGroup
+								links={links}
+								size='sm'
+								className='pb-6'
+								color={['highlight', 'primary']}
+								variant={['solid', 'stroke']}
 							/>
 						</Toggle>
 					))}
@@ -72,7 +85,7 @@ const ToggleGroupHeader = ({ group, idx }) => {
 			justify='between'
 			className={cn('my-2 md:my-3', idx === 0 && 'md:mt-0')}
 		>
-			<h6 className='__label shrink-0 text-blue'>{group}</h6>
+			<h6 className='__label shrink-0 text-slate'>{group}</h6>
 			<Divider color='steel 200' size='full' className='h-px' />
 		</Flex>
 	)
@@ -96,7 +109,7 @@ export const TogglesNav = ({ groups, className }) => {
 				gap='sm'
 				className={cn(
 					'sticky top-24',
-					'rounded-xl bg-steel-100/70',
+					'rounded-xl bg-slate-100/70',
 					'p-2 md:p-4 xl:p-6',
 					className,
 				)}

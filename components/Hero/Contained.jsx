@@ -48,7 +48,7 @@ const HeroContained = ({
 					'__xs',
 					// TODO: Import variable too replace hardcoded "Stone 50"
 					['None', 'Stone 50'].includes(color) &&
-						'border-b border-steel-200',
+						'border-b border-slate-200',
 				)}
 			>
 				<Flex layout='stack' justify='between'>

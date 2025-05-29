@@ -37,7 +37,7 @@ const Hero = ({
 								<Title
 									as='h6'
 									title='Meet the Doctor'
-									className='__label text-yellow'
+									className='__label text-slate'
 								/>
 
 								{/* Name */}

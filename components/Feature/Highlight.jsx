@@ -64,11 +64,11 @@ const variants = cva('', {
 		},
 
 		highlight: {
-			Indigo: 'bg-gradient-to-b from-yellow-200  to-green-300',
-			Blue: 'bg-gradient-to-b from-yellow-200 to-blue-300',
-			Yellow: 'bg-gradient-to-b from-green-200  to-yellow-50',
-			Green: 'bg-gradient-to-b from-yellow-100  to-green-200',
-			Yellow: 'bg-gradient-to-b from-yellow-100  to-green-200',
+			Indigo: 'bg-gradient-to-b from-slate-200  to-green-300',
+			Blue: 'bg-gradient-to-b from-slate-200 to-slate-300',
+			Yellow: 'bg-gradient-to-b from-green-200  to-slate-50',
+			Green: 'bg-gradient-to-b from-slate-100  to-green-200',
+			Yellow: 'bg-gradient-to-b from-slate-100  to-green-200',
 		},
 	},
 })
@@ -154,7 +154,7 @@ const FeatureHighlight = ({
 								getTheme(color).isDark &&
 								'from-indigo-900 via-indigo-900/30 to-transparent opacity-80',
 							!getTheme(color).isDark &&
-								'from-yellow-200 via-green-300/50 to-transparent',
+								'from-slate-200 via-green-300/50 to-transparent',
 							variants({ cover: position }),
 						)}
 					/>

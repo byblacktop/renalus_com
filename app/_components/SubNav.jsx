@@ -43,15 +43,15 @@ const SubNav = ({ link, className }) => {
 				<Button
 					link={link}
 					variant='nav'
+					arrow={{
+						direction: 'down',
+						variant: 'chevron',
+					}}
 					className={cn(
 						className,
 						'pr-0 xl:pr-2',
 						'gap-0.5 xl:gap-1.5',
 					)}
-					arrow={{
-						direction: 'down',
-						variant: 'chevron',
-					}}
 				/>
 			</PopoverButton>
 
@@ -61,10 +61,10 @@ const SubNav = ({ link, className }) => {
 					static
 					transition
 					className={cn(
-						'absolute top-full left-0',
+						'absolute top-full left-1/2 -translate-x-1/2',
 						'w-screen max-w-max flex-auto',
 						'rounded-xl overflow-hidden shadow-2xl',
-						'bg-white p-2',
+						'bg-white p-2 md:p-4',
 					)}
 				>
 					<Dropdown {...link.subnav} />
@@ -74,35 +74,31 @@ const SubNav = ({ link, className }) => {
 	)
 }
 
-const SubNavItems = ({ links, cols }) => {
+const SubNavItems = ({ links, className, parent }) => {
 	return (
-		<Grid gap='4xs' cols={cols}>
+		<dl className={cn(className)}>
 			{links.map(({ className, ...link }) => (
 				<dd key={kn(link)}>
 					<Button
 						link={link}
-						size='sm'
 						variant='flat'
 						color='indigo'
-						className={cn(
-							'w-full px-3.5 py-2 font-medium',
-							className,
-						)}
+						className={cn('w-full p-2.5 font-medium', className)}
 						{...link}
 					/>
 				</dd>
 			))}
-		</Grid>
+		</dl>
 	)
 }
 
-const SubNavLocations = ({ item }) => {
+const SubNavLocations = () => {
 	const locations = useAtomValue(locationsAtom)
 
 	if (invalidArrObjectData(locations)) return null
 
 	return (
-		<Grid gap='2xs' cols={2} className='pb-4'>
+		<dl className='columns-2 pb-2'>
 			{locations.map(location => (
 				<LocationCard
 					key={kn(location)}
@@ -110,7 +106,7 @@ const SubNavLocations = ({ item }) => {
 					variant='subnav'
 				/>
 			))}
-		</Grid>
+		</dl>
 	)
 }
 

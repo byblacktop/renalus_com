@@ -37,14 +37,6 @@
       }
     },
     "Info": {
-      "logo": {
-        "type": "Image",
-        "config": {
-          "label": "Logo",
-          "constraint": {},
-          "thumbnails": []
-        }
-      },
       "phone": {
         "type": "Text",
         "config": {
@@ -75,13 +67,6 @@
         "config": {
           "label": "Hours"
         }
-      },
-      "rid": {
-        "type": "Text",
-        "config": {
-          "label": "Reviews ID",
-          "placeholder": "Doctible Review ID"
-        }
       }
     },
     "Gallery": {
@@ -100,6 +85,27 @@
               }
             }
           }
+        }
+      }
+    },
+    "Meta": {
+      "region": {
+        "type": "Select",
+        "config": {
+          "label": "Region",
+          "placeholder": "",
+          "options": [
+            "Florida",
+            "Alabama"
+          ],
+          "default_value": "Florida"
+        }
+      },
+      "priority": {
+        "type": "Number",
+        "config": {
+          "label": "Sort Order",
+          "placeholder": ""
         }
       }
     },

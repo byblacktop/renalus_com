@@ -106,10 +106,11 @@ const SelectInput = ({
 					leaveTo='opacity-0'
 				>
 					<ListboxOptions
+						data-lenis-prevent
 						className={cn(
-							'absolute left-0',
-							'h6 bg-white rounded-lg overflow-hidden',
-							'shadow-lg shadow-steel-800/5',
+							'absolute left-0 max-h-60',
+							'h6 bg-white rounded-lg overflow-y-auto',
+							'shadow-lg shadow-slate-800/5',
 						)}
 					>
 						{options.map((option, i) => (
@@ -132,7 +133,7 @@ const Selected = ({ selected, placeholder, required }) => {
 			<span
 				className={cn(
 					'input truncate w-full text-left normal-case tracking-normal',
-					selected === placeholder ? 'text-steel/50' : 'text-fg',
+					selected === placeholder ? 'text-slate/50' : 'text-fg',
 				)}
 			>
 				{selected}
@@ -153,13 +154,13 @@ const OptionItem = ({ option }) => (
 	<ListboxOption
 		className={({ selected, active }) =>
 			cn(
-				'py-2.5 md:py-3 xl:py-4',
-				'px-4 md:px-7 xl:px-9',
+				'py-2 md:py-2.5 xl:py-3',
+				'px-4 md:px-6 xl:px-7',
 				'whitespace-nowrap cursor-pointer',
-				'border-b border-steel-800/10 last-of-type:border-none',
+				'border-b border-slate-800/10 last-of-type:border-none',
 				'bg-transparent hover:bg-green/10',
-				active ? 'text-steel-900 bg-blue-25/30' : 'text-gray-700',
-				selected && 'bg-blue-50/50',
+				active ? 'text-slate-900 bg-slate-25/30' : 'text-gray-700',
+				selected && 'bg-slate-50/50',
 			)
 		}
 		value={option}
@@ -185,7 +186,7 @@ const ItemSelectedIcon = ({ selected }) =>
 			className={cn('absolute inset-y-0 left-2 flex items-center')}
 		>
 			<CheckIcon
-				className='w-4 h-4 p-0.5 text-white bg-blue-500 rounded-full overflow-hidden'
+				className='w-4 h-4 p-0.5 text-white bg-slate-500 rounded-full overflow-hidden'
 				aria-hidden='true'
 			/>
 		</span>

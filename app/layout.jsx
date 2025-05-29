@@ -17,7 +17,7 @@ export default async function RootLayout({ children }) {
 				{children}
 
 				{/* Tools and helpers */}
-				{/* <TagManager /> */}
+				<TagManager />
 			</body>
 		</html>
 	)
@@ -33,7 +33,7 @@ export const metadata = {
 	metadataBase: new URL(SITE_URL),
 
 	// Favicon
-	manifest: './webmanifest.json',
+	manifest: '/site.webmanifest',
 
 	// Social
 	openGraph: {

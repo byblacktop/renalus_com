@@ -45,7 +45,7 @@ const Contact = ({ items, ...contentProps }) => {
 						</div>
 					</div>
 
-					<div className='max-w-xl bg-steel-100 rounded-xl overflow-hidden'>
+					<div className='max-w-xl bg-slate-100 rounded-xl overflow-hidden'>
 						<EmailForm
 							cols={1}
 							className='p-8 md:p-12 h-full'
@@ -63,7 +63,7 @@ const ContactInfo = ({ links, title, arrow }) => {
 
 	return (
 		<Flex layout='stack' gap='3xs'>
-			<h6 className='__label __xs text-steel/70'>{title}</h6>
+			<h6 className='__label __xs text-slate/70'>{title}</h6>
 
 			{links.map((link, i) => (
 				<div key={kn(link)}>

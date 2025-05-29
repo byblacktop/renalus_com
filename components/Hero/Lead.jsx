@@ -41,9 +41,11 @@ const HeroLead = ({
 			}}
 			className={{
 				section: className,
+				lead: 'text-balance',
 				title: 'd2',
 			}}
 			{...contentProps}
+			color='indigo 700'
 		>
 			<article className='max-w-(--breakpoint-5xl) mx-auto px-fluid __sm'>
 				<AspectImage

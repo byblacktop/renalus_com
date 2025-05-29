@@ -2,13 +2,17 @@ import { Container, Section } from '@/components/Compose'
 import { Lead } from '@/components/Content'
 import { CoverImage } from '@/components/Media'
 import { Overlay, Spacer } from '@/components/UI'
+import { cn } from '@/lib/utils'
 
 const Hero = ({ img, children, ...contentProps }) => (
 	<Section className='__hero bg-indigo' data-theme='dark'>
 		<Spacer size={1} split={true} />
 		<Container
 			layout='block'
-			className='pb-fluid-x rounded-4xl overflow-hidden'
+			className={cn(
+				'pb-fluid-x max-w-[min(96vw,var(--breakpoint-2xl))]',
+				'rounded-4xl overflow-hidden',
+			)}
 		>
 			{/* Content */}
 			<div className='relative z-1 flex flex-col gap-4 justify-end'>

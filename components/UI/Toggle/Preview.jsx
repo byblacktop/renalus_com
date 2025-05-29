@@ -26,7 +26,7 @@ const TogglePreview = ({ children, className }) => {
 					'w-full text-center pt-18',
 					isOpen && 'pointer-events-none',
 					!isOpen &&
-						'bg-gradient-to-t from-steel-100/100 via-steel-100/80 to-steel-100/0',
+						'bg-gradient-to-t from-slate-100/100 via-slate-100/80 to-slate-100/0',
 				)}
 			>
 				<Button

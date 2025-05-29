@@ -7,6 +7,7 @@ import { Shell } from '@/components/Compose'
 import { slugify } from '@/lib/helpers'
 import { gap } from '@/lib/tw'
 import { cn, kn } from '@/lib/utils'
+import { addRow } from '@/actions/db'
 import { sendEmail } from '@/actions/mail'
 import { Checkbox, SelectInput, Submit, TextInput } from './Fields'
 import Form from './Form'
@@ -36,6 +37,12 @@ const EmailForm = ({
 		setSubmitting(true)
 
 		try {
+			// Save to db
+			const { success, error, data } = await addRow(values)
+
+			if (error) throw new Error(error.message)
+
+			// Send email
 			const results = await sendEmail({ from, to, ...values })
 
 			if (!results.success) throw new Error(results.error)

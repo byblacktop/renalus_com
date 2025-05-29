@@ -56,7 +56,7 @@ const CollectionPreviews = ({
 				{items.map(({ list, cols, ...contentProps }) => (
 					<dd
 						key={kn(contentProps)}
-						className='pt-6 border-t border-blue-100/70'
+						className='pt-6 border-t border-slate-100/70'
 					>
 						<Flex>
 							<Prose wrap {...contentProps} className='w-1/5' />

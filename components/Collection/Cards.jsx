@@ -27,7 +27,7 @@ const CollectionCards = ({
 				img={img}
 				className={{
 					figure: cn(
-						'@container z-1 bg-blue-200',
+						'@container z-1 bg-slate-200',
 						'inset-x-4 md:inset-x-7 2xl:inset-x-10',
 						'rounded-3xl md:rounded-4xl',
 					),

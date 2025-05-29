@@ -12,12 +12,12 @@ const variants = cva('', {
 		layout: {
 			inline: 'flex items-center gap-0',
 			stack: 'flex flex-col',
-			cols: 'columns-2',
+			cols: 'columns-2 gap-0',
 		},
 
 		color: {
-			dark: 'text-white/80 hover:text-white',
-			light: 'text-indigo hover:text-blue-300',
+			dark: 'text-white/90 hover:text-white',
+			light: 'text-indigo hover:text-slate-300',
 		},
 
 		cta: {

@@ -44,7 +44,7 @@ const CardArticle = ({ url, title, subtitle, img, tags }) => {
 					as={{ title: 'h6', subtitle: 'h4' }}
 					className={{
 						lead: '__xs grow',
-						title: 'text-blue',
+						title: 'text-slate',
 					}}
 				/>
 

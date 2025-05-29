@@ -33,11 +33,11 @@ const CollectionCore = ({
 					// TODO: Find better global config
 					className='max-xs:grid-cols-1 xl:col-span-3'
 					itemsProseProps={cn(
-						'bg-blue-200/10 rounded-xl',
+						'bg-slate-200/10 rounded-xl',
 						'p-4 md:p-6',
 						'max-xs:flex',
 					)}
-					leadProps={{ titleProps: 'text-blue-100' }}
+					leadProps={{ titleProps: 'text-slate-100' }}
 				/>
 			</Container>
 		</Section>
