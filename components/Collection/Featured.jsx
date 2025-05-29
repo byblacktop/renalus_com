@@ -29,7 +29,7 @@ const CollectionFeatured = ({
 						pack={true}
 						className={cn(
 							'relative z-1 items-start',
-							'bg-stone-100',
+							'bg-slate-200',
 							'col-span-5 md:-mr-36',
 							'rounded-xl px-6 lg:px-8',
 							'divide-y divide-stone-300',
