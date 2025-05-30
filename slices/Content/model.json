@@ -51,12 +51,12 @@
 							"Green",
 							"Red",
 							"White",
-							"Steel 50",
-							"Steel 100",
-							"Steel 200",
-							"Stone 50",
-							"Stone 100",
-							"Stone 200"
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200"
 						],
 						"default_value": "None"
 					}
@@ -152,12 +152,12 @@
 							"Green",
 							"Red",
 							"White",
-							"Steel 50",
-							"Steel 100",
-							"Steel 200",
-							"Stone 50",
-							"Stone 100",
-							"Stone 200"
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200"
 						],
 						"default_value": "None"
 					}
@@ -242,12 +242,12 @@
 							"Green",
 							"Red",
 							"White",
-							"Steel 50",
-							"Steel 100",
-							"Steel 200",
-							"Stone 50",
-							"Stone 100",
-							"Stone 200"
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200"
 						],
 						"default_value": "None"
 					}
@@ -391,12 +391,12 @@
 							"Green",
 							"Red",
 							"White",
-							"Steel 50",
-							"Steel 100",
-							"Steel 200",
-							"Stone 50",
-							"Stone 100",
-							"Stone 200"
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200"
 						],
 						"default_value": "None"
 					}
@@ -463,12 +463,12 @@
 							"Green",
 							"Red",
 							"White",
-							"Steel 50",
-							"Steel 100",
-							"Steel 200",
-							"Stone 50",
-							"Stone 100",
-							"Stone 200"
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200"
 						],
 						"default_value": "None"
 					}
@@ -568,12 +568,12 @@
 							"Orange",
 							"Green",
 							"White",
-							"Steel 50",
-							"Steel 100",
-							"Steel 200",
-							"Stone 50",
-							"Stone 100",
-							"Stone 200"
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200"
 						]
 					},
 					"type": "Select"
@@ -591,12 +591,12 @@
 							"Green",
 							"Red",
 							"White",
-							"Steel 50",
-							"Steel 100",
-							"Steel 200",
-							"Stone 50",
-							"Stone 100",
-							"Stone 200"
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200"
 						],
 						"default_value": "None"
 					}
@@ -674,12 +674,12 @@
 							"Green",
 							"Red",
 							"White",
-							"Steel 50",
-							"Steel 100",
-							"Steel 200",
-							"Stone 50",
-							"Stone 100",
-							"Stone 200"
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200"
 						],
 						"default_value": "None"
 					}

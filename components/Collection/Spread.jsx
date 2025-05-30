@@ -136,7 +136,7 @@ const Card = ({ img, bounds, title, body, link }) => {
 						title={title}
 						className='__xl text-balance text-white'
 					/>
-					<Divider color='Steel 200' />
+					<Divider color='Slate 200' />
 					<Title title={body} className='text-slate-100' />
 				</figcaption>
 

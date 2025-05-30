@@ -46,8 +46,8 @@ const HeroContained = ({
 				gap='2xl'
 				className={cn(
 					'__xs',
-					// TODO: Import variable too replace hardcoded "Stone 50"
-					['None', 'Stone 50'].includes(color) &&
+					// TODO: Import variable too replace hardcoded "Zinc 50"
+					['None', 'Zinc 50'].includes(color) &&
 						'border-b border-slate-200',
 				)}
 			>

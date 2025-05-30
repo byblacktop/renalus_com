@@ -86,7 +86,7 @@ const ToggleGroupHeader = ({ group, idx }) => {
 			className={cn('my-2 md:my-3', idx === 0 && 'md:mt-0')}
 		>
 			<h6 className='__label shrink-0 text-slate'>{group}</h6>
-			<Divider color='steel 200' size='full' className='h-px' />
+			<Divider color='Slate 200' size='full' className='h-px' />
 		</Flex>
 	)
 }

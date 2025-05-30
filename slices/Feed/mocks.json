@@ -280,7 +280,7 @@
 			"color": {
 				"__TYPE__": "FieldContent",
 				"type": "Select",
-				"value": "Steel 100"
+				"value": "Slate 100"
 			},
 			"team": {
 				"__TYPE__": "FieldContent",

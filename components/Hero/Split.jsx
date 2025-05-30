@@ -97,7 +97,7 @@ const HeroSplit = ({
 			/>
 
 			{/* <Divider
-				color='Steel 100'
+				color='Slate 100'
 				size='full'
 				position='center'
 				className='z-10 h-px max-w-8xl'

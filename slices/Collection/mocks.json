@@ -988,7 +988,7 @@
 			},
 			"color": {
 				"__TYPE__": "FieldContent",
-				"value": "Steel 50",
+				"value": "Slate 50",
 				"type": "Select"
 			},
 			"items": {
@@ -1959,7 +1959,7 @@
 			},
 			"color": {
 				"__TYPE__": "FieldContent",
-				"value": "Steel 100",
+				"value": "Slate 100",
 				"type": "Select"
 			},
 			"items": {
@@ -3224,7 +3224,7 @@
 			"color": {
 				"__TYPE__": "FieldContent",
 				"type": "Select",
-				"value": "Steel 200"
+				"value": "Slate 200"
 			},
 			"items": {
 				"__TYPE__": "TableContent",

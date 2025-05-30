@@ -29,10 +29,10 @@ const CollectionFeatured = ({
 						pack={true}
 						className={cn(
 							'relative z-1 items-start',
-							'bg-slate-200',
+							'bg-slate-100',
 							'col-span-5 md:-mr-36',
 							'rounded-xl px-6 lg:px-8',
-							'divide-y divide-stone-300',
+							'divide-y divide-slate-300',
 						)}
 					>
 						{items.map(item => (
@@ -54,10 +54,10 @@ const CollectionFeatured = ({
 
 const Item = ({ item }) => {
 	return (
-		<Flex as='dd' className='py-6 lg:py-8 text-indigo'>
-			<Title title={item.title} className='flex-1 __sm' />
+		<Flex as='dd' className='py-6 lg:py-8 text-indigo-900'>
+			<Title title={item.title} className='flex-1 __2xs' />
 
-			<Body body={item.body} className='flex-2' role='nav' />
+			<Body body={item.body} className='flex-2 __sm' role='nav' />
 		</Flex>
 	)
 }

@@ -103,7 +103,7 @@
 		}
 
 		.__dark:not(:has(.__base)) & {
-			--v-fg: var(--color-stone-50);
+			--v-fg: var(--color-zinc-50);
 
 			.group:hover &,
 			&:hover {

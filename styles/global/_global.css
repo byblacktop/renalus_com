@@ -2,10 +2,10 @@
 	font-size: 16px;
 
 	/* Colors */
-	--bg: var(--color-stone-50);
+	--bg: var(--color-zinc-25);
 	--fg: var(--color-slate);
-	--fg-h: var(--color-indigo-700);
-	--accent: var(--color-blue);
+	--fg-h: var(--color-indigo-800);
+	--accent: var(--color-green-100);
 
 	/* Widths */
 	--w-container: 1560px;
@@ -59,7 +59,7 @@ body {
 }
 
 .__dark {
-	--fg: var(--color-stone-50);
+	--fg: var(--color-zinc-50);
 	--fg-h: var(--color-slate-25);
 }
 
