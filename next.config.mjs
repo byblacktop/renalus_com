@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 import vercelToolbar from '@vercel/toolbar/plugins/next'
 
-import { LOCATIONS } from './lib/static.mjs'
+import { NAV } from './lib/static.mjs'
 
 const withVercelToolbar = vercelToolbar()
 
@@ -62,16 +62,34 @@ const nextConfig = {
 	//// Redirects
 	async redirects() {
 		return [
+			...NAV.primary
+				.map(({ href, subnav }) => {
+					const page = {
+						source: href,
+						destination: '/',
+						permanent: false,
+					}
+
+					const subpages =
+						subnav?.links
+							?.map(({ href }) => {
+								if (!href || !href.startsWith('/')) return null
+
+								return {
+									source: href,
+									destination: '/',
+									permanent: false,
+								}
+							})
+							.filter(Boolean) || []
+
+					return [page, ...subpages]
+				})
+				.flat(),
 			{
-				source: '/:uid',
+				source: '/contact',
 				destination: '/',
 				permanent: false,
-				missing: [
-					{
-						type: 'query',
-						key: 'manifest',
-					},
-				],
 			},
 			{
 				source: '/location/:uid',
@@ -89,11 +107,6 @@ const nextConfig = {
 				permanent: false,
 			},
 		]
-		// return LOCATIONS.map(({ href }) => ({
-		// 	source: href.replace('/location', ''),
-		// 	destination: href,
-		// 	permanent: true,
-		// }))
 	},
 }
 

@@ -12,7 +12,7 @@ const variants = cva('', {
 		layout: {
 			inline: 'flex items-center gap-0',
 			stack: 'flex flex-col',
-			cols: 'columns-2 gap-0',
+			cols: 'columns-2 gap-6',
 		},
 
 		color: {

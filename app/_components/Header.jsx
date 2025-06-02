@@ -217,14 +217,14 @@ const NavSecondary = ({ isDark, hasScrolled, breakpoint }) => {
 			/>
 			{!breakpoint && (
 				<>
-					<li>
+					{/* <li>
 						<Button
 							link={NAV.cta.pay}
 							color='info'
 							variant='stroke'
 							target='_blank'
 						/>
-					</li>
+					</li> */}
 
 					<li>
 						<Button

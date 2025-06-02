@@ -34,7 +34,7 @@
 
 	/* Info */
 	&[class*='-info'] {
-		--v-color: var(--color-blue-500);
+		--v-color: var(--color-blue-300);
 		--v-contrast: var(--color-slate-800);
 		--v-hover: var(--color-slate-100);
 	}

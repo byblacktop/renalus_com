@@ -21,7 +21,7 @@ const Footer = () => {
 					<Flex align='start' justify='between' gap='2xl' wrap>
 						<Brand />
 
-						<Flex as='div' gap='lg' className='2xl:gap-24'>
+						<Flex as='div' gap='lg'>
 							<Sitemap />
 
 							<Locations />
@@ -54,8 +54,8 @@ const Brand = () => (
 
 		{/* Brand Statement */}
 		<p className='__sm'>
-			Doctors of Optometry bringing clear vision across Northwest
-			Florida and Southeast Alabama.
+			Human-centered kidney care across Northwest Florida and
+			Southeast Alabama.
 		</p>
 	</div>
 )
@@ -94,7 +94,7 @@ const Contact = () => (
 		<div className={spaceY['4xs']}>
 			<h3 className='__sm'>Get In Touch</h3>
 			<p className='__sm'>
-				Questions • Concerns • Ready for eye care now?
+				Questions • Concerns • Need Patient Care Assistance?
 			</p>
 		</div>
 		<Button

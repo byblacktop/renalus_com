@@ -21,7 +21,7 @@ import { cn, kn } from '@/lib/utils'
 // import Mark from '@public/logo/mark.svg'
 
 const img =
-	'https://images.prismic.io/terrezza/Z8_WHhsAHJWomTrT_optometry-vision-and-optometrist-hand-with-glasse-2023-11-27-05-18-45-utc.jpg?auto=format,compress'
+	'https://images.prismic.io/renalus/aDiq_CdWJ-7kSs2-_istockphoto-1445429243-1024x1024.jpg?auto=format,compress'
 
 const NavOverlay = ({ offset }) => {
 	// Path
