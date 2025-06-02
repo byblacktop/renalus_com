@@ -26,7 +26,7 @@ const VideoTrigger = ({ className, ...props }) => {
 			className={cn(
 				'size-24 rounded-full',
 				'flex items-center justify-center',
-				'bg-gray-50 scale-100 group-hover:scale-105 duration-400',
+				'bg-zinc-50 scale-100 group-hover:scale-105 duration-400',
 				cp(className, 'bg', true),
 			)}
 			{...props}

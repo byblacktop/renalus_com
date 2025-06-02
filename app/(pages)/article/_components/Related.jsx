@@ -4,7 +4,7 @@ import { Backdrop, ButtonGroup } from '@/components/UI'
 import { getRelatedDocs } from '@/lib/api'
 import { invalidString } from '@/lib/helpers'
 import { spaceY } from '@/lib/tw'
-import { PostHighlights } from '@/posts/Highlights'
+import { PostHighlights } from '@/article/Highlights'
 
 const Related = async ({ id, links }) => {
 	if (invalidString(id)) return

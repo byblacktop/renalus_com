@@ -29,9 +29,9 @@ const HeroLead = ({
 			linkPosition='after'
 			accent={true}
 			linkProps={{
-				color: ['accent', 'light'],
+				color: ['primary', 'light'],
 				variant: ['solid', 'stroke'],
-				cta: [true],
+				// cta: [true],
 				arrow: [
 					{
 						direction: 'upRight',

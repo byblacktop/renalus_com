@@ -131,7 +131,7 @@ const figureVariants = cva('', {
 		cta: {
 			true: cn(
 				'p-2 rounded-full overflow-hidden',
-				'bg-green-900 text-green-100',
+				'bg-green-800 text-green-100',
 			),
 		},
 

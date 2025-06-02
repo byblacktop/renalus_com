@@ -71,7 +71,7 @@ const ProseSplit = ({
 			}}
 		>
 			{accent && (
-				<div className='max-sm:hidden w-20 h-1 bg-slate-200' />
+				<div className='max-sm:hidden w-20 h-1 bg-indigo-400' />
 			)}
 			{children}
 		</Lead>

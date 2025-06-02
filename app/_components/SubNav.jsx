@@ -14,7 +14,7 @@ import { Button, Grid } from '@/components/UI'
 import { invalidArrObjectData } from '@/lib/helpers'
 import { locationsAtom } from '@/lib/store'
 import { cn, kn } from '@/lib/utils'
-import { LocationCard } from '@/locations/List'
+import { LocationCard } from '@/location/List'
 
 // import { DynamicFeed } from './Feed'
 

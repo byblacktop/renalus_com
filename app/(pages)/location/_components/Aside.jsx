@@ -45,12 +45,12 @@ const Contact = ({ title, address, phone, fax, link }) => {
 				<Details title='Fax' icon='fax' data={fax} />
 			</dl>
 
-			{/* CTA — Appointment */}
+			{/* CTA — Contact */}
 			<Button
 				color='accent'
 				link={{
 					href: `/contact?location=${slugify(title)}`,
-					text: 'Request Appointment',
+					text: 'Contact Us',
 				}}
 				arrow={{
 					direction: 'upRight',

@@ -38,7 +38,7 @@ const Range = ({
 					min={min}
 					max={max}
 					step={step}
-					className='w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer p-0'
+					className='w-full h-1 bg-zinc-200 rounded-lg appearance-none cursor-pointer p-0'
 					{...register(name)}
 				/>
 

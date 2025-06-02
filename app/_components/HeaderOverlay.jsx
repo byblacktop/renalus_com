@@ -62,7 +62,7 @@ const NavOverlay = ({ offset }) => {
 						{/* Spacer */}
 						<div style={{ height: 'var(--h-header)' }} />
 
-						<div className='divide-y divide-gray-500/10 grid grid-cols-2'>
+						<div className='divide-y divide-zinc-500/10 grid grid-cols-2'>
 							{/* Nav Items */}
 							<nav>
 								{NAV.primary.map(item => (
@@ -87,7 +87,7 @@ const NavOverlay = ({ offset }) => {
 									<div className='aspect-w-16 aspect-h-6' />
 									<Button
 										as='button'
-										text='Request Appointment'
+										text='Contact Us'
 										variant='stroke'
 										size='lg'
 										color='accent'

@@ -2,9 +2,9 @@ import { Section } from '@/components/Compose'
 import { Button } from '@/components/UI'
 import { getDoc, getMeta, getStaticParams } from '@/lib/api'
 import { getFeaturedImg } from '@/lib/helpers'
-import { Body } from '@/locations/Body'
-import { Hero } from '@/locations/Hero'
-import { Reviews } from '@/locations/Reviews'
+import { Body } from '@/location/Body'
+import { Hero } from '@/location/Hero'
+import { Reviews } from '@/location/Reviews'
 
 const Location = async ({ params }) => {
 	const { uid } = await params

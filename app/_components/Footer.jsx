@@ -27,7 +27,7 @@ const Footer = () => {
 							<Locations />
 						</Flex>
 
-						<Appointment />
+						<Contact />
 					</Flex>
 				</Container>
 			</section>
@@ -89,7 +89,7 @@ const Locations = () => (
 	</nav>
 )
 
-const Appointment = () => (
+const Contact = () => (
 	<div className={cn('w-full max-w-3xs self-center', spaceY.md)}>
 		<div className={spaceY['4xs']}>
 			<h3 className='__sm'>Get In Touch</h3>
@@ -102,7 +102,7 @@ const Appointment = () => (
 			cta={true}
 			link={{
 				href: '/contact',
-				text: 'Request Appointment',
+				text: 'Contact Us',
 			}}
 			arrow={{
 				direction: 'upRight',

@@ -18,7 +18,7 @@ const CollectionCards = ({
 				<Spacer size={3} split={true} />
 				<Prose
 					width='sm'
-					className={{ subtitle: '__label __sm text-green-200' }}
+					className={{ subtitle: '__label __sm text-indigo-200' }}
 					{...contentProps}
 				/>
 			</Container>
@@ -27,7 +27,7 @@ const CollectionCards = ({
 				img={img}
 				className={{
 					figure: cn(
-						'@container z-1 bg-slate-200',
+						'@container z-1 bg-indigo-500',
 						'inset-x-4 md:inset-x-7 2xl:inset-x-10',
 						'rounded-3xl md:rounded-4xl',
 					),

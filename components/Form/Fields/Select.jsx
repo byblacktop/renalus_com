@@ -142,7 +142,7 @@ const Selected = ({ selected, placeholder, required }) => {
 
 			<span className='absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none'>
 				<ChevronUpDownIcon
-					className='w-5 h-5 text-gray-400'
+					className='w-5 h-5 text-zinc-400'
 					aria-hidden='true'
 				/>
 			</span>
@@ -159,7 +159,7 @@ const OptionItem = ({ option }) => (
 				'whitespace-nowrap cursor-pointer',
 				'border-b border-slate-800/10 last-of-type:border-none',
 				'bg-transparent hover:bg-green/10',
-				active ? 'text-slate-900 bg-slate-25/30' : 'text-gray-700',
+				active ? 'text-slate-900 bg-slate-50/30' : 'text-zinc-700',
 				selected && 'bg-slate-50/50',
 			)
 		}

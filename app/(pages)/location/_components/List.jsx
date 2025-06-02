@@ -76,8 +76,8 @@ const Card = ({
 					className={cn(
 						'py-2.5',
 						'relative z-1 flex flex-wrap',
-						'border-b border-gray-300',
-						'group-hover:border-gray-300/0',
+						'border-b border-zinc-300',
+						'group-hover:border-zinc-300/0',
 						variant === 'default' && 'group-last-of-type:border-b-0',
 						gap.sm,
 					)}
@@ -126,7 +126,7 @@ const Card = ({
 								'transition-all duration-300',
 								'text-slate',
 								variant === 'default'
-									? 'group-hover:text-slate-25 bg-slate-25/70 group-hover:bg-slate'
+									? 'group-hover:text-slate-50 bg-slate-50/70 group-hover:bg-slate'
 									: 'bg-white group-hover:bg-white',
 							)}
 						/>

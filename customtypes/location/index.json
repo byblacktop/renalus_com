@@ -67,6 +67,29 @@
         "config": {
           "label": "Hours"
         }
+      },
+      "faxes": {
+        "type": "Group",
+        "config": {
+          "label": "Fax Numbers",
+          "repeat": true,
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            },
+            "number": {
+              "type": "Text",
+              "config": {
+                "label": "Number",
+                "placeholder": ""
+              }
+            }
+          }
+        }
       }
     },
     "Gallery": {

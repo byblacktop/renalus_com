@@ -23,12 +23,12 @@
 		"jsx": "preserve",
 		"paths": {
 			"@/*": ["./*"],
-			"@/actions/*": ["app/_actions/*"],
 			"@/components/*": ["components/*", "app/_components/*"],
-			"@/helpers/*": ["lib/helpers/*"],
-			"@/locations/*": ["app/(pages)/location/_components/*"],
-			"@/posts/*": ["app/(pages)/post/_components/*"],
+			"@/location/*": ["app/(pages)/location/_components/*"],
+			"@/article/*": ["app/(pages)/article/_components/*"],
 			"@/team/*": ["app/(pages)/team/_components/*"],
+			"@/helpers/*": ["lib/helpers/*"],
+			"@/actions/*": ["app/_actions/*"],
 			"@/img/*": ["public/img/*"],
 			"@/icons/*": ["public/icons/*"]
 		}

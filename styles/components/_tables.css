@@ -50,14 +50,14 @@
 		@apply transition-colors
 			border-b
 			border-indigo-100/50
-			hover:bg-indigo-25/25;
+			hover:bg-indigo-50/25;
 
 		&[data-link] {
 			@apply cursor-pointer;
 		}
 
 		&[data-state='selected'] {
-			@apply bg-gray-300/50;
+			@apply bg-zinc-300/50;
 		}
 	}
 }
@@ -68,7 +68,7 @@
 .table-data--caption {
 	@apply mt-4
 		text-xs
-		text-gray-500;
+		text-zinc-500;
 }
 
 .table-data--pagination {

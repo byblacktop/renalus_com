@@ -1,8 +1,8 @@
 import { getDoc, getMeta, getStaticParams } from '@/lib/api'
-import { Body } from '@/posts/Body'
-import { Hero } from '@/posts/Hero'
-import { PodcastPlayer } from '@/posts/Podcast'
-import { Related } from '@/posts/Related'
+import { Body } from '@/article/Body'
+import { Hero } from '@/article/Hero'
+import { PodcastPlayer } from '@/article/Podcast'
+import { Related } from '@/article/Related'
 
 const links = {
 	media: [{ href: '/articles', text: 'Back to All' }],

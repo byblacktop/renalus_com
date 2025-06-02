@@ -2,9 +2,9 @@ import { Suspense } from 'react'
 
 import { Shell } from '@/components/Compose'
 import { LoadingDots } from '@/components/UI'
-import { List } from '@/locations/List'
-import { PostGrid } from '@/posts/Grid'
-import { PostHighlights } from '@/posts/Highlights'
+import { PostGrid } from '@/article/Grid'
+import { PostHighlights } from '@/article/Highlights'
+import { List } from '@/location/List'
 import { TeamCards } from '@/team/Grid'
 import { DynamicItems } from './Dynamic'
 

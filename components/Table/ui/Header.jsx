@@ -58,14 +58,14 @@ const DataTableColumnSortable = ({ column, label }) => {
 			</MenuButton>
 
 			{/* Options */}
-			<MenuItems className='absolute left-0 flex flex-col items-start gap-1 py-2 px-3 mt-0.5 w-24 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg focus:outline-none'>
+			<MenuItems className='absolute left-0 flex flex-col items-start gap-1 py-2 px-3 mt-0.5 w-24 origin-top-right divide-y divide-zinc-100 rounded-md bg-white shadow-lg focus:outline-none'>
 				{/* Asc */}
 				<MenuItem
 					as='button'
 					onClick={() => column.toggleSorting(false)}
 					className='btn btn-util btn-sm'
 				>
-					<ArrowUpIcon className='size-3.5 text-gray-400' />
+					<ArrowUpIcon className='size-3.5 text-zinc-400' />
 					<span>Asc</span>
 				</MenuItem>
 
@@ -75,7 +75,7 @@ const DataTableColumnSortable = ({ column, label }) => {
 					onClick={() => column.toggleSorting(true)}
 					className='btn btn-util btn-sm'
 				>
-					<ArrowDownIcon className='size-3.5 text-gray-400' />
+					<ArrowDownIcon className='size-3.5 text-zinc-400' />
 					<span>Desc</span>
 				</Menu.Item>
 
@@ -85,7 +85,7 @@ const DataTableColumnSortable = ({ column, label }) => {
 					onClick={() => column.toggleVisibility(false)}
 					className='btn btn-util btn-sm'
 				>
-					<EyeSlashIcon className='size-3.5 text-gray-400' />
+					<EyeSlashIcon className='size-3.5 text-zinc-400' />
 					<span>Hide</span>
 				</MenuItem>
 			</MenuItems>

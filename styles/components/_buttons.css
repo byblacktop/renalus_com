@@ -19,7 +19,7 @@
 		/* Layout */
     inline-flex
 		justify-between
-		gap-2
+		gap-2.5
     place-items-center
     place-content-center
 		min-w-max
@@ -180,7 +180,8 @@
 
 	&.btn-cta {
 		@apply p-1
-			pl-5;
+			pl-5
+			gap-4.5;
 	}
 
 	/* States */
@@ -194,7 +195,7 @@
 	&.btn-util {
 		@apply gap-2
 		!p-0
-		!text-gray-800
+		!text-zinc-800
 		!normal-case
 		!tracking-normal;
 	}
@@ -203,10 +204,10 @@
 	&.btn-trigger {
 		@apply tracking-normal
 			!border
-			!border-gray-400
-			!text-gray-600
+			!border-zinc-400
+			!text-zinc-600
 			!rounded
-			hover:!border-gray-800
-			hover:!text-gray-800;
+			hover:!border-zinc-800
+			hover:!text-zinc-800;
 	}
 }

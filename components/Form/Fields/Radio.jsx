@@ -32,7 +32,7 @@ const Radio = ({
 							'w-full flex items-center gap-3 rounded-lg border-2 duration-300',
 							selected === value
 								? 'border-slate bg-slate-100/50'
-								: 'border-gray-200 bg-transparent',
+								: 'border-zinc-200 bg-transparent',
 						)}
 					>
 						<input

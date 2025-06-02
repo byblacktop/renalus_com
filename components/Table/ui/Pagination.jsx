@@ -28,7 +28,7 @@ const variants = cva('', {
 
 		active: {
 			true: 'bg-amber-100 text-amber-900',
-			false: 'text-gray-900',
+			false: 'text-zinc-900',
 		},
 	},
 })
@@ -149,7 +149,7 @@ const Option = ({ value }) => {
 			value={value}
 			className={cn(
 				variants({ layout: 'option' }),
-				'text-gray-900',
+				'text-zinc-900',
 				'data-[focus]:bg-slate-100/30 data-[focus]:text-slate-900',
 				'cursor-pointer',
 			)}

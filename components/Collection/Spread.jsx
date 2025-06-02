@@ -144,7 +144,7 @@ const Card = ({ img, bounds, title, body, link }) => {
 					img={img}
 					className={{
 						cover: 'z-0',
-						img: 'grayscale-0 group-hover:grayscale-80 transition-grayscale',
+						img: 'grayscale-0 group-hover:grayscale-80 transition-zincscale',
 					}}
 				>
 					<div className='absolute z-10 bottom-4 right-4'>

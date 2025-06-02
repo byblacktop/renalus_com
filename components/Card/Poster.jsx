@@ -50,7 +50,7 @@ const Backdrop = ({ img }) => {
 			img={img}
 			className={{
 				figure: 'rounded-xl overflow-hidden z-0',
-				img: 'grayscale-0 group-hover:grayscale-80 transition-grayscale',
+				img: 'grayscale-0 group-hover:grayscale-80 transition-zincscale',
 			}}
 		>
 			<Overlay
