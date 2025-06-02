@@ -14,7 +14,7 @@
 		"lint:write": "next lint --fix",
 		"slicemachine": "start-slicemachine",
 		"postbuild": "next-sitemap",
-		"prepare": "husky install",
+		"prepare": "husky",
 		"clean": "rm -rf .next && rm -rf node_modules && rm -f yarn.lock && rm -f package-lock.json && rm -f pnpm-lock.yaml"
 	},
 	"lint-staged": {

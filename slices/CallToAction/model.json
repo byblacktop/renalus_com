@@ -98,7 +98,6 @@
 									"options": [
 										"Indigo",
 										"Blue",
-										"Yellow",
 										"Green",
 										"Red",
 										"White",
@@ -229,20 +228,21 @@
 									"label": "Color",
 									"placeholder": "Background Color",
 									"options": [
-										"Indigo",
-										"Blue",
-										"Yellow",
-										"Green",
-										"Red",
-										"White",
+										"None",
+										"Indigo 800",
+										"Indigo 900",
 										"Slate 50",
 										"Slate 100",
 										"Slate 200",
 										"Zinc 50",
 										"Zinc 100",
-										"Zinc 200"
+										"Zinc 200",
+										"Blue",
+										"Green",
+										"Red",
+										"White"
 									],
-									"default_value": "Indigo"
+									"default_value": "Indigo 800"
 								}
 							}
 						}

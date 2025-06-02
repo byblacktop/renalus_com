@@ -62,6 +62,7 @@ const ProseSplit = ({
 			className={{
 				lead: cn('flex-1 grow-4 __sm', cp(className, 'body')),
 				title: cn(
+					'__label',
 					position === 'Right' &&
 						group === 'Title' &&
 						'place-self-end',

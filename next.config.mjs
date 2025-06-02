@@ -61,11 +61,39 @@ const nextConfig = {
 
 	//// Redirects
 	async redirects() {
-		return LOCATIONS.map(({ href }) => ({
-			source: href.replace('/location', ''),
-			destination: href,
-			permanent: true,
-		}))
+		return [
+			{
+				source: '/:uid',
+				destination: '/',
+				permanent: false,
+				missing: [
+					{
+						type: 'query',
+						key: 'manifest',
+					},
+				],
+			},
+			{
+				source: '/location/:uid',
+				destination: '/',
+				permanent: false,
+			},
+			{
+				source: '/team/:uid',
+				destination: '/',
+				permanent: false,
+			},
+			{
+				source: '/article/:uid',
+				destination: '/',
+				permanent: false,
+			},
+		]
+		// return LOCATIONS.map(({ href }) => ({
+		// 	source: href.replace('/location', ''),
+		// 	destination: href,
+		// 	permanent: true,
+		// }))
 	},
 }
 

@@ -82,7 +82,7 @@ const SubNavItems = ({ links, className, parent }) => {
 					<Button
 						link={link}
 						variant='flat'
-						color='indigo'
+						color='slate'
 						className={cn('w-full p-2.5 font-medium', className)}
 						{...link}
 					/>

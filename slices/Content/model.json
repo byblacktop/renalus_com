@@ -45,18 +45,18 @@
 						"placeholder": "",
 						"options": [
 							"None",
-							"Indigo",
-							"Blue",
-							"Yellow",
-							"Green",
-							"Red",
-							"White",
+							"Indigo 800",
+							"Indigo 900",
 							"Slate 50",
 							"Slate 100",
 							"Slate 200",
 							"Zinc 50",
 							"Zinc 100",
-							"Zinc 200"
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
 						],
 						"default_value": "None"
 					}
@@ -146,18 +146,18 @@
 						"placeholder": "",
 						"options": [
 							"None",
-							"Indigo",
-							"Blue",
-							"Yellow",
-							"Green",
-							"Red",
-							"White",
+							"Indigo 800",
+							"Indigo 900",
 							"Slate 50",
 							"Slate 100",
 							"Slate 200",
 							"Zinc 50",
 							"Zinc 100",
-							"Zinc 200"
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
 						],
 						"default_value": "None"
 					}
@@ -236,18 +236,18 @@
 						"placeholder": "",
 						"options": [
 							"None",
-							"Indigo",
-							"Blue",
-							"Yellow",
-							"Green",
-							"Red",
-							"White",
+							"Indigo 800",
+							"Indigo 900",
 							"Slate 50",
 							"Slate 100",
 							"Slate 200",
 							"Zinc 50",
 							"Zinc 100",
-							"Zinc 200"
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
 						],
 						"default_value": "None"
 					}
@@ -385,18 +385,18 @@
 						"placeholder": "",
 						"options": [
 							"None",
-							"Indigo",
-							"Blue",
-							"Yellow",
-							"Green",
-							"Red",
-							"White",
+							"Indigo 800",
+							"Indigo 900",
 							"Slate 50",
 							"Slate 100",
 							"Slate 200",
 							"Zinc 50",
 							"Zinc 100",
-							"Zinc 200"
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
 						],
 						"default_value": "None"
 					}
@@ -457,18 +457,18 @@
 						"placeholder": "",
 						"options": [
 							"None",
-							"Indigo",
-							"Blue",
-							"Yellow",
-							"Green",
-							"Red",
-							"White",
+							"Indigo 800",
+							"Indigo 900",
 							"Slate 50",
 							"Slate 100",
 							"Slate 200",
 							"Zinc 50",
 							"Zinc 100",
-							"Zinc 200"
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
 						],
 						"default_value": "None"
 					}
@@ -585,18 +585,18 @@
 						"placeholder": "",
 						"options": [
 							"None",
-							"Indigo",
-							"Blue",
-							"Yellow",
-							"Green",
-							"Red",
-							"White",
+							"Indigo 800",
+							"Indigo 900",
 							"Slate 50",
 							"Slate 100",
 							"Slate 200",
 							"Zinc 50",
 							"Zinc 100",
-							"Zinc 200"
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
 						],
 						"default_value": "None"
 					}
@@ -668,18 +668,18 @@
 						"placeholder": "",
 						"options": [
 							"None",
-							"Indigo",
-							"Blue",
-							"Yellow",
-							"Green",
-							"Red",
-							"White",
+							"Indigo 800",
+							"Indigo 900",
 							"Slate 50",
 							"Slate 100",
 							"Slate 200",
 							"Zinc 50",
 							"Zinc 100",
-							"Zinc 200"
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
 						],
 						"default_value": "None"
 					}

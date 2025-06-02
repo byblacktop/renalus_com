@@ -33,8 +33,9 @@ const HeroLead = ({
 				variant: ['solid', 'stroke'],
 				// cta: [true],
 				arrow: [
+					null,
 					{
-						direction: 'upRight',
+						direction: 'downRight',
 						loop: true,
 					},
 				],

@@ -33,7 +33,7 @@ export const metadata = {
 	metadataBase: new URL(SITE_URL),
 
 	// Favicon
-	manifest: '/site.webmanifest',
+	// manifest: '/site.webmanifest',
 
 	// Social
 	openGraph: {
