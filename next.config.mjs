@@ -61,6 +61,8 @@ const nextConfig = {
 
 	//// Redirects
 	async redirects() {
+		if (process.env.NODE_ENV === 'development') return []
+
 		return [
 			...NAV.primary
 				.map(({ href, subnav }) => {

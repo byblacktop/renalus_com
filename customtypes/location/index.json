@@ -37,20 +37,6 @@
       }
     },
     "Info": {
-      "phone": {
-        "type": "Text",
-        "config": {
-          "label": "Phone",
-          "placeholder": "Phone Number"
-        }
-      },
-      "fax": {
-        "type": "Text",
-        "config": {
-          "label": "Fax",
-          "placeholder": "Fax Number"
-        }
-      },
       "address": {
         "type": "Link",
         "config": {
@@ -62,10 +48,11 @@
           "repeat": false
         }
       },
-      "hours": {
-        "type": "Table",
+      "phone": {
+        "type": "Text",
         "config": {
-          "label": "Hours"
+          "label": "Phone",
+          "placeholder": "Phone Number"
         }
       },
       "faxes": {
@@ -90,24 +77,11 @@
             }
           }
         }
-      }
-    },
-    "Gallery": {
-      "imgs": {
-        "type": "Group",
+      },
+      "hours": {
+        "type": "Table",
         "config": {
-          "label": "Image Gallery",
-          "repeat": true,
-          "fields": {
-            "img": {
-              "type": "Image",
-              "config": {
-                "label": "Image",
-                "constraint": {},
-                "thumbnails": []
-              }
-            }
-          }
+          "label": "Hours"
         }
       }
     },

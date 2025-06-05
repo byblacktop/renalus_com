@@ -27,6 +27,13 @@
           "placeholder": "Full Name"
         }
       },
+      "degree": {
+        "type": "Text",
+        "config": {
+          "label": "Degree",
+          "placeholder": ""
+        }
+      },
       "bio": {
         "type": "StructuredText",
         "config": {
@@ -34,46 +41,6 @@
           "placeholder": "",
           "allowTargetBlank": true,
           "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item,heading3"
-        }
-      },
-      "media": {
-        "type": "Group",
-        "config": {
-          "label": "Featured Video",
-          "repeat": false,
-          "fields": {
-            "video": {
-              "type": "Embed",
-              "config": {
-                "label": "Featured Video",
-                "placeholder": ""
-              }
-            },
-            "img": {
-              "type": "Image",
-              "config": {
-                "label": "Video Poster Image",
-                "constraint": {},
-                "thumbnails": [
-                  {
-                    "name": "md",
-                    "width": 770,
-                    "height": 434
-                  },
-                  {
-                    "name": "sm",
-                    "width": 480,
-                    "height": 270
-                  },
-                  {
-                    "name": "blur",
-                    "width": 16,
-                    "height": 16
-                  }
-                ]
-              }
-            }
-          }
         }
       },
       "slices": {
@@ -85,27 +52,20 @@
       }
     },
     "Info": {
+      "credentials": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Credentials",
+          "placeholder": "List Doctor's Academic and Relevant Credentials",
+          "allowTargetBlank": false,
+          "multi": "list-item"
+        }
+      },
       "position": {
         "type": "Text",
         "config": {
           "label": "Position",
           "placeholder": ""
-        }
-      },
-      "start": {
-        "type": "Text",
-        "config": {
-          "label": "Start",
-          "placeholder": "Industry Start"
-        }
-      },
-      "education": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Education",
-          "placeholder": "List Doctor's Academic Credentials",
-          "allowTargetBlank": false,
-          "single": "list-item"
         }
       }
     },
@@ -124,6 +84,7 @@
           "placeholder": "Team Member Group",
           "options": [
             "Doctor",
+            "Provider",
             "Staff"
           ],
           "default_value": "Doctor"
@@ -143,26 +104,6 @@
                 "repeat": false,
                 "customtypes": [
                   "location"
-                ]
-              }
-            }
-          }
-        }
-      },
-      "specialties": {
-        "type": "Group",
-        "config": {
-          "label": "Specialties",
-          "repeat": true,
-          "fields": {
-            "specialty": {
-              "type": "Link",
-              "config": {
-                "label": "Specialty",
-                "select": "document",
-                "repeat": false,
-                "customtypes": [
-                  "page"
                 ]
               }
             }
