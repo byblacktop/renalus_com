@@ -24,7 +24,7 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 		}}
 		linkProps={{
 			variant: 'outline',
-			color: ['highlight', 'white'],
+			color: ['notice', 'white'],
 			arrow: [
 				{
 					direction: 'downRight',

@@ -168,6 +168,13 @@ const HeaderNav = ({ theme, hasScrolled }) => {
 			{/* Logo */}
 			<Logo
 				theme={hasScrolled || navActive ? 'dark' : theme.logo}
+				variant={
+					hasScrolled || navActive
+						? 'primary'
+						: theme.logo === 'dark'
+							? 'duo'
+							: 'primary'
+				}
 				size={hasScrolled ? 'w-40 md:w-44 xl:w-52' : undefined}
 				className={{
 					figure: 'basis-0 grow-1',
@@ -217,15 +224,6 @@ const NavSecondary = ({ isDark, hasScrolled, breakpoint }) => {
 			/>
 			{!breakpoint && (
 				<>
-					{/* <li>
-						<Button
-							link={NAV.cta.pay}
-							color='info'
-							variant='stroke'
-							target='_blank'
-						/>
-					</li> */}
-
 					<li>
 						<Button
 							link={NAV.cta.portal}

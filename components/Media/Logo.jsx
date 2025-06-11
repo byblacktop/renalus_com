@@ -5,22 +5,24 @@ import { Shell } from '@/components/Compose'
 import { SITE_NAME } from '@/lib/constants'
 import { cn, cp } from '@/lib/utils'
 // Logo Variants
-import LogoPrimary from '@/public/logo/LOGO__color.svg'
+import LogoDuo from '@/public/logo/LOGO__color.svg'
+import LogoPrimary from '@/public/logo/LOGO__filled.svg'
 import LogoMono from '@/public/logo/LOGO.svg'
 
 const variants = {
 	primary: LogoPrimary,
+	duo: LogoDuo,
 	mono: LogoMono,
 }
 
 const themes = {
 	dark: {
-		color: 'fill-indigo-800',
-		accent: 'var(--color-red-200)',
+		color: 'fill-indigo-900',
+		accent: 'var(--color-red-300)',
 	},
 	light: {
 		color: 'fill-white',
-		accent: 'var(--color-red)',
+		// accent: 'var(--color-red)',
 	},
 }
 
@@ -44,7 +46,8 @@ const Logo = ({
 		>
 			<span className='sr-only'>{SITE_NAME} Logo</span>
 
-			<LogoPrimary
+			<Shell
+				as={variants[variant] ?? variants.primary}
 				className={cn(
 					'block',
 					themes[theme].color,

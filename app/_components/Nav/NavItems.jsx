@@ -16,8 +16,8 @@ const variants = cva('', {
 		},
 
 		color: {
-			dark: 'text-white/90 hover:text-white',
-			light: 'text-indigo hover:text-slate-300',
+			dark: 'text-white/90 hover:text-indigo-200/90',
+			light: 'text-indigo-900 hover:text-indigo-500',
 		},
 
 		cta: {

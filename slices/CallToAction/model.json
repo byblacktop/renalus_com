@@ -229,6 +229,7 @@
 									"placeholder": "Background Color",
 									"options": [
 										"None",
+										"Indigo 700",
 										"Indigo 800",
 										"Indigo 900",
 										"Slate 50",
