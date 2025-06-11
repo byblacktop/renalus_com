@@ -69,15 +69,15 @@ const Card = ({
 	const img = getFeaturedImg(imgs)
 
 	return (
-		<dd className='group relative z-1 p-1'>
+		<dd className='group relative z-1 p-2'>
 			<div className='px-2.5'>
 				<LinkShell
 					href={link}
 					className={cn(
 						'py-2.5',
 						'relative z-1 flex flex-wrap',
-						'border-b border-zinc-300',
-						'group-hover:border-zinc-300/0',
+						'border-b border-slate-100',
+						'group-hover:border-slate-100/0',
 						variant === 'default' && 'group-last-of-type:border-b-0',
 						gap.sm,
 					)}
@@ -136,7 +136,7 @@ const Card = ({
 			<div
 				className={cn(
 					'absolute inset-0 z-0 rounded-xl overflow-hidden',
-					'bg-slate-100/0 group-hover:bg-slate-50',
+					'bg-slate-50/0 group-hover:bg-slate-50',
 					'scale-95 group-hover:scale-100',
 					'transition duration-300',
 					'pointer-events-none',

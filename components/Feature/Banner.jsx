@@ -70,7 +70,7 @@ const FeatureBanner = ({
 			<CoverImage
 				img={img}
 				plx={{ speed: -1 }}
-				className={{ figure: 'z-1', target: '-bottom-[20%]' }}
+				// className={{ figure: 'z-1', target: '-bottom-[20%]' }}
 			>
 				<Overlay gradient='dark' direction='tr' />
 			</CoverImage>

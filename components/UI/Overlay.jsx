@@ -17,15 +17,14 @@ const variants = cva('', {
 
 		color: {
 			black: 'bg-black',
-			steel: 'bg-slate',
+			slate: 'bg-slate',
+			zinc: 'bg-zinc',
 			stone: 'bg-stone',
-			white: 'bg-white',
 			indigo: 'bg-indigo',
 			blue: 'bg-slate',
-			sky: 'bg-slate',
-			yellow: 'bg-slate',
 			red: 'bg-red',
 			green: 'bg-green',
+			white: 'bg-white',
 		},
 
 		gradient: {
@@ -38,7 +37,6 @@ const variants = cva('', {
 			white: 'from-white/70 via-white/30 to-white/0',
 			indigo: 'from-indigo-800/90 via-indigo-800/20 to-indigo-800/0',
 			blue: 'from-blue-800/80 via-blue-800/50 to-blue-800/30',
-			sky: 'from-blue-300/90 via-blue-300/80 to-blue-300/60',
 			red: 'from-red-800/70 via-red-800/30 to-red-800/0',
 			green: 'from-green-800/70 via-green-800/30 to-green-800/0',
 		},

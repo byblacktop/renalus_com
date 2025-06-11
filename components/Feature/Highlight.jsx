@@ -66,9 +66,8 @@ const variants = cva('', {
 		highlight: {
 			Indigo: 'bg-gradient-to-b from-slate-200  to-green-300',
 			Blue: 'bg-gradient-to-b from-slate-200 to-slate-300',
-			Yellow: 'bg-gradient-to-b from-green-200  to-slate-50',
 			Green: 'bg-gradient-to-b from-slate-100  to-green-200',
-			Yellow: 'bg-gradient-to-b from-slate-100  to-green-200',
+			Red: 'bg-gradient-to-b from-slate-100  to-red-200',
 		},
 	},
 })

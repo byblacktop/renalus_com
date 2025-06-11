@@ -45,7 +45,7 @@ const Hero = ({
 			<MediaTriggers podcast={podcast} video={video} />
 		</Container>
 
-		<Backdrop offset='bottom' color='steel-100' layer />
+		<Backdrop offset='bottom' color='slate-100' layer />
 	</Section>
 )
 

@@ -27,7 +27,7 @@ const Reviews = ({ title, rid }) => {
 				</Flex>
 			</Container>
 
-			<Backdrop color='steel-200' offset='panel' />
+			<Backdrop color='slate-200' offset='panel' />
 		</Section>
 	)
 }

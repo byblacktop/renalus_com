@@ -100,7 +100,7 @@ const Trigger = ({ href, className, children }) =>
 		<dd className={className}>
 			<Link
 				href={href}
-				className='block group  rounded-full overflow-hidden duration-500 ease-out-smooth text-slate-100 bg-indigo-900 hover:bg-indigo-700'
+				className='block group  rounded-full overflow-hidden duration-500 ease-out-smooth text-slate-100 bg-indigo-900 hover:bg-indigo-950'
 			>
 				{children}
 			</Link>

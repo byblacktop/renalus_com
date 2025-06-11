@@ -5,28 +5,34 @@ import { Shell } from '@/components/Compose'
 import { SITE_NAME } from '@/lib/constants'
 import { cn, cp } from '@/lib/utils'
 // Logo Variants
-import Logo00 from '@/public/logo/LOGO__00.png'
-import Logo01 from '@/public/logo/LOGO__01.png'
-import Logo02 from '@/public/logo/LOGO__02.png'
-import Logo03 from '@/public/logo/LOGO__03.png'
+import LogoPrimary from '@/public/logo/LOGO__color.svg'
+import LogoMono from '@/public/logo/LOGO.svg'
 
 const variants = {
-	primary: Logo01,
-	light: Logo00,
-	blank: Logo03,
+	primary: LogoPrimary,
+	mono: LogoMono,
+}
+
+const themes = {
+	dark: {
+		color: 'fill-indigo-800',
+		accent: 'var(--color-red-200)',
+	},
+	light: {
+		color: 'fill-white',
+		accent: 'var(--color-red)',
+	},
 }
 
 const Logo = ({
 	variant = 'primary',
-	color = 'indigo',
+	theme = 'dark',
 	size = 'w-44 md:w-52 xl:w-60',
 	className,
 	...props
 }) => (
 	<figure
 		className={cn('relative leading-none', cp(className, 'figure'))}
-		data-theme={color}
-		data-variant={variant}
 	>
 		<Link
 			href='/'
@@ -37,14 +43,15 @@ const Logo = ({
 			)}
 		>
 			<span className='sr-only'>{SITE_NAME} Logo</span>
-			<Image
-				src={variants[variant] ?? variants.primary}
+
+			<LogoPrimary
+				className={cn(
+					'block',
+					themes[theme].color,
+					cp(className, 'logo', true),
+				)}
+				style={{ '--color-accent': themes[theme].accent }}
 				alt={SITE_NAME}
-				className={cn('block', cp(className, 'logo', true))}
-				width={1025}
-				height={300}
-				priority
-				unoptimized
 				{...props}
 			/>
 		</Link>

@@ -1,7 +1,7 @@
 import { Banner } from '@/components/Banner'
 import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
 import { GSAP } from '@/components/Interactive'
+import { Header } from '@/components/Nav/Header'
 import { Providers } from '@/components/Providers'
 import { Lenis } from '@/lib/lenis'
 

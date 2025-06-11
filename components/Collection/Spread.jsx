@@ -8,10 +8,15 @@ import { Container, Section } from '@/components/Compose'
 import { ProseSplit, Title } from '@/components/Content'
 import { CoverImage } from '@/components/Media'
 import { Divider, Flex, LinkArrow, Overlay } from '@/components/UI'
-import { getLink } from '@/lib/helpers'
+import { getLink, getTheme } from '@/lib/helpers'
 import { cn, kn } from '@/lib/utils'
 
-const CollectionSpread = ({ items, dataset, ...contentProps }) => {
+const CollectionSpread = ({
+	items,
+	color,
+	dataset,
+	...contentProps
+}) => {
 	// Refs
 	const scrollRef = useRef(null)
 
@@ -30,16 +35,22 @@ const CollectionSpread = ({ items, dataset, ...contentProps }) => {
 	return (
 		<Section
 			ref={setSizeRef}
-			className='overflow-hidden bg-indigo *:text-white -mb-8 pb-8'
+			className={cn(
+				'overflow-hidden-mb-8 pb-8',
+				getTheme(color).className,
+			)}
 			{...dataset}
 		>
-			<Container
-				className={
-					cn()
-					// 'border-t border-t-slate-200'
-				}
-			>
-				<ProseSplit align='end' {...contentProps} />
+			<Container>
+				<ProseSplit
+					align='end'
+					className={{
+						subtitle: getTheme(color).isDark
+							? 'text-blue-300'
+							: 'text-blue-800',
+					}}
+					{...contentProps}
+				/>
 			</Container>
 			<div
 				ref={scrollRef}

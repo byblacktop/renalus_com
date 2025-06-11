@@ -561,19 +561,18 @@
 						"default_value": "Indigo",
 						"options": [
 							"None",
-							"Indigo",
-							"Blue",
-							"Sky",
-							"Yellow",
-							"Orange",
-							"Green",
-							"White",
+							"Indigo 800",
+							"Indigo 900",
 							"Slate 50",
 							"Slate 100",
 							"Slate 200",
 							"Zinc 50",
 							"Zinc 100",
-							"Zinc 200"
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
 						]
 					},
 					"type": "Select"

@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useAtomValue } from 'jotai'
 
 import { Logo } from '@/components/Media'
-import { NavItems } from '@/components/NavItems'
+import { NavItems } from '@/components/Nav/NavItems'
 import { Button } from '@/components/UI'
 import {
 	useBelowBreakpoint,
@@ -28,7 +28,7 @@ const themes = {
 	},
 	light: {
 		theme: 'light',
-		logo: 'primary',
+		logo: 'dark',
 		isDark: false,
 	},
 }
@@ -167,7 +167,7 @@ const HeaderNav = ({ theme, hasScrolled }) => {
 		>
 			{/* Logo */}
 			<Logo
-				variant={hasScrolled || navActive ? 'primary' : theme.logo}
+				theme={hasScrolled || navActive ? 'dark' : theme.logo}
 				size={hasScrolled ? 'w-40 md:w-44 xl:w-52' : undefined}
 				className={{
 					figure: 'basis-0 grow-1',

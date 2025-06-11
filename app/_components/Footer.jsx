@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { Container } from '@/components/Compose'
 import { Logo } from '@/components/Media'
-import { NavItems } from '@/components/NavItems'
+import { NavItems } from '@/components/Nav/NavItems'
 import { Button, Divider, Flex, Grid } from '@/components/UI'
 import { NAV } from '@/lib/sitemap'
 import { spaceY } from '@/lib/tw'

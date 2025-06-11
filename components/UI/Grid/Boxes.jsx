@@ -3,13 +3,12 @@ import { cva } from 'cva'
 
 import { LinkShell } from '@/components/Compose'
 import { Lead } from '@/components/Content'
-import { ButtonGroup, GridItem } from '@/components/UI'
+import { ButtonGroup } from '@/components/UI'
 import { getTheme } from '@/lib/helpers'
 import { cn } from '@/lib/utils'
 import DataIcon from '@/public/icons/data.svg'
 
-const getBG = idx => 'yellow'
-// gsap.utils.wrap(['yellow', 'green', 'orange'], idx)
+const getBG = idx => 'blue'
 
 const variants = cva('relative grid gap-4 md:gap-6 xl:gap-8', {
 	variants: {

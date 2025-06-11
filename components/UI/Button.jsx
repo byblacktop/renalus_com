@@ -3,7 +3,7 @@
 import Link from 'next/link'
 
 import { Shell } from '@/components/Compose'
-import { NavLink } from '@/components/NavLink'
+import { NavLink } from '@/components/Nav/NavLink'
 import { LinkArrow, LoadingDots } from '@/components/UI'
 import {
 	getLink,
@@ -24,7 +24,7 @@ const variants = getVariants('btn', {
 	},
 })
 
-const isCurrentPageAnchor = (link) => {
+const isCurrentPageAnchor = link => {
 	if (!link?.href.includes('#')) return false
 
 	return link.href.startsWith(window.location.pathname + '#')
@@ -93,11 +93,20 @@ const ButtonLink = ({ as, link, type, children, ...atts }) => {
 		)
 	}
 
-	const hash = typeof window !== 'undefined' && link?.href?.includes(window.location.pathname + '#') ? link.href.split('#')[1] : null
+	const hash =
+		typeof window !== 'undefined' &&
+		link?.href?.includes(window.location.pathname + '#')
+			? link.href.split('#')[1]
+			: null
 
 	if (hash) {
 		return (
-			<Link {...getLink({ ...link, href: `#${hash}` })} {...atts} data-hash={`#${hash}`} data-type='next-link'>
+			<Link
+				{...getLink({ ...link, href: `#${hash}` })}
+				{...atts}
+				data-hash={`#${hash}`}
+				data-type='next-link'
+			>
 				{children}
 			</Link>
 		)

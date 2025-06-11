@@ -2,7 +2,7 @@ import { PopoverGroup } from '@headlessui/react'
 import { cva } from 'cva'
 
 import { Shell } from '@/components/Compose'
-import { SubNav } from '@/components/SubNav'
+import { SubNav } from '@/components/Nav/SubNav'
 import { Button, Flex } from '@/components/UI'
 import { invalidArrData } from '@/lib/helpers'
 import { cn, cp, kn } from '@/lib/utils'

@@ -5,7 +5,7 @@
 	--bg: var(--color-zinc-50);
 	--fg: var(--color-slate);
 	--fg-h: var(--color-indigo-800);
-	--accent: var(--color-green-100);
+	--accent: var(--color-red);
 
 	/* Widths */
 	--w-container: 1560px;
@@ -136,11 +136,16 @@ button,
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
 	@apply relative
 		no-underline
-		ease-in-out;
+		ease-out-smooth;
 
 	/* Animations/Transitions (prevent intro animated butotns) */
 	&:not(.__gs) {
 		@apply transition
 		duration-300;
 	}
+}
+
+.transition {
+	@apply duration-300
+		ease-out-smooth;
 }

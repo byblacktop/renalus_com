@@ -35,9 +35,6 @@ const Content = ({
 		<Shell
 			as={layouts[variation] ?? Thread}
 			isSection={!layouts[variation] || variation === 'default'}
-			className={{
-				lead: 'text-balance',
-			}}
 			{...getSliceData(slice_type, variation)}
 			{...resolveProps(primary, resolver)}
 			{...context}
