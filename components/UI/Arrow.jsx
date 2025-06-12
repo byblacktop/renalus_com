@@ -69,19 +69,17 @@ const variants = cva('', {
 			down: 'group-hover:translate-y-1',
 			left: 'group-hover:-translate-x-1',
 			right: 'group-hover:translate-x-1',
-			upRight:
-				'group-hover:translate-x-0.5 group-hover:-translate-y-0.5',
-			upLeft:
-				'group-hover:-translate-x-0.5 group-hover:-translate-y-0.5',
+			upRight: 'group-hover:translate-x-1 group-hover:-translate-y-1',
+			upLeft: 'group-hover:-translate-x-1 group-hover:-translate-y-1',
 			downRight:
-				'group-hover:translate-x-0.5 group-hover:translate-y-0.5',
+				'group-hover:translate-x-1 group-hover:translate-y-1',
 			downLeft:
-				'group-hover:-translate-x-0.5 group-hover:translate-y-0.5',
+				'group-hover:-translate-x-1 group-hover:translate-y-1',
 		},
 
 		loop: {
 			true: 'duration-1000',
-			false: 'duration-300',
+			false: '',
 			parent: '',
 		},
 	},
@@ -161,12 +159,15 @@ const LinkArrow = ({
 			)}
 		>
 			<Title title={caption} as='figcaption' className='__sm h6' />
-			<Icon
+			<span
 				className={cn(
-					'translate-x-0 tranlate-y-0 transition-all',
+					'block',
+					'translate-x-0 tranlate-y-0 transition',
 					variants({ direction, size, variant, loop }),
 				)}
-			/>
+			>
+				<Icon />
+			</span>
 		</figure>
 	)
 }

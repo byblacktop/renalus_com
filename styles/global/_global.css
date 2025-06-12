@@ -135,17 +135,30 @@ button,
 .btn {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
 	@apply relative
-		no-underline
-		ease-out-smooth;
+		no-underline;
 
 	/* Animations/Transitions (prevent intro animated butotns) */
 	&:not(.__gs) {
-		@apply transition
-		duration-300;
+		@apply transition-all;
+
+		&:not([class*='ease-']) {
+			@apply ease-in-out;
+		}
+
+		&:not([class*='duration-']) {
+			@apply duration-400;
+		}
 	}
 }
 
 .transition {
-	@apply duration-300
-		ease-out-smooth;
+	@apply transition-all;
+
+	&:not([class*='ease-']) {
+		@apply ease-in-out;
+	}
+
+	&:not([class*='duration-']) {
+		@apply duration-400;
+	}
 }
