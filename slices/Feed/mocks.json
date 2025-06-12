@@ -284,8 +284,8 @@
 			},
 			"team": {
 				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Doctor"
+				"value": "Doctor",
+				"type": "Select"
 			},
 			"cols": {
 				"__TYPE__": "FieldContent",

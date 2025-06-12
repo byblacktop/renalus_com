@@ -18,7 +18,7 @@ const Footer = () => {
 					width='lg'
 					className={cn('pt-20 lg:pt-28 pb-8 lg:pb-12')}
 				>
-					<Flex align='start' justify='between' gap='2xl' wrap>
+					<Flex align='start' justify='between' gap='sm' wrap>
 						<Brand />
 
 						<Flex as='div' gap='lg'>
@@ -50,7 +50,7 @@ const Footer = () => {
 const Brand = () => (
 	<div className={cn('w-full max-w-3xs', spaceY.xs)}>
 		{/* Logo */}
-		<Logo variant='light' />
+		<Logo theme='light' />
 
 		{/* Brand Statement */}
 		<p className='__sm'>

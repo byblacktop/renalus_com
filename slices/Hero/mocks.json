@@ -1,201 +1,6 @@
 [
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "default",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "We transform your vision into clear reality.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "With a passion for precision and a commitment to excellence, we transform your vision into a clear picture perfect reality to enrich your world.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"links": {
-				"__TYPE__": "RepeatableContent",
-				"type": "Link",
-				"value": [
-					{
-						"key": "b22019e7-9d0a-472a-82cc-2e278563f383",
-						"__TYPE__": "LinkContent",
-						"value": {
-							"__TYPE__": "ExternalLink",
-							"url": "https://prismic.io",
-							"text": "About  Us"
-						}
-					},
-					{
-						"key": "d4f01725-7521-4693-8bf7-0083ce997b2c",
-						"__TYPE__": "LinkContent",
-						"value": {
-							"__TYPE__": "ExternalLink",
-							"url": "#next",
-							"text": "Learn More"
-						}
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading6",
-						"content": {
-							"text": "Surrounded"
-						}
-					}
-				]
-			},
-			"img": {
-				"provider": "imgix",
-				"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=1920&h=1280",
-				"alt": "black framed eyeglasses",
-				"origin": {
-					"id": "tRIx_NfMNYA",
-					"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
-					"width": 5472,
-					"height": 3648
-				},
-				"width": 1920,
-				"height": 1280,
-				"edit": {
-					"background": "transparent",
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				"credits": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {
-					"lg": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=1440&h=960",
-						"alt": "black framed eyeglasses",
-						"origin": {
-							"id": "tRIx_NfMNYA",
-							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
-							"width": 5472,
-							"height": 3648
-						},
-						"width": 1440,
-						"height": 960,
-						"edit": {
-							"background": "transparent",
-							"zoom": 1,
-							"crop": {
-								"x": 0,
-								"y": 0
-							}
-						},
-						"credits": null
-					},
-					"md": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=960&h=640",
-						"alt": "black framed eyeglasses",
-						"origin": {
-							"id": "tRIx_NfMNYA",
-							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
-							"width": 5472,
-							"height": 3648
-						},
-						"width": 960,
-						"height": 640,
-						"edit": {
-							"background": "transparent",
-							"zoom": 1,
-							"crop": {
-								"x": 0,
-								"y": 0
-							}
-						},
-						"credits": null
-					},
-					"sm": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=480&h=320",
-						"alt": "black framed eyeglasses",
-						"origin": {
-							"id": "tRIx_NfMNYA",
-							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
-							"width": 5472,
-							"height": 3648
-						},
-						"width": 480,
-						"height": 320,
-						"edit": {
-							"background": "transparent",
-							"zoom": 1,
-							"crop": {
-								"x": 0,
-								"y": 0
-							}
-						},
-						"credits": null
-					},
-					"blur": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=912,0,3648,3648&w=16&h=16",
-						"alt": "black framed eyeglasses",
-						"origin": {
-							"id": "tRIx_NfMNYA",
-							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
-							"width": 5472,
-							"height": 3648
-						},
-						"width": 16,
-						"height": 16,
-						"edit": {
-							"background": "transparent",
-							"zoom": 1,
-							"crop": {
-								"x": 912,
-								"y": 0
-							}
-						},
-						"credits": null
-					}
-				}
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"value": "Green",
-				"type": "Select"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			},
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
 		"variation": "lead",
 		"primary": {
 			"title": {
@@ -674,7 +479,6 @@
 		"variation": "contained",
 		"primary": {
 			"img": {
-				"__TYPE__": "ImageContent",
 				"provider": "imgix",
 				"url": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxnbGFzc2VzfGVufDB8fHx8MTc0Mzk5NjI0OHww&ixlib=rb-4.0.3&q=85&rect=785,0,3665,3490&w=1260&h=1200",
 				"alt": "person holding eyeglasses",
@@ -694,6 +498,8 @@
 						"y": 0
 					}
 				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {
 					"md": {
 						"provider": "imgix",
@@ -714,7 +520,8 @@
 								"x": 785,
 								"y": 0
 							}
-						}
+						},
+						"credits": null
 					},
 					"sm": {
 						"provider": "imgix",
@@ -735,7 +542,8 @@
 								"x": 785,
 								"y": 0
 							}
-						}
+						},
+						"credits": null
 					},
 					"blur": {
 						"provider": "imgix",
@@ -756,7 +564,8 @@
 								"x": 872,
 								"y": 0
 							}
-						}
+						},
+						"credits": null
 					}
 				}
 			},
@@ -826,6 +635,201 @@
 			}
 		},
 		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "We transform your vision into clear reality.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "With a passion for precision and a commitment to excellence, we transform your vision into a clear picture perfect reality to enrich your world.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "b22019e7-9d0a-472a-82cc-2e278563f383",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://prismic.io",
+							"text": "About  Us"
+						}
+					},
+					{
+						"key": "d4f01725-7521-4693-8bf7-0083ce997b2c",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "#next",
+							"text": "Learn More"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading6",
+						"content": {
+							"text": "Angry"
+						}
+					}
+				]
+			},
+			"img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=1920&h=1280",
+				"alt": "black framed eyeglasses",
+				"origin": {
+					"id": "tRIx_NfMNYA",
+					"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5472,
+					"height": 3648
+				},
+				"width": 1920,
+				"height": 1280,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"lg": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=1440&h=960",
+						"alt": "black framed eyeglasses",
+						"origin": {
+							"id": "tRIx_NfMNYA",
+							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 1440,
+						"height": 960,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							}
+						},
+						"credits": null
+					},
+					"md": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=960&h=640",
+						"alt": "black framed eyeglasses",
+						"origin": {
+							"id": "tRIx_NfMNYA",
+							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 960,
+						"height": 640,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							}
+						},
+						"credits": null
+					},
+					"sm": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=0,0,5472,3648&w=480&h=320",
+						"alt": "black framed eyeglasses",
+						"origin": {
+							"id": "tRIx_NfMNYA",
+							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 480,
+						"height": 320,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							}
+						},
+						"credits": null
+					},
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85&rect=912,0,3648,3648&w=16&h=16",
+						"alt": "black framed eyeglasses",
+						"origin": {
+							"id": "tRIx_NfMNYA",
+							"url": "https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDEzMzY4ODl8MA&ixlib=rb-4.0.3&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 912,
+								"y": 0
+							}
+						},
+						"credits": null
+					}
+				}
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo 700"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			},
 			{
 				"__TYPE__": "GroupItemContent",
 				"value": []

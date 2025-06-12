@@ -227,7 +227,7 @@ const NavSecondary = ({ isDark, hasScrolled, breakpoint }) => {
 					<li>
 						<Button
 							link={NAV.cta.portal}
-							color='info'
+							color='primary'
 							variant='stroke'
 							target='_blank'
 						/>

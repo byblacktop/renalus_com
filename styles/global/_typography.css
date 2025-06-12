@@ -166,7 +166,7 @@ h3,
 
 h4,
 .h4 {
-	@apply leading-snug
+	@apply leading-tight
 		fs-xl;
 
 	&.__2xs,
@@ -180,16 +180,14 @@ h4,
 	.__lead.__xs &,
 	.__prose.__xs &,
 	.__body.__xs & {
-		@apply leading-tight
-			fs-base;
+		@apply fs-base;
 	}
 
 	&.__sm,
 	.__lead.__sm &,
 	.__prose.__sm &,
 	.__body.__sm & {
-		@apply leading-tight
-			fs-lg;
+		@apply fs-lg;
 	}
 
 	&.__lg,

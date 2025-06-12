@@ -18,7 +18,7 @@ const variants = {
 const themes = {
 	dark: {
 		color: 'fill-indigo-900',
-		accent: 'var(--color-red-300)',
+		accent: 'var(--color-red)',
 	},
 	light: {
 		color: 'fill-white',

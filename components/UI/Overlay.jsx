@@ -29,16 +29,16 @@ const variants = cva('', {
 
 		gradient: {
 			black: 'from-black/80 via-black/20 to-black/0',
-			smoke: 'from-black/70 via-black/30 to-black/10',
-			rich: 'from-indigo-800/100 via-indigo-800/60 to-indigo-800/0 from-20%',
+			smoke: 'from-slate-900/80 via-slate-900/35 to-slate-900/5',
+			rich: 'from-indigo-900/100 via-indigo-900/60 to-indigo-900/10 from-20%',
 			royal:
 				'from-slate-700/100 via-slate-700/50 to-slate-700/0 from-25%',
-			dark: 'from-indigo-950/70 via-indigo-950/40 to-indigo-950/0',
+			dark: 'from-indigo-950/80 via-indigo-950/40 to-indigo-950/20',
 			white: 'from-white/70 via-white/30 to-white/0',
-			indigo: 'from-indigo-800/90 via-indigo-800/20 to-indigo-800/0',
-			blue: 'from-blue-800/80 via-blue-800/50 to-blue-800/30',
-			red: 'from-red-800/70 via-red-800/30 to-red-800/0',
-			green: 'from-green-800/70 via-green-800/30 to-green-800/0',
+			indigo: 'from-indigo-700/90 via-indigo-700/40 to-indigo-700/0',
+			blue: 'from-blue-700/80 via-blue-700/50 to-blue-700/30',
+			red: 'from-red-500/70 via-red-500/30 to-red-500/0',
+			green: 'from-green-300/70 via-green-300/30 to-green-300/0',
 		},
 
 		blend: {

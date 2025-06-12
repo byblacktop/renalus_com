@@ -68,8 +68,8 @@ const ProseSplit = ({
 						'place-self-end',
 					getTheme(color).accent ??
 						(getTheme(color).isDark
-							? 'text-slate-100'
-							: 'text-slate'),
+							? 'text-blue-300'
+							: 'text-indigo'),
 					cp(className, 'subtitle'),
 				),
 			}}

@@ -24,7 +24,7 @@ const variants = cva('', {
 		},
 
 		img: {
-			0: 'absolute max-w-sm left-1/2 right-0 -translate-x-1/2 opacity-70 -scale-x-100',
+			0: 'absolute max-w-sm left-1/2 right-0 -translate-x-1/2',
 			1: 'absolute left-[25%] right-0',
 		},
 	},

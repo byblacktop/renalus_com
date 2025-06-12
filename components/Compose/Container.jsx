@@ -50,6 +50,7 @@ const variants = cva('__container', {
 			sm: 'max-w-(--breakpoint-xl)',
 			lg: 'max-w-(--breakpoint-3xl)',
 			xl: 'max-w-(--breakpoint-4xl)',
+			'2xl': 'max-w-(--breakpoint-5xl)',
 		},
 
 		cols: cols,

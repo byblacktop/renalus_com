@@ -15,7 +15,7 @@ const Cta = ({
 }) => {
 	return (
 		<Shell
-			as={layouts[variation] ?? CtaCards}
+			as={layouts[variation] ?? layouts.default}
 			{...getSliceData(slice_type, variation)}
 			{...resolveProps(primary, resolver)}
 			{...context}

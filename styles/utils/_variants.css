@@ -56,8 +56,8 @@
 	/* Notice */
 	&[class*='-notice'] {
 		--v-color: var(--color-blue-400);
-		--v-contrast: var(--color-indigo-800);
-		--v-hover: var(--color-blue-400);
+		--v-contrast: var(--color-indigo-900);
+		--v-hover: var(--color-blue-300);
 	}
 
 	/***********

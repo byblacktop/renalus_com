@@ -22,16 +22,7 @@ const CtaCards = ({
 	...contentProps
 }) => {
 	return (
-		<Section
-			{...dataset}
-			className={
-				cn()
-				// 'overflow-hidden',
-				// 'bg-gradient-to-b from-stone-50 via-stone-50 to-indigo',
-
-				// 'from-50% to-50%',
-			}
-		>
+		<Section {...dataset}>
 			<Container
 				width='lg'
 				layout='grid'
@@ -57,7 +48,13 @@ const CtaCards = ({
 				</Grid>
 			</Container>
 
-			<CoverImage img={img} className='rounded-4xl overflow-hidden'>
+			<CoverImage
+				img={img}
+				className={cn(
+					'inset-1.5 md:inset-2 3xl:inset-3',
+					'rounded-4xl overflow-hidden',
+				)}
+			>
 				<Overlay gradient='indigo' blend='hard' />
 			</CoverImage>
 		</Section>

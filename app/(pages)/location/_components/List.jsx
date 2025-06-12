@@ -64,7 +64,7 @@ const Card = ({
 	hours,
 	link,
 	imgs,
-	variant = 'default',
+	variant = '',
 }) => {
 	const img = getFeaturedImg(imgs)
 

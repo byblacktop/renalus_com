@@ -2,6 +2,7 @@ import { Shell } from '@/components/Compose'
 import {
 	HeroContained,
 	HeroHighlight,
+	HeroLayered,
 	HeroLead,
 	HeroPoster,
 	HeroSplit,
@@ -14,6 +15,7 @@ const layouts = {
 	split: HeroSplit,
 	highlight: HeroHighlight,
 	contained: HeroContained,
+	layered: HeroLayered,
 }
 
 const resolver = {
@@ -29,7 +31,7 @@ const Hero = ({
 
 	return (
 		<Shell
-			as={layouts[variation] ?? HeroPoster}
+			as={layouts[variation] ?? layouts.default}
 			className='__hero'
 			{...props}
 			{...dataset}

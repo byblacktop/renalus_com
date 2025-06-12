@@ -139,13 +139,6 @@ const figureVariants = cva('', {
 			true: 'overflow-hidden',
 		},
 	},
-
-	// compoundVariants: [
-	// 	{
-	// 		cta: true,
-	// 		className: 'bg-green-700 text-green-100',
-	// 	},
-	// ],
 })
 
 const LinkArrow = ({
@@ -193,7 +186,7 @@ const NavArrow = ({
 			'relative z-2 group',
 			'flex justify-center items-center shrink-0',
 			'size-12 lg:size-14 2xl:size-16',
-			'duration-300 cursor-pointer',
+			'cursor-pointer',
 			circle && 'rounded-full overflow-hidden',
 			bgColor(bg),
 			textColor(color),

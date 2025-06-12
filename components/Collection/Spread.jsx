@@ -77,18 +77,18 @@ const CollectionSpread = ({
 			</div>
 			<Container className='pt-6 pb-8'>
 				<Flex justify='center'>
-					<Flex gap='3xs' className='max-sm:hidden'>
+					<Flex gap='2xs' className='max-sm:hidden'>
 						{items.map((item, idx) => (
 							<button
 								key={kn(item)}
 								onClick={() => scrollTo(idx)}
 								data-active={activeIndex === idx ? true : undefined}
 								className={cn(
-									'size-2.5 rounded-full bg-slate-300',
+									'size-2.5 rounded-full ',
 									'border border-transparent',
 									'transition',
-									'data-active:bg-slate-400 data-hover:bg-slate-400',
-									'forced-colors:data-active:bg-slate forced-colors:data-focus:outline-offset-4',
+									'bg-zinc-300/30 hover:bg-zinc-300/70 data-active:bg-zinc-300',
+									'forced-colors:data-active:bg-zinc forced-colors:data-focus:outline-offset-4',
 								)}
 							/>
 						))}
@@ -145,10 +145,10 @@ const Card = ({ img, bounds, title, body, link }) => {
 				<figcaption className='relative z-1 space-y-2 md:space-y-4'>
 					<Title
 						title={title}
-						className='__xl text-balance text-white'
+						className='__lg text-balance text-white'
 					/>
-					<Divider color='Slate 200' />
-					<Title title={body} className='text-slate-100' />
+					<Divider color='Red' className='h-0.5' />
+					<Title title={body} className='__sm text-zinc-200' />
 				</figcaption>
 
 				<CoverImage
@@ -163,13 +163,19 @@ const Card = ({ img, bounds, title, body, link }) => {
 							loop
 							size='lg'
 							direction='upRight'
-							className='text-white/50 group-hover:text-white/100'
+							className='text-zinc-100/50 group-hover:text-zinc-100'
 						/>
 					</div>
-					<Overlay direction='t' gradient='royal' />
 					<Overlay
 						direction='t'
-						gradient='royal'
+						gradient='rich'
+						blend='multiply'
+						className='from-35% to-80%'
+					/>
+					<Overlay
+						direction='t'
+						gradient='rich'
+						blend='multiply'
 						className='opacity-0 group-hover:opacity-100 transition-opacity'
 					/>
 				</CoverImage>

@@ -33,7 +33,7 @@ const Content = ({
 }) => {
 	return (
 		<Shell
-			as={layouts[variation] ?? Thread}
+			as={layouts[variation] ?? layouts.default}
 			isSection={!layouts[variation] || variation === 'default'}
 			{...getSliceData(slice_type, variation)}
 			{...resolveProps(primary, resolver)}

@@ -40,7 +40,7 @@ const Collection = ({
 }) => {
 	return (
 		<Shell
-			as={layouts[variation] ?? CollectionProse}
+			as={layouts[variation] ?? layouts.default}
 			{...getSliceData(slice_type, variation)}
 			{...resolveProps(primary, resolver)}
 			{...context}

@@ -15,7 +15,7 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 			section: cn(
 				className,
 				bgColor(color),
-				'rounded-4xl overflow-hidden',
+				'rounded-b-4xl overflow-hidden',
 				'h-[calc(max(92vh,1000px)-var(--h-banner)-48px)]',
 				'-mb-8 [&+*]:pt-8',
 			),
@@ -43,7 +43,7 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 				'2xl:top-[var(--h-header)]',
 			)}
 		>
-			<Overlay gradient='dark' />
+			<Overlay gradient='smoke' />
 		</CoverImage>
 	</ContentSplitProse>
 )

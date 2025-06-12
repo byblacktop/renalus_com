@@ -49,7 +49,7 @@
 						"label": "Label",
 						"placeholder": "",
 						"allowTargetBlank": false,
-						"single": "heading6"
+						"single": "heading6,heading5"
 					}
 				},
 				"title": {
@@ -155,6 +155,111 @@
 						"placeholder": "",
 						"allowTargetBlank": false,
 						"single": "heading5,heading6"
+					}
+				},
+				"title": {
+					"type": "StructuredText",
+					"config": {
+						"label": "Main Headline",
+						"placeholder": "",
+						"allowTargetBlank": false,
+						"single": "heading1"
+					}
+				},
+				"body": {
+					"config": {
+						"label": "Intro Content",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"single": "paragraph"
+					},
+					"type": "StructuredText"
+				},
+				"links": {
+					"type": "Link",
+					"config": {
+						"label": "Links",
+						"placeholder": "",
+						"select": null,
+						"allowTargetBlank": true,
+						"allowText": true,
+						"repeat": true
+					}
+				},
+				"color": {
+					"type": "Select",
+					"config": {
+						"label": "Background Color",
+						"placeholder": "",
+						"options": [
+							"None",
+							"Indigo 700",
+							"Indigo 800",
+							"Indigo 900",
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
+						],
+						"default_value": "None"
+					}
+				}
+			},
+			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+			"items": {}
+		},
+		{
+			"id": "layered",
+			"name": "Layered",
+			"docURL": "...",
+			"version": "initial",
+			"description": "Hero",
+			"primary": {
+				"img": {
+					"type": "Image",
+					"config": {
+						"label": "Image",
+						"constraint": {
+							"width": 1920,
+							"height": 1280
+						},
+						"thumbnails": [
+							{
+								"name": "lg",
+								"width": 1440,
+								"height": 960
+							},
+							{
+								"name": "md",
+								"width": 960,
+								"height": 640
+							},
+							{
+								"name": "sm",
+								"width": 480,
+								"height": 320
+							},
+							{
+								"name": "blur",
+								"width": 16,
+								"height": 16
+							}
+						]
+					}
+				},
+				"subtitle": {
+					"type": "StructuredText",
+					"config": {
+						"label": "Label",
+						"placeholder": "",
+						"allowTargetBlank": false,
+						"single": "heading6,heading5"
 					}
 				},
 				"title": {
