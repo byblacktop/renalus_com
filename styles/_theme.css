@@ -205,9 +205,10 @@
 
 	/* Radius */
 	--radius-base: 0.6rem;
-	--radius-4xl: clamp(1.5rem, 1.666vw, 2rem); /* 2 —— 24-32px */
+	--radius-3xl: clamp(1.5rem, 1.5vw, 2rem); /* 1.5 —— 24-32px */
+	--radius-4xl: clamp(1.75rem, 2vw, 2.5rem); /* 2.5 —— 32-40px */
 	--radius-5xl: clamp(2rem, 2.5vw, 3rem); /* 3 —— 32-48px */
-	--radius-6xl: clamp(3rem, 3.333vw, 4rem); /* 4 —— 48-64px */
+	--radius-6xl: clamp(2.5rem, 3.333vw, 4rem); /* 4 —— 48-64px */
 	--radius-7xl: clamp(4.5rem, 5vw, 6rem); /* 6 —— 72-96px */
 	--radius-8xl: clamp(6rem, 6.666vw, 8rem); /* 8 —— 96-128px */
 	--radius-9xl: clamp(8rem, 10vw, 12rem); /* 12 —— 128-192px */

@@ -45,6 +45,9 @@ const HeroLayered = ({ img, color, className, ...contentProps }) => (
 				priority
 				img={img}
 				className='left-1/4 -right-[calc(var(--m-stretch)-var(--px))] rounded-4xl overflow-hidden'
+				style={{
+					right: `calc(var(--m-stretch)-var(--px))`,
+				}}
 			>
 				<Overlay direction='r' gradient='indigo' blend='multiply' />
 			</CoverImage>

@@ -21,8 +21,8 @@ const variants = cva('', {
 		{
 			offset: ['boxed', 'panel'],
 			className: cn(
-				'inset-y-2 md:inset-y-4 3xl:inset-y-8',
-				'inset-x-1.5 md:inset-x-2 3xl:inset-x-3',
+				'inset-y-1 md:inset-y-1.5 3xl:inset-y-2',
+				'inset-x-2 md:inset-x-3 3xl:inset-x-4',
 				'rounded-3xl md:rounded-4xl',
 			),
 		},

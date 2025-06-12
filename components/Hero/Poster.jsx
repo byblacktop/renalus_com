@@ -15,9 +15,9 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 			section: cn(
 				className,
 				bgColor(color),
-				'rounded-b-4xl overflow-hidden',
+				'rounded-b-5xl overflow-hidden',
 				'h-[calc(max(92vh,1000px)-var(--h-banner)-48px)]',
-				'-mb-8 [&+*]:pt-8',
+				'-mb-10 [&+*]:pt-10',
 			),
 			container: 'h-full px-fluid-y place-content-end',
 			title: 'd2',
@@ -36,8 +36,8 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 			img={img}
 			priority
 			className={cn(
-				'rounded-3xl overflow-hidden',
-				'inset-4 md:inset-6 2xl:inset-8',
+				'rounded-4xl overflow-hidden',
+				'inset-2 md:inset-3 2xl:inset-4',
 				'top-[var(--h-header)]',
 				'md:top-[var(--h-header)]',
 				'2xl:top-[var(--h-header)]',
