@@ -2,7 +2,7 @@
 	font-size: 16px;
 
 	/* Colors */
-	--bg: var(--color-zinc-50);
+	--bg: var(--color-zinc-100);
 	--fg: var(--color-slate);
 	--fg-h: var(--color-indigo);
 	--accent: var(--color-red);
@@ -58,9 +58,10 @@ body {
 	background-color: var(--bg);
 }
 
-.__dark {
-	--fg: var(--color-zinc-50);
-	--fg-h: var(--color-slate-50);
+.__dark,
+[data-theme='dark'] {
+	--fg: var(--color-zinc-100);
+	--fg-h: var(--color-indigo-100);
 }
 
 /** Layout and baseline */

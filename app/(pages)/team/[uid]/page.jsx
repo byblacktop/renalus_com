@@ -7,18 +7,12 @@ const Team = async ({ params }) => {
 	const { uid } = await params
 	const team = await getDoc('team', uid)
 
-	const { start, education, bio, specialties, media, ...props } = team
+	const { bio, affiliations, ...props } = team
 
 	return (
 		<>
 			<Hero {...props}>
-				<Bio
-					start={start}
-					education={education}
-					specialties={specialties}
-					media={validArrObjectData(media) ? media[0] : null}
-					bio={bio}
-				/>
+				<Bio bio={bio} affiliations={affiliations} />
 			</Hero>
 		</>
 	)

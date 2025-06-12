@@ -4,7 +4,6 @@ import { getDoc, getMeta, getStaticParams } from '@/lib/api'
 import { getFeaturedImg } from '@/lib/helpers'
 import { Body } from '@/location/Body'
 import { Hero } from '@/location/Hero'
-import { Reviews } from '@/location/Reviews'
 
 const Location = async ({ params }) => {
 	const { uid } = await params
@@ -21,8 +20,6 @@ const Location = async ({ params }) => {
 			/>
 
 			<Body {...location} />
-
-			<Reviews title={location.title} rid={location.rid} />
 
 			{/* Back button */}
 			<Section

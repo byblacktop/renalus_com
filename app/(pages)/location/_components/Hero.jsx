@@ -24,7 +24,7 @@ const Hero = ({ img, children, ...contentProps }) => (
 					{...contentProps}
 					as={{ subtitle: 'h6' }}
 					className={{
-						lead: '*:text-stone-50',
+						lead: '*:text-stone-100',
 						subtitle: '__label',
 					}}
 				/>

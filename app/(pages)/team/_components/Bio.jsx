@@ -4,10 +4,10 @@ import { Video } from '@/components/Media'
 import { Flex } from '@/components/UI'
 import { invalidContent } from '@/lib/helpers'
 
-const Bio = ({ start, education, media, bio }) => {
+const Bio = ({ bio, affiliations }) => {
 	return (
 		<Container gap='prose' className='px-0'>
-			<Details
+			{/* <Details
 				title='Industry Start'
 				body={start}
 				as='h4'
@@ -20,8 +20,15 @@ const Bio = ({ start, education, media, bio }) => {
 				className='__xs'
 			/>
 
-			<Video {...media} />
+			<Video {...media} /> */}
 			<Details title='Bio' body={bio} />
+
+			<Details
+				title='Hospital Affiliations'
+				body={affiliations}
+				as='h4'
+				className='__xs'
+			/>
 		</Container>
 	)
 }

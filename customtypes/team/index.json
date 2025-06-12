@@ -43,25 +43,6 @@
 					"multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item,heading3"
 				}
 			},
-
-			"credentials": {
-				"type": "StructuredText",
-				"config": {
-					"label": "Credentials",
-					"placeholder": "List Doctor's Academic and Relevant Credentials",
-					"allowTargetBlank": false,
-					"multi": "list-item"
-				}
-			},
-			"slices": {
-				"type": "Slices",
-				"fieldset": "Slice Zone",
-				"config": {
-					"choices": {}
-				}
-			}
-		},
-		"Info": {
 			"affiliations": {
 				"type": "StructuredText",
 				"config": {
@@ -71,11 +52,11 @@
 					"multi": "list-item"
 				}
 			},
-			"position": {
-				"type": "Text",
+			"slices": {
+				"type": "Slices",
+				"fieldset": "Slice Zone",
 				"config": {
-					"label": "Position",
-					"placeholder": ""
+					"choices": {}
 				}
 			}
 		},

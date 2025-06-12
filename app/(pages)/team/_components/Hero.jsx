@@ -9,17 +9,10 @@ import { cn } from '@/lib/utils'
 import { Contact } from '@/team/Contact'
 import { Controls } from '@/team/Controls'
 
-const Hero = ({
-	name,
-	img,
-	locations,
-	position,
-	priority,
-	children,
-}) => {
+const Hero = ({ name, img, locations, priority, children }) => {
 	return (
 		<>
-			<Section className='__hero' data-theme='dark'>
+			<Section className='__hero'>
 				<Container
 					as='div'
 					gap='none'
@@ -31,28 +24,18 @@ const Hero = ({
 					{/* 7 Cols */}
 					<article className='md:col-span-8 lg:col-span-7 md:px-4 xl:px-8'>
 						<div className='__xs flex flex-col gap-2 lg:pt-fluid lg:h-[280px]'>
-							{/* Name / Department */}
-							<div className={spaceY.md}>
-								{/* Label */}
-								<Title
-									as='h6'
-									title='Meet the Doctor'
-									className='__label text-slate'
-								/>
-
-								{/* Name */}
-								<Lead
-									title={name}
-									subtitle={position}
-									layout='stack'
-									gap={0}
-									className={{
-										title: 'text-stone-50',
-										subtitle: '__label text-stone-50',
-									}}
-									as={{ title: 'h1', subtitle: 'h6' }}
-								/>
-							</div>
+							{/* Name */}
+							<Lead
+								title={name}
+								subtitle='Meet the Doctor'
+								layout='reverse'
+								gap='xl'
+								className={{
+									title: 'text-indigo-50',
+									subtitle: '__label text-blue-300',
+								}}
+								as={{ title: 'h1', subtitle: 'h6' }}
+							/>
 
 							{/* Titles */}
 							<Contact locations={locations} />
@@ -70,8 +53,8 @@ const Hero = ({
 				{/* Backdrop -- Large screen */}
 				<Backdrop
 					layer
-					color='indigo'
-					className='h-[545px] rounded-t-4xl overflow-hidden'
+					color='indigo 900'
+					className='h-[545px] overflow-hidden'
 				/>
 			</Section>
 		</>
