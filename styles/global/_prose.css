@@ -178,7 +178,7 @@ li {
 		}
 	}
 
-	&:not([class*='columns-']) ul {
+	&:not([class*='columns-']):not([role='nav']) ul {
 		@apply flex
 			flex-col
 			gap-1.5
@@ -205,13 +205,13 @@ li {
 
 [role='nav'] {
 	> ul {
-		@apply !gap-0;
 	}
 
 	a {
 		@apply relative
-			py-2
+			py-1.5
 			flex
+			gap-4
 			items-center
 			justify-between
 			text-indigo-600
@@ -220,6 +220,7 @@ li {
 		&:after {
 			content: '';
 			@apply relative
+				shrink-0
 				block
 				size-7
 				border
@@ -231,11 +232,12 @@ li {
 
 			background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 40 40' stroke-width='1.5' stroke='hsl(214, 67%, 34%)'><path stroke-linecap='round' stroke-linejoin='round' d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path></svg>");
 			background-repeat: no-repeat;
-			background-position: 5px 5px;
+			background-position: 6px 6px;
+			background-size: 22px 22px;
 		}
 
 		&:hover:after {
-			background-position: 7.5px 2.5px;
+			background-position: 8.5px 3.5px;
 		}
 	}
 

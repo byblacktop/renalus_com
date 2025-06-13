@@ -166,7 +166,7 @@ h3,
 
 h4,
 .h4 {
-	@apply leading-tight
+	@apply leading-snug
 		fs-xl;
 
 	&.__2xs,
@@ -316,8 +316,23 @@ li {
 
 .__label {
 	@apply uppercase
-		tracking-widest
-		font-medium;
+		tracking-md
+		font-normal
+		inline-flex
+		items-center
+		gap-2;
+}
+
+.__brief {
+	&:before {
+		@apply content-['']
+		relative
+		block
+		w-7
+		h-0.5
+		bg-red
+		-top-[0.1em];
+	}
 }
 
 /* /////// Buttons and links */

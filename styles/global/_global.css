@@ -64,6 +64,12 @@ body {
 	--fg-h: var(--color-indigo-100);
 }
 
+.__light,
+[data-theme='light'] {
+	--fg: var(--color-slate);
+	--fg-h: var(--color-indigo);
+}
+
 /** Layout and baseline */
 div,
 main,

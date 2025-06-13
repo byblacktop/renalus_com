@@ -12,18 +12,21 @@ import { Controls } from '@/team/Controls'
 const Hero = ({ name, img, locations, priority, children }) => {
 	return (
 		<>
-			<Section className='__hero'>
+			<Section className='__hero' data-theme='dark'>
 				<Container
 					as='div'
 					gap='none'
-					className='md:grid-cols-12 max-lg:gap-x-4 max-lg:gap-y-10 overflow-clip'
+					className={cn(
+						'md:grid-cols-12 overflow-clip',
+						'max-lg:gap-x-4 max-lg:gap-y-10',
+					)}
 				>
 					{/* 4 Cols Image */}
 					<Avatar img={img} />
 
 					{/* 7 Cols */}
-					<article className='md:col-span-8 lg:col-span-7 md:px-4 xl:px-8'>
-						<div className='__xs flex flex-col gap-2 lg:pt-fluid lg:h-[280px]'>
+					<div className='md:col-span-8 lg:col-span-7 md:px-4 xl:px-8'>
+						<div className='__xs flex flex-col gap-2 lg:pt-fluid lg:h-[330px]'>
 							{/* Name */}
 							<Lead
 								title={name}
@@ -42,7 +45,7 @@ const Hero = ({ name, img, locations, priority, children }) => {
 						</div>
 
 						{children}
-					</article>
+					</div>
 
 					{/* 1 Col */}
 					<Suspense>
@@ -82,7 +85,7 @@ const Avatar = ({ img }) => (
 			/>
 
 			<Button
-				link={{ href: '/about#our-doctors', text: 'Back to Team' }}
+				link={{ href: '/team', text: 'Back to Team' }}
 				variant='flat'
 				size='sm'
 				className='__label'

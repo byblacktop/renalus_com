@@ -23,24 +23,21 @@ const CollectionFeatured = ({
 				/>
 
 				<Grid as='div' cols={13} className='items-center'>
-					<Grid
-						cols={1}
-						gap={0}
-						pack={true}
+					<dl
 						className={cn(
-							'relative z-1 items-start',
-							'bg-slate-100',
+							'relative z-1 rounded-xl',
 							'col-span-5 md:-mr-36',
-							'rounded-xl px-6 lg:px-8',
+							'px-6 lg:px-8',
+							'bg-slate-100',
 							'divide-y divide-slate-300',
 						)}
 					>
 						{items.map(item => (
 							<Item key={kn(item)} item={item} />
 						))}
-					</Grid>
+					</dl>
 
-					<div className='relative aspect-1 col-span-8'>
+					<div className='relative aspect-11/12 col-span-8'>
 						<CoverImage
 							img={img}
 							className='rounded-xl overflow-hidden'
@@ -54,10 +51,14 @@ const CollectionFeatured = ({
 
 const Item = ({ item }) => {
 	return (
-		<Flex as='dd' className='py-6 lg:py-8 text-indigo-900'>
-			<Title title={item.title} className='flex-1 __2xs' />
+		<Flex as='dd' align='start' className='py-6 lg:py-8'>
+			<Title
+				title={item.title}
+				// as='h5'
+				className='flex-4 __xs'
+			/>
 
-			<Body body={item.body} className='flex-2 __sm' role='nav' />
+			<Body body={item.body} className='flex-7 __sm' role='nav' />
 		</Flex>
 	)
 }

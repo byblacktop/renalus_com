@@ -3,6 +3,7 @@ import { QueueListIcon } from '@heroicons/react/24/outline'
 
 import { LinkArrow } from '@/components/UI'
 import { getFilteredDocs } from '@/lib/api'
+import { cn } from '@/lib/utils'
 
 const getTeamNav = async curr => {
 	const getNext = getFilteredDocs('team', {
@@ -75,7 +76,7 @@ const Controls = async ({ priority }) => {
 					/>
 				</Trigger>
 
-				<Trigger href='/about#our-doctors' className='lg:-order-1'>
+				<Trigger href='/team' className='lg:-order-1'>
 					<figure className='p-4'>
 						<QueueListIcon className='w-6 h-6 ' />
 					</figure>
@@ -100,7 +101,11 @@ const Trigger = ({ href, className, children }) =>
 		<dd className={className}>
 			<Link
 				href={href}
-				className='block group  rounded-full overflow-hidden duration-500 ease-out-smooth text-slate-100 bg-indigo-900 hover:bg-indigo-950'
+				className={cn(
+					'block group rounded-full overflow-hidden',
+					'text-slate-100 bg-indigo-800 hover:bg-indigo-700',
+					'duration-500 ease-out-smooth',
+				)}
 			>
 				{children}
 			</Link>

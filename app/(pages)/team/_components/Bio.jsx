@@ -6,28 +6,14 @@ import { invalidContent } from '@/lib/helpers'
 
 const Bio = ({ bio, affiliations }) => {
 	return (
-		<Container gap='prose' className='px-0'>
-			{/* <Details
-				title='Industry Start'
-				body={start}
-				as='h4'
-				className='__xs'
-			/>
-			<Details
-				title='Education'
-				body={education}
-				as='h4'
-				className='__xs'
-			/>
-
-			<Video {...media} /> */}
+		<Container gap='prose' className='px-0' data-theme='light'>
 			<Details title='Bio' body={bio} />
 
 			<Details
 				title='Hospital Affiliations'
 				body={affiliations}
 				as='h4'
-				className='__xs'
+				className='__2xs'
 			/>
 		</Container>
 	)
@@ -38,7 +24,7 @@ const Details = ({ title, body, ...props }) => {
 
 	return (
 		<Flex layout='stack' gap='xs'>
-			<h6 className='__label __sm'>{title}</h6>
+			<h6 className='__label __brief text-blue'>{title}</h6>
 			<Title title={body} {...props} />
 		</Flex>
 	)

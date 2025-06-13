@@ -8,6 +8,7 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 	<ContentSplitProse
 		{...contentProps}
 		color='indigo' // TODO: Refactor more appropriately... forcing indigo to trigger dark theme for inner content
+		group='Body'
 		align='end'
 		accent={true}
 		linkPosition='after'
