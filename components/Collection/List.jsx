@@ -67,7 +67,7 @@ const CollectionList = ({
 							subtitleAs='h4'
 							subtitleProps={cn(
 								getTheme(color).isDark
-									? 'text-green-600'
+									? 'text-indigo-600'
 									: 'text-indigo-200',
 							)}
 							titleProps='__xs'
@@ -92,9 +92,11 @@ const CollectionList = ({
 
 						<Body
 							body={item.list}
+							role='list'
 							className={cn(
+								'__lsit',
 								variants({ listCols: item.cols }),
-								gap.sm,
+								gap.base,
 							)}
 						/>
 					</dd>

@@ -42,12 +42,10 @@ const getProse = ({ title, subtitle, body, group }) => {
 	]
 }
 
-const getGrowClass = ({ body, group }) => {
-	console.log({ body, group })
-
+const getGrowClass = ({ body, group, accent }) => {
 	if (invalidContent(body)) return ['grow-6', 'grow-4']
 
-	const grow = body.length > 1 || group === 'Body'
+	const grow = body.length > 1 || (group === 'Body' && !accent)
 
 	if (group === 'Title')
 		return grow ? ['grow-6', 'grow-4'] : ['grow-4', 'grow-6']
@@ -68,13 +66,13 @@ const ProseSplit = ({
 	...contentProps
 }) => {
 	const subtitleClass = cn(
-		// '__label __brief __xs',
+		'__label __brief __xs',
 		getTheme(color).accent ??
-			(getTheme(color).isDark ? 'text-indigo-100' : ''),
+			(getTheme(color).isDark ? 'text-blue-300' : 'text-blue-800'),
 		cp(className, 'subtitle'),
 	)
 
-	const growClass = getGrowClass({ ...contentProps, group })
+	const growClass = getGrowClass({ ...contentProps, group, accent })
 
 	const [lead, body] = getProse({ ...contentProps, group })
 
@@ -101,7 +99,12 @@ const ProseSplit = ({
 						cp(className, 'lead'),
 					),
 					title: cp(className, 'title'),
-					subtitle: group === 'Body' ? subtitleClass : null,
+					subtitle:
+						group === 'Body'
+							? subtitleClass
+							: group === 'Title'
+								? '__sm'
+								: null,
 				}}
 			>
 				<ButtonGroup
@@ -130,7 +133,7 @@ const ProseSplit = ({
 							group === 'Title' &&
 							'place-self-end',
 					),
-					subtitle: cp(className, 'body'),
+					subtitle: cn('__sm', cp(className, 'body')),
 				}}
 			>
 				{accent && (

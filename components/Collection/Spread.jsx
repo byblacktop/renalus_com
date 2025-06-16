@@ -42,15 +42,7 @@ const CollectionSpread = ({
 			{...dataset}
 		>
 			<Container>
-				<ProseSplit
-					align='end'
-					className={{
-						subtitle: getTheme(color).isDark
-							? 'text-blue-300'
-							: 'text-blue-800',
-					}}
-					{...contentProps}
-				/>
+				<ProseSplit color={color} align='end' {...contentProps} />
 			</Container>
 			<div
 				ref={scrollRef}
@@ -140,6 +132,7 @@ const Card = ({ img, bounds, title, body, link }) => {
 					'p-6 md:p-8 xl:p-10',
 					'overflow-hidden rounded-3xl',
 					'snap-start scroll-ml-[var(--scroll-padding)]',
+					'bg-slate-300',
 				)}
 			>
 				<figcaption className='relative z-1 space-y-2 md:space-y-4'>
@@ -155,7 +148,7 @@ const Card = ({ img, bounds, title, body, link }) => {
 					img={img}
 					className={{
 						cover: 'z-0',
-						img: 'grayscale-0 group-hover:grayscale-80 transition-zincscale',
+						img: 'grayscale-0 group-hover:grayscale-80',
 					}}
 				>
 					<div className='absolute z-10 bottom-4 right-4'>
@@ -168,15 +161,20 @@ const Card = ({ img, bounds, title, body, link }) => {
 					</div>
 					<Overlay
 						direction='t'
-						gradient='rich'
+						gradient='indigo'
 						blend='multiply'
 						className='from-35% to-80%'
 					/>
 					<Overlay
 						direction='t'
-						gradient='rich'
+						gradient='indigo'
 						blend='multiply'
 						className='opacity-0 group-hover:opacity-100 transition-opacity'
+					/>
+					<Overlay
+						color='sky'
+						blend='color'
+						className='opacity-0 group-hover:opacity-30 transition-opacity'
 					/>
 				</CoverImage>
 			</article>

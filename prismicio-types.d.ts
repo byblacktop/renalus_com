@@ -2471,6 +2471,16 @@ export type ContentSliceBanner = prismic.SharedSliceVariation<"banner", Simplify
  */
 export interface ContentSliceStatementPrimary {
 	/**
+	 * Image field in *Content → Statement → Primary*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: content.statement.primary.img
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	img: prismic.ImageField<"lg" | "md" | "sm" | "blur">;
+	
+	/**
 	 * Label field in *Content → Statement → Primary*
 	 *
 	 * - **Field Type**: Title
@@ -2512,14 +2522,26 @@ export interface ContentSliceStatementPrimary {
 	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
-	 * Image field in *Content → Statement → Primary*
+	 * Close Accent field in *Content → Statement → Primary*
 	 *
-	 * - **Field Type**: Image
+	 * - **Field Type**: Boolean
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: content.statement.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Default Value**: true
+	 * - **API ID Path**: content.statement.primary.close
+	 * - **Documentation**: https://prismic.io/docs/field#boolean
 	 */
-	img: prismic.ImageField<"lg" | "md" | "sm" | "blur">;
+	close: prismic.BooleanField;
+	
+	/**
+	 * Transition Color field in *Content → Statement → Primary*
+	 *
+	 * - **Field Type**: Boolean
+	 * - **Placeholder**: *None*
+	 * - **Default Value**: true
+	 * - **API ID Path**: content.statement.primary.transition
+	 * - **Documentation**: https://prismic.io/docs/field#boolean
+	 */
+	transition: prismic.BooleanField;
 	
 	/**
 	 * Links field in *Content → Statement → Primary*

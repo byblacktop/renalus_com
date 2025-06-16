@@ -32,7 +32,7 @@ const ContentThread = ({ color, flow, className, children }) => (
 	>
 		<Container
 			className={cn(
-				!flow && 'max-w-4xl',
+				flow ? '' : 'max-w-4xl',
 				cp(className, 'thread', true),
 			)}
 		>

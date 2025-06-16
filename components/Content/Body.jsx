@@ -57,7 +57,9 @@ const Body = ({
 
 	return (
 		<Shell
-			as={wrap || className || body.length > 1 ? 'div' : false}
+			as={
+				wrap || flow || className || body.length > 1 ? 'div' : false
+			}
 			className={classeNames}
 			{...props}
 		>

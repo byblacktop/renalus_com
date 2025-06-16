@@ -500,6 +500,38 @@
       "version": "initial",
       "description": "Content",
       "primary": {
+        "img": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 1480,
+              "height": 1200
+            },
+            "thumbnails": [
+              {
+                "name": "lg",
+                "width": 1110,
+                "height": 900
+              },
+              {
+                "name": "md",
+                "width": 740,
+                "height": 600
+              },
+              {
+                "name": "sm",
+                "width": 370,
+                "height": 300
+              },
+              {
+                "name": "blur",
+                "width": 16,
+                "height": 16
+              }
+            ]
+          }
+        },
         "subtitle": {
           "type": "StructuredText",
           "config": {
@@ -551,36 +583,22 @@
             "default_value": "None"
           }
         },
-        "img": {
-          "type": "Image",
+        "close": {
+          "type": "Boolean",
           "config": {
-            "label": "Image",
-            "constraint": {
-              "width": 1480,
-              "height": 1200
-            },
-            "thumbnails": [
-              {
-                "name": "lg",
-                "width": 1110,
-                "height": 900
-              },
-              {
-                "name": "md",
-                "width": 740,
-                "height": 600
-              },
-              {
-                "name": "sm",
-                "width": 370,
-                "height": 300
-              },
-              {
-                "name": "blur",
-                "width": 16,
-                "height": 16
-              }
-            ]
+            "label": "Close Accent",
+            "placeholder_false": "No",
+            "placeholder_true": "Yes",
+            "default_value": true
+          }
+        },
+        "transition": {
+          "type": "Boolean",
+          "config": {
+            "label": "Transition Color",
+            "placeholder_false": "No",
+            "placeholder_true": "Yes",
+            "default_value": true
           }
         },
         "links": {

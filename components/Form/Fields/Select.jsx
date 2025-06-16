@@ -110,7 +110,8 @@ const SelectInput = ({
 						className={cn(
 							'absolute left-0 max-h-60',
 							'h6 bg-white rounded-lg overflow-y-auto',
-							'shadow-lg shadow-slate-800/5',
+							'shadow-lg shadow-slate/20',
+							'focus:outline-none focus-visible:outline-none focus-within:outline-none',
 						)}
 					>
 						{options.map((option, i) => (
@@ -152,20 +153,22 @@ const Selected = ({ selected, placeholder, required }) => {
 
 const OptionItem = ({ option }) => (
 	<ListboxOption
-		className={({ selected, active }) =>
+		className={({ selected }) =>
 			cn(
-				'py-2 md:py-2.5 xl:py-3',
-				'px-4 md:px-6 xl:px-7',
+				'relative',
+				'py-2.5 md:py-3 xl:py-4',
+				'px-6 md:px-8 xl:px-10',
 				'whitespace-nowrap cursor-pointer',
 				'border-b border-slate-800/10 last-of-type:border-none',
 				'bg-transparent hover:bg-green/10',
-				active ? 'text-slate-900 bg-slate-50/30' : 'text-zinc-700',
+				'text-zinc-700',
+				'data-active:text-slate-900 data-active:bg-zinc-50',
 				selected && 'bg-slate-50/50',
 			)
 		}
 		value={option}
 	>
-		{({ selected, active }) => (
+		{({ selected }) => (
 			<>
 				<span
 					className={cn('block truncate', selected && 'font-medium')}

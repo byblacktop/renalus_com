@@ -170,7 +170,8 @@ li {
 	&[class*='columns-'] ul {
 		li {
 			@apply my-1
-				xl:my-2;
+				xl:my-2
+				break-inside-avoid;
 
 			&:first-child {
 				@apply mt-0;
@@ -199,6 +200,25 @@ li {
 					top-0
 					left-0;
 			}
+		}
+	}
+}
+
+[role='list'] {
+	li {
+		@apply relative
+		pl-7;
+
+		&:before {
+			@apply content-['']
+			w-2.5
+			h-3
+			absolute
+			top-[0.4em]
+			left-0
+			block;
+
+			background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 300 350' fill='hsl(201, 42%, 47%)' xmlns='http://www.w3.org/2000/svg'><path d='M150 5.11331e-06C193.929 63.0481 244.158 121.684 300 175.049C244.158 228.292 193.929 286.976 150 350C106.071 286.976 55.8425 228.292 0 175.049C55.8425 121.684 106.071 63.0481 150 5.11331e-06Z' /></svg>");
 		}
 	}
 }
