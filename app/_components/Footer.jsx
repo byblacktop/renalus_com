@@ -54,7 +54,7 @@ const Brand = () => (
 
 		{/* Brand Statement */}
 		<p className='__sm'>
-			Human-centered kidney care across Northwest Florida and
+			Patient-centered kidney care across Northwest Florida and
 			Southeast Alabama.
 		</p>
 	</div>

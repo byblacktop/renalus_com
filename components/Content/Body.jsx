@@ -9,7 +9,7 @@ import { cn, cp } from '@/lib/utils'
 const variants = cva('__body', {
 	variants: {
 		flow: {
-			true: 'sm:columns-2 sm:gap-12 lg:gap-16 2xl:gap-24',
+			true: 'sm:columns-2 sm:gap-12 lg:gap-16 2xl:gap-20',
 		},
 
 		offset: {

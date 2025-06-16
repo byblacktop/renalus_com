@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { useAtomValue } from 'jotai'
+import { useLenis } from 'lenis/react'
 
 import { Logo } from '@/components/Media'
 import { NavItems } from '@/components/Nav/NavItems'
@@ -12,7 +13,6 @@ import {
 	useViewport,
 } from '@/lib/hooks/useScreen'
 import { throttle } from '@/lib/helpers'
-import { useLenis } from '@/lib/lenis'
 import { NAV } from '@/lib/sitemap'
 import { bannerOpen, navOpen } from '@/lib/store'
 import { cn } from '@/lib/utils'

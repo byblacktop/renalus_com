@@ -88,7 +88,8 @@ const Img = forwardRef(
 		if (escape) return
 
 		return (
-			<Image
+			<Shell
+				as={Image}
 				fill
 				alt=''
 				ref={ref}

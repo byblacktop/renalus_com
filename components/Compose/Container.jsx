@@ -53,15 +53,15 @@ const variants = cva('__container', {
 			'2xl': 'max-w-(--breakpoint-5xl)',
 		},
 
-		cols: cols,
+		cols,
 
-		gap: gap,
+		gap,
 	},
 
 	compoundVariants: [
 		{
 			layout: undefined,
-			cols: Object.keys(cols),
+			cols: Object.keys(cols).map(k => Number(k)),
 			className: 'grid',
 		},
 		{

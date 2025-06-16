@@ -2,12 +2,12 @@
 
 import { useId, useRef } from 'react'
 import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 import {
 	animateBtns,
 	animateLines,
 	animateWords,
-	GS,
 	revealImgs,
 	useSelector,
 } from '@/lib/animations'
@@ -35,7 +35,7 @@ const Section = ({ animate = false, ...props }) => {
 
 		//// Parent timeline
 		//
-		__TL.current = GS.timeline({ id: uid, paused: true })
+		__TL.current = gsap.timeline({ id: uid, paused: true })
 
 		//// Child timelines
 		//

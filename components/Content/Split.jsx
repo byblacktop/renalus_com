@@ -27,12 +27,11 @@ const ContentSplit = ({
 			>
 				<Title title={title} className='col-span-3 ' />
 
-				<Title title={subtitle} className='__xs max-lg:col-span-3' />
-				<Body
-					body={body}
-					className='max-lg:col-span-3 col-span-2'
-					flow={flow}
+				<Title
+					title={subtitle}
+					className='__label __brief __sm max-lg:col-span-3'
 				/>
+				<Body body={body} className='max-lg:col-span-3 col-span-2' />
 			</div>
 
 			<div className='col-span-5 max-md:hidden'>

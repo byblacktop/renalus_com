@@ -24,7 +24,7 @@ const Details = ({ title, body, ...props }) => {
 
 	return (
 		<Flex layout='stack' gap='xs'>
-			<h6 className='__label __brief text-blue'>{title}</h6>
+			<h6 className='__label __brief text-indigo'>{title}</h6>
 			<Title title={body} {...props} />
 		</Flex>
 	)

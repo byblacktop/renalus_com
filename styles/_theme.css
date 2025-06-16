@@ -203,13 +203,6 @@
 	--radius-11xl: clamp(14rem, 16vw, 20rem); /* 20 —— 256-364px */
 	--radius-12xl: clamp(16rem, 18vw, 24rem); /* 24 —— 364-512px */
 
-	/* Flex Grow */
-	--flex-grow-2: 2;
-	--flex-grow-3: 3;
-	--flex-grow-4: 4;
-	--flex-grow-5: 5;
-	--flex-grow-6: 6;
-
 	/* Z-Index */
 	--z-index-1: 1;
 	--z-index-2: 2;

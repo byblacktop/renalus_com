@@ -2,10 +2,11 @@
 
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 import { Prose } from '@/components/Content'
 import { AspectImage, CoverImage } from '@/components/Media'
-import { GS, useArrayRef } from '@/lib/animations'
+import { useArrayRef } from '@/lib/animations'
 import { invalidRef, invalidRefArrData } from '@/lib/helpers'
 import { tw } from '@/lib/tw'
 import { cn, kn } from '@/lib/utils'
@@ -26,15 +27,16 @@ const Panels = ({ items, children }) => {
 
 			//// Intro
 			//
-			GS.timeline({
-				scrollTrigger: {
-					scrub: 0.75,
-					ease: 'smoothOut',
-					trigger: panels.current[0],
-					start: 'top 125%',
-					end: 'top 66%',
-				},
-			})
+			gsap
+				.timeline({
+					scrollTrigger: {
+						scrub: 0.75,
+						ease: 'smoothOut',
+						trigger: panels.current[0],
+						start: 'top 125%',
+						end: 'top 66%',
+					},
+				})
 				.fromTo(
 					imgs.current[0].parentElement,
 					{ scale: 1 / 1.2 },
@@ -45,11 +47,11 @@ const Panels = ({ items, children }) => {
 			//// More sections
 			//
 			imgs.current?.slice(1).map(img => {
-				GS.set(img, { autoAlpha: 0, scale: 1.2 })
+				gsap.set(img, { autoAlpha: 0, scale: 1.2 })
 			})
 
 			panels.current?.slice(1).map((panel, idx) => {
-				GS.fromTo(
+				gsap.fromTo(
 					panel,
 					{
 						autoAlpha: 0,
@@ -65,7 +67,7 @@ const Panels = ({ items, children }) => {
 							start: 'top 80%',
 							end: 'bottom 80%',
 							onEnter: () => {
-								GS.to(imgs.current[idx + 1], {
+								gsap.to(imgs.current[idx + 1], {
 									autoAlpha: 1,
 									scale: 1,
 									duration: 1,
@@ -73,7 +75,7 @@ const Panels = ({ items, children }) => {
 								})
 							},
 							onLeaveBack: () => {
-								GS.to(imgs.current[idx + 1], {
+								gsap.to(imgs.current[idx + 1], {
 									autoAlpha: 0,
 									scale: 1.2,
 									duration: 1,
@@ -100,11 +102,10 @@ const Panels = ({ items, children }) => {
 					'relative z-2',
 					'bg-white',
 					'mt-[33vh]',
-					'rounded-2xl px-fluid',
+					'rounded-2xl p-fluid-y',
 					tw.spaceY['3xl'],
 				)}
 			>
-				<h5 className='text-slate-300'>Services</h5>
 				<dl
 					className={cn(
 						'max-w-2xl mx-auto',
@@ -125,15 +126,7 @@ const Panel = ({ title, subtitle, body, setPanel }) => (
 		ref={setPanel}
 		className={cn('py-12 sm:py-16 xl:py-24 last:pb-0 first:pt-0')}
 	>
-		<Prose
-			gap='md'
-			title={title}
-			subtitle={subtitle}
-			body={body}
-			className={{
-				body: '__lg text-indigo-200',
-			}}
-		/>
+		<Prose gap='md' title={title} subtitle={subtitle} body={body} />
 	</dd>
 )
 
@@ -142,8 +135,8 @@ const PanelImages = ({ items, setImgs }) => {
 		<AspectImage
 			ref={setImgs}
 			img={items[0].img}
-			w={12}
-			h={16}
+			w={1}
+			h={1}
 			className={{
 				figure:
 					'sticky top-8 mb-64 w-[130%] rounded-2xl overflow-hidden',

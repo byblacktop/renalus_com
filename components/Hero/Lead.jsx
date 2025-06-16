@@ -43,6 +43,7 @@ const HeroLead = ({
 				section: className,
 				lead: 'text-balance',
 				title: 'd2',
+				body: '__sm max-w-lg',
 			}}
 			{...contentProps}
 		>

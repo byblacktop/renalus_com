@@ -5,10 +5,12 @@ import {
 	CollectionFeatured,
 	CollectionGallery,
 	CollectionList,
+	CollectionPanels,
 	CollectionPopovers,
 	CollectionPreviews,
 	CollectionProse,
 	CollectionSpread,
+	CollectionStack,
 	CollectionToggles,
 } from '@/components/Collection'
 import { Shell } from '@/components/Compose'
@@ -23,10 +25,12 @@ const layouts = {
 	columns: CollectionColumns,
 	toggles: CollectionToggles,
 	gallery: CollectionGallery,
-	spread: CollectionSpread,
 	previews: CollectionPreviews,
 	popovers: CollectionPopovers,
 	alpha: CollectionAlpha,
+	spread: CollectionSpread,
+	panels: CollectionPanels,
+	stack: CollectionStack,
 }
 
 const resolver = {

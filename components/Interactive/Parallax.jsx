@@ -2,9 +2,9 @@
 
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 import { useWindowSize } from 'hamo'
 
-import { GS } from '@/lib/animations'
 import { mapRange } from '@/lib/helpers'
 import { cp } from '@/lib/utils'
 
@@ -24,10 +24,10 @@ const Parallax = ({
 		() => {
 			const y = windowWidth * speed * 0.1
 
-			const setY = GS.quickSetter(target.current, 'y', 'px')
-			const set3D = GS.quickSetter(target.current, 'force3D')
+			const setY = gsap.quickSetter(target.current, 'y', 'px')
+			const set3D = gsap.quickSetter(target.current, 'force3D')
 
-			GS.timeline({
+			gsap.timeline({
 				scrollTrigger: {
 					id,
 					scrub: true,

@@ -75,7 +75,7 @@ const SubNavLocations = () => {
 	if (invalidArrObjectData(locations)) return null
 
 	return (
-		<dl className='columns-3 pb-2'>
+		<dl className='columns-3 gap-0 pb-2'>
 			{locations.map(location => (
 				<LocationCard
 					key={kn(location)}

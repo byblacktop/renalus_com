@@ -18,7 +18,9 @@ const CollectionCards = ({
 				<Spacer size={3} split={true} />
 				<Prose
 					width='sm'
-					className={{ subtitle: '__label __sm text-indigo-200' }}
+					className={{
+						subtitle: '__label __brief __sm text-indigo-100',
+					}}
 					{...contentProps}
 				/>
 			</Container>

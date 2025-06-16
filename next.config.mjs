@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 import vercelToolbar from '@vercel/toolbar/plugins/next'
 
-import { NAV } from './lib/static.mjs'
-
 const withVercelToolbar = vercelToolbar()
 
 const nextConfig = {
@@ -57,58 +55,6 @@ const nextConfig = {
 		fileLoaderRule.exclude = /\.svg$/i
 
 		return config
-	},
-
-	//// Redirects
-	async redirects() {
-		if (process.env.NODE_ENV === 'development') return []
-
-		return [
-			...NAV.primary
-				.map(({ href, subnav }) => {
-					const page = {
-						source: href,
-						destination: '/',
-						permanent: false,
-					}
-
-					const subpages =
-						subnav?.links
-							?.map(({ href }) => {
-								if (!href || !href.startsWith('/')) return null
-
-								return {
-									source: href,
-									destination: '/',
-									permanent: false,
-								}
-							})
-							.filter(Boolean) || []
-
-					return [page, ...subpages]
-				})
-				.flat(),
-			{
-				source: '/contact',
-				destination: '/',
-				permanent: false,
-			},
-			{
-				source: '/location/:uid',
-				destination: '/',
-				permanent: false,
-			},
-			{
-				source: '/team/:uid',
-				destination: '/',
-				permanent: false,
-			},
-			{
-				source: '/article/:uid',
-				destination: '/',
-				permanent: false,
-			},
-		]
 	},
 }
 

@@ -1,4 +1,5 @@
-import { Banner } from '@/components/Banner'
+import { ReactTempus } from 'tempus/react'
+
 import { Footer } from '@/components/Footer'
 import { GSAP } from '@/components/Interactive'
 import { Header } from '@/components/Nav/Header'
@@ -9,8 +10,11 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<Providers>
-				{/* Header */}
+				{/* Animations */}
+				<GSAP />
+				<ReactTempus patch />
 
+				{/* Header */}
 				<Header />
 
 				{/* Main Page Content */}
@@ -21,7 +25,7 @@ export default function Layout({ children }) {
 			</Providers>
 
 			{/* GSAP */}
-			<GSAP scrollTrigger={true} markers={false} />
+			{/* <GSAP scrollTrigger={true} markers={false} /> */}
 
 			{/* Lenis Smooth Scroll */}
 			<Lenis

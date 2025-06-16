@@ -1,10 +1,10 @@
 import { Suspense } from 'react'
 
 import { Container, Section } from '@/components/Compose'
-import { Lead, Title } from '@/components/Content'
+import { Lead } from '@/components/Content'
 import { AspectImage } from '@/components/Media'
 import { Backdrop, Button } from '@/components/UI'
-import { gap, spaceY } from '@/lib/tw'
+import { gap } from '@/lib/tw'
 import { cn } from '@/lib/utils'
 import { Contact } from '@/team/Contact'
 import { Controls } from '@/team/Controls'

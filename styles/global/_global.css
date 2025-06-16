@@ -2,8 +2,8 @@
 	font-size: 16px;
 
 	/* Colors */
-	--bg: var(--color-zinc-100);
-	--fg: var(--color-slate);
+	--bg: var(--color-zinc-50);
+	--fg: var(--color-indigo-900);
 	--fg-h: var(--color-indigo);
 	--accent: var(--color-red);
 
@@ -66,7 +66,7 @@ body {
 
 .__light,
 [data-theme='light'] {
-	--fg: var(--color-slate);
+	--fg: var(--color-indigo-900);
 	--fg-h: var(--color-indigo);
 }
 

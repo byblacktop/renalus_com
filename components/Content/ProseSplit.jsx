@@ -36,8 +36,8 @@ const getProse = ({ title, subtitle, body, group }) => {
 			title,
 		},
 		{
-			subtitle: body,
 			title: subtitle,
+			subtitle: body,
 		},
 	]
 }
@@ -58,9 +58,9 @@ const ProseSplit = ({
 	...contentProps
 }) => {
 	const subtitleClass = cn(
-		'__label',
+		'__label __brief __xs',
 		getTheme(color).accent ??
-			(getTheme(color).isDark ? 'text-blue-300' : 'text-indigo'),
+			(getTheme(color).isDark ? 'text-indigo-100' : ''),
 		cp(className, 'subtitle'),
 	)
 
@@ -79,22 +79,12 @@ const ProseSplit = ({
 			)}
 		>
 			<Lead
-				// title={title}
-				// subtitle={
-				// 	group === 'Title'
-				// 		? body
-				// 		: group === 'Body'
-				// 			? subtitle
-				// 			: null
-				// }
-				// prose={group === 'Title'}
-				// layout={group === 'Body' ? 'reverse' : 'stack'}
 				{...lead}
 				gap='sm'
 				as={{ ...as, subtitle: as?.body }}
 				className={{
 					lead: cn(
-						'flex-1 grow-6 text-pretty',
+						'flex-1 grow-6 text-balance',
 						cp(className, 'lead'),
 					),
 					title: cp(className, 'title'),
@@ -114,21 +104,20 @@ const ProseSplit = ({
 			</Lead>
 
 			<Lead
-				// title={group !== 'Body' ? contentProps.subtitle : null}
-				// subtitle={group !== 'Title' ? contentProps.body : null}
 				{...body}
 				layout='stack'
 				gap='sm'
 				wrap={true}
 				as={{ title: as?.subtitle, subtitle: as?.body }}
 				className={{
-					lead: cn('flex-1 grow-4 __sm', cp(className, 'body')),
+					lead: cn('flex-1 grow-4'),
 					title: cn(
 						subtitleClass,
 						position === 'Right' &&
 							group === 'Title' &&
 							'place-self-end',
 					),
+					subtitle: cp(className, 'body'),
 				}}
 			>
 				{accent && (

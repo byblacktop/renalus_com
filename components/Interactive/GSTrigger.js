@@ -1,24 +1,21 @@
 'use client'
 
 import { useEffect, useLayoutEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+import { useLenis } from 'lenis/react'
 
-import { __TL_CONFIG, GS, GS_TRIGGER } from '@/lib/animations'
-import { useLenis } from '@/lib/lenis'
+import { __TL_CONFIG } from '@/lib/animations'
 
-const GSScrollTrigger = ({ markers }) => {
+export function GSScrollTrigger({ markers }) {
 	useLayoutEffect(() => {
-		// Globally register ScrollTrigger
-		GS.registerPlugin(GS_TRIGGER)
-
 		// ScrollTrigger custom setup
-		GS_TRIGGER.clearScrollMemory('manual')
-		GS_TRIGGER.defaults({ ...__TL_CONFIG, markers })
-	})
+		ScrollTrigger.clearScrollMemory('manual')
+		ScrollTrigger.defaults({ ...__TL_CONFIG, markers })
+	}, [])
 
-	const lenis = useLenis(GS_TRIGGER?.update)
-	useEffect(() => GS_TRIGGER?.refresh(), [lenis])
+	const lenis = useLenis(ScrollTrigger?.update)
+	useEffect(() => ScrollTrigger?.refresh(), [lenis])
 
 	return null
 }
-
-export { GSScrollTrigger }

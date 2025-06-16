@@ -19,20 +19,20 @@ const FeatureBanner = ({
 			'pt-8 md:pt-16 2xl:pt-24',
 		)}
 		{...dataset}
+		data-theme='dark'
 	>
 		<div
 			className={cn(
 				'absolute inset-0',
 				'bottom-24 md:bottom-40 xl:bottom-60',
-				bgColor(color, 700),
+				bgColor(color),
 			)}
 		/>
 
 		<div
 			className={cn(
 				'relative overflow-hidden',
-				'rounded-l-2xl', // Round Corner
-				'text-white',
+				'rounded-l-5xl', // Round Corner
 			)}
 		>
 			<Container
@@ -56,10 +56,10 @@ const FeatureBanner = ({
 					}}
 					className={{
 						prose: 'col-span-5 col-start-2 text-balance max-w-none',
-						subtitle: 'text-slate-600 __xs',
+						subtitle: '__label __brief __sm',
 						lead: 'max-w-none',
 						title: 'd2',
-						body: '__xl',
+						body: '__sm',
 					}}
 				/>
 

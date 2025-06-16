@@ -3,9 +3,9 @@
 import { useEffect, useRef } from 'react'
 import { Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/20/solid'
+import gsap from 'gsap'
 import { useAtom } from 'jotai'
 
-import { GS } from '@/lib/animations/config'
 import { useBrowserLayout } from '@/lib/hooks/useLayout'
 import { bannerOpen } from '@/lib/store'
 
@@ -21,7 +21,7 @@ const Show = ({ children, initial = false, ...props }) => {
 		const size = show ? 48 : 0
 		const r = document.querySelector(':root')
 
-		GS.to(heightRef, {
+		gsap.to(heightRef, {
 			current: size,
 			duration: 0.5,
 			delay: 0.2,

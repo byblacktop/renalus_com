@@ -327,6 +327,131 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
+		"variation": "feature",
+		"primary": {
+			"img": {
+				"url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsZWdhbHxlbnwwfHx8fDE3MTA3Nzk2MTF8MA&ixlib=rb-4.0.3&q=85&rect=1367%2C0%2C3218%2C3969&w=1200&h=1480",
+				"alt": "book lot on black wooden shelf",
+				"origin": {
+					"id": "zeH-ljawHtg",
+					"url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsZWdhbHxlbnwwfHx8fDE3MTA3Nzk2MTF8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5953,
+					"height": 3969
+				},
+				"width": 1200,
+				"height": 1480,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 1367,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Helping Law Firms Connect With Highly Specialized Experts",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "At Expert Research Group, we specialize in facilitating seamless collaborations between attorneys and top-tier experts, ensuring that every case is fortified with unparalleled expertise. We understand the intricacies of complex legal battles and the paramount importance of precise, informed insights.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading4",
+						"content": {
+							"text": "What We Do",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Slate 200"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"key": "2e244ae5-347d-406d-9dd8-7e598a0bcbf4",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "#",
+								"target": ""
+							}
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Our Industries"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"key": "74d6242d-35f7-43b9-994d-1db001e20e80",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "#",
+								"target": ""
+							}
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Learn More"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
 		"variation": "splitProse",
 		"primary": {
 			"title": {
@@ -358,7 +483,7 @@
 			"color": {
 				"__TYPE__": "FieldContent",
 				"type": "Select",
-				"value": "Green"
+				"value": "Indigo 700"
 			},
 			"subtitle": {
 				"__TYPE__": "StructuredTextContent",
@@ -478,7 +603,7 @@
 			"color": {
 				"__TYPE__": "FieldContent",
 				"type": "Select",
-				"value": "Indigo 800"
+				"value": "Indigo 700"
 			},
 			"accent": {
 				"origin": {
@@ -543,131 +668,6 @@
 							"__TYPE__": "FieldContent",
 							"value": "perhaps",
 							"type": "Text"
-						}
-					]
-				]
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "feature",
-		"primary": {
-			"img": {
-				"url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsZWdhbHxlbnwwfHx8fDE3MTA3Nzk2MTF8MA&ixlib=rb-4.0.3&q=85&rect=1367%2C0%2C3218%2C3969&w=1200&h=1480",
-				"alt": "book lot on black wooden shelf",
-				"origin": {
-					"id": "zeH-ljawHtg",
-					"url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsZWdhbHxlbnwwfHx8fDE3MTA3Nzk2MTF8MA&ixlib=rb-4.0.3&q=85",
-					"width": 5953,
-					"height": 3969
-				},
-				"width": 1200,
-				"height": 1480,
-				"edit": {
-					"background": "transparent",
-					"zoom": 1,
-					"crop": {
-						"x": 1367,
-						"y": 0
-					}
-				},
-				"credits": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Helping Law Firms Connect With Highly Specialized Experts",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "At Expert Research Group, we specialize in facilitating seamless collaborations between attorneys and top-tier experts, ensuring that every case is fortified with unparalleled expertise. We understand the intricacies of complex legal battles and the paramount importance of precise, informed insights.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading4",
-						"content": {
-							"text": "What We Do",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Slate 200"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"link",
-						{
-							"key": "2e244ae5-347d-406d-9dd8-7e598a0bcbf4",
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "ExternalLink",
-								"url": "#",
-								"target": ""
-							}
-						}
-					],
-					[
-						"text",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Our Industries"
-						}
-					]
-				]
-			},
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"link",
-						{
-							"key": "74d6242d-35f7-43b9-994d-1db001e20e80",
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "ExternalLink",
-								"url": "#",
-								"target": ""
-							}
-						}
-					],
-					[
-						"text",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Learn More"
 						}
 					]
 				]

@@ -37,7 +37,9 @@ const CtaSplit = ({ items, dataset, ...contentProps }) => {
 	return (
 		<Section
 			className={cn(
-				'sm:px-fluid pt-5 lg:pt-10',
+				'sm:px-fluid',
+				// 'pt-5 lg:pt-10',
+				'-mt-8 z-999 bg-bg',
 				'rounded-4xl md:rounded-5xl overflow-hidden',
 			)}
 			{...dataset}
@@ -94,7 +96,7 @@ const CtaItem = ({ img, link, color, idx, ...contentProps }) => {
 				{...contentProps}
 			/>
 
-			<div className='aspect-w-16 aspect-h-9' />
+			<div className='aspect-w-16 aspect-h-10' />
 
 			<div
 				className={cn(
@@ -112,7 +114,7 @@ const CtaItem = ({ img, link, color, idx, ...contentProps }) => {
 
 			<div
 				className={cn(
-					'top-[22%] bottom-[20%]',
+					'top-[22%] bottom-[22%]',
 					'z-1',
 					bgColor(color),
 					variants({ img: idx }),
@@ -120,9 +122,9 @@ const CtaItem = ({ img, link, color, idx, ...contentProps }) => {
 			>
 				<CoverImage img={img}>
 					<Overlay
-						gradient='indigo'
+						gradient='dark'
 						direction='b'
-						className='opacity-70'
+						className='via-30% to-60%'
 					/>
 				</CoverImage>
 			</div>

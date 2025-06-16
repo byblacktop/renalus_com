@@ -35,6 +35,7 @@ const SubNav = ({ link, className }) => {
 	return (
 		<Popover
 			className='relative'
+			data-theme='light'
 			onPointerEnter={() => setOpen(true)}
 			onPointerLeave={() => setOpen(false)}
 		>

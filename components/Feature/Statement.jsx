@@ -16,7 +16,7 @@ const FeatureStatement = ({
 			className={cn('pl-8 md:pl-16 xl:pl-24 z-2', bgColor(color))}
 			{...dataset}
 		>
-			<div className='__bg rounded-tl-6 md:rounded-tl-8 xl:rounded-tl-12'>
+			<div className='__bg rounded-tl-4xl md:rounded-tl-6xl xl:rounded-tl-8xl'>
 				<Container
 					layout='grid'
 					gap='xl'
