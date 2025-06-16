@@ -110,7 +110,7 @@
 									"label": "Label",
 									"placeholder": "",
 									"allowTargetBlank": false,
-									"single": "heading6"
+									"single": "heading6,heading5"
 								}
 							},
 							"title": {
@@ -119,7 +119,7 @@
 									"label": "Title",
 									"placeholder": "",
 									"allowTargetBlank": true,
-									"single": "heading5,heading6,heading4"
+									"single": "heading2,heading3,heading4"
 								}
 							},
 							"body": {
@@ -128,7 +128,7 @@
 									"label": "Body",
 									"placeholder": "",
 									"allowTargetBlank": true,
-									"single": "paragraph,strong,em"
+									"multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
 								}
 							},
 							"link": {
@@ -226,20 +226,10 @@
 								"config": {
 									"label": "Image",
 									"constraint": {
-										"width": 400,
-										"height": 600
+										"width": 1200,
+										"height": null
 									},
 									"thumbnails": [
-										{
-											"name": "lg",
-											"width": 600,
-											"height": 800
-										},
-										{
-											"name": "sm",
-											"width": 200,
-											"height": 300
-										},
 										{
 											"name": "blur",
 											"width": 16,
@@ -254,7 +244,7 @@
 									"label": "Label",
 									"placeholder": "",
 									"allowTargetBlank": false,
-									"single": "heading6"
+									"single": "heading6,heading5"
 								}
 							},
 							"title": {
@@ -263,7 +253,7 @@
 									"label": "Title",
 									"placeholder": "",
 									"allowTargetBlank": true,
-									"single": "heading5,heading6,heading4"
+									"single": "heading2,heading3,heading4"
 								}
 							},
 							"body": {
@@ -272,7 +262,7 @@
 									"label": "Body",
 									"placeholder": "",
 									"allowTargetBlank": true,
-									"single": "paragraph,strong,em"
+									"multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
 								}
 							},
 							"link": {

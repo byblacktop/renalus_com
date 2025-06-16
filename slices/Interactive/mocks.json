@@ -13,8 +13,436 @@
 						}
 					}
 				]
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Eu voluptate ipsum eu cillum ad ullamco pariatur anim mollit esse incididunt nisi elit magna."
+											}
+										}
+									]
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Street"
+											}
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading2",
+											"content": {
+												"text": "Swept"
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
 			}
 		},
 		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "panels",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Brave"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Everyone"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ut est aliqua aliqua fugiat cupidatat. Excepteur non ipsum ullamco id elit tempor."
+						}
+					}
+				]
+			},
+			"position": {
+				"__TYPE__": "FieldContent",
+				"value": "Right",
+				"type": "Select"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Indigo 700",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+										"width": 4010,
+										"height": 4010
+									},
+									"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?rect=0%2C0%2C4010%2C4010&w=1200&h=1200",
+									"width": 1200,
+									"height": 1200,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "paid",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"blur": {
+											"origin": {
+												"id": "blur",
+												"url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea",
+												"width": 5000,
+												"height": 4613
+											},
+											"url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?rect=194%2C0%2C4613%2C4613&w=16&h=16",
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 194,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "string",
+											"credits": null
+										}
+									}
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Active"
+											}
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Eaten"
+											}
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Cillum laboris sint quis eiusmod sit dolore ut minim occaecat. Commodo voluptate id in esse exercitation sit ipsum ipsum sint fugiat nulla quis labore. Sit incididunt veniam eiusmod Lorem proident dolor do culpa."
+											}
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "c1cc2921-ca9e-4a19-b605-d4f8311183e0",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev",
+										"text": "younger"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "stack",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Spoken"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Closer"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Enim veniam nisi laboris non nostrud ut enim elit occaecat cillum commodo ea. Adipisicing et consectetur aliquip officia adipisicing amet mollit fugiat excepteur."
+						}
+					}
+				]
+			},
+			"position": {
+				"__TYPE__": "FieldContent",
+				"value": "Right",
+				"type": "Select"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "None",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+										"width": 6597,
+										"height": 4398
+									},
+									"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?rect=1833%2C0%2C2932%2C4398&w=400&h=600",
+									"width": 400,
+									"height": 600,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 1833,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "answer",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"lg": {
+											"origin": {
+												"id": "lg",
+												"url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef",
+												"width": 4000,
+												"height": 6000
+											},
+											"url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?rect=0%2C333%2C4000%2C5333&w=600&h=800",
+											"width": 600,
+											"height": 800,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 333
+												},
+												"background": "transparent"
+											},
+											"alt": "track",
+											"credits": null
+										},
+										"sm": {
+											"origin": {
+												"id": "sm",
+												"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+												"width": 3810,
+												"height": 5715
+											},
+											"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?rect=0%2C0%2C3810%2C5715&w=200&h=300",
+											"width": 200,
+											"height": 300,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "teach",
+											"credits": null
+										},
+										"blur": {
+											"origin": {
+												"id": "blur",
+												"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+												"width": 4480,
+												"height": 4480
+											},
+											"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?rect=0%2C0%2C4480%2C4480&w=16&h=16",
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"alt": "wolf",
+											"credits": null
+										}
+									}
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Broad"
+											}
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Oldest"
+											}
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Consectetur deserunt est occaecat velit ullamco ad amet nisi voluptate. Sint qui qui et dolor consequat ipsum et pariatur do. Duis mollit anim eiusmod ipsum et eu pariatur exercitation ex laboris excepteur cupidatat exercitation excepteur ad."
+											}
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "65dfbb8e-8f14-4d97-a40a-88f5859a6d54",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "also"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
 	}
 ]

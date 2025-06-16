@@ -102,7 +102,8 @@ const Panels = ({ items, children }) => {
 					'relative z-2',
 					'bg-white',
 					'mt-[33vh]',
-					'rounded-2xl p-fluid-y',
+					'p-fluid-y',
+					'rounded-3xl lg:rounded-4xl',
 					tw.spaceY['3xl'],
 				)}
 			>
@@ -121,12 +122,18 @@ const Panels = ({ items, children }) => {
 	)
 }
 
-const Panel = ({ title, subtitle, body, setPanel }) => (
+const Panel = ({ setPanel, ...contentProps }) => (
 	<dd
 		ref={setPanel}
 		className={cn('py-12 sm:py-16 xl:py-24 last:pb-0 first:pt-0')}
 	>
-		<Prose gap='md' title={title} subtitle={subtitle} body={body} />
+		<Prose
+			{...contentProps}
+			gap='base'
+			className={{
+				subtitle: '__label __brief __xs text-indigo-500',
+			}}
+		/>
 	</dd>
 )
 
@@ -135,12 +142,13 @@ const PanelImages = ({ items, setImgs }) => {
 		<AspectImage
 			ref={setImgs}
 			img={items[0].img}
-			w={1}
-			h={1}
+			w={3}
+			h={4}
 			className={{
-				figure:
-					'sticky top-8 mb-64 w-[130%] rounded-2xl overflow-hidden',
-				img: 'rounded-2xl overflow-hidden',
+				figure: cn(
+					'sticky top-8 mb-64 w-[130%] overflow-hidden',
+					'rounded-3xl lg:rounded-4xl',
+				),
 			}}
 		>
 			{items.slice(1).map(({ img }) => (

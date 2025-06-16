@@ -174,7 +174,7 @@ interface LocationDocumentData {
  */
 export type LocationDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<LocationDocumentData>, "location", Lang>;
 
-type PageDocumentDataSlicesSlice = FormIntakeSlice | FeedSlice | ContentSlice | CollectionSlice | CallToActionSlice | HeroSlice
+type PageDocumentDataSlicesSlice = InteractiveSlice | FormIntakeSlice | FeedSlice | ContentSlice | CollectionSlice | CallToActionSlice | HeroSlice
 
 /**
  * Content for Page documents
@@ -3778,7 +3778,7 @@ export interface InteractiveSlicePanelsPrimaryItemsItem {
 	 * - **API ID Path**: interactive.panels.primary.items[].img
 	 * - **Documentation**: https://prismic.io/docs/field#image
 	 */
-	img: prismic.ImageField<"lg" | "sm" | "blur">;
+	img: prismic.ImageField<"blur">;
 	
 	/**
 	 * Label field in *Interactive → Panels → Primary → Items*
