@@ -49,7 +49,10 @@ const HeroSplit = ({
 				gap='sm'
 				className='max-w-2xl max-md:pt-12 max-md:pb-0'
 			>
-				<Title title={subtitle} className={cn(accent, 'w-full')} />
+				<Title
+					title={subtitle}
+					className={cn('__label __brief __xs', accent, 'w-full')}
+				/>
 
 				<Prose
 					{...contentProps}

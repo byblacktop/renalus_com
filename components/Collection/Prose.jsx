@@ -1,6 +1,7 @@
 import { Container, Section } from '@/components/Compose'
 import { Prose } from '@/components/Content'
 import { Grid } from '@/components/UI'
+import { getTheme } from '@/lib/helpers'
 import { cn } from '@/lib/utils'
 
 const CollectionProse = ({
@@ -15,7 +16,14 @@ const CollectionProse = ({
 	text,
 }) => {
 	return (
-		<Section className={cn('overflow-hidden')} {...dataset}>
+		<Section
+			className={cn(
+				'relative z-10 rounded-4xl overflow-hidden',
+				'm-4 md:m-6 mb-0 md:mb-0',
+				getTheme(color).className,
+			)}
+			{...dataset}
+		>
 			<Container
 				layout='grid'
 				cols={2}
@@ -38,7 +46,12 @@ const CollectionProse = ({
 					items={items}
 					bodyProps='__sm'
 					className={{
-						grid: cn('divide-y auto-rows-min', 'divide-indigo/10'),
+						grid: cn(
+							'divide-y auto-rows-min',
+							getTheme(color).isDark
+								? 'divide-slate-300/20'
+								: 'divide-indigo/20',
+						),
 						items: 'py-6 md:py-8 xl:py-12 first:pt-0 last:pb-0',
 					}}
 				/>

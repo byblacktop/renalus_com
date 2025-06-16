@@ -24,7 +24,10 @@ const CollectionToggles = ({ items, ...contentProps }) => {
 		<>
 			<ContentSplitProse
 				{...contentProps}
-				className={{ container: '__xs' }}
+				position='Left'
+				group='Body'
+				align='end'
+				className={{ container: '__sm' }}
 			/>
 			<Section container layout='grid' cols={12} width='sm'>
 				<TogglesNav

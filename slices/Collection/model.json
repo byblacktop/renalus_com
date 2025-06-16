@@ -354,7 +354,7 @@
 									"label": "Title",
 									"placeholder": "",
 									"allowTargetBlank": true,
-									"single": "heading5,heading6"
+									"single": "heading3,heading4,heading5,heading6"
 								}
 							},
 							"body": {
@@ -738,60 +738,6 @@
 									"allowText": true,
 									"repeat": true,
 									"variants": ["Default", "Call to Action"]
-								}
-							}
-						}
-					}
-				}
-			},
-			"items": {},
-			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-		},
-		{
-			"id": "gallery",
-			"name": "Gallery",
-			"docURL": "...",
-			"version": "initial",
-			"description": "Cards",
-			"primary": {
-				"cols": {
-					"type": "Select",
-					"config": {
-						"label": "Columns",
-						"placeholder": "",
-						"options": ["1", "2", "3", "4", "5", "6"]
-					}
-				},
-				"items": {
-					"type": "Group",
-					"config": {
-						"label": "Images",
-						"repeat": true,
-						"fields": {
-							"img": {
-								"type": "Image",
-								"config": {
-									"label": "Image",
-									"constraint": {
-										"width": 1920
-									},
-									"thumbnails": [
-										{
-											"name": "md",
-											"width": 1200,
-											"height": null
-										},
-										{
-											"name": "sm",
-											"width": 480,
-											"height": 480
-										},
-										{
-											"name": "blur",
-											"width": 16,
-											"height": 16
-										}
-									]
 								}
 							}
 						}

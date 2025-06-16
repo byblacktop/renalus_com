@@ -11,10 +11,10 @@ const ToggleIcon = ({ open, color }) => (
 				'md:size-7',
 				'xl:size-8',
 				'flex items-center justify-center rounded-full',
-				'duration-400 bg-slate-100',
-				// 'group-hover:text-white',
-				// colorShift(bgColor(color), -2, 'bg'),
-				// colorShift(bgColor(color), -3, 'group-hover:bg'),
+				'bg-zinc-50',
+				'group-hover:text-white',
+				'group-hover:bg-indigo',
+				'transition rotate-0 group-hover:rotate-180',
 			)}
 		>
 			{/* Icons */}

@@ -601,140 +601,6 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "columns",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Where Skill, Precision, and Compassion Combine",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading5",
-						"content": {
-							"text": "The Renalus Difference",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "There are a lot of surgical specialists out there. They share the same medical degrees, the same knowledge of surgical solutions, and maybe even the same technologies, but what sets us apart is how we utilize our experience, knowledge and drive for improved patient experiences and outcomes. ",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"cols": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "3"
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Indigo"
-			},
-			"items": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"subtitle",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading6",
-											"content": {
-												"text": "Renalus Values",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					}
-				]
-			},
-			"links": {
-				"__TYPE__": "RepeatableContent",
-				"type": "Link",
-				"value": [
-					{
-						"key": "a352b274-cf2f-41f8-a437-9c79244b3216",
-						"__TYPE__": "LinkContent",
-						"value": {
-							"__TYPE__": "ExternalLink",
-							"url": "http://twitter.com",
-							"text": "Learn More"
-						}
-					}
-				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
 		"variation": "gallery",
 		"primary": {
 			"cols": {
@@ -1335,1096 +1201,6 @@
 											"credits": null
 										}
 									}
-								}
-							]
-						]
-					}
-				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "previews",
-		"primary": {
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading5",
-						"content": {
-							"text": "Under"
-						}
-					}
-				]
-			},
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Pride"
-						}
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Lorem mollit sit quis ullamco veniam incididunt laboris et et et voluptate."
-						}
-					}
-				]
-			},
-			"cols": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "1"
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"value": "Slate 100",
-				"type": "Select"
-			},
-			"items": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Fairfield",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"list",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ann Taylor",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Anne Klein",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "BCBGMAXAZRIA",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "BEBE",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Betsey Johnson",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Boss",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Calvin Klein Jeans",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Carrera",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Champion",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Coach",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cole Haan",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cool Clip",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Costa",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Danny Gokey",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Dilli Dalli",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Dragon",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Draper James",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ducks Unlimited",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "FYSH",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "IZOD",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Jimmy Crystal",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Joseph Abboud",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Karl Lagerfeld",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Kate Spade",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Kensie",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "L.A.M.B.",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lacoste",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lenton and Rusby",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Life is Good",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lilly Pulitzer",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Longchamp",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lulu Guiness",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Maui Jim",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Michael Kors",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Nautica",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Nike",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Oakley",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Paradigm",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Penguin",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Polo Ralph Lauren",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Rayban",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Silhouette",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Steve Madden",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Superflex",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Takumi",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ted Baker",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Tommy Hilfiger",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Under Armour",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Vera Bradley",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Vera Wang",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Wiley X",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "XOXO",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Zac Posen",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Luxury Brands",
-												"spans": [
-													{
-														"type": "strong",
-														"start": 0,
-														"end": 13
-													}
-												]
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Fendi",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Gucci",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Marc Jacobs",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Saint Laurent",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"cols",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "4"
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"list",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ann Taylor",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Anne Klein",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "BCBGMAXAZRIA",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "BEBE",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Betsey Johnson",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Boss",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Calvin Klein Jeans",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Carrera",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Champion",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Coach",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cole Haan",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cool Clip",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Costa",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Danny Gokey",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Dilli Dalli",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Dragon",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Draper James",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ducks Unlimited",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "FYSH",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "IZOD",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Jimmy Crystal",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Joseph Abboud",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Karl Lagerfeld",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Kate Spade",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Kensie",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "L.A.M.B.",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lacoste",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lenton and Rusby",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Life is Good",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lilly Pulitzer",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Longchamp",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lulu Guiness",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Maui Jim",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Michael Kors",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Nautica",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Nike",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Oakley",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Paradigm",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Penguin",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Polo Ralph Lauren",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Rayban",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Silhouette",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Steve Madden",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Superflex",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Takumi",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ted Baker",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Tommy Hilfiger",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Under Armour",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Vera Bradley",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Vera Wang",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Wiley X",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "XOXO",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Zac Posen",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Luxury Brands",
-												"spans": [
-													{
-														"type": "strong",
-														"start": 0,
-														"end": 13
-													}
-												]
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Fendi",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Gucci",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Marc Jacobs",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Saint Laurent",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"cols",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "4"
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Nine Mile Crossing",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
 								}
 							]
 						]
@@ -4355,222 +3131,6 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "list",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading5",
-						"content": {
-							"text": "About Us",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"cols": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "2"
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Indigo 700"
-			},
-			"items": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"subtitle",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading6",
-											"content": {
-												"text": "01 Renalus Values",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"list",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Quis consequat incididunt nulla nisi et incididunt cupidatat cillum Lorem aliqua cupidatat."
-											}
-										}
-									]
-								}
-							],
-							[
-								"cols",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "1"
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"list",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Laboris magna id aliquip aliquip aliquip laboris."
-											}
-										}
-									]
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"subtitle",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading6",
-											"content": {
-												"text": "02 Renalus Values",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"cols",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "2"
-								}
-							]
-						]
-					}
-				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
 		"variation": "spread",
 		"primary": {
 			"subtitle": {
@@ -4617,8 +3177,8 @@
 				"type": "Link",
 				"value": [
 					{
-						"__TYPE__": "LinkContent",
 						"key": "a970f1aa-1294-4214-a0e3-655381d87454",
+						"__TYPE__": "LinkContent",
 						"value": {
 							"__TYPE__": "AnyLink",
 							"kind": "any",
@@ -5224,6 +3784,1634 @@
 											"credits": null
 										}
 									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "list",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "About Us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "2"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo 700"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Weakness",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lack of concentration",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Loss of appetite",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Metallic taste in the mouth or ammonia breath",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Inability to sleep",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Swelling in the feet and ankles",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dry, itchy skin",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Muscle cramps at night",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Puffiness around the eyes, particularly in the morning",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Increasing frequency of urination, especially at night",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "1"
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "There are often no early warning symptoms; however, as CKD progresses, symptoms may include:",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Symptoms",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "High blood pressure leading to headaches, dizziness, confusion, double/blurred vision, seizures, heart disease, heart attack and stroke.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Anemia (low red blood cell counts) that can be associated with pale complexion, weakness, reduced ability to exercise, feeling of poor health, constantly feeling cold, heart disease and decreased alertness and thinking ability.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cardiovascular Disease developing a higher risk of chest pain, heart attacks and congestive heart failure with symptoms including shortness of breath, swelling of feet/ankles, stroke, and narrowing of the arteries in the legs causing pain, inability to walk and tissue breakdown.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cholesterol/triglyceride abnormalities",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nutrition imbalances, decrease in appetite, lower protein levels in blood, and loss of muscle.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Bone disorders including abnormal bone structure, decreased bone strength and bone pain.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Complications of CKD",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "columns",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Where Skill, Precision, and Compassion Combine",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "The Renalus Difference",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "There are a lot of surgical specialists out there. They share the same medical degrees, the same knowledge of surgical solutions, and maybe even the same technologies, but what sets us apart is how we utilize our experience, knowledge and drive for improved patient experiences and outcomes. ",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "3"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Slate 100"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "01 Renalus Care",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Chronic Kidney Disease",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Personalized management to slow progression and maintain your quality of life",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Thorough evaluation when protein or blood appears in urine",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Proteinuria and Hematuria",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "02 Renalus Care",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Glomerular Diseases",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "03 Renalus Care",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Specialized treatment for kidney filtering disorders",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "a352b274-cf2f-41f8-a437-9c79244b3216",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": ""
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "previews",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Lifestyle",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Live with Energy, Confidence, and Peace of Mind About Your Health",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Quality of life isn't just about living longer—it's about feeling good, having energy for the things you love, and feeling confident about your health choices.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "1"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Slate 100",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Choose Changes That Fit Your Life",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ann Taylor",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Anne Klein",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BCBGMAXAZRIA",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BEBE",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Betsey Johnson",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Boss",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Calvin Klein Jeans",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Carrera",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Champion",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Coach",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cole Haan",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cool Clip",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Costa",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Danny Gokey",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dilli Dalli",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dragon",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Draper James",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ducks Unlimited",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "FYSH",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "IZOD",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Jimmy Crystal",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Joseph Abboud",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Karl Lagerfeld",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kate Spade",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kensie",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "L.A.M.B.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lacoste",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lenton and Rusby",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Life is Good",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lilly Pulitzer",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Longchamp",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lulu Guiness",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Maui Jim",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Michael Kors",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nautica",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nike",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Oakley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Paradigm",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Penguin",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Polo Ralph Lauren",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Rayban",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Silhouette",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Steve Madden",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Superflex",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Takumi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ted Baker",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Tommy Hilfiger",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Under Armour",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Bradley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Wang",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Wiley X",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "XOXO",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Zac Posen",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Luxury Brands",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 13
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Fendi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Gucci",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Marc Jacobs",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Saint Laurent",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "4"
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Fairfield",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ann Taylor",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Anne Klein",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BCBGMAXAZRIA",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BEBE",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Betsey Johnson",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Boss",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Calvin Klein Jeans",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Carrera",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Champion",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Coach",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cole Haan",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cool Clip",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Costa",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Danny Gokey",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dilli Dalli",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dragon",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Draper James",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ducks Unlimited",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "FYSH",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "IZOD",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Jimmy Crystal",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Joseph Abboud",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Karl Lagerfeld",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kate Spade",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kensie",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "L.A.M.B.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lacoste",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lenton and Rusby",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Life is Good",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lilly Pulitzer",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Longchamp",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lulu Guiness",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Maui Jim",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Michael Kors",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nautica",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nike",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Oakley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Paradigm",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Penguin",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Polo Ralph Lauren",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Rayban",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Silhouette",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Steve Madden",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Superflex",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Takumi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ted Baker",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Tommy Hilfiger",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Under Armour",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Bradley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Wang",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Wiley X",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "XOXO",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Zac Posen",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Luxury Brands",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 13
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Fendi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Gucci",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Marc Jacobs",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Saint Laurent",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "4"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Nine Mile Crossing",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
 								}
 							]
 						]

@@ -1,6 +1,6 @@
 import { Lead } from '@/components/Content'
 import { ButtonGroup, Flex } from '@/components/UI'
-import { getTheme } from '@/lib/helpers'
+import { getTheme, invalidContent } from '@/lib/helpers'
 import { cn, cp } from '@/lib/utils'
 
 const getProse = ({ title, subtitle, body, group }) => {
@@ -42,11 +42,21 @@ const getProse = ({ title, subtitle, body, group }) => {
 	]
 }
 
+const getGrowClass = ({ body, group }) => {
+	console.log({ body, group })
+
+	if (invalidContent(body)) return ['grow-6', 'grow-4']
+
+	const grow = body.length > 1 || group === 'Body'
+
+	if (group === 'Title')
+		return grow ? ['grow-6', 'grow-4'] : ['grow-4', 'grow-6']
+
+	return grow ? ['grow-4', 'grow-6'] : ['grow-6', 'grow-4']
+}
+
 const ProseSplit = ({
 	as,
-	// title,
-	// subtitle,
-	// body,
 	color,
 	position,
 	group,
@@ -58,11 +68,13 @@ const ProseSplit = ({
 	...contentProps
 }) => {
 	const subtitleClass = cn(
-		'__label __brief __xs',
+		// '__label __brief __xs',
 		getTheme(color).accent ??
 			(getTheme(color).isDark ? 'text-indigo-100' : ''),
 		cp(className, 'subtitle'),
 	)
+
+	const growClass = getGrowClass({ ...contentProps, group })
 
 	const [lead, body] = getProse({ ...contentProps, group })
 
@@ -84,7 +96,8 @@ const ProseSplit = ({
 				as={{ ...as, subtitle: as?.body }}
 				className={{
 					lead: cn(
-						'flex-1 grow-6 text-balance',
+						'flex-1 text-balance',
+						growClass[0],
 						cp(className, 'lead'),
 					),
 					title: cp(className, 'title'),
@@ -110,7 +123,7 @@ const ProseSplit = ({
 				wrap={true}
 				as={{ title: as?.subtitle, subtitle: as?.body }}
 				className={{
-					lead: cn('flex-1 grow-4'),
+					lead: cn('flex-1', growClass[1]),
 					title: cn(
 						subtitleClass,
 						position === 'Right' &&

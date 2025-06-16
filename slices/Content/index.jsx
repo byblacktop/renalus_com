@@ -35,6 +35,7 @@ const Content = ({
 		<Shell
 			as={layouts[variation] ?? layouts.default}
 			isSection={!layouts[variation] || variation === 'default'}
+			className={{ subtitle: '__label __brief __xs' }}
 			{...getSliceData(slice_type, variation)}
 			{...resolveProps(primary, resolver)}
 			{...context}

@@ -14,6 +14,7 @@ const Thread = ({
 		<Shell
 			as={isSection ? ContentThread : 'div'}
 			color={color}
+			flow={contentProps.flow}
 			className={cn('__thread', cp(className, 'thread', true))}
 			{...dataset}
 		>
@@ -22,7 +23,7 @@ const Thread = ({
 	)
 }
 
-const ContentThread = ({ color, className, children }) => (
+const ContentThread = ({ color, flow, className, children }) => (
 	<Section
 		className={cn(
 			getTheme(color).className,
@@ -30,7 +31,10 @@ const ContentThread = ({ color, className, children }) => (
 		)}
 	>
 		<Container
-			className={cn(' max-w-4xl', cp(className, 'thread', true))}
+			className={cn(
+				!flow && 'max-w-4xl',
+				cp(className, 'thread', true),
+			)}
 		>
 			{/* Main Content */}
 			{children}

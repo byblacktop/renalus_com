@@ -16,7 +16,7 @@ const FeatureStatement = ({
 			className={cn('pl-8 md:pl-16 xl:pl-24 z-2', bgColor(color))}
 			{...dataset}
 		>
-			<div className='__bg rounded-tl-4xl md:rounded-tl-6xl xl:rounded-tl-8xl'>
+			<div className='__bg rounded-tl-4xl md:rounded-tl-6xl xl:rounded-tl-7xl'>
 				<Container
 					layout='grid'
 					gap='xl'
@@ -31,14 +31,14 @@ const FeatureStatement = ({
 					<div
 						className={cn(
 							'relative overflow-hidden',
-							'rounded-3 md:rounded-4 xl:rounded-6', // Round sides
-							'rounded-bl-xl md:rounded-bl-xl xl:rounded-bl-2xl', // Flat side
+							'rounded-3xl md:rounded-4xl xl:rounded-5xl', // Round sides
+							// 'rounded-br-xl md:rounded-br-xl xl:rounded-br-2xl', // Flat side
 							'aspect-w-16 aspect-h-12 xl:aspect-h-11',
 						)}
 					>
 						<CoverImage
 							img={img}
-							plx={{ speed: 0.5 }}
+							// plx={{ speed: 0.5 }}
 							className={{ target: '-top-24 -bottom-24' }}
 						/>
 					</div>
@@ -51,8 +51,10 @@ const FeatureStatement = ({
 						}}
 						className={{
 							thread: 'max-w-lg xl:max-w-xl text-pretty',
-							lead: '__lg',
-							subtitle: textColor(color, 500),
+							subtitle: cn(
+								'__label __brief __xs',
+								textColor(color, 500),
+							),
 						}}
 						{...contentProps}
 					/>

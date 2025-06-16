@@ -7,6 +7,7 @@ const ToggleHeader = ({ children, className }) => (
 	<header
 		className={cn(
 			'group relative z-2 w-full',
+			'cursor-pointer',
 			'py-2 md:py-3',
 			cp(className, 'header', true),
 		)}

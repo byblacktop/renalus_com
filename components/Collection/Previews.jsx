@@ -43,22 +43,22 @@ const CollectionPreviews = ({
 			)}
 		>
 			{/* Intro Lead Content */}
-			<ProseSplit {...contentProps} />
+			<ProseSplit align='end' {...contentProps} />
 
 			{/* List Items */}
 			<dl
 				className={cn(
 					'grid grid-cols-1 grid-flow-row-dense',
 					variants({ cols }),
-					gap.xl,
+					gap.lg,
 				)}
 			>
 				{items.map(({ list, cols, ...contentProps }) => (
 					<dd
 						key={kn(contentProps)}
-						className='pt-6 border-t border-slate-100/70'
+						className='pt-8 border-t border-indigo/20'
 					>
-						<Flex>
+						<Flex align='start'>
 							<Prose wrap {...contentProps} className='w-1/5' />
 
 							<TogglePreview className='grow'>

@@ -207,7 +207,7 @@ h4,
 
 h5,
 .h5 {
-	@apply leading-snug
+	@apply leading-normal
 		font-semibold
 		fs-xs;
 
@@ -319,7 +319,6 @@ li {
 		tracking-md
 		font-normal
 		inline-flex
-		items-center
 		gap-2;
 }
 
@@ -331,7 +330,7 @@ li {
 		w-7
 		h-0.5
 		bg-red
-		-top-[0.1em];
+		top-[0.55em];
 	}
 }
 

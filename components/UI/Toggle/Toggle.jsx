@@ -31,19 +31,19 @@ const ToggleDom = ({
 					<ToggleHeader color={color}>
 						<ToggleTitle title={title} subtitle={subtitle} />
 						{/* TODO: Add optional show/hide */}
-						{/* <ToggleIcon color={color} open={open} /> */}
+						<ToggleIcon color={color} open={open} />
 					</ToggleHeader>
 
 					{/* TODO: Add optional show/hide */}
-					<ToggleContent show={true}>{children}</ToggleContent>
+					<ToggleContent show={open}>{children}</ToggleContent>
 
 					<div
 						className={cn(
 							'absolute inset-y-0 -inset-x-6 z-0',
-							'rounded-xl pointer-none',
+							'rounded-xl pointer-events-none',
 							'transition-all duration-300 ease-in-out origin-top',
-							'scale-90 bg-slate-100/0',
-							'group-hover:scale-100 group-hover:bg-slate-100/70',
+							'scale-90 bg-zinc-50/0',
+							'group-hover:scale-100 group-hover:bg-zinc-50',
 							// TODO: Add optional show/hide
 							// open ? 'scale-100 opacity-5' : 'scale-90 opacity-0',
 						)}

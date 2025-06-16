@@ -21,11 +21,15 @@ const ContentSplit = ({
 		<Container layout='grid' cols='12'>
 			<div
 				className={cn(
-					'z-20 col-span-12 md:col-span-7 grid grid-cols-3 sm:gap-8 lg:gap-12 place-content-start space-y-6 sm:space-y-0',
+					'z-20 col-span-12 md:col-span-7',
+					'grid grid-cols-3',
+					'sm:gap-8 lg:gap-12',
+					'items-start',
+					'space-y-6 sm:space-y-0',
 					position === 'Right' && 'sm:order-2',
 				)}
 			>
-				<Title title={title} className='col-span-3 ' />
+				<Title title={title} className='col-span-3' />
 
 				<Title
 					title={subtitle}

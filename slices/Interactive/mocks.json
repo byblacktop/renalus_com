@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading6",
+						"content": {
+							"text": "Difficulty"
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

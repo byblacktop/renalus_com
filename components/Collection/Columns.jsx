@@ -31,7 +31,13 @@ const CollectionColumns = ({
 			{...dataset}
 		>
 			<Container layout='grid' gap='base' className={cn()}>
-				<Prose links={[{ link, text }]} {...contentProps} />
+				<Prose
+					{...contentProps}
+					links={[{ link, text }]}
+					className={{
+						subtitle: '__label __brief __sm',
+					}}
+				/>
 				<dl
 					className={cn(
 						'grid grid-flow-row-dense',
@@ -49,7 +55,7 @@ const CollectionColumns = ({
 								subtitleProps='text-green-600'
 								titleProps='__xs'
 								gap='sm'
-								className='pb-4 md:pb-8 mb-4 md:mb-8 border-b border-white/30'
+								className='pb-4 md:pb-8 mb-4 md:mb-8 border-b border-indigo/20'
 							/>
 
 							<Body

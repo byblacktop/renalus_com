@@ -33,22 +33,28 @@ const CollectionList = ({
 		<Section
 			container
 			layout='grid'
-			gap='base'
+			gap='xl'
 			dataset={dataset}
 			className={cn(
 				'relative z-10 rounded-4xl overflow-hidden',
-				'm-4 md:m-6 mb-0 md:mb-0',
+				'm-4 md:m-6',
+				// 'mb-0 md:mb-0',
 				getTheme(color).className,
 			)}
 		>
 			{/* Intro Lead Content */}
-			<Prose links={[{ link, text }]} {...contentProps} />
+			<Prose
+				{...contentProps}
+				links={[{ link, text }]}
+				className={{
+					subtitle: '__label __brief __sm',
+				}}
+			/>
 
 			{/* List Items */}
 			<dl
 				className={cn(
 					'grid grid-cols-1 grid-flow-row-dense',
-					' md:p-fluid __xs pb-0',
 					variants({ cols }),
 					gap.xl,
 				)}
@@ -70,7 +76,7 @@ const CollectionList = ({
 								'pb-4 md:pb-8 mb-4 md:mb-8 border-b',
 								getTheme(color).isDark
 									? 'border-slate-200/20'
-									: 'border-indigo-200/20',
+									: 'border-indigo-500/20',
 							)}
 						/>
 

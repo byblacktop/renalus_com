@@ -34,8 +34,8 @@ const HeroContained = ({
 		<Section
 			className={cn(
 				'rounded-b-4xl overflow-hidden',
+				'-mb-10 [&+*]:pt-10',
 				themeClass,
-
 				className,
 			)}
 			{...dataset}
@@ -52,7 +52,10 @@ const HeroContained = ({
 				)}
 			>
 				<Flex layout='stack' justify='between'>
-					<Title title={subtitle} className={cn(accent, 'w-full')} />
+					<Title
+						title={subtitle}
+						className={cn(accent, 'w-full', '__label __brief __xs')}
+					/>
 
 					<Prose
 						{...contentProps}
@@ -71,6 +74,9 @@ const HeroContained = ({
 							],
 						}}
 					/>
+
+					{/* Empty div to control spacing */}
+					<div />
 				</Flex>
 
 				<div className='relative z-1'>
