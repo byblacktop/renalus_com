@@ -51,10 +51,7 @@ const HeroLayered = ({
 				<CoverImage
 					priority
 					img={img}
-					className='left-1/4 -right-[calc(var(--m-stretch)-var(--px))] rounded-4xl overflow-hidden'
-					style={{
-						right: `calc(var(--m-stretch)-var(--px))`,
-					}}
+					className='left-1/4 rounded-4xl -right-[calc(var(--m-stretch)-var(--px))] overflow-hidden'
 				>
 					<Overlay direction='r' gradient='smoke' />
 				</CoverImage>

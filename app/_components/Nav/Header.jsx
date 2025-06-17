@@ -161,7 +161,7 @@ const HeaderNav = ({ theme, hasScrolled }) => {
 			data-theme={theme.theme}
 			className={cn(
 				'flex items-center justify-between',
-				'max-w-(--breakpoint-5xl) mx-auto',
+				'max-w-screen-5xl mx-auto',
 				'px-fluid py-3 md:py-4',
 			)}
 		>

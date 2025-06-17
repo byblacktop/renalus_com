@@ -45,16 +45,20 @@ const HeroContained = ({
 				cols={2}
 				gap='2xl'
 				className={cn(
-					'__xs',
+					'__xs max-w-screen-5xl',
 					// TODO: Import variable too replace hardcoded "Zinc 50"
 					['None', 'Zinc 50'].includes(color) &&
 						'border-b border-slate-200',
 				)}
 			>
-				<Flex layout='stack' justify='between'>
+				<Flex
+					layout='stack'
+					justify='between'
+					className='w-full max-w-lg mx-auto'
+				>
 					<Title
 						title={subtitle}
-						className={cn(accent, 'w-full', '__label __brief __xs')}
+						className={cn(accent, '__label __brief __xs')}
 					/>
 
 					<Prose
@@ -62,6 +66,7 @@ const HeroContained = ({
 						gap={{ prose: 'xs' }}
 						className={{
 							prose: 'content-start',
+							title: 'd2',
 							links: 'mt-4 lg:mt-6',
 						}}
 						linkProps={{
