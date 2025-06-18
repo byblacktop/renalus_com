@@ -48,7 +48,7 @@ const SubNavItems = ({ links, className }) => {
 						color='zinc'
 						className={cn(
 							'px-2.5 py-2 font-medium w-full min-w-auto whitespace-normal text-balance',
-							'bg-zinc-50/0 hover:bg-zinc-50 rounded-lg',
+							'bg-indigo-50/0 hover:bg-indigo-50/70 rounded-lg',
 							className,
 						)}
 						{...link}
@@ -73,7 +73,7 @@ const SubNavGroups = ({ links, className }) => {
 				<div
 					key={key}
 					className={cn(
-						'space-y-5 px-10 max-w-3xs',
+						'space-y-5 px-10 max-w-2xs',
 						'first:pl-0 last:pr-0',
 					)}
 				>
