@@ -59,7 +59,7 @@ const Feed = ({
 			{...props}
 			{...dataset}
 		>
-			<Container gap='prose' className={cn('__lg')}>
+			<Container gap='prose'>
 				<ProseSplit
 					position='Right'
 					color={primary?.color}

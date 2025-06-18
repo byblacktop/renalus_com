@@ -19,7 +19,7 @@ const layouts = {
 }
 
 const resolver = {
-	color: 'Zinc 50',
+	color: 'None',
 }
 
 const Hero = ({

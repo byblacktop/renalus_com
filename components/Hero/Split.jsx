@@ -60,13 +60,12 @@ const HeroSplit = ({
 					{...contentProps}
 					gap={{ prose: 'xs' }}
 					className={{
-						prose: 'content-start',
+						prose: 'content-start text-balance',
 						title: 'h2',
 						links: 'mt-4 lg:mt-6',
 					}}
 					linkProps={{
 						variant: 'outline',
-						// color: [contrastUtil(color)],
 						arrow: [
 							{
 								direction: 'downRight',
