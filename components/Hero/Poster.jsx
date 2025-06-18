@@ -20,7 +20,7 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 				'h-[calc(max(92vh,1000px)-var(--h-banner)-48px)]',
 				'-mb-10 [&+*]:pt-10',
 			),
-			container: 'h-full px-fluid-y place-content-end',
+			container: 'h-full px-fluid-y py-fluid-x place-content-end',
 			title: 'd2',
 		}}
 		linkProps={{
