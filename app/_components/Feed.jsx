@@ -13,15 +13,24 @@ const layouts = {
 	post: PostHighlights,
 	team: TeamCards,
 	articles: PostGrid,
+	default: PostGrid,
 }
 
-const DynamicFeed = ({ type, filter, qry, layout, ...props }) => {
+const DynamicFeed = ({
+	variation,
+	type,
+	filter,
+	qry,
+	layout,
+	...props
+}) => {
 	return (
 		<Suspense fallback={<LoadingDots />}>
 			<DynamicItems type={type} filter={filter} qry={qry}>
 				{({ results }) => (
 					<Shell
-						as={layouts[layout || type]}
+						as={layouts[variation] ?? layouts[layout || type]}
+						type={type}
 						results={results}
 						{...props}
 					/>

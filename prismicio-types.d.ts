@@ -2645,31 +2645,6 @@ export interface FeedSliceFeaturedPrimaryItemsItem {
 }
 
 /**
- * Item in *Feed → Gallery → Primary → Dynamic Feed Data*
- */
-export interface FeedSliceGalleryPrimaryFeedItem {
-	/**
-	 * Image field in *Feed → Gallery → Primary → Dynamic Feed Data*
-	 *
-	 * - **Field Type**: Image
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: feed.gallery.primary.feed[].img
-	 * - **Documentation**: https://prismic.io/docs/field#image
-	 */
-	img: prismic.ImageField<"lg" | "md" | "blur">;
-	
-	/**
-	 * Tags field in *Feed → Gallery → Primary → Dynamic Feed Data*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: (Optional) Tags for user filtering
-	 * - **API ID Path**: feed.gallery.primary.feed[].tags
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
-	 */
-	tags: prismic.KeyTextField;
-}
-
-/**
  * Primary content in *Feed → Feed Grid → Primary*
  */
 export interface FeedSliceDefaultPrimary {
@@ -2967,73 +2942,9 @@ export interface FeedSliceTeamPrimary {
 export type FeedSliceTeam = prismic.SharedSliceVariation<"team", Simplify<FeedSliceTeamPrimary>, never>;
 
 /**
- * Primary content in *Feed → Gallery → Primary*
- */
-export interface FeedSliceGalleryPrimary {
-	/**
-	 * Label field in *Feed → Gallery → Primary*
-	 *
-	 * - **Field Type**: Title
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: feed.gallery.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	subtitle: prismic.TitleField;
-	
-	/**
-	 * Title field in *Feed → Gallery → Primary*
-	 *
-	 * - **Field Type**: Title
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: feed.gallery.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	title: prismic.TitleField;
-	
-	/**
-	 * Content Body field in *Feed → Gallery → Primary*
-	 *
-	 * - **Field Type**: Rich Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: feed.gallery.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	body: prismic.RichTextField;
-	
-	/**
-	 * Background Color field in *Feed → Gallery → Primary*
-	 *
-	 * - **Field Type**: Select
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: feed.gallery.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
-	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
-	
-	/**
-	 * Dynamic Feed Data field in *Feed → Gallery → Primary*
-	 *
-	 * - **Field Type**: Group
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: feed.gallery.primary.feed[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
-	 */
-	feed: prismic.GroupField<Simplify<FeedSliceGalleryPrimaryFeedItem>>;
-}
-
-/**
- * Gallery variation for Feed Slice
- *
- * - **API ID**: `gallery`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type FeedSliceGallery = prismic.SharedSliceVariation<"gallery", Simplify<FeedSliceGalleryPrimary>, never>;
-
-/**
  * Slice variation for *Feed*
  */
-type FeedSliceVariation = FeedSliceDefault | FeedSliceList | FeedSliceFeatured | FeedSliceTeam | FeedSliceGallery
+type FeedSliceVariation = FeedSliceDefault | FeedSliceList | FeedSliceFeatured | FeedSliceTeam
 
 /**
  * Feed Shared Slice
@@ -4210,14 +4121,11 @@ declare module "@prismicio/client" {
 			FeedSliceFeaturedPrimaryItemsItem,
 			FeedSliceFeaturedPrimary,
 			FeedSliceTeamPrimary,
-			FeedSliceGalleryPrimaryFeedItem,
-			FeedSliceGalleryPrimary,
 			FeedSliceVariation,
 			FeedSliceDefault,
 			FeedSliceList,
 			FeedSliceFeatured,
 			FeedSliceTeam,
-			FeedSliceGallery,
 			FormIntakeSlice,
 			FormIntakeSliceDefaultPrimaryItemsItem,
 			FormIntakeSliceDefaultPrimaryFieldsItem,

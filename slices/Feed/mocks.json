@@ -1,64 +1,6 @@
 [
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "default",
-		"primary": {
-			"type": {
-				"__TYPE__": "FieldContent",
-				"value": "News",
-				"type": "Select"
-			},
-			"tags": {
-				"__TYPE__": "FieldContent",
-				"value": "block",
-				"type": "Text"
-			},
-			"links": {
-				"key": "8ca619c4-a7df-470e-8629-26857dc043a7",
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "https://slicemachine.dev",
-					"text": "studying",
-					"variant": "Default"
-				}
-			},
-			"feed": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"type",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "Locations",
-									"type": "Select"
-								}
-							],
-							[
-								"tags",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "song",
-									"type": "Text"
-								}
-							]
-						]
-					}
-				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
 		"variation": "list",
 		"primary": {
 			"subtitle": {
@@ -302,18 +244,55 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "gallery",
+		"variation": "default",
 		"primary": {
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
+			"type": {
+				"__TYPE__": "FieldContent",
+				"value": "News",
+				"type": "Select"
+			},
+			"tags": {
+				"__TYPE__": "FieldContent",
+				"value": "block",
+				"type": "Text"
+			},
+			"links": {
+				"__TYPE__": "LinkContent",
+				"key": "8ca619c4-a7df-470e-8629-26857dc043a7",
+				"value": {
+					"__TYPE__": "AnyLink",
+					"kind": "any",
+					"text": "",
+					"variant": "Default"
+				}
+			},
+			"feed": {
+				"__TYPE__": "GroupContentType",
 				"value": [
 					{
-						"type": "heading5",
-						"content": {
-							"text": "Mother"
-						}
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Locations",
+									"type": "Select"
+								}
+							]
+						]
 					}
 				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "3"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo 700"
 			},
 			"title": {
 				"__TYPE__": "StructuredTextContent",
@@ -321,8 +300,10 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Welcome"
-						}
+							"text": "Find the location that works best for your schedule and lifestyle—quality care is always close by.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -332,57 +313,31 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Laborum sunt officia eiusmod esse consectetur amet amet magna occaecat ea irure ad cupidatat proident. Officia magna ipsum dolor sit elit irure consequat adipisicing reprehenderit exercitation do aliqua ea veniam. Aliquip commodo proident quis sunt laborum labore et irure deserunt officia ipsum nulla."
-						}
+							"text": "Each of our locations is more than just an office—it's a place where you'll find experienced physicians who understand your community and are personally committed to your health outcomes.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We believe exceptional kidney care should be accessible right in your neighborhood, delivered by providers who are part of your community and invested in your long-term well-being.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"value": "None",
-				"type": "Select"
-			},
-			"feed": {
-				"__TYPE__": "GroupContentType",
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"tags",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "waste",
-									"type": "Text"
-								}
-							],
-							[
-								"img",
-								{
-									"origin": {
-										"id": "main",
-										"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
-										"width": 5616,
-										"height": 3744
-									},
-									"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
-									"width": 5616,
-									"height": 3744,
-									"edit": {
-										"zoom": 1,
-										"crop": {
-											"x": 0,
-											"y": 0
-										},
-										"background": "transparent"
-									},
-									"alt": "fort",
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {}
-								}
-							]
-						]
+						"type": "heading5",
+						"content": {
+							"text": "Renalus Locations",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			}

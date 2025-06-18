@@ -1,504 +1,380 @@
 {
-  "id": "feed",
-  "type": "SharedSlice",
-  "name": "Feed",
-  "description": "Feed",
-  "variations": [
-    {
-      "id": "default",
-      "name": "Feed Grid",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
-      "primary": {
-        "subtitle": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Label",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading5,heading6"
-          }
-        },
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2,heading3,heading4"
-          }
-        },
-        "body": {
-          "config": {
-            "label": "Content Body",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
-          },
-          "type": "StructuredText"
-        },
-        "links": {
-          "type": "Link",
-          "config": {
-            "label": "Link",
-            "placeholder": "",
-            "select": null,
-            "allowTargetBlank": true,
-            "allowText": true,
-            "repeat": false,
-            "variants": [
-              "Default",
-              "Call to Action"
-            ]
-          }
-        },
-        "color": {
-          "type": "Select",
-          "config": {
-            "label": "Background Color",
-            "placeholder": "",
-            "options": [
-              "None",
-              "Indigo 700",
-              "Indigo 800",
-              "Indigo 900",
-              "Slate 50",
-              "Slate 100",
-              "Slate 200",
-              "Zinc 50",
-              "Zinc 100",
-              "Zinc 200",
-              "Blue",
-              "Green",
-              "Red",
-              "White"
-            ]
-          }
-        },
-        "feed": {
-          "type": "Group",
-          "config": {
-            "label": "Dynamic Feed Data",
-            "repeat": false,
-            "fields": {
-              "type": {
-                "type": "Select",
-                "config": {
-                  "label": "Type",
-                  "placeholder": "",
-                  "options": [
-                    "Posts",
-                    "Team",
-                    "Locations"
-                  ],
-                  "default_value": "Posts"
-                }
-              },
-              "tags": {
-                "type": "Text",
-                "config": {
-                  "label": "Tags",
-                  "placeholder": "(Optional) Filter results by tag"
-                }
-              }
-            }
-          }
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "list",
-      "name": "Info List",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
-      "primary": {
-        "img": {
-          "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "subtitle": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Label",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading5,heading6"
-          }
-        },
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2,heading3,heading4"
-          }
-        },
-        "body": {
-          "config": {
-            "label": "Content Body",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
-          },
-          "type": "StructuredText"
-        },
-        "links": {
-          "type": "Link",
-          "config": {
-            "label": "Link",
-            "placeholder": "Call to Action",
-            "select": null,
-            "allowTargetBlank": true,
-            "allowText": true,
-            "repeat": false,
-            "variants": [
-              "Default",
-              "Call To Action"
-            ]
-          }
-        },
-        "color": {
-          "type": "Select",
-          "config": {
-            "label": "Background Color",
-            "placeholder": "",
-            "options": [
-              "None",
-              "Indigo 700",
-              "Indigo 800",
-              "Indigo 900",
-              "Slate 50",
-              "Slate 100",
-              "Slate 200",
-              "Zinc 50",
-              "Zinc 100",
-              "Zinc 200",
-              "Blue",
-              "Green",
-              "Red",
-              "White"
-            ]
-          }
-        },
-        "feed": {
-          "type": "Group",
-          "config": {
-            "label": "Dynamic Feed Data",
-            "repeat": false,
-            "fields": {
-              "type": {
-                "type": "Select",
-                "config": {
-                  "label": "Type",
-                  "placeholder": "",
-                  "options": [
-                    "Posts",
-                    "Team",
-                    "Locations"
-                  ],
-                  "default_value": "Posts"
-                }
-              },
-              "tags": {
-                "type": "Text",
-                "config": {
-                  "label": "Tags",
-                  "placeholder": "(Optional) Filter results by tag"
-                }
-              }
-            }
-          }
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "featured",
-      "name": "Featured Posts",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
-      "primary": {
-        "subtitle": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Label",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading5,heading6"
-          }
-        },
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2,heading3,heading4"
-          }
-        },
-        "body": {
-          "config": {
-            "label": "Content Body",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
-          },
-          "type": "StructuredText"
-        },
-        "color": {
-          "type": "Select",
-          "config": {
-            "label": "Background Color",
-            "placeholder": "",
-            "options": [
-              "None",
-              "Indigo 700",
-              "Indigo 800",
-              "Indigo 900",
-              "Slate 50",
-              "Slate 100",
-              "Slate 200",
-              "Zinc 50",
-              "Zinc 100",
-              "Zinc 200",
-              "Blue",
-              "Green",
-              "Red",
-              "White"
-            ]
-          }
-        },
-        "links": {
-          "type": "Link",
-          "config": {
-            "label": "Link",
-            "placeholder": "Link to related page or resource",
-            "select": null,
-            "allowTargetBlank": true,
-            "allowText": true,
-            "repeat": false,
-            "variants": [
-              "Default",
-              "Call to Action"
-            ]
-          }
-        },
-        "items": {
-          "type": "Group",
-          "config": {
-            "label": "Dynamic Feed Data",
-            "repeat": true,
-            "fields": {
-              "item": {
-                "type": "Link",
-                "config": {
-                  "label": "Item",
-                  "select": "document",
-                  "repeat": false,
-                  "customtypes": [
-                    "location",
-                    "post"
-                  ]
-                }
-              }
-            }
-          }
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "team",
-      "name": "Team",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
-      "primary": {
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading3,heading4"
-          }
-        },
-        "body": {
-          "config": {
-            "label": "Content Body",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
-          },
-          "type": "StructuredText"
-        },
-        "color": {
-          "type": "Select",
-          "config": {
-            "label": "Background Color",
-            "placeholder": "",
-            "options": [
-              "None",
-              "Indigo 700",
-              "Indigo 800",
-              "Indigo 900",
-              "Slate 50",
-              "Slate 100",
-              "Slate 200",
-              "Zinc 50",
-              "Zinc 100",
-              "Zinc 200",
-              "Blue",
-              "Green",
-              "Red",
-              "White"
-            ]
-          }
-        },
-        "team": {
-          "type": "Select",
-          "config": {
-            "label": "Team Group",
-            "placeholder": "",
-            "options": [
-              "Doctor",
-              "Provider",
-              "Staff"
-            ],
-            "default_value": "Doctor"
-          }
-        },
-        "cols": {
-          "type": "Select",
-          "config": {
-            "label": "Columns",
-            "placeholder": "",
-            "options": [
-              "1",
-              "2",
-              "3",
-              "4"
-            ]
-          }
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "gallery",
-      "name": "Gallery",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
-      "primary": {
-        "subtitle": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Label",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading5,heading6"
-          }
-        },
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2,heading3,heading4"
-          }
-        },
-        "body": {
-          "config": {
-            "label": "Content Body",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
-          },
-          "type": "StructuredText"
-        },
-        "color": {
-          "type": "Select",
-          "config": {
-            "label": "Background Color",
-            "placeholder": "",
-            "options": [
-              "None",
-              "Indigo 700",
-              "Indigo 800",
-              "Indigo 900",
-              "Slate 50",
-              "Slate 100",
-              "Slate 200",
-              "Zinc 50",
-              "Zinc 100",
-              "Zinc 200",
-              "Blue",
-              "Green",
-              "Red",
-              "White"
-            ]
-          }
-        },
-        "feed": {
-          "type": "Group",
-          "config": {
-            "label": "Dynamic Feed Data",
-            "repeat": false,
-            "fields": {
-              "img": {
-                "type": "Image",
-                "config": {
-                  "label": "Image",
-                  "constraint": {
-                    "width": 1920
-                  },
-                  "thumbnails": [
-                    {
-                      "name": "lg",
-                      "width": 980,
-                      "height": null
-                    },
-                    {
-                      "name": "md",
-                      "width": 480,
-                      "height": null
-                    },
-                    {
-                      "name": "blur",
-                      "width": 16,
-                      "height": 16
-                    }
-                  ]
-                }
-              },
-              "tags": {
-                "type": "Text",
-                "config": {
-                  "label": "Tags",
-                  "placeholder": "(Optional) Tags for user filtering"
-                }
-              }
-            }
-          }
-        }
-      },
-      "items": {}
-    }
-  ]
+	"id": "feed",
+	"type": "SharedSlice",
+	"name": "Feed",
+	"description": "Feed",
+	"variations": [
+		{
+			"id": "default",
+			"name": "Feed Grid",
+			"docURL": "...",
+			"version": "initial",
+			"description": "Default",
+			"imageUrl": "",
+			"primary": {
+				"subtitle": {
+					"type": "StructuredText",
+					"config": {
+						"label": "Label",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"single": "heading5,heading6"
+					}
+				},
+				"title": {
+					"type": "StructuredText",
+					"config": {
+						"label": "Title",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"single": "heading2,heading3,heading4"
+					}
+				},
+				"body": {
+					"config": {
+						"label": "Content Body",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
+					},
+					"type": "StructuredText"
+				},
+				"links": {
+					"type": "Link",
+					"config": {
+						"label": "Link",
+						"placeholder": "",
+						"select": null,
+						"allowTargetBlank": true,
+						"allowText": true,
+						"repeat": false,
+						"variants": ["Default", "Call to Action"]
+					}
+				},
+				"color": {
+					"type": "Select",
+					"config": {
+						"label": "Background Color",
+						"placeholder": "",
+						"options": [
+							"None",
+							"Indigo 700",
+							"Indigo 800",
+							"Indigo 900",
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
+						]
+					}
+				},
+				"cols": {
+					"type": "Select",
+					"config": {
+						"label": "Columns",
+						"placeholder": "",
+						"options": ["1", "2", "3", "4", "5", "6"]
+					}
+				},
+				"feed": {
+					"type": "Group",
+					"config": {
+						"label": "Dynamic Feed Data",
+						"repeat": false,
+						"fields": {
+							"type": {
+								"type": "Select",
+								"config": {
+									"label": "Type",
+									"placeholder": "",
+									"options": ["Posts", "Team", "Locations"],
+									"default_value": "Posts"
+								}
+							},
+							"tags": {
+								"type": "Text",
+								"config": {
+									"label": "Tags",
+									"placeholder": "(Optional) Filter results by tag"
+								}
+							}
+						}
+					}
+				}
+			},
+			"items": {}
+		},
+		{
+			"id": "list",
+			"name": "Info List",
+			"docURL": "...",
+			"version": "initial",
+			"description": "Default",
+			"imageUrl": "",
+			"primary": {
+				"img": {
+					"type": "Image",
+					"config": {
+						"label": "Image",
+						"constraint": {},
+						"thumbnails": []
+					}
+				},
+				"subtitle": {
+					"type": "StructuredText",
+					"config": {
+						"label": "Label",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"single": "heading5,heading6"
+					}
+				},
+				"title": {
+					"type": "StructuredText",
+					"config": {
+						"label": "Title",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"single": "heading2,heading3,heading4"
+					}
+				},
+				"body": {
+					"config": {
+						"label": "Content Body",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
+					},
+					"type": "StructuredText"
+				},
+				"links": {
+					"type": "Link",
+					"config": {
+						"label": "Link",
+						"placeholder": "Call to Action",
+						"select": null,
+						"allowTargetBlank": true,
+						"allowText": true,
+						"repeat": false,
+						"variants": ["Default", "Call To Action"]
+					}
+				},
+				"color": {
+					"type": "Select",
+					"config": {
+						"label": "Background Color",
+						"placeholder": "",
+						"options": [
+							"None",
+							"Indigo 700",
+							"Indigo 800",
+							"Indigo 900",
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
+						]
+					}
+				},
+				"feed": {
+					"type": "Group",
+					"config": {
+						"label": "Dynamic Feed Data",
+						"repeat": false,
+						"fields": {
+							"type": {
+								"type": "Select",
+								"config": {
+									"label": "Type",
+									"placeholder": "",
+									"options": ["Posts", "Team", "Locations"],
+									"default_value": "Posts"
+								}
+							},
+							"tags": {
+								"type": "Text",
+								"config": {
+									"label": "Tags",
+									"placeholder": "(Optional) Filter results by tag"
+								}
+							}
+						}
+					}
+				}
+			},
+			"items": {}
+		},
+		{
+			"id": "featured",
+			"name": "Featured Posts",
+			"docURL": "...",
+			"version": "initial",
+			"description": "Default",
+			"imageUrl": "",
+			"primary": {
+				"subtitle": {
+					"type": "StructuredText",
+					"config": {
+						"label": "Label",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"single": "heading5,heading6"
+					}
+				},
+				"title": {
+					"type": "StructuredText",
+					"config": {
+						"label": "Title",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"single": "heading2,heading3,heading4"
+					}
+				},
+				"body": {
+					"config": {
+						"label": "Content Body",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
+					},
+					"type": "StructuredText"
+				},
+				"color": {
+					"type": "Select",
+					"config": {
+						"label": "Background Color",
+						"placeholder": "",
+						"options": [
+							"None",
+							"Indigo 700",
+							"Indigo 800",
+							"Indigo 900",
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
+						]
+					}
+				},
+				"links": {
+					"type": "Link",
+					"config": {
+						"label": "Link",
+						"placeholder": "Link to related page or resource",
+						"select": null,
+						"allowTargetBlank": true,
+						"allowText": true,
+						"repeat": false,
+						"variants": ["Default", "Call to Action"]
+					}
+				},
+				"items": {
+					"type": "Group",
+					"config": {
+						"label": "Dynamic Feed Data",
+						"repeat": true,
+						"fields": {
+							"item": {
+								"type": "Link",
+								"config": {
+									"label": "Item",
+									"select": "document",
+									"repeat": false,
+									"customtypes": ["location", "post"]
+								}
+							}
+						}
+					}
+				}
+			},
+			"items": {}
+		},
+		{
+			"id": "team",
+			"name": "Team",
+			"docURL": "...",
+			"version": "initial",
+			"description": "Default",
+			"imageUrl": "",
+			"primary": {
+				"title": {
+					"type": "StructuredText",
+					"config": {
+						"label": "Title",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"single": "heading3,heading4"
+					}
+				},
+				"body": {
+					"config": {
+						"label": "Content Body",
+						"placeholder": "",
+						"allowTargetBlank": true,
+						"multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
+					},
+					"type": "StructuredText"
+				},
+				"color": {
+					"type": "Select",
+					"config": {
+						"label": "Background Color",
+						"placeholder": "",
+						"options": [
+							"None",
+							"Indigo 700",
+							"Indigo 800",
+							"Indigo 900",
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 50",
+							"Zinc 100",
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
+						]
+					}
+				},
+				"team": {
+					"type": "Select",
+					"config": {
+						"label": "Team Group",
+						"placeholder": "",
+						"options": ["Doctor", "Provider", "Staff"],
+						"default_value": "Doctor"
+					}
+				},
+				"cols": {
+					"type": "Select",
+					"config": {
+						"label": "Columns",
+						"placeholder": "",
+						"options": ["1", "2", "3", "4"]
+					}
+				}
+			},
+			"items": {}
+		}
+	]
 }

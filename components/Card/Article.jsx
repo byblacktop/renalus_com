@@ -21,6 +21,7 @@ const CardArticle = ({ url, title, subtitle, img, tags }) => {
 			<AspectImage
 				img={img}
 				h={10}
+				fallback={true}
 				sizes='(min-width: 1680px) 720px, (min-width: 960px) 480px, (min-width: 680px) 340px, 100vw'
 				className='overflow-hidden rounded-2xl'
 				config={{

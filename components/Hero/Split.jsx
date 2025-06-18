@@ -30,6 +30,8 @@ const HeroSplit = ({
 }) => {
 	const { bg, accent, className: themeClass } = getTheme(color)
 
+	console.log(color, contrastUtil(color))
+
 	return (
 		<Section
 			className={cn(
@@ -64,7 +66,7 @@ const HeroSplit = ({
 					}}
 					linkProps={{
 						variant: 'outline',
-						color: [contrastUtil(color)],
+						// color: [contrastUtil(color)],
 						arrow: [
 							{
 								direction: 'downRight',

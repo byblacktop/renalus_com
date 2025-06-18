@@ -78,7 +78,7 @@ const SubNavCTA = ({ cta }) => {
 	if (invalidArrObjectData(cta)) return null
 
 	return (
-		<div className='flex gap-2 bg-indigo-50 -m-8 mt-8 py-1.5 px-10'>
+		<div className='flex gap-2 bg-zinc-100 -m-8 mt-8 py-1.5 px-10'>
 			{cta.map(({ link, ...props }) => (
 				<Button key={kn(link)} link={link} {...props} />
 			))}

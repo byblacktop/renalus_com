@@ -35,7 +35,7 @@ import { Button, Divider } from '@/components/UI'
 import { invalidArrObjectData } from '@/lib/helpers'
 import { locationsAtom } from '@/lib/store'
 import { cn, kn } from '@/lib/utils'
-import { LocationCard } from '@/location/List'
+import { LocationCard } from '@/location/Card'
 
 const SubNavItems = ({ links, className }) => {
 	return (

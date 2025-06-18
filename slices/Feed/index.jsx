@@ -13,10 +13,6 @@ import { spaceY } from '@/lib/tw'
 import { cn, getSliceData, resolveProps } from '@/lib/utils'
 import { TeamGrid } from '@/team/Grid'
 
-const layouts = {
-	default: DynamicFeed,
-}
-
 const resolver = {
 	type: 'post',
 }
@@ -39,7 +35,11 @@ const Feed = ({
 	slice: { primary, variation, slice_type },
 	context,
 }) => {
-	const { dataset, ...props } = getSliceData(slice_type, variation)
+	const { dataset, ...props } = getSliceData(
+		slice_type,
+		variation,
+		primary?.color,
+	)
 
 	if (variation === 'team')
 		return <TeamGrid {...dataset} {...primary} />
@@ -59,7 +59,11 @@ const Feed = ({
 			>
 				<ProseSplit
 					position='Right'
+					color={primary?.color}
 					className={{
+						prose: getTheme(primary?.color).isDark
+							? 'text-white'
+							: '',
 						lead: 'grow-1',
 						body: 'grow-1',
 					}}
@@ -73,11 +77,12 @@ const Feed = ({
 				/>
 
 				<div className={type === 'post' ? spaceY.xs : undefined}>
-					<Shell
-						as={layouts[type] ?? layouts.default}
+					<DynamicFeed
+						variation={variation}
 						type={type}
 						img={primary?.img}
 						qry={qry[type]}
+						{...primary}
 						{...context}
 					/>
 
