@@ -36,9 +36,8 @@ const CollectionList = ({
 			gap='xl'
 			dataset={dataset}
 			className={cn(
-				'relative z-10 rounded-4xl overflow-hidden',
+				'relative z-10 rounded-3xl md:rounded-4xl overflow-hidden',
 				'm-4 md:m-6',
-				// 'mb-0 md:mb-0',
 				getTheme(color).className,
 			)}
 		>

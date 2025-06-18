@@ -3,6 +3,7 @@ import { ProseSplit } from '@/components/Content'
 import { DynamicFeed } from '@/components/Feed'
 import { Backdrop, ButtonGroup } from '@/components/UI'
 import {
+	bgColor,
 	getTheme,
 	invalidArrObjectData,
 	singularize,
@@ -49,14 +50,16 @@ const Feed = ({
 
 	return (
 		<Section
-			className={getTheme(primary?.color).isDark ? '__dark' : ''}
+			className={cn(
+				getTheme(primary?.color).isDark ? '__dark' : '',
+				'relative z-10 rounded-3xl md:rounded-4xl overflow-hidden',
+				'm-4 md:m-6',
+				bgColor(primary?.color),
+			)}
 			{...props}
 			{...dataset}
 		>
-			<Container
-				gap='prose'
-				className={cn('__lg', primary?.color !== 'None' && 'pb-0')}
-			>
+			<Container gap='prose' className={cn('__lg')}>
 				<ProseSplit
 					position='Right'
 					color={primary?.color}
@@ -102,7 +105,7 @@ const Feed = ({
 				</div>
 			</Container>
 
-			<Backdrop
+			{/* <Backdrop
 				color={primary?.color}
 				offset='boxed'
 				className={
@@ -110,7 +113,7 @@ const Feed = ({
 					validArrObjectData(links) &&
 					'bottom-12 md:bottom-16 2xl:bottom-24'
 				}
-			/>
+			/> */}
 		</Section>
 	)
 }
