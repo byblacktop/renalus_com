@@ -37,21 +37,6 @@ const Contact = ({ title, address, phone, fax, link }) => {
 				<Details title='Phone' icon='phone' data={phone} />
 				<Details title='Fax' icon='fax' data={fax} />
 			</dl>
-
-			{/* CTA — Appointment */}
-			{/* <Button
-				color='accent'
-				link={{
-					href: `/contact?location=${slugify(title)}`,
-					text: 'Request Appointment',
-				}}
-				arrow={{
-					direction: 'upRight',
-					loop: true,
-					className: 'p-2 rounded-full bg-green-700 text-green-100',
-				}}
-				className='btn-cta w-full'
-			/> */}
 		</div>
 	)
 }

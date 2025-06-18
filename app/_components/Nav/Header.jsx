@@ -170,7 +170,7 @@ const HeaderNav = ({ theme, hasScrolled }) => {
 				theme={hasScrolled || navActive ? 'dark' : theme.logo}
 				variant={
 					hasScrolled || navActive
-						? 'primary'
+						? 'duo'
 						: theme.logo === 'dark'
 							? 'duo'
 							: 'primary'
@@ -227,7 +227,13 @@ const NavSecondary = ({ isDark, hasScrolled, breakpoint }) => {
 					<li>
 						<Button
 							link={NAV.cta.portal}
-							color='primary'
+							color={
+								hasScrolled
+									? 'primary'
+									: isDark
+										? 'notice'
+										: 'primary'
+							}
 							variant='stroke'
 							target='_blank'
 						/>

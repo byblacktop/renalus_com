@@ -1,5 +1,3 @@
-import { asLink } from '@prismicio/client'
-
 import { Container, LinkShell, Section } from '@/components/Compose'
 import { Lead, Thread } from '@/components/Content'
 import { CoverImage } from '@/components/Media'
@@ -36,7 +34,7 @@ const CtaCards = ({
 					className={{
 						thread: 'col-span-5',
 						title: 'text-white',
-						subtitle: '__label text-indigo-800',
+						subtitle: '__label __brief text-indigo-200',
 					}}
 					{...contentProps}
 				/>
@@ -55,7 +53,7 @@ const CtaCards = ({
 					'rounded-4xl overflow-hidden',
 				)}
 			>
-				<Overlay gradient='indigo' blend='hard' />
+				<Overlay gradient='dark' blend='multiply' />
 			</CoverImage>
 		</Section>
 	)
@@ -78,6 +76,7 @@ const Card = ({ title, subtitle, link, color }) => {
 			<LinkShell
 				link={link}
 				className={cn(
+					'h-full',
 					'px-4 md:px-6 xl:px-8',
 					'pt-6 md:pt-8 xl:pt-10',
 					'pb-3 md:pb-4 xl:pb-5',
@@ -90,6 +89,7 @@ const Card = ({ title, subtitle, link, color }) => {
 					gap='md'
 					as={{ title: 'h6', subtitle: 'h4' }}
 					className={{
+						lead: 'h-full',
 						title: '__label __xs',
 					}}
 				>
@@ -97,6 +97,7 @@ const Card = ({ title, subtitle, link, color }) => {
 
 					<div
 						className={cn(
+							'mt-auto',
 							'border-t border-t-current',
 							'p-0 pt-4 md:pt-5',
 						)}
