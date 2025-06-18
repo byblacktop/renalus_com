@@ -1,46 +1,24 @@
 import { Container, Section } from '@/components/Compose'
 import { Lead } from '@/components/Content'
-import { CoverImage } from '@/components/Media'
-import { Overlay, Spacer } from '@/components/UI'
-import { cn } from '@/lib/utils'
+import { Aside } from './Aside'
 
-const Hero = ({ img, children, ...contentProps }) => (
-	<Section className='__hero bg-indigo' data-theme='dark'>
-		<Spacer size={1} split={true} />
-		<Container
-			layout='block'
-			className={cn(
-				'pb-fluid-x max-w-[min(96vw,var(--breakpoint-2xl))]',
-				'rounded-4xl overflow-hidden',
-			)}
-		>
-			{/* Content */}
-			<div className='relative z-1 flex flex-col gap-4 justify-end'>
-				{/* Spacer */}
-				<Spacer size={6} />
+const Hero = ({ title, subtitle, ...asideProps }) => (
+	<Section className='__hero bg-slate-100' data-theme='light'>
+		<Container width='xs' className='__xl' gap='base'>
+			<Lead
+				title={title}
+				subtitle={subtitle}
+				as={{ subtitle: 'h6' }}
+				className={{
+					title: 'd2',
+					subtitle: '__label __brief __xs',
+				}}
+			/>
 
-				{/* Location Title */}
-				<Lead
-					{...contentProps}
-					as={{ subtitle: 'h6' }}
-					className={{
-						lead: '*:text-stone-100',
-						subtitle: '__label',
-					}}
-				/>
+			<div className='w-full h-px bg-slate-200' />
 
-				{/* Content */}
-				{children}
-			</div>
-
-			{/* Image w/ Color Overlay */}
-			<CoverImage priority img={img}>
-				<Overlay gradient='indigo' blend='multiply' />
-			</CoverImage>
+			<Aside {...asideProps} />
 		</Container>
-
-		{/* Backdrop */}
-		<div className='absolute inset-x-0 bottom-0 top-auto h-[calc(10%+32px)] rounded-t-4xl bg-bg' />
 	</Section>
 )
 

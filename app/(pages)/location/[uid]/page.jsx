@@ -2,6 +2,7 @@ import { Section } from '@/components/Compose'
 import { Button } from '@/components/UI'
 import { getDoc, getMeta, getStaticParams } from '@/lib/api'
 import { getFeaturedImg } from '@/lib/helpers'
+import { Aside } from '@/location/Aside'
 import { Body } from '@/location/Body'
 import { Hero } from '@/location/Hero'
 
@@ -13,16 +14,12 @@ const Location = async ({ params }) => {
 
 	return (
 		<>
-			<Hero
-				img={img}
-				title={location.title}
-				subtitle='Location Overview'
-			/>
+			<Hero img={img} subtitle='Location Overview' {...location} />
 
-			<Body {...location} />
+			{/* <Body {...location} /> */}
 
 			{/* Back button */}
-			<Section
+			{/* <Section
 				container
 				width='sm'
 				className={{ container: '__3xs' }}
@@ -40,7 +37,7 @@ const Location = async ({ params }) => {
 						className: '-order-1',
 					}}
 				/>
-			</Section>
+			</Section> */}
 		</>
 	)
 }

@@ -29,16 +29,7 @@ const getHours = hours => {
 	return firstRow
 }
 
-const LocationCard = ({
-	// title,
-	// address,
-	// phone,
-	// hours,
-	link,
-	imgs,
-	variant = '',
-	...props
-}) => {
+const LocationCard = ({ link, imgs, variant = '', ...props }) => {
 	const img = getFeaturedImg(imgs)
 
 	return (

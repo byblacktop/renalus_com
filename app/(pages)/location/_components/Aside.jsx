@@ -8,15 +8,8 @@ import {
 } from '@/lib/helpers'
 import { Hours, Info } from './Info'
 
-const Aside = ({ logo, hours, ...contact }) => (
-	<Flex as='aside' layout='stack' gap='sm'>
-		<AspectImage
-			img={logo}
-			w={16}
-			h={5}
-			className={{ img: 'object-contain' }}
-		/>
-
+const Aside = ({ hours, ...contact }) => (
+	<Flex as='aside' layout='grid' columns={2} gap='md'>
 		<Contact {...contact} />
 		<Open hours={hours} />
 	</Flex>
@@ -24,8 +17,8 @@ const Aside = ({ logo, hours, ...contact }) => (
 
 const Contact = ({ title, address, phone, fax, link }) => {
 	return (
-		<Box>
-			<h4>Contact</h4>
+		<div className='max-w-2xs space-y-4'>
+			<h5 className='__label __sm'>Contact</h5>
 
 			{/* Contact details */}
 			<dl className='p __xs space-y-1 md:space-y-2'>
@@ -45,12 +38,12 @@ const Contact = ({ title, address, phone, fax, link }) => {
 				<Details title='Fax' icon='fax' data={fax} />
 			</dl>
 
-			{/* CTA — Contact */}
-			<Button
+			{/* CTA — Appointment */}
+			{/* <Button
 				color='accent'
 				link={{
 					href: `/contact?location=${slugify(title)}`,
-					text: 'Contact Us',
+					text: 'Request Appointment',
 				}}
 				arrow={{
 					direction: 'upRight',
@@ -58,8 +51,8 @@ const Contact = ({ title, address, phone, fax, link }) => {
 					className: 'p-2 rounded-full bg-green-700 text-green-100',
 				}}
 				className='btn-cta w-full'
-			/>
-		</Box>
+			/> */}
+		</div>
 	)
 }
 
@@ -70,7 +63,7 @@ const Details = ({ title, icon, data, ...props }) => {
 		<>
 			<dt className='sr-only'>{title}</dt>
 			<dd>
-				<Info icon={icon} title={data} {...props} />
+				<Info icon={icon} title={data} size='__sm' {...props} />
 			</dd>
 		</>
 	)
@@ -80,10 +73,10 @@ const Open = ({ hours }) => {
 	if (invalidObjectData(hours)) return
 
 	return (
-		<Box>
-			<h4>Hours</h4>
+		<div className='max-w-2xs space-y-4'>
+			<h5 className='__label __sm'>Hours</h5>
 			<Hours hours={hours} />
-		</Box>
+		</div>
 	)
 }
 
