@@ -19,7 +19,7 @@ const CollectionCards = ({
 				<Prose
 					width='sm'
 					className={{
-						subtitle: '__label __brief __sm text-indigo-100',
+						subtitle: '__label __brief __xs text-indigo-200',
 					}}
 					{...contentProps}
 				/>
@@ -33,7 +33,7 @@ const CollectionCards = ({
 						'inset-x-4 md:inset-x-7 2xl:inset-x-10',
 						'rounded-3xl md:rounded-4xl',
 					),
-					img: cn('z-2', 'mix-blend-multiply grayscale-100'),
+					img: cn('z-2', 'mix-blend-multiply grayscale-50'),
 				}}
 			>
 				{/* Gradient */}

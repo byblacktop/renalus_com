@@ -45,8 +45,12 @@ const SubNavItems = ({ links, className }) => {
 					<Button
 						link={link}
 						variant='flat'
-						color='slate'
-						className={cn('w-full p-2.5 font-medium', className)}
+						color='zinc'
+						className={cn(
+							'px-2.5 py-2 font-medium w-full min-w-auto whitespace-normal text-balance',
+							'bg-zinc-50/0 hover:bg-zinc-50 rounded-lg',
+							className,
+						)}
 						{...link}
 					/>
 				</dd>
@@ -57,11 +61,25 @@ const SubNavItems = ({ links, className }) => {
 
 const SubNavGroups = ({ links, className }) => {
 	return (
-		<div className={cn('grid grid-cols-2 gap-4 xl:gap-8', className)}>
+		<div
+			className={cn(
+				'grid grid-cols-2',
+				'divide-x divide-zinc-100',
+				className,
+			)}
+		>
+			{/* Link Columns */}
 			{Object.entries(links).map(([key, { label, links }]) => (
-				<div key={key} className='space-y-2'>
-					<h4 className='__xs'>{label}</h4>
-					<Divider />
+				<div
+					key={key}
+					className={cn(
+						'space-y-5 px-10 max-w-3xs',
+						'first:pl-0 last:pr-0',
+					)}
+				>
+					<h5 className='__sm inline-flex gap-2 pl-2.5 text-slate'>
+						{label}
+					</h5>
 					<SubNavItems links={links} />
 				</div>
 			))}

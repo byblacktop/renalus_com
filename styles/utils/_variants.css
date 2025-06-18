@@ -71,18 +71,11 @@
 		--v-hover: var(--color-indigo-900);
 	}
 
-	/* Light */
-	&[class*='-light'] {
-		--v-color: var(--color-indigo-100);
-		--v-contrast: var(--color-indigo-800);
-		--v-hover: var(--color-indigo-600);
-	}
-
 	/* Zinc */
 	&[class*='-zinc'] {
 		--v-color: var(--color-zinc-600);
 		--v-contrast: var(--color-zinc-100);
-		--v-hover: var(--color-zinc-800);
+		--v-hover: var(--color-zinc-900);
 	}
 
 	/* Slate */
@@ -90,6 +83,20 @@
 		--v-color: var(--color-slate-600);
 		--v-contrast: var(--color-zinc-100);
 		--v-hover: var(--color-slate-800);
+	}
+
+	/* Light */
+	&[class*='-light'] {
+		--v-color: var(--color-indigo-100);
+		--v-contrast: var(--color-indigo-800);
+		--v-hover: var(--color-indigo-600);
+	}
+
+	/* Dark */
+	&[class*='-dark'] {
+		--v-color: var(--color-indigo-700);
+		--v-contrast: var(--color-indigo-100);
+		--v-hover: var(--color-indigo-800);
 	}
 
 	/* White */

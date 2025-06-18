@@ -45,10 +45,9 @@ const getProse = ({ title, subtitle, body, group }) => {
 const getGrowClass = ({ body, group, accent }) => {
 	if (invalidContent(body)) return ['grow-6', 'grow-4']
 
-	const grow = body.length > 1 || (group === 'Body' && !accent)
+	if (group === 'Title') return ['grow-6 shrink-0', 'grow-1']
 
-	if (group === 'Title')
-		return grow ? ['grow-6', 'grow-4'] : ['grow-4', 'grow-6']
+	const grow = body.length > 1 || (group === 'Body' && !accent)
 
 	return grow ? ['grow-4', 'grow-6'] : ['grow-6', 'grow-4']
 }
@@ -91,20 +90,21 @@ const ProseSplit = ({
 			<Lead
 				{...lead}
 				gap='sm'
-				as={{ ...as, subtitle: as?.body }}
+				as={{
+					...as,
+					subtitle: group === 'Body' ? as?.subtitle : as?.body,
+				}}
 				className={{
-					lead: cn(
-						'flex-1 text-balance',
-						growClass[0],
-						cp(className, 'lead'),
-					),
-					title: cp(className, 'title'),
-					subtitle:
+					lead: cn(growClass[0], cp(className, 'lead')),
+					title: cn(cp(className, 'title')),
+					subtitle: cn(
+						group === 'Title' && 'text-pretty',
 						group === 'Body'
 							? subtitleClass
 							: group === 'Title'
 								? '__sm'
 								: null,
+					),
 				}}
 			>
 				<ButtonGroup
@@ -126,7 +126,7 @@ const ProseSplit = ({
 				wrap={true}
 				as={{ title: as?.subtitle, subtitle: as?.body }}
 				className={{
-					lead: cn('flex-1', growClass[1]),
+					lead: cn(growClass[1]),
 					title: cn(
 						subtitleClass,
 						position === 'Right' &&

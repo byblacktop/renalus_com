@@ -6,10 +6,10 @@ import {
 	PopoverButton,
 	PopoverPanel,
 } from '@headlessui/react'
-import { cva } from 'cva'
 
 import { Button } from '@/components/UI'
-import { cn } from '@/lib/utils'
+import { invalidArrObjectData } from '@/lib/helpers'
+import { cn, kn } from '@/lib/utils'
 import { SubNavGroups, SubNavItems, SubNavLocations } from './Flyout'
 
 const layouts = {
@@ -17,15 +17,6 @@ const layouts = {
 	groups: SubNavGroups,
 	locations: SubNavLocations,
 }
-
-const variants = cva('', {
-	variants: {
-		cols: {
-			1: 'grid-cols-1',
-			2: 'grid-cols-2',
-		},
-	},
-})
 
 const SubNav = ({ link, className }) => {
 	const [open, setOpen] = useState(false)
@@ -74,10 +65,24 @@ const SubNav = ({ link, className }) => {
 						)}
 					>
 						<Dropdown {...link.subnav} />
+
+						<SubNavCTA cta={link.subnav.cta} />
 					</div>
 				</PopoverPanel>
 			)}
 		</Popover>
+	)
+}
+
+const SubNavCTA = ({ cta }) => {
+	if (invalidArrObjectData(cta)) return null
+
+	return (
+		<div className='flex gap-2 bg-zinc-100 -m-8 mt-8 py-1.5 px-10'>
+			{cta.map(({ link, ...props }) => (
+				<Button key={kn(link)} link={link} {...props} />
+			))}
+		</div>
 	)
 }
 

@@ -323,6 +323,9 @@ li {
 }
 
 .__brief {
+	@apply inline-flex
+		gap-2;
+
 	&:before {
 		@apply content-['']
 		relative
