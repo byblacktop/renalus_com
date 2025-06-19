@@ -1,13 +1,18 @@
 import { Title } from '@/components/Content'
 import { Flex } from '@/components/UI'
+import { cn } from '@/lib/utils'
 
 const ToggleTitle = ({ title, subtitle }) => (
-	<Flex gap='xs'>
+	<Flex gap='xs' align='start'>
 		{/* Trigger Subtitle */}
 		<Title
 			title={subtitle}
 			as={typeof subtitle === 'string' && 'h6'}
-			className='__label __sm text-slate'
+			className={cn(
+				'__label',
+				'relative top-[0.15em]',
+				'leading-none font-semibold text-accent',
+			)}
 		/>
 
 		{/* Trigger Title */}

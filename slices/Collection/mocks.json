@@ -601,11 +601,560 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "gallery",
+		"variation": "list",
 		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "About Us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
 			"cols": {
 				"__TYPE__": "FieldContent",
-				"value": "4",
+				"type": "Select",
+				"value": "2"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo 700"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Weakness",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lack of concentration",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Loss of appetite",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Metallic taste in the mouth or ammonia breath",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Inability to sleep",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Swelling in the feet and ankles",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dry, itchy skin",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Muscle cramps at night",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Puffiness around the eyes, particularly in the morning",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Increasing frequency of urination, especially at night",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "1"
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "There are often no early warning symptoms; however, as CKD progresses, symptoms may include:",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Symptoms",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "High blood pressure leading to headaches, dizziness, confusion, double/blurred vision, seizures, heart disease, heart attack and stroke.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Anemia (low red blood cell counts) that can be associated with pale complexion, weakness, reduced ability to exercise, feeling of poor health, constantly feeling cold, heart disease and decreased alertness and thinking ability.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cardiovascular Disease developing a higher risk of chest pain, heart attacks and congestive heart failure with symptoms including shortness of breath, swelling of feet/ankles, stroke, and narrowing of the arteries in the legs causing pain, inability to walk and tissue breakdown.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cholesterol/triglyceride abnormalities",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nutrition imbalances, decrease in appetite, lower protein levels in blood, and loss of muscle.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Bone disorders including abnormal bone structure, decreased bone strength and bone pain.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Complications of CKD",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "columns",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Where Skill, Precision, and Compassion Combine",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "The Renalus Difference",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "There are a lot of surgical specialists out there. They share the same medical degrees, the same knowledge of surgical solutions, and maybe even the same technologies, but what sets us apart is how we utilize our experience, knowledge and drive for improved patient experiences and outcomes. ",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "3"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Slate 100"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "01 Renalus Care",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Chronic Kidney Disease",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Personalized management to slow progression and maintain your quality of life",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Thorough evaluation when protein or blood appears in urine",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Proteinuria and Hematuria",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "02 Renalus Care",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Glomerular Diseases",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "03 Renalus Care",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Specialized treatment for kidney filtering disorders",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "a352b274-cf2f-41f8-a437-9c79244b3216",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": ""
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "featured",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Whistle"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Courage"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Culpa tempor consectetur nostrud minim. Ad minim ut et tempor quis amet et duis nulla quis consectetur minim. Velit adipisicing tempor ex."
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Slate 50",
 				"type": "Select"
 			},
 			"items": {
@@ -615,97 +1164,59 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"img",
+								"title",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3558,3558&w=1920&h=1920",
-									"alt": "gold-colored framed hippie sunglasses on white surface",
-									"origin": {
-										"id": "1-nx1QR5dTE",
-										"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-										"width": 3558,
-										"height": 3558
-									},
-									"width": 1920,
-									"height": 1920,
-									"edit": {
-										"background": "transparent",
-										"zoom": 1,
-										"crop": {
-											"x": 0,
-											"y": 0
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Length",
+												"spans": []
+											},
+											"direction": "ltr"
 										}
-									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {
-										"md": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3558,3558&w=1200&h=1200",
-											"alt": "gold-colored framed hippie sunglasses on white surface",
-											"origin": {
-												"id": "1-nx1QR5dTE",
-												"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 3558,
-												"height": 3558
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Fugiat ",
+												"spans": []
 											},
-											"width": 1200,
-											"height": 1200,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
+											"direction": "ltr"
 										},
-										"sm": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3558,3558&w=480&h=480",
-											"alt": "gold-colored framed hippie sunglasses on white surface",
-											"origin": {
-												"id": "1-nx1QR5dTE",
-												"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 3558,
-												"height": 3558
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Elit labore",
+												"spans": []
 											},
-											"width": 480,
-											"height": 480,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
+											"direction": "ltr"
 										},
-										"blur": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3558,3558&w=16&h=16",
-											"alt": "gold-colored framed hippie sunglasses on white surface",
-											"origin": {
-												"id": "1-nx1QR5dTE",
-												"url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 3558,
-												"height": 3558
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Aliqua exercitation ",
+												"spans": []
 											},
-											"width": 16,
-											"height": 16,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Aliqua do labore",
+												"spans": []
 											},
-											"credits": null
+											"direction": "ltr"
 										}
-									}
+									]
 								}
 							]
 						]
@@ -714,19 +1225,769 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Length",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Fugiat ",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Elit labore",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Aliqua exercitation ",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Aliqua do labore",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxudXRyaXRpb258ZW58MHx8fHwxNzQ5ODQ3ODEzfDA&ixlib=rb-4.1.0&q=85",
+				"alt": "poached egg with vegetables and tomatoes on blue plate",
+				"origin": {
+					"id": "jUPOXXRNdcA",
+					"url": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxudXRyaXRpb258ZW58MHx8fHwxNzQ5ODQ3ODEzfDA&ixlib=rb-4.1.0&q=85",
+					"width": 5503,
+					"height": 3745
+				},
+				"width": 5503,
+				"height": 3745,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"accent": {
+				"__TYPE__": "FieldContent",
+				"value": "Gray 25",
+				"type": "Select"
+			},
+			"links": {
+				"key": "cc29a494-5eb8-4c22-9af4-eff4450211e7",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev",
+					"text": "bound",
+					"variant": "Default"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "faq",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Patient Information",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Learn more about what to expect for your visit with us.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo 700"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "How can I schedule an appointment?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Call our office or request an appointment online for a staff member to call you and schedule a visit. Visit our Locations page to find the most convenient office to call. You can also submit our quick Online Appointment Request Form and a staff member will contact you.",
+												"spans": [
+													{
+														"type": "hyperlink",
+														"start": 112,
+														"end": 121,
+														"data": {
+															"__TYPE__": "ExternalLink",
+															"url": "#",
+															"target": "_self"
+														}
+													},
+													{
+														"type": "strong",
+														"start": 112,
+														"end": 121
+													},
+													{
+														"type": "hyperlink",
+														"start": 201,
+														"end": 232,
+														"data": {
+															"__TYPE__": "ExternalLink",
+															"url": "#",
+															"target": "_self"
+														}
+													},
+													{
+														"type": "strong",
+														"start": 201,
+														"end": 232
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"links",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"key": "4ea7e9f1-311e-48d3-976c-ebf68756caf5",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "#",
+												"text": "Learn More",
+												"variant": "Call to Action"
+											}
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Scheduling & Appointments"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Please bring a valid picture ID, insurance card(s), a list of your current medications, and your previous prescription for glasses or contact lenses.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What should I bring to my eye exam?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Scheduling & Appointments"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "A routine eye exam typically takes 45 minutes to an hour.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "How long does an eye exam typically take?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Scheduling & Appointments"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We accept VSP, Davis Vision, EYEMED, Medicare, Spectera, Avesis, Superior, Tricare, Alabama Medicaid, VCP, BCBS, CIGNA, and Healthspring. VCI and FCE Members may only be seen in Florida locations. If your insurance is not listed, please call the office to inquire.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Insurance & Payment Options"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What insurance plans do you accept?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Insurance & Payment Options"
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Our self-pay eye exams start at $99, and eyeglass packages start at $89. We offer a variety of frames to fit almost any budget.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What is the cost of an eye exam without insurance?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Insurance & Payment Options"
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We accept cash, debit cards, Visa, MasterCard, Discover, American Express, and CareCredit at all locations.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What types of payments do you accept?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "The Patient Portal gives you access to your records, orders, prescriptions, receipts, and more. ",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 4,
+														"end": 18
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "New Patients: Use the username and temporary password given at your appointment to log in.",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 13
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Existing Patients: Use the credentials provided when scheduling. If you don’t have an appointment, call the office where you were last seen to receive your login details.",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 18
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"group",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Patient Portal & Online Access"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "How do I log in to the Patient Portal?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"links",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"key": "2b3df717-d8b3-4b8a-9c44-0adf684b6958",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "/portal",
+												"target": "_blank",
+												"text": "Login to Patient Portal",
+												"variant": "Default"
+											}
+										},
+										{
+											"key": "814902f2-9de9-4a27-b6bd-1b3ea9475abf",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "/contact",
+												"text": "Contact Us for Assistance",
+												"variant": "Default"
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"toggles": {
+				"__TYPE__": "TableContent",
+				"content": [
+					{
+						"key": "973bff9d-1309-473c-8ab6-7964af5ac171",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "472a1e36-af09-4f8a-b867-6d1d9c11bede",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "How can I schedule an appointment?",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 34
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "609d79a9-0610-4143-9bdb-7a138e294b09",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "FAQs",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "spread",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Conditions We Treat",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Whatever Kidney Condition You're Facing, We Have the Experience to Help",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Kidney health conditions can range from early warning signs to complex, ongoing diseases—and each person's experience is unique.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "a970f1aa-1294-4214-a0e3-655381d87454",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "AnyLink",
+							"kind": "any",
+							"text": ""
+						}
+					}
+				]
+			},
+			"position": {
+				"__TYPE__": "FieldContent",
+				"value": "Right",
+				"type": "Select"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo 700"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Our Mission",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "e14f0893-de2b-45d8-8792-c8334f2815e2",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "Learn More"
+									}
+								}
+							],
+							[
 								"img",
 								{
 									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=0,0,5184,3456&w=1920&h=1280",
-									"alt": "clear eyeglasses on book",
+									"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3104,4656&w=400&h=600",
+									"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
 									"origin": {
-										"id": "d05w6_7FaPM",
-										"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
-										"width": 5184,
-										"height": 3456
+										"id": "7r1HxvVC7AY",
+										"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+										"width": 3104,
+										"height": 4656
 									},
-									"width": 1920,
-									"height": 1280,
+									"width": 400,
+									"height": 600,
 									"edit": {
 										"background": "transparent",
 										"zoom": 1,
@@ -738,45 +1999,45 @@
 									"credits": null,
 									"__TYPE__": "ImageContent",
 									"thumbnails": {
-										"md": {
+										"lg": {
 											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=0,0,5184,3456&w=1200&h=800",
-											"alt": "clear eyeglasses on book",
+											"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,259,3104,4139&w=600&h=800",
+											"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
 											"origin": {
-												"id": "d05w6_7FaPM",
-												"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
-												"width": 5184,
-												"height": 3456
+												"id": "7r1HxvVC7AY",
+												"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 3104,
+												"height": 4656
 											},
-											"width": 1200,
+											"width": 600,
 											"height": 800,
 											"edit": {
 												"background": "transparent",
 												"zoom": 1,
 												"crop": {
 													"x": 0,
-													"y": 0
+													"y": 259
 												}
 											},
 											"credits": null
 										},
 										"sm": {
 											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=864,0,3456,3456&w=480&h=480",
-											"alt": "clear eyeglasses on book",
+											"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3104,4656&w=200&h=300",
+											"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
 											"origin": {
-												"id": "d05w6_7FaPM",
-												"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
-												"width": 5184,
-												"height": 3456
+												"id": "7r1HxvVC7AY",
+												"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 3104,
+												"height": 4656
 											},
-											"width": 480,
-											"height": 480,
+											"width": 200,
+											"height": 300,
 											"edit": {
 												"background": "transparent",
 												"zoom": 1,
 												"crop": {
-													"x": 864,
+													"x": 0,
 													"y": 0
 												}
 											},
@@ -784,13 +2045,13 @@
 										},
 										"blur": {
 											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=864,0,3456,3456&w=16&h=16",
-											"alt": "clear eyeglasses on book",
+											"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,776,3104,3104&w=16&h=16",
+											"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
 											"origin": {
-												"id": "d05w6_7FaPM",
-												"url": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
-												"width": 5184,
-												"height": 3456
+												"id": "7r1HxvVC7AY",
+												"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 3104,
+												"height": 4656
 											},
 											"width": 16,
 											"height": 16,
@@ -798,7 +2059,325 @@
 												"background": "transparent",
 												"zoom": 1,
 												"crop": {
-													"x": 864,
+													"x": 0,
+													"y": 776
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Chronic Kidney Diseas",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We help you slow progression and maintain quality of life through personalized management plans that work with your daily routine.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=1580,0,2528,3792&w=400&h=600",
+									"alt": "orange fruits under blue sky during daytime",
+									"origin": {
+										"id": "eaOjEz8746k",
+										"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+										"width": 5688,
+										"height": 3792
+									},
+									"width": 400,
+									"height": 600,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 1580,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"lg": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=1422,0,2844,3792&w=600&h=800",
+											"alt": "orange fruits under blue sky during daytime",
+											"origin": {
+												"id": "eaOjEz8746k",
+												"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 5688,
+												"height": 3792
+											},
+											"width": 600,
+											"height": 800,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 1422,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=1580,0,2528,3792&w=200&h=300",
+											"alt": "orange fruits under blue sky during daytime",
+											"origin": {
+												"id": "eaOjEz8746k",
+												"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 5688,
+												"height": 3792
+											},
+											"width": 200,
+											"height": 300,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 1580,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=948,0,3792,3792&w=16&h=16",
+											"alt": "orange fruits under blue sky during daytime",
+											"origin": {
+												"id": "eaOjEz8746k",
+												"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 5688,
+												"height": 3792
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 948,
+													"y": 0
+												}
+											},
+											"credits": null
+										}
+									}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Proteinuria and Hematuria",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "When protein or blood appears in your urine, we provide thorough evaluation and targeted treatment to address the underlying causes.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "97e82e9f-e76b-4a14-9c9d-6bfd67989c28",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "#",
+										"text": "Learn More"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Glomerular Diseases",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Our specialized approach to kidney filtering disorders focuses on preserving function while managing symptoms that affect your daily life.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "16b6c694-7345-4e37-9b82-a2e074c58ed1",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "#",
+										"text": "Learn More"
+									}
+								}
+							],
+							[
+								"img",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=504,0,2016,3024&w=400&h=600",
+									"alt": "yellow lemon fruit beside green leaves",
+									"origin": {
+										"id": "3t8rQ3LD2JI",
+										"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+										"width": 3024,
+										"height": 3024
+									},
+									"width": 400,
+									"height": 600,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 504,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"lg": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=378,0,2268,3024&w=600&h=800",
+											"alt": "yellow lemon fruit beside green leaves",
+											"origin": {
+												"id": "3t8rQ3LD2JI",
+												"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 3024,
+												"height": 3024
+											},
+											"width": 600,
+											"height": 800,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 378,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"sm": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=504,0,2016,3024&w=200&h=300",
+											"alt": "yellow lemon fruit beside green leaves",
+											"origin": {
+												"id": "3t8rQ3LD2JI",
+												"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 3024,
+												"height": 3024
+											},
+											"width": 200,
+											"height": 300,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 504,
+													"y": 0
+												}
+											},
+											"credits": null
+										},
+										"blur": {
+											"provider": "imgix",
+											"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3024,3024&w=16&h=16",
+											"alt": "yellow lemon fruit beside green leaves",
+											"origin": {
+												"id": "3t8rQ3LD2JI",
+												"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 3024,
+												"height": 3024
+											},
+											"width": 16,
+											"height": 16,
+											"edit": {
+												"background": "transparent",
+												"zoom": 1,
+												"crop": {
+													"x": 0,
 													"y": 0
 												}
 											},
@@ -813,118 +2392,63 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"img",
+								"title",
 								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,6000&w=1920&h=1920",
-									"alt": "shallow focus photo of black Ray-Ban wayfarer sunglasses",
-									"origin": {
-										"id": "K62u25Jk6vo",
-										"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-										"width": 6000,
-										"height": 6000
-									},
-									"width": 1920,
-									"height": 1920,
-									"edit": {
-										"background": "transparent",
-										"zoom": 1,
-										"crop": {
-											"x": 0,
-											"y": 0
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "Electrolyte and Fluid Imbalances",
+												"spans": []
+											},
+											"direction": "ltr"
 										}
-									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {
-										"md": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,6000&w=1200&h=1200",
-											"alt": "shallow focus photo of black Ray-Ban wayfarer sunglasses",
-											"origin": {
-												"id": "K62u25Jk6vo",
-												"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 6000,
-												"height": 6000
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We restore your body's natural balance through careful monitoring and treatment plans designed around your specific needs.",
+												"spans": []
 											},
-											"width": 1200,
-											"height": 1200,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"sm": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,6000&w=480&h=480",
-											"alt": "shallow focus photo of black Ray-Ban wayfarer sunglasses",
-											"origin": {
-												"id": "K62u25Jk6vo",
-												"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 6000,
-												"height": 6000
-											},
-											"width": 480,
-											"height": 480,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"blur": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,6000&w=16&h=16",
-											"alt": "shallow focus photo of black Ray-Ban wayfarer sunglasses",
-											"origin": {
-												"id": "K62u25Jk6vo",
-												"url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 6000,
-												"height": 6000
-											},
-											"width": 16,
-											"height": 16,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
+											"direction": "ltr"
 										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"key": "5cb056e7-7e00-4ed2-a8b9-c50374176cd5",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "#",
+										"text": "Learn More"
 									}
 								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
+							],
 							[
 								"img",
 								{
 									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3999,5999&w=1920&h=2880",
-									"alt": "black framed eyeglasses on brown wooden table",
+									"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3709,5563&w=400&h=600",
+									"alt": "assorted sliced citrus fruits on brown wooden chopping board",
 									"origin": {
-										"id": "bSjqyqukCjY",
-										"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-										"width": 3999,
-										"height": 5999
+										"id": "1CsaVdwfIew",
+										"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+										"width": 3709,
+										"height": 5563
 									},
-									"width": 1920,
-									"height": 2880,
+									"width": 400,
+									"height": 600,
 									"edit": {
 										"background": "transparent",
 										"zoom": 1,
@@ -936,243 +2460,45 @@
 									"credits": null,
 									"__TYPE__": "ImageContent",
 									"thumbnails": {
-										"md": {
+										"lg": {
 											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,3999,5999&w=1200&h=1800",
-											"alt": "black framed eyeglasses on brown wooden table",
+											"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,309,3709,4945&w=600&h=800",
+											"alt": "assorted sliced citrus fruits on brown wooden chopping board",
 											"origin": {
-												"id": "bSjqyqukCjY",
-												"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 3999,
-												"height": 5999
+												"id": "1CsaVdwfIew",
+												"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 3709,
+												"height": 5563
 											},
-											"width": 1200,
-											"height": 1800,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"sm": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,1000,3999,3999&w=480&h=480",
-											"alt": "black framed eyeglasses on brown wooden table",
-											"origin": {
-												"id": "bSjqyqukCjY",
-												"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 3999,
-												"height": 5999
-											},
-											"width": 480,
-											"height": 480,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 1000
-												}
-											},
-											"credits": null
-										},
-										"blur": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,1000,3999,3999&w=16&h=16",
-											"alt": "black framed eyeglasses on brown wooden table",
-											"origin": {
-												"id": "bSjqyqukCjY",
-												"url": "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 3999,
-												"height": 5999
-											},
-											"width": 16,
-											"height": 16,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 1000
-												}
-											},
-											"credits": null
-										}
-									}
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"img",
-								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=0,0,4608,3456&w=1920&h=1440",
-									"alt": "eyeglasses on white table",
-									"origin": {
-										"id": "WeCoLo0Rxp4",
-										"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
-										"width": 4608,
-										"height": 3456
-									},
-									"width": 1920,
-									"height": 1440,
-									"edit": {
-										"background": "transparent",
-										"zoom": 1,
-										"crop": {
-											"x": 0,
-											"y": 0
-										}
-									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {
-										"md": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=0,0,4608,3456&w=1200&h=900",
-											"alt": "eyeglasses on white table",
-											"origin": {
-												"id": "WeCoLo0Rxp4",
-												"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
-												"width": 4608,
-												"height": 3456
-											},
-											"width": 1200,
-											"height": 900,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"sm": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=576,0,3456,3456&w=480&h=480",
-											"alt": "eyeglasses on white table",
-											"origin": {
-												"id": "WeCoLo0Rxp4",
-												"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
-												"width": 4608,
-												"height": 3456
-											},
-											"width": 480,
-											"height": 480,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 576,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"blur": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85&rect=576,0,3456,3456&w=16&h=16",
-											"alt": "eyeglasses on white table",
-											"origin": {
-												"id": "WeCoLo0Rxp4",
-												"url": "https://images.unsplash.com/photo-1534844978-b859e5a09ad6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxnbGFzc2VzfGVufDB8fHx8MTc0MzY2OTUyNXww&ixlib=rb-4.0.3&q=85",
-												"width": 4608,
-												"height": 3456
-											},
-											"width": 16,
-											"height": 16,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 576,
-													"y": 0
-												}
-											},
-											"credits": null
-										}
-									}
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"img",
-								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,4000&w=1920&h=1280",
-									"alt": "black-framed eyeglasses",
-									"origin": {
-										"id": "e8TtkC5xyv4",
-										"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-										"width": 6000,
-										"height": 4000
-									},
-									"width": 1920,
-									"height": 1280,
-									"edit": {
-										"background": "transparent",
-										"zoom": 1,
-										"crop": {
-											"x": 0,
-											"y": 0
-										}
-									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {
-										"md": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,0,6000,4000&w=1200&h=800",
-											"alt": "black-framed eyeglasses",
-											"origin": {
-												"id": "e8TtkC5xyv4",
-												"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 6000,
-												"height": 4000
-											},
-											"width": 1200,
+											"width": 600,
 											"height": 800,
 											"edit": {
 												"background": "transparent",
 												"zoom": 1,
 												"crop": {
 													"x": 0,
-													"y": 0
+													"y": 309
 												}
 											},
 											"credits": null
 										},
 										"sm": {
 											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=1000,0,4000,4000&w=480&h=480",
-											"alt": "black-framed eyeglasses",
+											"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3709,5563&w=200&h=300",
+											"alt": "assorted sliced citrus fruits on brown wooden chopping board",
 											"origin": {
-												"id": "e8TtkC5xyv4",
-												"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 6000,
-												"height": 4000
+												"id": "1CsaVdwfIew",
+												"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 3709,
+												"height": 5563
 											},
-											"width": 480,
-											"height": 480,
+											"width": 200,
+											"height": 300,
 											"edit": {
 												"background": "transparent",
 												"zoom": 1,
 												"crop": {
-													"x": 1000,
+													"x": 0,
 													"y": 0
 												}
 											},
@@ -1180,13 +2506,13 @@
 										},
 										"blur": {
 											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=1000,0,4000,4000&w=16&h=16",
-											"alt": "black-framed eyeglasses",
+											"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,927,3709,3709&w=16&h=16",
+											"alt": "assorted sliced citrus fruits on brown wooden chopping board",
 											"origin": {
-												"id": "e8TtkC5xyv4",
-												"url": "https://images.unsplash.com/photo-1556306510-31ca015374b0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-												"width": 6000,
-												"height": 4000
+												"id": "1CsaVdwfIew",
+												"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
+												"width": 3709,
+												"height": 5563
 											},
 											"width": 16,
 											"height": 16,
@@ -1194,13 +2520,1125 @@
 												"background": "transparent",
 												"zoom": 1,
 												"crop": {
-													"x": 1000,
-													"y": 0
+													"x": 0,
+													"y": 927
 												}
 											},
 											"credits": null
 										}
 									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "previews",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Lifestyle",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Live with Energy, Confidence, and Peace of Mind About Your Health",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Quality of life isn't just about living longer—it's about feeling good, having energy for the things you love, and feeling confident about your health choices.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cols": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "1"
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Slate 100",
+				"type": "Select"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Choose Changes That Fit Your Life",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ann Taylor",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Anne Klein",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BCBGMAXAZRIA",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BEBE",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Betsey Johnson",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Boss",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Calvin Klein Jeans",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Carrera",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Champion",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Coach",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cole Haan",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cool Clip",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Costa",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Danny Gokey",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dilli Dalli",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dragon",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Draper James",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ducks Unlimited",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "FYSH",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "IZOD",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Jimmy Crystal",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Joseph Abboud",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Karl Lagerfeld",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kate Spade",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kensie",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "L.A.M.B.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lacoste",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lenton and Rusby",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Life is Good",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lilly Pulitzer",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Longchamp",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lulu Guiness",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Maui Jim",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Michael Kors",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nautica",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nike",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Oakley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Paradigm",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Penguin",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Polo Ralph Lauren",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Rayban",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Silhouette",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Steve Madden",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Superflex",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Takumi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ted Baker",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Tommy Hilfiger",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Under Armour",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Bradley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Wang",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Wiley X",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "XOXO",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Zac Posen",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Luxury Brands",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 13
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Fendi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Gucci",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Marc Jacobs",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Saint Laurent",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "4"
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading6",
+											"content": {
+												"text": "Fairfield",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ann Taylor",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Anne Klein",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BCBGMAXAZRIA",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "BEBE",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Betsey Johnson",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Boss",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Calvin Klein Jeans",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Carrera",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Champion",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Coach",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cole Haan",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Cool Clip",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Costa",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Danny Gokey",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dilli Dalli",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Dragon",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Draper James",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ducks Unlimited",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "FYSH",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "IZOD",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Jimmy Crystal",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Joseph Abboud",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Karl Lagerfeld",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kate Spade",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Kensie",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "L.A.M.B.",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lacoste",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lenton and Rusby",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Life is Good",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lilly Pulitzer",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Longchamp",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Lulu Guiness",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Maui Jim",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Michael Kors",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nautica",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Nike",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Oakley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Paradigm",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Penguin",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Polo Ralph Lauren",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Rayban",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Silhouette",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Steve Madden",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Superflex",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Takumi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Ted Baker",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Tommy Hilfiger",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Under Armour",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Bradley",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Vera Wang",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Wiley X",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "XOXO",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Zac Posen",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Luxury Brands",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 13
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Fendi",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Gucci",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Marc Jacobs",
+												"spans": []
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Saint Laurent",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"cols",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "4"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading5",
+											"content": {
+												"text": "Nine Mile Crossing",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
 								}
 							]
 						]
@@ -2374,7 +4812,7 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "toggles",
+		"variation": "highlight",
 		"primary": {
 			"title": {
 				"__TYPE__": "StructuredTextContent",
@@ -2382,7 +4820,15 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Patient Information",
+							"text": "Protect Your Future Health with Simple Steps You Can Take Today.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "heading4",
+						"content": {
+							"text": "You don't need to overhaul your entire life to make a meaningful difference.",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -2393,9 +4839,17 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
+						"type": "heading3",
+						"content": {
+							"text": "Here's the empowering truth: you have more control over your kidney health than you might think.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
 						"type": "paragraph",
 						"content": {
-							"text": "Learn more about what to expect for your visit with us.",
+							"text": "Prevention isn't about living in fear of what might happen, it's about making informed choices that give you confidence in your long-term health. The same lifestyle habits that help you feel better today are often the ones that provide the strongest protection against kidney disease tomorrow.",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -2405,7 +4859,7 @@
 			"color": {
 				"__TYPE__": "FieldContent",
 				"type": "Select",
-				"value": "Indigo"
+				"value": "Indigo 700"
 			},
 			"items": {
 				"__TYPE__": "GroupContentType",
@@ -2437,41 +4891,8 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "Call our office or request an appointment online for a staff member to call you and schedule a visit. Visit our Locations page to find the most convenient office to call. You can also submit our quick Online Appointment Request Form and a staff member will contact you.",
-												"spans": [
-													{
-														"type": "hyperlink",
-														"start": 112,
-														"end": 121,
-														"data": {
-															"__TYPE__": "ExternalLink",
-															"url": "#",
-															"target": "_self"
-														}
-													},
-													{
-														"type": "strong",
-														"start": 112,
-														"end": 121
-													},
-													{
-														"type": "hyperlink",
-														"start": 201,
-														"end": 232,
-														"data": {
-															"__TYPE__": "ExternalLink",
-															"url": "#",
-															"target": "_self"
-														}
-													},
-													{
-														"type": "strong",
-														"start": 201,
-														"end": 232
-													}
-												]
-											},
-											"direction": "ltr"
+												"text": "Mollit labore ea qui."
+											}
 										}
 									]
 								}
@@ -2494,14 +4915,6 @@
 										}
 									]
 								}
-							],
-							[
-								"group",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Scheduling & Appointments"
-								}
 							]
 						]
 					},
@@ -2516,10 +4929,8 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "Please bring a valid picture ID, insurance card(s), a list of your current medications, and your previous prescription for glasses or contact lenses.",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Ipsum sit deserunt ut ad ea cupidatat ipsum. Dolore eiusmod fugiat voluptate veniam veniam fugiat reprehenderit voluptate fugiat. Cupidatat consequat incididunt commodo quis qui excepteur aliquip cillum ullamco aliquip aute consectetur enim."
+											}
 										}
 									]
 								}
@@ -2539,14 +4950,6 @@
 										}
 									]
 								}
-							],
-							[
-								"group",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Scheduling & Appointments"
-								}
 							]
 						]
 					},
@@ -2561,10 +4964,8 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "A routine eye exam typically takes 45 minutes to an hour.",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Ipsum nisi mollit nisi aliquip ullamco reprehenderit consequat anim fugiat dolore aliqua laborum enim fugiat. Nisi sunt ullamco ipsum incididunt aliquip et exercitation pariatur dolor. Mollit excepteur magna dolore proident commodo veniam laborum do officia."
+											}
 										}
 									]
 								}
@@ -2584,14 +4985,6 @@
 										}
 									]
 								}
-							],
-							[
-								"group",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Scheduling & Appointments"
-								}
 							]
 						]
 					},
@@ -2606,20 +4999,10 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "We accept VSP, Davis Vision, EYEMED, Medicare, Spectera, Avesis, Superior, Tricare, Alabama Medicaid, VCP, BCBS, CIGNA, and Healthspring. VCI and FCE Members may only be seen in Florida locations. If your insurance is not listed, please call the office to inquire.",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Proident aute proident deserunt nostrud est anim incididunt proident consequat. Cillum labore dolore exercitation laboris non non consectetur ad aliquip occaecat incididunt dolore Lorem."
+											}
 										}
 									]
-								}
-							],
-							[
-								"group",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Insurance & Payment Options"
 								}
 							],
 							[
@@ -2644,14 +5027,6 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"group",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Insurance & Payment Options"
-								}
-							],
-							[
 								"body",
 								{
 									"__TYPE__": "StructuredTextContent",
@@ -2659,10 +5034,8 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "Our self-pay eye exams start at $99, and eyeglass packages start at $89. We offer a variety of frames to fit almost any budget.",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Occaecat pariatur in consectetur dolor labore eiusmod aute sit."
+											}
 										}
 									]
 								}
@@ -2689,14 +5062,6 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"group",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Insurance & Payment Options"
-								}
-							],
-							[
 								"body",
 								{
 									"__TYPE__": "StructuredTextContent",
@@ -2704,10 +5069,8 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "We accept cash, debit cards, Visa, MasterCard, Discover, American Express, and CareCredit at all locations.",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Commodo deserunt adipisicing voluptate dolore ad quis voluptate est laborum."
+											}
 										}
 									]
 								}
@@ -2741,54 +5104,10 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "The Patient Portal gives you access to your records, orders, prescriptions, receipts, and more. ",
-												"spans": [
-													{
-														"type": "strong",
-														"start": 4,
-														"end": 18
-													}
-												]
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "New Patients: Use the username and temporary password given at your appointment to log in.",
-												"spans": [
-													{
-														"type": "strong",
-														"start": 0,
-														"end": 13
-													}
-												]
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Existing Patients: Use the credentials provided when scheduling. If you don’t have an appointment, call the office where you were last seen to receive your login details.",
-												"spans": [
-													{
-														"type": "strong",
-														"start": 0,
-														"end": 18
-													}
-												]
-											},
-											"direction": "ltr"
+												"text": "Labore elit amet sit."
+											}
 										}
 									]
-								}
-							],
-							[
-								"group",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Patient Portal & Online Access"
 								}
 							],
 							[
@@ -2898,227 +5217,58 @@
 					{
 						"type": "heading5",
 						"content": {
-							"text": "FAQs",
+							"text": "Kidney Disease Prevention",
 							"spans": []
 						},
 						"direction": "ltr"
 					}
 				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "featured",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Whistle"
-						}
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading5",
-						"content": {
-							"text": "Courage"
-						}
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Culpa tempor consectetur nostrud minim. Ad minim ut et tempor quis amet et duis nulla quis consectetur minim. Velit adipisicing tempor ex."
-						}
-					}
-				]
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"value": "Slate 50",
-				"type": "Select"
-			},
-			"items": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "Length",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Fugiat ",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Elit labore",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Aliqua exercitation ",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Aliqua do labore",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "Length",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Fugiat ",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Elit labore",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Aliqua exercitation ",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Aliqua do labore",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					}
-				]
 			},
 			"img": {
 				"provider": "imgix",
-				"url": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxudXRyaXRpb258ZW58MHx8fHwxNzQ5ODQ3ODEzfDA&ixlib=rb-4.1.0&q=85",
-				"alt": "poached egg with vegetables and tomatoes on blue plate",
+				"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85&rect=0,1,4489,2987&w=768&h=511",
+				"alt": "man in yellow tank top running near shore",
 				"origin": {
-					"id": "jUPOXXRNdcA",
-					"url": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxudXRyaXRpb258ZW58MHx8fHwxNzQ5ODQ3ODEzfDA&ixlib=rb-4.1.0&q=85",
-					"width": 5503,
-					"height": 3745
+					"id": "z4WH11FMfIQ",
+					"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85",
+					"width": 4489,
+					"height": 2988
 				},
-				"width": 5503,
-				"height": 3745,
+				"width": 768,
+				"height": 511,
 				"edit": {
 					"background": "transparent",
 					"zoom": 1,
 					"crop": {
 						"x": 0,
-						"y": 0
+						"y": 1
 					}
 				},
 				"credits": null,
 				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"accent": {
-				"__TYPE__": "FieldContent",
-				"value": "Gray 25",
-				"type": "Select"
-			},
-			"links": {
-				"key": "cc29a494-5eb8-4c22-9af4-eff4450211e7",
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "https://slicemachine.dev",
-					"text": "bound",
-					"variant": "Default"
+				"thumbnails": {
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85&rect=751,0,2988,2988&w=16&h=16",
+						"alt": "man in yellow tank top running near shore",
+						"origin": {
+							"id": "z4WH11FMfIQ",
+							"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85",
+							"width": 4489,
+							"height": 2988
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 751,
+								"y": 0
+							}
+						},
+						"credits": null
+					}
 				}
 			}
 		},
@@ -3131,28 +5281,15 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "spread",
+		"variation": "toggles",
 		"primary": {
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading5",
-						"content": {
-							"text": "Conditions We Treat",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
 			"title": {
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Whatever Kidney Condition You're Facing, We Have the Experience to Help",
+							"text": "Build Your Best Defense Against Future Kidney Problems",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -3165,32 +5302,12 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Kidney health conditions can range from early warning signs to complex, ongoing diseases—and each person's experience is unique.",
+							"text": "Prevention isn't just about avoiding problems, but creating a foundation of health that lets you live confidently without constantly worrying about what might happen. The good news is that many of the most effective prevention strategies are also the ones that help you feel better day-to-day.",
 							"spans": []
 						},
 						"direction": "ltr"
 					}
 				]
-			},
-			"links": {
-				"__TYPE__": "RepeatableContent",
-				"type": "Link",
-				"value": [
-					{
-						"key": "a970f1aa-1294-4214-a0e3-655381d87454",
-						"__TYPE__": "LinkContent",
-						"value": {
-							"__TYPE__": "AnyLink",
-							"kind": "any",
-							"text": ""
-						}
-					}
-				]
-			},
-			"position": {
-				"__TYPE__": "FieldContent",
-				"value": "Right",
-				"type": "Select"
 			},
 			"color": {
 				"__TYPE__": "FieldContent",
@@ -3204,128 +5321,6 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"subtitle",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading6",
-											"content": {
-												"text": "Our Mission",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"link",
-								{
-									"key": "e14f0893-de2b-45d8-8792-c8334f2815e2",
-									"__TYPE__": "LinkContent",
-									"value": {
-										"__TYPE__": "ExternalLink",
-										"url": "http://twitter.com",
-										"text": "Learn More"
-									}
-								}
-							],
-							[
-								"img",
-								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3104,4656&w=400&h=600",
-									"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
-									"origin": {
-										"id": "7r1HxvVC7AY",
-										"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-										"width": 3104,
-										"height": 4656
-									},
-									"width": 400,
-									"height": 600,
-									"edit": {
-										"background": "transparent",
-										"zoom": 1,
-										"crop": {
-											"x": 0,
-											"y": 0
-										}
-									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {
-										"lg": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,259,3104,4139&w=600&h=800",
-											"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
-											"origin": {
-												"id": "7r1HxvVC7AY",
-												"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 3104,
-												"height": 4656
-											},
-											"width": 600,
-											"height": 800,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 259
-												}
-											},
-											"credits": null
-										},
-										"sm": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3104,4656&w=200&h=300",
-											"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
-											"origin": {
-												"id": "7r1HxvVC7AY",
-												"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 3104,
-												"height": 4656
-											},
-											"width": 200,
-											"height": 300,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"blur": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,776,3104,3104&w=16&h=16",
-											"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
-											"origin": {
-												"id": "7r1HxvVC7AY",
-												"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 3104,
-												"height": 4656
-											},
-											"width": 16,
-											"height": 16,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 776
-												}
-											},
-											"credits": null
-										}
-									}
-								}
-							],
-							[
 								"title",
 								{
 									"__TYPE__": "StructuredTextContent",
@@ -3333,7 +5328,7 @@
 										{
 											"type": "heading4",
 											"content": {
-												"text": "Chronic Kidney Diseas",
+												"text": "How can I schedule an appointment?",
 												"spans": []
 											},
 											"direction": "ltr"
@@ -3349,10 +5344,60 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "We help you slow progression and maintain quality of life through personalized management plans that work with your daily routine.",
-												"spans": []
+												"text": "Call our office or request an appointment online for a staff member to call you and schedule a visit. Visit our Locations page to find the most convenient office to call. You can also submit our quick Online Appointment Request Form and a staff member will contact you.",
+												"spans": [
+													{
+														"type": "hyperlink",
+														"start": 112,
+														"end": 121,
+														"data": {
+															"__TYPE__": "ExternalLink",
+															"url": "#",
+															"target": "_self"
+														}
+													},
+													{
+														"type": "strong",
+														"start": 112,
+														"end": 121
+													},
+													{
+														"type": "hyperlink",
+														"start": 201,
+														"end": 232,
+														"data": {
+															"__TYPE__": "ExternalLink",
+															"url": "#",
+															"target": "_self"
+														}
+													},
+													{
+														"type": "strong",
+														"start": 201,
+														"end": 232
+													}
+												]
 											},
 											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"links",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"key": "4ea7e9f1-311e-48d3-976c-ebf68756caf5",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "#",
+												"text": "Learn More",
+												"variant": "Call to Action"
+											}
 										}
 									]
 								}
@@ -3363,116 +5408,6 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"img",
-								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=1580,0,2528,3792&w=400&h=600",
-									"alt": "orange fruits under blue sky during daytime",
-									"origin": {
-										"id": "eaOjEz8746k",
-										"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-										"width": 5688,
-										"height": 3792
-									},
-									"width": 400,
-									"height": 600,
-									"edit": {
-										"background": "transparent",
-										"zoom": 1,
-										"crop": {
-											"x": 1580,
-											"y": 0
-										}
-									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {
-										"lg": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=1422,0,2844,3792&w=600&h=800",
-											"alt": "orange fruits under blue sky during daytime",
-											"origin": {
-												"id": "eaOjEz8746k",
-												"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 5688,
-												"height": 3792
-											},
-											"width": 600,
-											"height": 800,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 1422,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"sm": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=1580,0,2528,3792&w=200&h=300",
-											"alt": "orange fruits under blue sky during daytime",
-											"origin": {
-												"id": "eaOjEz8746k",
-												"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 5688,
-												"height": 3792
-											},
-											"width": 200,
-											"height": 300,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 1580,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"blur": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=948,0,3792,3792&w=16&h=16",
-											"alt": "orange fruits under blue sky during daytime",
-											"origin": {
-												"id": "eaOjEz8746k",
-												"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 5688,
-												"height": 3792
-											},
-											"width": 16,
-											"height": 16,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 948,
-													"y": 0
-												}
-											},
-											"credits": null
-										}
-									}
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "Proteinuria and Hematuria",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
 								"body",
 								{
 									"__TYPE__": "StructuredTextContent",
@@ -3480,488 +5415,7 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "When protein or blood appears in your urine, we provide thorough evaluation and targeted treatment to address the underlying causes.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"link",
-								{
-									"key": "97e82e9f-e76b-4a14-9c9d-6bfd67989c28",
-									"__TYPE__": "LinkContent",
-									"value": {
-										"__TYPE__": "ExternalLink",
-										"url": "#",
-										"text": "Learn More"
-									}
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "Glomerular Diseases",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Our specialized approach to kidney filtering disorders focuses on preserving function while managing symptoms that affect your daily life.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"link",
-								{
-									"key": "16b6c694-7345-4e37-9b82-a2e074c58ed1",
-									"__TYPE__": "LinkContent",
-									"value": {
-										"__TYPE__": "ExternalLink",
-										"url": "#",
-										"text": "Learn More"
-									}
-								}
-							],
-							[
-								"img",
-								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=504,0,2016,3024&w=400&h=600",
-									"alt": "yellow lemon fruit beside green leaves",
-									"origin": {
-										"id": "3t8rQ3LD2JI",
-										"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-										"width": 3024,
-										"height": 3024
-									},
-									"width": 400,
-									"height": 600,
-									"edit": {
-										"background": "transparent",
-										"zoom": 1,
-										"crop": {
-											"x": 504,
-											"y": 0
-										}
-									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {
-										"lg": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=378,0,2268,3024&w=600&h=800",
-											"alt": "yellow lemon fruit beside green leaves",
-											"origin": {
-												"id": "3t8rQ3LD2JI",
-												"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 3024,
-												"height": 3024
-											},
-											"width": 600,
-											"height": 800,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 378,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"sm": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=504,0,2016,3024&w=200&h=300",
-											"alt": "yellow lemon fruit beside green leaves",
-											"origin": {
-												"id": "3t8rQ3LD2JI",
-												"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 3024,
-												"height": 3024
-											},
-											"width": 200,
-											"height": 300,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 504,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"blur": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3024,3024&w=16&h=16",
-											"alt": "yellow lemon fruit beside green leaves",
-											"origin": {
-												"id": "3t8rQ3LD2JI",
-												"url": "https://images.unsplash.com/photo-1597589022928-bb4002c099ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 3024,
-												"height": 3024
-											},
-											"width": 16,
-											"height": 16,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
-										}
-									}
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "Electrolyte and Fluid Imbalances",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "We restore your body's natural balance through careful monitoring and treatment plans designed around your specific needs.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"link",
-								{
-									"key": "5cb056e7-7e00-4ed2-a8b9-c50374176cd5",
-									"__TYPE__": "LinkContent",
-									"value": {
-										"__TYPE__": "ExternalLink",
-										"url": "#",
-										"text": "Learn More"
-									}
-								}
-							],
-							[
-								"img",
-								{
-									"provider": "imgix",
-									"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3709,5563&w=400&h=600",
-									"alt": "assorted sliced citrus fruits on brown wooden chopping board",
-									"origin": {
-										"id": "1CsaVdwfIew",
-										"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-										"width": 3709,
-										"height": 5563
-									},
-									"width": 400,
-									"height": 600,
-									"edit": {
-										"background": "transparent",
-										"zoom": 1,
-										"crop": {
-											"x": 0,
-											"y": 0
-										}
-									},
-									"credits": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {
-										"lg": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,309,3709,4945&w=600&h=800",
-											"alt": "assorted sliced citrus fruits on brown wooden chopping board",
-											"origin": {
-												"id": "1CsaVdwfIew",
-												"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 3709,
-												"height": 5563
-											},
-											"width": 600,
-											"height": 800,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 309
-												}
-											},
-											"credits": null
-										},
-										"sm": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,0,3709,5563&w=200&h=300",
-											"alt": "assorted sliced citrus fruits on brown wooden chopping board",
-											"origin": {
-												"id": "1CsaVdwfIew",
-												"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 3709,
-												"height": 5563
-											},
-											"width": 200,
-											"height": 300,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 0
-												}
-											},
-											"credits": null
-										},
-										"blur": {
-											"provider": "imgix",
-											"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85&rect=0,927,3709,3709&w=16&h=16",
-											"alt": "assorted sliced citrus fruits on brown wooden chopping board",
-											"origin": {
-												"id": "1CsaVdwfIew",
-												"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDk4ODEyNzV8MA&ixlib=rb-4.1.0&q=85",
-												"width": 3709,
-												"height": 5563
-											},
-											"width": 16,
-											"height": 16,
-											"edit": {
-												"background": "transparent",
-												"zoom": 1,
-												"crop": {
-													"x": 0,
-													"y": 927
-												}
-											},
-											"credits": null
-										}
-									}
-								}
-							]
-						]
-					}
-				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "list",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading5",
-						"content": {
-							"text": "About Us",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Expert Doctors of Optometry bringing clear vision across Northwest Florida and Southeast Alabama.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"cols": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "2"
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Indigo 700"
-			},
-			"items": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"list",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Weakness",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lack of concentration",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Loss of appetite",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Metallic taste in the mouth or ammonia breath",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Inability to sleep",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Swelling in the feet and ankles",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Dry, itchy skin",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Muscle cramps at night",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Puffiness around the eyes, particularly in the morning",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Increasing frequency of urination, especially at night",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"cols",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "1"
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading5",
-											"content": {
-												"text": "There are often no early warning symptoms; however, as CKD progresses, symptoms may include:",
+												"text": "Please bring a valid picture ID, insurance card(s), a list of your current medications, and your previous prescription for glasses or contact lenses.",
 												"spans": []
 											},
 											"direction": "ltr"
@@ -3977,203 +5431,7 @@
 										{
 											"type": "heading4",
 											"content": {
-												"text": "Symptoms",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"list",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "list-item",
-											"content": {
-												"text": "High blood pressure leading to headaches, dizziness, confusion, double/blurred vision, seizures, heart disease, heart attack and stroke.",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Anemia (low red blood cell counts) that can be associated with pale complexion, weakness, reduced ability to exercise, feeling of poor health, constantly feeling cold, heart disease and decreased alertness and thinking ability.",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cardiovascular Disease developing a higher risk of chest pain, heart attacks and congestive heart failure with symptoms including shortness of breath, swelling of feet/ankles, stroke, and narrowing of the arteries in the legs causing pain, inability to walk and tissue breakdown.",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cholesterol/triglyceride abnormalities",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Nutrition imbalances, decrease in appetite, lower protein levels in blood, and loss of muscle.",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Bone disorders including abnormal bone structure, decreased bone strength and bone pain.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "Complications of CKD",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					}
-				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "columns",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Where Skill, Precision, and Compassion Combine",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading5",
-						"content": {
-							"text": "The Renalus Difference",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "There are a lot of surgical specialists out there. They share the same medical degrees, the same knowledge of surgical solutions, and maybe even the same technologies, but what sets us apart is how we utilize our experience, knowledge and drive for improved patient experiences and outcomes. ",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"cols": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "3"
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Slate 100"
-			},
-			"items": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"subtitle",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading6",
-											"content": {
-												"text": "01 Renalus Care",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Chronic Kidney Disease",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Personalized management to slow progression and maintain your quality of life",
+												"text": "What should I bring to my eye exam?",
 												"spans": []
 											},
 											"direction": "ltr"
@@ -4194,7 +5452,7 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "Thorough evaluation when protein or blood appears in urine",
+												"text": "A routine eye exam typically takes 45 minutes to an hour.",
 												"spans": []
 											},
 											"direction": "ltr"
@@ -4208,25 +5466,9 @@
 									"__TYPE__": "StructuredTextContent",
 									"value": [
 										{
-											"type": "heading5",
+											"type": "heading4",
 											"content": {
-												"text": "Proteinuria and Hematuria",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"subtitle",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading6",
-											"content": {
-												"text": "02 Renalus Care",
+												"text": "How long does an eye exam typically take?",
 												"spans": []
 											},
 											"direction": "ltr"
@@ -4240,38 +5482,6 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Glomerular Diseases",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"subtitle",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading6",
-											"content": {
-												"text": "03 Renalus Care",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
 								"body",
 								{
 									"__TYPE__": "StructuredTextContent",
@@ -4279,7 +5489,23 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "Specialized treatment for kidney filtering disorders",
+												"text": "We accept VSP, Davis Vision, EYEMED, Medicare, Spectera, Avesis, Superior, Tricare, Alabama Medicaid, VCP, BCBS, CIGNA, and Healthspring. VCI and FCE Members may only be seen in Florida locations. If your insurance is not listed, please call the office to inquire.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What insurance plans do you accept?",
 												"spans": []
 											},
 											"direction": "ltr"
@@ -4288,100 +5514,19 @@
 								}
 							]
 						]
-					}
-				]
-			},
-			"links": {
-				"__TYPE__": "RepeatableContent",
-				"type": "Link",
-				"value": [
-					{
-						"key": "a352b274-cf2f-41f8-a437-9c79244b3216",
-						"__TYPE__": "LinkContent",
-						"value": {
-							"__TYPE__": "AnyLink",
-							"kind": "any",
-							"text": ""
-						}
-					}
-				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "previews",
-		"primary": {
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading5",
-						"content": {
-							"text": "Lifestyle",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Live with Energy, Confidence, and Peace of Mind About Your Health",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Quality of life isn't just about living longer—it's about feeling good, having energy for the things you love, and feeling confident about your health choices.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"cols": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "1"
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"value": "Slate 100",
-				"type": "Select"
-			},
-			"items": {
-				"__TYPE__": "GroupContentType",
-				"value": [
+					},
 					{
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"title",
+								"body",
 								{
 									"__TYPE__": "StructuredTextContent",
 									"value": [
 										{
-											"type": "heading5",
+											"type": "paragraph",
 											"content": {
-												"text": "Choose Changes That Fit Your Life",
+												"text": "Our self-pay eye exams start at $99, and eyeglass packages start at $89. We offer a variety of frames to fit almost any budget.",
 												"spans": []
 											},
 											"direction": "ltr"
@@ -4390,446 +5535,86 @@
 								}
 							],
 							[
-								"list",
+								"title",
 								{
 									"__TYPE__": "StructuredTextContent",
 									"value": [
 										{
-											"type": "list-item",
+											"type": "heading4",
 											"content": {
-												"text": "Ann Taylor",
+												"text": "What is the cost of an eye exam without insurance?",
 												"spans": []
 											},
 											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Anne Klein",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "BCBGMAXAZRIA",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "BEBE",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Betsey Johnson",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Boss",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Calvin Klein Jeans",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Carrera",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Champion",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Coach",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cole Haan",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cool Clip",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Costa",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Danny Gokey",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Dilli Dalli",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Dragon",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Draper James",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ducks Unlimited",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "FYSH",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "IZOD",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Jimmy Crystal",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Joseph Abboud",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Karl Lagerfeld",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Kate Spade",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Kensie",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "L.A.M.B.",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lacoste",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lenton and Rusby",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Life is Good",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lilly Pulitzer",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Longchamp",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lulu Guiness",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Maui Jim",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Michael Kors",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Nautica",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Nike",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Oakley",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Paradigm",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Penguin",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Polo Ralph Lauren",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Rayban",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Silhouette",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Steve Madden",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Superflex",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Takumi",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ted Baker",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Tommy Hilfiger",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Under Armour",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Vera Bradley",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Vera Wang",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Wiley X",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "XOXO",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Zac Posen",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "",
+												"text": "We accept cash, debit cards, Visa, MasterCard, Discover, American Express, and CareCredit at all locations.",
 												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What types of payments do you accept?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "The Patient Portal gives you access to your records, orders, prescriptions, receipts, and more. ",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 4,
+														"end": 18
+													}
+												]
 											},
 											"direction": "ltr"
 										},
 										{
-											"type": "heading5",
+											"type": "list-item",
 											"content": {
-												"text": "Luxury Brands",
+												"text": "New Patients: Use the username and temporary password given at your appointment to log in.",
 												"spans": [
 													{
 														"type": "strong",
@@ -4843,559 +5628,18 @@
 										{
 											"type": "list-item",
 											"content": {
-												"text": "Fendi",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Gucci",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Marc Jacobs",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Saint Laurent",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"cols",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "4"
-								}
-							],
-							[
-								"subtitle",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading6",
-											"content": {
-												"text": "Fairfield",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"list",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ann Taylor",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Anne Klein",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "BCBGMAXAZRIA",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "BEBE",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Betsey Johnson",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Boss",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Calvin Klein Jeans",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Carrera",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Champion",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Coach",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cole Haan",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Cool Clip",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Costa",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Danny Gokey",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Dilli Dalli",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Dragon",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Draper James",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ducks Unlimited",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "FYSH",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "IZOD",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Jimmy Crystal",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Joseph Abboud",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Karl Lagerfeld",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Kate Spade",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Kensie",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "L.A.M.B.",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lacoste",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lenton and Rusby",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Life is Good",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lilly Pulitzer",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Longchamp",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Lulu Guiness",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Maui Jim",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Michael Kors",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Nautica",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Nike",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Oakley",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Paradigm",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Penguin",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Polo Ralph Lauren",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Rayban",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Silhouette",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Steve Madden",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Superflex",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Takumi",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Ted Baker",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Tommy Hilfiger",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Under Armour",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Vera Bradley",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Vera Wang",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Wiley X",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "XOXO",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Zac Posen",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "heading5",
-											"content": {
-												"text": "Luxury Brands",
+												"text": "Existing Patients: Use the credentials provided when scheduling. If you don’t have an appointment, call the office where you were last seen to receive your login details.",
 												"spans": [
 													{
 														"type": "strong",
 														"start": 0,
-														"end": 13
+														"end": 18
 													}
 												]
 											},
 											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Fendi",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Gucci",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Marc Jacobs",
-												"spans": []
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Saint Laurent",
-												"spans": []
-											},
-											"direction": "ltr"
 										}
 									]
-								}
-							],
-							[
-								"cols",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "4"
 								}
 							],
 							[
@@ -5404,12 +5648,42 @@
 									"__TYPE__": "StructuredTextContent",
 									"value": [
 										{
-											"type": "heading5",
+											"type": "heading4",
 											"content": {
-												"text": "Nine Mile Crossing",
+												"text": "How do I log in to the Patient Portal?",
 												"spans": []
 											},
 											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"links",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"key": "2b3df717-d8b3-4b8a-9c44-0adf684b6958",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "/portal",
+												"target": "_blank",
+												"text": "Login to Patient Portal",
+												"variant": "Default"
+											}
+										},
+										{
+											"key": "814902f2-9de9-4a27-b6bd-1b3ea9475abf",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "/contact",
+												"text": "Contact Us for Assistance",
+												"variant": "Default"
+											}
 										}
 									]
 								}
@@ -5417,6 +5691,117 @@
 						]
 					}
 				]
+			},
+			"toggles": {
+				"__TYPE__": "TableContent",
+				"content": [
+					{
+						"key": "973bff9d-1309-473c-8ab6-7964af5ac171",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "472a1e36-af09-4f8a-b867-6d1d9c11bede",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "How can I schedule an appointment?",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 34
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "609d79a9-0610-4143-9bdb-7a138e294b09",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Kidney Disease Prevention",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85&rect=0,1,4489,2987&w=768&h=511",
+				"alt": "man in yellow tank top running near shore",
+				"origin": {
+					"id": "z4WH11FMfIQ",
+					"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85",
+					"width": 4489,
+					"height": 2988
+				},
+				"width": 768,
+				"height": 511,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 1
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85&rect=751,0,2988,2988&w=16&h=16",
+						"alt": "man in yellow tank top running near shore",
+						"origin": {
+							"id": "z4WH11FMfIQ",
+							"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85",
+							"width": 4489,
+							"height": 2988
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 751,
+								"y": 0
+							}
+						},
+						"credits": null
+					}
+				}
 			}
 		},
 		"items": [

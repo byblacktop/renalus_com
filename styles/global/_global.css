@@ -62,12 +62,16 @@ body {
 [data-theme='dark'] {
 	--fg: var(--color-zinc-100);
 	--fg-h: var(--color-indigo-100);
+	--accent: var(--color-red-400);
+	--color-accent: var(--accent);
 }
 
 .__light,
 [data-theme='light'] {
 	--fg: var(--color-indigo-900);
 	--fg-h: var(--color-indigo);
+	--accent: var(--color-red);
+	--color-accent: var(--accent);
 }
 
 /** Layout and baseline */

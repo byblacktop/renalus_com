@@ -2,8 +2,10 @@ import {
 	CollectionAlpha,
 	CollectionCards,
 	CollectionColumns,
+	CollectionFaqs,
 	CollectionFeatured,
 	CollectionGallery,
+	CollectionHighlight,
 	CollectionList,
 	CollectionPopovers,
 	CollectionPreviews,
@@ -27,6 +29,8 @@ const layouts = {
 	popovers: CollectionPopovers,
 	alpha: CollectionAlpha,
 	spread: CollectionSpread,
+	faq: CollectionFaqs,
+	highlight: CollectionHighlight,
 }
 
 const resolver = {
@@ -41,7 +45,7 @@ const Collection = ({
 	return (
 		<Shell
 			as={layouts[variation] ?? layouts.default}
-			{...getSliceData(slice_type, variation)}
+			{...getSliceData(slice_type, variation, primary.color)}
 			{...resolveProps(primary, resolver)}
 			{...context}
 		/>

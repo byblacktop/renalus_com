@@ -4,7 +4,16 @@ import { Flex } from '@/components/UI/Flex'
 import { cn, cp } from '@/lib/utils'
 
 const ToggleHeader = ({ children, className }) => (
-	<header
+	// <header
+	// 	className={cn(
+	// 		'group relative z-2 w-full',
+	// 		'cursor-pointer',
+	// 		'py-2 md:py-3',
+	// 		cp(className, 'header', true),
+	// 	)}
+	// >
+	<DisclosureButton
+		as='header'
 		className={cn(
 			'group relative z-2 w-full',
 			'cursor-pointer',
@@ -12,17 +21,16 @@ const ToggleHeader = ({ children, className }) => (
 			cp(className, 'header', true),
 		)}
 	>
-		<DisclosureButton as='div' className='group w-full'>
-			<Flex
-				layout='flex'
-				items='center'
-				justify='between'
-				className={cp(className, 'container')}
-			>
-				{children}
-			</Flex>
-		</DisclosureButton>
-	</header>
+		<Flex
+			layout='flex'
+			items='center'
+			justify='between'
+			className={cp(className, 'container')}
+		>
+			{children}
+		</Flex>
+	</DisclosureButton>
+	// </header>
 )
 
 export { ToggleHeader }

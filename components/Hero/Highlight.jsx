@@ -13,6 +13,7 @@ const HeroHighlight = ({
 			align='end'
 			accent={true}
 			linkPosition='after'
+			group='Body'
 			linkProps={{
 				variant: ['outline', 'stroke'],
 				arrow: [
