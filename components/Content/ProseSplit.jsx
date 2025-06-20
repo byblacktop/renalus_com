@@ -49,7 +49,7 @@ const getGrowClass = ({ body, group, accent }) => {
 
 	const grow = accent ? false : body.length > 1 || group === 'Body'
 
-	return grow ? ['grow-4', 'grow-6'] : ['grow-6', 'grow-1']
+	return grow ? ['grow-1', 'grow-1'] : ['grow-6', 'grow-1']
 }
 
 const ProseSplit = ({
@@ -133,7 +133,7 @@ const ProseSplit = ({
 							group === 'Title' &&
 							'place-self-end',
 					),
-					subtitle: cn('__sm', cp(className, 'body')),
+					subtitle: cn('__sm max-w-2xl', cp(className, 'body')),
 				}}
 			>
 				{accent && (

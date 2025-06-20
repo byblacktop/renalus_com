@@ -7,11 +7,13 @@ import { cn } from '@/lib/utils'
 const FeatureStatement = ({
 	img,
 	color,
+	position,
 	close,
 	transition,
 	dataset,
 	...contentProps
 }) => {
+	console.log(position, contentProps)
 	return (
 		<Section
 			className={cn('pl-8 md:pl-16 xl:pl-24 z-2', bgColor(color))}
@@ -37,6 +39,7 @@ const FeatureStatement = ({
 					{/* TODO: Double check this... kinda weird... or extract to component */}
 					<div
 						className={cn(
+							position === 'Left' && 'order-2',
 							'relative overflow-hidden',
 							'rounded-3xl md:rounded-4xl xl:rounded-5xl', // Round sides
 							!close &&

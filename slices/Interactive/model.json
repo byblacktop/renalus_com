@@ -1,436 +1,445 @@
 {
-	"id": "interactive",
-	"type": "SharedSlice",
-	"name": "Interactive",
-	"description": "Interactive",
-	"variations": [
-		{
-			"id": "default",
-			"name": "Spread",
-			"docURL": "...",
-			"version": "initial",
-			"description": "Default",
-			"primary": {
-				"subtitle": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Label",
-						"placeholder": "",
-						"allowTargetBlank": true,
-						"single": "heading5,heading6"
-					}
-				},
-				"title": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Title",
-						"placeholder": "Main Heading",
-						"allowTargetBlank": true,
-						"single": "heading2,heading3,heading4,heading5,heading6"
-					}
-				},
-				"body": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Intro Content",
-						"placeholder": "Introduce the Collection",
-						"allowTargetBlank": true,
-						"multi": "paragraph,heading5,heading6,strong,em,list-item,o-list-item"
-					}
-				},
-				"position": {
-					"type": "Select",
-					"config": {
-						"label": "Content Position",
-						"placeholder": "",
-						"options": ["Right", "Left"],
-						"default_value": "Right"
-					}
-				},
-				"color": {
-					"type": "Select",
-					"config": {
-						"label": "Background Color",
-						"placeholder": "",
-						"options": [
-							"None",
-							"Indigo 50",
-							"Indigo 100",
-							"Indigo 200",
-							"Indigo 700",
-							"Indigo 800",
-							"Indigo 900",
-							"Slate 50",
-							"Slate 100",
-							"Slate 200",
-							"Zinc 100",
-							"Zinc 200",
-							"Blue",
-							"Green",
-							"Red",
-							"White"
-						],
-						"default_value": "None"
-					}
-				},
-				"items": {
-					"type": "Group",
-					"config": {
-						"label": "Items",
-						"repeat": true,
-						"fields": {
-							"img": {
-								"type": "Image",
-								"config": {
-									"label": "Image",
-									"constraint": {
-										"width": 400,
-										"height": 600
-									},
-									"thumbnails": [
-										{
-											"name": "lg",
-											"width": 600,
-											"height": 800
-										},
-										{
-											"name": "sm",
-											"width": 200,
-											"height": 300
-										},
-										{
-											"name": "blur",
-											"width": 16,
-											"height": 16
-										}
-									]
-								}
-							},
-							"subtitle": {
-								"type": "StructuredText",
-								"config": {
-									"label": "Label",
-									"placeholder": "",
-									"allowTargetBlank": false,
-									"single": "heading6,heading5"
-								}
-							},
-							"title": {
-								"type": "StructuredText",
-								"config": {
-									"label": "Title",
-									"placeholder": "",
-									"allowTargetBlank": true,
-									"single": "heading2,heading3,heading4"
-								}
-							},
-							"body": {
-								"type": "StructuredText",
-								"config": {
-									"label": "Body",
-									"placeholder": "",
-									"allowTargetBlank": true,
-									"multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
-								}
-							},
-							"link": {
-								"type": "Link",
-								"config": {
-									"label": "Link",
-									"placeholder": "",
-									"select": null,
-									"allowTargetBlank": true,
-									"allowText": true
-								}
-							}
-						}
-					}
-				}
-			},
-			"items": {},
-			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-		},
-		{
-			"id": "panels",
-			"name": "Panels",
-			"docURL": "...",
-			"version": "initial",
-			"description": "Default",
-			"primary": {
-				"subtitle": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Label",
-						"placeholder": "",
-						"allowTargetBlank": true,
-						"single": "heading5,heading6"
-					}
-				},
-				"title": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Title",
-						"placeholder": "Main Heading",
-						"allowTargetBlank": true,
-						"single": "heading2,heading3,heading4,heading5,heading6"
-					}
-				},
-				"body": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Intro Content",
-						"placeholder": "Introduce the Collection",
-						"allowTargetBlank": true,
-						"multi": "paragraph,heading5,heading6,strong,em,list-item,o-list-item"
-					}
-				},
-				"position": {
-					"type": "Select",
-					"config": {
-						"label": "Content Position",
-						"placeholder": "",
-						"options": ["Right", "Left"],
-						"default_value": "Right"
-					}
-				},
-				"color": {
-					"type": "Select",
-					"config": {
-						"label": "Background Color",
-						"placeholder": "",
-						"options": [
-							"None",
-							"Indigo 50",
-							"Indigo 100",
-							"Indigo 200",
-							"Indigo 700",
-							"Indigo 800",
-							"Indigo 900",
-							"Slate 50",
-							"Slate 100",
-							"Slate 200",
-							"Zinc 100",
-							"Zinc 200",
-							"Blue",
-							"Green",
-							"Red",
-							"White"
-						],
-						"default_value": "None"
-					}
-				},
-				"items": {
-					"type": "Group",
-					"config": {
-						"label": "Items",
-						"repeat": true,
-						"fields": {
-							"img": {
-								"type": "Image",
-								"config": {
-									"label": "Image",
-									"constraint": {
-										"width": 1200,
-										"height": null
-									},
-									"thumbnails": [
-										{
-											"name": "blur",
-											"width": 16,
-											"height": 16
-										}
-									]
-								}
-							},
-							"subtitle": {
-								"type": "StructuredText",
-								"config": {
-									"label": "Label",
-									"placeholder": "",
-									"allowTargetBlank": false,
-									"single": "heading6,heading5"
-								}
-							},
-							"title": {
-								"type": "StructuredText",
-								"config": {
-									"label": "Title",
-									"placeholder": "",
-									"allowTargetBlank": true,
-									"single": "heading2,heading3,heading4"
-								}
-							},
-							"body": {
-								"type": "StructuredText",
-								"config": {
-									"label": "Body",
-									"placeholder": "",
-									"allowTargetBlank": true,
-									"multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
-								}
-							},
-							"link": {
-								"type": "Link",
-								"config": {
-									"label": "Link",
-									"placeholder": "",
-									"select": null,
-									"allowTargetBlank": true,
-									"allowText": true
-								}
-							}
-						}
-					}
-				}
-			},
-			"items": {},
-			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-		},
-		{
-			"id": "stack",
-			"name": "Stack",
-			"docURL": "...",
-			"version": "initial",
-			"description": "Default",
-			"primary": {
-				"subtitle": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Label",
-						"placeholder": "",
-						"allowTargetBlank": true,
-						"single": "heading5,heading6"
-					}
-				},
-				"title": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Title",
-						"placeholder": "Main Heading",
-						"allowTargetBlank": true,
-						"single": "heading2,heading3,heading4,heading5,heading6"
-					}
-				},
-				"body": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Intro Content",
-						"placeholder": "Introduce the Collection",
-						"allowTargetBlank": true,
-						"multi": "paragraph,heading5,heading6,strong,em,list-item,o-list-item"
-					}
-				},
-				"position": {
-					"type": "Select",
-					"config": {
-						"label": "Content Position",
-						"placeholder": "",
-						"options": ["Right", "Left"],
-						"default_value": "Right"
-					}
-				},
-				"color": {
-					"type": "Select",
-					"config": {
-						"label": "Background Color",
-						"placeholder": "",
-						"options": [
-							"None",
-							"Indigo 50",
-							"Indigo 100",
-							"Indigo 200",
-							"Indigo 700",
-							"Indigo 800",
-							"Indigo 900",
-							"Slate 50",
-							"Slate 100",
-							"Slate 200",
-							"Zinc 100",
-							"Zinc 200",
-							"Blue",
-							"Green",
-							"Red",
-							"White"
-						],
-						"default_value": "None"
-					}
-				},
-				"items": {
-					"type": "Group",
-					"config": {
-						"label": "Items",
-						"repeat": true,
-						"fields": {
-							"img": {
-								"type": "Image",
-								"config": {
-									"label": "Image",
-									"constraint": {
-										"width": 400,
-										"height": 600
-									},
-									"thumbnails": [
-										{
-											"name": "lg",
-											"width": 600,
-											"height": 800
-										},
-										{
-											"name": "sm",
-											"width": 200,
-											"height": 300
-										},
-										{
-											"name": "blur",
-											"width": 16,
-											"height": 16
-										}
-									]
-								}
-							},
-							"subtitle": {
-								"type": "StructuredText",
-								"config": {
-									"label": "Label",
-									"placeholder": "",
-									"allowTargetBlank": false,
-									"single": "heading6"
-								}
-							},
-							"title": {
-								"type": "StructuredText",
-								"config": {
-									"label": "Title",
-									"placeholder": "",
-									"allowTargetBlank": true,
-									"single": "heading5,heading6,heading4"
-								}
-							},
-							"body": {
-								"type": "StructuredText",
-								"config": {
-									"label": "Body",
-									"placeholder": "",
-									"allowTargetBlank": true,
-									"single": "paragraph,strong,em"
-								}
-							},
-							"link": {
-								"type": "Link",
-								"config": {
-									"label": "Link",
-									"placeholder": "",
-									"select": null,
-									"allowTargetBlank": true,
-									"allowText": true
-								}
-							}
-						}
-					}
-				}
-			},
-			"items": {},
-			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-		}
-	]
+  "id": "interactive",
+  "type": "SharedSlice",
+  "name": "Interactive",
+  "description": "Interactive",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Spread",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "primary": {
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Label",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading5,heading6"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Main Heading",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6"
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Intro Content",
+            "placeholder": "Introduce the Collection",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading5,heading6,strong,em,list-item,o-list-item"
+          }
+        },
+        "position": {
+          "type": "Select",
+          "config": {
+            "label": "Content Position",
+            "placeholder": "",
+            "options": [
+              "Right",
+              "Left"
+            ],
+            "default_value": "Right"
+          }
+        },
+        "color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Indigo 50",
+              "Indigo 100",
+              "Indigo 200",
+              "Indigo 700",
+              "Indigo 800",
+              "Indigo 900",
+              "Slate 50",
+              "Slate 100",
+              "Slate 200",
+              "Zinc 100",
+              "Zinc 200",
+              "Blue",
+              "Green",
+              "Red",
+              "White"
+            ],
+            "default_value": "None"
+          }
+        },
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Items",
+            "repeat": true,
+            "fields": {
+              "img": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {
+                    "width": 400,
+                    "height": 600
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "lg",
+                      "width": 600,
+                      "height": 800
+                    },
+                    {
+                      "name": "sm",
+                      "width": 200,
+                      "height": 300
+                    },
+                    {
+                      "name": "blur",
+                      "width": 16,
+                      "height": 16
+                    }
+                  ]
+                }
+              },
+              "subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Label",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "single": "heading6,heading5"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "single": "heading2,heading3,heading4"
+                }
+              },
+              "body": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Body",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "panels",
+      "name": "Panels",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "primary": {
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Label",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading5,heading6"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Main Heading",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6"
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Intro Content",
+            "placeholder": "Introduce the Collection",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading5,heading6,strong,em,list-item,o-list-item"
+          }
+        },
+        "position": {
+          "type": "Select",
+          "config": {
+            "label": "Content Position",
+            "placeholder": "",
+            "options": [
+              "Right",
+              "Left"
+            ],
+            "default_value": "Right"
+          }
+        },
+        "color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Indigo 50",
+              "Indigo 100",
+              "Indigo 200",
+              "Indigo 700",
+              "Indigo 800",
+              "Indigo 900",
+              "Slate 50",
+              "Slate 100",
+              "Slate 200",
+              "Zinc 100",
+              "Zinc 200",
+              "Blue",
+              "Green",
+              "Red",
+              "White"
+            ],
+            "default_value": "None"
+          }
+        },
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Items",
+            "repeat": true,
+            "fields": {
+              "img": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {
+                    "width": 1200,
+                    "height": null
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "blur",
+                      "width": 16,
+                      "height": 16
+                    }
+                  ]
+                }
+              },
+              "subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Label",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "single": "heading6,heading5"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "single": "heading2,heading3,heading4"
+                }
+              },
+              "body": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Body",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "stack",
+      "name": "Stack",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "primary": {
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Label",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading5,heading6"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Main Heading",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6"
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Intro Content",
+            "placeholder": "Introduce the Collection",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading5,heading6,strong,em,list-item,o-list-item"
+          }
+        },
+        "position": {
+          "type": "Select",
+          "config": {
+            "label": "Content Position",
+            "placeholder": "",
+            "options": [
+              "Right",
+              "Left"
+            ],
+            "default_value": "Right"
+          }
+        },
+        "color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Indigo 50",
+              "Indigo 100",
+              "Indigo 200",
+              "Indigo 700",
+              "Indigo 800",
+              "Indigo 900",
+              "Slate 50",
+              "Slate 100",
+              "Slate 200",
+              "Zinc 100",
+              "Zinc 200",
+              "Blue",
+              "Green",
+              "Red",
+              "White"
+            ],
+            "default_value": "None"
+          }
+        },
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Items",
+            "repeat": true,
+            "fields": {
+              "img": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {
+                    "width": 400,
+                    "height": 600
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "lg",
+                      "width": 600,
+                      "height": 800
+                    },
+                    {
+                      "name": "sm",
+                      "width": 200,
+                      "height": 300
+                    },
+                    {
+                      "name": "blur",
+                      "width": 16,
+                      "height": 16
+                    }
+                  ]
+                }
+              },
+              "subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Label",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "single": "heading6"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "single": "heading4,heading5,heading6"
+                }
+              },
+              "body": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Body",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong,em,list-item,o-list-item,heading6,heading5,hyperlink,heading4"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
 }

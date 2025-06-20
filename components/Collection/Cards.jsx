@@ -14,7 +14,10 @@ const CollectionCards = ({
 }) => (
 	<Section {...dataset}>
 		<article>
-			<Container as='div' className='__dark __lg z-2 -mb-(--py)'>
+			<Container
+				as='div'
+				className='__dark __lg z-2 -mb-(--py) max-2xl:pl-fluid-y'
+			>
 				<Spacer size={3} split={true} />
 				<Prose
 					width='sm'
@@ -43,15 +46,12 @@ const CollectionCards = ({
 						'from-indigo/70 to-indigo-200/0 to-40%',
 					)}
 				/>
-
-				{/* Backdrop */}
-				{/* <div className='absolute inset-x-stretch bg-indigo' /> */}
 			</CoverImage>
 
 			<Backdrop color='indigo' offset='split' />
 		</article>
 
-		<Container className='z-3 pt-0 pb-fluid-x'>
+		<Container className='z-3 pt-0 pb-fluid-x' data-theme='light'>
 			<Grid cols={cols}>
 				<div />
 				{items.map(item => (

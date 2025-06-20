@@ -6,7 +6,6 @@ import {
 } from '@/components/Content'
 import {
 	FeatureBanner,
-	FeatureHighlight,
 	FeatureSplit,
 	FeatureStatement,
 } from '@/components/Feature'
@@ -17,7 +16,6 @@ const layouts = {
 	split: ContentSplit,
 	splitProse: ContentSplitProse,
 	feature: FeatureSplit,
-	highlight: FeatureHighlight,
 	banner: FeatureBanner,
 	statement: FeatureStatement,
 }

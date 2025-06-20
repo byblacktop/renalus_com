@@ -337,179 +337,6 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "layered",
-		"primary": {
-			"img": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
-					"width": 5848,
-					"height": 3899
-				},
-				"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?rect=0%2C0%2C5848%2C3899&w=1920&h=1280",
-				"width": 1920,
-				"height": 1280,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"alt": "bound",
-				"credits": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {
-					"lg": {
-						"origin": {
-							"id": "lg",
-							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
-							"width": 3648,
-							"height": 4560
-						},
-						"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?rect=0%2C1064%2C3648%2C2432&w=1440&h=960",
-						"width": 1440,
-						"height": 960,
-						"edit": {
-							"zoom": 1,
-							"crop": {
-								"x": 0,
-								"y": 1064
-							},
-							"background": "transparent"
-						},
-						"alt": "fighting",
-						"credits": null
-					},
-					"md": {
-						"origin": {
-							"id": "md",
-							"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
-							"width": 4000,
-							"height": 4000
-						},
-						"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?rect=0%2C667%2C4000%2C2667&w=960&h=640",
-						"width": 960,
-						"height": 640,
-						"edit": {
-							"zoom": 1,
-							"crop": {
-								"x": 0,
-								"y": 667
-							},
-							"background": "transparent"
-						},
-						"alt": "storm",
-						"credits": null
-					},
-					"sm": {
-						"origin": {
-							"id": "sm",
-							"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
-							"width": 3168,
-							"height": 4752
-						},
-						"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?rect=0%2C1320%2C3168%2C2112&w=480&h=320",
-						"width": 480,
-						"height": 320,
-						"edit": {
-							"zoom": 1,
-							"crop": {
-								"x": 0,
-								"y": 1320
-							},
-							"background": "transparent"
-						},
-						"alt": "track",
-						"credits": null
-					},
-					"blur": {
-						"origin": {
-							"id": "blur",
-							"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
-							"width": 5616,
-							"height": 3744
-						},
-						"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?rect=936%2C0%2C3744%2C3744&w=16&h=16",
-						"width": 16,
-						"height": 16,
-						"edit": {
-							"zoom": 1,
-							"crop": {
-								"x": 936,
-								"y": 0
-							},
-							"background": "transparent"
-						},
-						"alt": "call",
-						"credits": null
-					}
-				}
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading6",
-						"content": {
-							"text": "Mistake"
-						}
-					}
-				]
-			},
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "Breathing"
-						}
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Nisi dolore enim ad dolor Lorem proident duis culpa id."
-						}
-					}
-				]
-			},
-			"links": {
-				"__TYPE__": "RepeatableContent",
-				"type": "Link",
-				"value": [
-					{
-						"key": "fbcc8e93-bbf7-430a-b21f-e01ceab13af8",
-						"__TYPE__": "LinkContent",
-						"value": {
-							"__TYPE__": "ExternalLink",
-							"url": "https://slicemachine.dev",
-							"text": "quick"
-						}
-					}
-				]
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"value": "Indigo 700",
-				"type": "Select"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
 		"variation": "split",
 		"primary": {
 			"img": {
@@ -996,6 +823,184 @@
 				"__TYPE__": "FieldContent",
 				"type": "Select",
 				"value": "Small"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "layered",
+		"primary": {
+			"img": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+					"width": 5848,
+					"height": 3899
+				},
+				"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?rect=0%2C0%2C5848%2C3899&w=1920&h=1280",
+				"width": 1920,
+				"height": 1280,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "bound",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"lg": {
+						"origin": {
+							"id": "lg",
+							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+							"width": 3648,
+							"height": 4560
+						},
+						"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?rect=0%2C1064%2C3648%2C2432&w=1440&h=960",
+						"width": 1440,
+						"height": 960,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 1064
+							},
+							"background": "transparent"
+						},
+						"alt": "fighting",
+						"credits": null
+					},
+					"md": {
+						"origin": {
+							"id": "md",
+							"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+							"width": 4000,
+							"height": 4000
+						},
+						"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?rect=0%2C667%2C4000%2C2667&w=960&h=640",
+						"width": 960,
+						"height": 640,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 667
+							},
+							"background": "transparent"
+						},
+						"alt": "storm",
+						"credits": null
+					},
+					"sm": {
+						"origin": {
+							"id": "sm",
+							"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+							"width": 3168,
+							"height": 4752
+						},
+						"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?rect=0%2C1320%2C3168%2C2112&w=480&h=320",
+						"width": 480,
+						"height": 320,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 1320
+							},
+							"background": "transparent"
+						},
+						"alt": "track",
+						"credits": null
+					},
+					"blur": {
+						"origin": {
+							"id": "blur",
+							"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+							"width": 5616,
+							"height": 3744
+						},
+						"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?rect=936%2C0%2C3744%2C3744&w=16&h=16",
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 936,
+								"y": 0
+							},
+							"background": "transparent"
+						},
+						"alt": "call",
+						"credits": null
+					}
+				}
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading6",
+						"content": {
+							"text": "Mistake"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Breathing"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nisi dolore enim ad dolor Lorem proident duis culpa id."
+						}
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "fbcc8e93-bbf7-430a-b21f-e01ceab13af8",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://slicemachine.dev",
+							"text": "quick"
+						}
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"value": "Indigo 700",
+				"type": "Select"
+			},
+			"accent": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "None"
 			}
 		},
 		"items": [

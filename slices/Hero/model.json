@@ -320,6 +320,32 @@
 						],
 						"default_value": "None"
 					}
+				},
+				"accent": {
+					"type": "Select",
+					"config": {
+						"label": "Transition Color",
+						"placeholder": "",
+						"options": [
+							"None",
+							"Indigo 50",
+							"Indigo 100",
+							"Indigo 200",
+							"Indigo 700",
+							"Indigo 800",
+							"Indigo 900",
+							"Slate 50",
+							"Slate 100",
+							"Slate 200",
+							"Zinc 100",
+							"Zinc 200",
+							"Blue",
+							"Green",
+							"Red",
+							"White"
+						],
+						"default_value": "None"
+					}
 				}
 			},
 			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",

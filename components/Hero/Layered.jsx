@@ -2,17 +2,18 @@ import { Container, Section } from '@/components/Compose'
 import { Prose } from '@/components/Content'
 import { CoverImage } from '@/components/Media'
 import { Overlay, Spacer } from '@/components/UI'
-import { contrastUtil, getTheme } from '@/lib/helpers'
+import { bgColor, contrastUtil, getTheme } from '@/lib/helpers'
 import { cn } from '@/lib/utils'
 
 const HeroLayered = ({
 	img,
 	color,
+	accent,
 	className,
 	dataset,
 	...contentProps
 }) => {
-	const { bg, accent, className: themeClass } = getTheme(color)
+	const { className: themeClass } = getTheme(color)
 
 	return (
 		<Section className={cn(themeClass, className)} {...dataset}>
@@ -58,7 +59,13 @@ const HeroLayered = ({
 			</Container>
 
 			{/* Backdrop */}
-			<div className='absolute inset-x-0 bottom-0 top-auto h-24 translate-y-0 rounded-t-4xl bg-bg' />
+			<div
+				className={cn(
+					'absolute inset-x-0 bottom-0 top-auto',
+					'h-24 translate-y-0 rounded-t-4xl',
+					bgColor(accent),
+				)}
+			/>
 		</Section>
 	)
 }

@@ -40,10 +40,10 @@ const CollectionColumns = ({
 				/>
 				<dl
 					className={cn(
-						'grid grid-flow-row-dense',
 						'py-fluid __xs pb-0',
+						'grid',
 						variants({ cols }),
-						gap.xl,
+						gap.lg,
 					)}
 				>
 					{items.map(item => (
@@ -51,11 +51,16 @@ const CollectionColumns = ({
 							<Lead
 								title={item.title}
 								subtitle={item.subtitle}
-								subtitleAs='h4'
-								subtitleProps='text-green-600'
 								titleProps='__xs'
 								gap='sm'
-								className='pb-4 md:pb-8 mb-4 md:mb-8 border-b border-indigo/20'
+								className={{
+									lead: cn(
+										'pb-4 md:pb-8 mb-4 md:mb-8',
+										'border-b border-indigo/20',
+										// 'place-content-start',
+									),
+									subtitle: '__label __brief',
+								}}
 							/>
 
 							<Body

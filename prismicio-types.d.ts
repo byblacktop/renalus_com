@@ -664,7 +664,7 @@ export interface CallToActionSliceSplitPrimaryItemsItem {
 	 * - **API ID Path**: call_to_action.split.primary.items[].color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 }
 
 /**
@@ -1353,7 +1353,7 @@ export interface CollectionSliceDefaultPrimary {
 	 * - **API ID Path**: collection.default.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → Prose → Primary*
@@ -1448,7 +1448,7 @@ export interface CollectionSliceCardsPrimary {
 	 * - **API ID Path**: collection.cards.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → Cards → Primary*
@@ -1523,7 +1523,7 @@ export interface CollectionSliceListPrimary {
 	 * - **API ID Path**: collection.list.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → List → Primary*
@@ -1608,7 +1608,7 @@ export interface CollectionSliceColumnsPrimary {
 	 * - **API ID Path**: collection.columns.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → Columns → Primary*
@@ -1693,7 +1693,7 @@ export interface CollectionSliceFeaturedPrimary {
 	 * - **API ID Path**: collection.featured.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Box Color field in *Collection → Featured Links → Primary*
@@ -1704,7 +1704,7 @@ export interface CollectionSliceFeaturedPrimary {
 	 * - **API ID Path**: collection.featured.primary.accent
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	accent: prismic.SelectField<"Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	accent: prismic.SelectField<"Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → Featured Links → Primary*
@@ -1779,7 +1779,7 @@ export interface CollectionSliceTogglesPrimary {
 	 * - **API ID Path**: collection.toggles.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → Toggles → Primary*
@@ -1844,7 +1844,7 @@ export interface CollectionSliceFaqPrimary {
 	 * - **API ID Path**: collection.faq.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → FAQ → Primary*
@@ -1930,7 +1930,7 @@ export interface CollectionSliceSpreadPrimary {
 	 * - **API ID Path**: collection.spread.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → Cards Spread → Primary*
@@ -2005,7 +2005,7 @@ export interface CollectionSlicePreviewsPrimary {
 	 * - **API ID Path**: collection.previews.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → Previews → Primary*
@@ -2070,7 +2070,7 @@ export interface CollectionSlicePopoversPrimary {
 	 * - **API ID Path**: collection.popovers.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Columns field in *Collection → Popovers → Primary*
@@ -2155,7 +2155,7 @@ export interface CollectionSliceAlphaPrimary {
 	 * - **API ID Path**: collection.alpha.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Featured field in *Collection → Alpha Groups → Primary*
@@ -2240,7 +2240,7 @@ export interface CollectionSliceHighlightPrimary {
 	 * - **API ID Path**: collection.highlight.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Collection → Highlight → Primary*
@@ -2319,7 +2319,7 @@ export interface ContentSliceDefaultPrimary {
 	 * - **API ID Path**: content.default.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Magazine Columns field in *Content → Thread → Primary*
@@ -2416,7 +2416,7 @@ export interface ContentSliceSplitPrimary {
 	 * - **API ID Path**: content.split.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Links field in *Content → Split Image → Primary*
@@ -2503,7 +2503,7 @@ export interface ContentSliceSplitProsePrimary {
 	 * - **API ID Path**: content.splitProse.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Links field in *Content → Split Thread → Primary*
@@ -2529,6 +2529,16 @@ export type ContentSliceSplitProse = prismic.SharedSliceVariation<"splitProse", 
  * Primary content in *Content → Feature → Primary*
  */
 export interface ContentSliceFeaturePrimary {
+	/**
+	 * Image field in *Content → Feature → Primary*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: content.feature.primary.img
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	img: prismic.ImageField<"lg" | "md" | "sm" | "blur">;
+	
 	/**
 	 * Label field in *Content → Feature → Primary*
 	 *
@@ -2560,6 +2570,17 @@ export interface ContentSliceFeaturePrimary {
 	body: prismic.RichTextField;
 	
 	/**
+	 * Content Position field in *Content → Feature → Primary*
+	 *
+	 * - **Field Type**: Select
+	 * - **Placeholder**: *None*
+	 * - **Default Value**: Right
+	 * - **API ID Path**: content.feature.primary.position
+	 * - **Documentation**: https://prismic.io/docs/field#select
+	 */
+	position: prismic.SelectField<"Right" | "Left", "filled">;
+	
+	/**
 	 * Accent Color field in *Content → Feature → Primary*
 	 *
 	 * - **Field Type**: Select
@@ -2568,17 +2589,7 @@ export interface ContentSliceFeaturePrimary {
 	 * - **API ID Path**: content.feature.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
-	
-	/**
-	 * Image field in *Content → Feature → Primary*
-	 *
-	 * - **Field Type**: Image
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: content.feature.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
-	 */
-	img: prismic.ImageField<"lg" | "md" | "sm" | "blur">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Links field in *Content → Feature → Primary*
@@ -2643,7 +2654,7 @@ export interface ContentSliceBannerPrimary {
 	 * - **API ID Path**: content.banner.primary.overlay
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	overlay: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	overlay: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Accent Color field in *Content → Banner → Primary*
@@ -2654,7 +2665,7 @@ export interface ContentSliceBannerPrimary {
 	 * - **API ID Path**: content.banner.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Image field in *Content → Banner → Primary*
@@ -2731,6 +2742,17 @@ export interface ContentSliceStatementPrimary {
 	body: prismic.RichTextField;
 	
 	/**
+	 * Content Position field in *Content → Statement → Primary*
+	 *
+	 * - **Field Type**: Select
+	 * - **Placeholder**: *None*
+	 * - **Default Value**: Right
+	 * - **API ID Path**: content.statement.primary.position
+	 * - **Documentation**: https://prismic.io/docs/field#select
+	 */
+	position: prismic.SelectField<"Right" | "Left", "filled">;
+	
+	/**
 	 * Accent Color field in *Content → Statement → Primary*
 	 *
 	 * - **Field Type**: Select
@@ -2739,18 +2761,7 @@ export interface ContentSliceStatementPrimary {
 	 * - **API ID Path**: content.statement.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
-	
-	/**
-	 * Close Accent field in *Content → Statement → Primary*
-	 *
-	 * - **Field Type**: Boolean
-	 * - **Placeholder**: *None*
-	 * - **Default Value**: true
-	 * - **API ID Path**: content.statement.primary.close
-	 * - **Documentation**: https://prismic.io/docs/field#boolean
-	 */
-	close: prismic.BooleanField;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Transition Color field in *Content → Statement → Primary*
@@ -2762,6 +2773,17 @@ export interface ContentSliceStatementPrimary {
 	 * - **Documentation**: https://prismic.io/docs/field#boolean
 	 */
 	transition: prismic.BooleanField;
+	
+	/**
+	 * Close Accent field in *Content → Statement → Primary*
+	 *
+	 * - **Field Type**: Boolean
+	 * - **Placeholder**: *None*
+	 * - **Default Value**: true
+	 * - **API ID Path**: content.statement.primary.close
+	 * - **Documentation**: https://prismic.io/docs/field#boolean
+	 */
+	close: prismic.BooleanField;
 	
 	/**
 	 * Links field in *Content → Statement → Primary*
@@ -2916,7 +2938,7 @@ export interface FeedSliceDefaultPrimary {
 	 * - **API ID Path**: feed.default.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
 	
 	/**
 	 * Columns field in *Feed → Feed Grid → Primary*
@@ -3010,7 +3032,7 @@ export interface FeedSliceListPrimary {
 	 * - **API ID Path**: feed.list.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
 	
 	/**
 	 * Dynamic Feed Data field in *Feed → Info List → Primary*
@@ -3074,7 +3096,7 @@ export interface FeedSliceFeaturedPrimary {
 	 * - **API ID Path**: feed.featured.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
 	
 	/**
 	 * Link field in *Feed → Featured Posts → Primary*
@@ -3138,7 +3160,7 @@ export interface FeedSliceTeamPrimary {
 	 * - **API ID Path**: feed.team.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
 	
 	/**
 	 * Team Group field in *Feed → Team → Primary*
@@ -3418,7 +3440,7 @@ export interface HeroSliceDefaultPrimary {
 	 * - **API ID Path**: hero.default.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 }
 
 /**
@@ -3493,7 +3515,7 @@ export interface HeroSliceLeadPrimary {
 	 * - **API ID Path**: hero.lead.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 }
 
 /**
@@ -3568,7 +3590,18 @@ export interface HeroSliceLayeredPrimary {
 	 * - **API ID Path**: hero.layered.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	
+	/**
+	 * Transition Color field in *Hero → Layered → Primary*
+	 *
+	 * - **Field Type**: Select
+	 * - **Placeholder**: *None*
+	 * - **Default Value**: None
+	 * - **API ID Path**: hero.layered.primary.accent
+	 * - **Documentation**: https://prismic.io/docs/field#select
+	 */
+	accent: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 }
 
 /**
@@ -3643,7 +3676,7 @@ export interface HeroSliceSplitPrimary {
 	 * - **API ID Path**: hero.split.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Size field in *Hero → Split → Primary*
@@ -3729,7 +3762,7 @@ export interface HeroSliceHighlightPrimary {
 	 * - **API ID Path**: hero.highlight.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Size field in *Hero → Highlight → Primary*
@@ -3815,7 +3848,7 @@ export interface HeroSliceContainedPrimary {
 	 * - **API ID Path**: hero.contained.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Size field in *Hero → Contained → Primary*
@@ -4071,7 +4104,7 @@ export interface InteractiveSliceDefaultPrimary {
 	 * - **API ID Path**: interactive.default.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Interactive → Spread → Primary*
@@ -4147,7 +4180,7 @@ export interface InteractiveSlicePanelsPrimary {
 	 * - **API ID Path**: interactive.panels.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Interactive → Panels → Primary*
@@ -4223,7 +4256,7 @@ export interface InteractiveSliceStackPrimary {
 	 * - **API ID Path**: interactive.stack.primary.color
 	 * - **Documentation**: https://prismic.io/docs/field#select
 	 */
-	color: prismic.SelectField<"None" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
 	/**
 	 * Items field in *Interactive → Stack → Primary*

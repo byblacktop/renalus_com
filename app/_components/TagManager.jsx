@@ -33,8 +33,8 @@ const TagManager = () => {
 			{/* TODO: Implement */}
 			{/* <GoogleTagManager gtmId={GOOGLE_TAG_MANAGER_ID} /> */}
 			{/* Vercel — Analytics & Toolbar */}
-			{/* <Analytics /> */}
-			{/* {isStaging && <VercelToolbar />} */}
+			<Analytics />
+			{isStaging && <VercelToolbar />}
 		</>
 	)
 }

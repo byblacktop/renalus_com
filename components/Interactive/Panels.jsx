@@ -54,8 +54,8 @@ const Panels = ({ items, children }) => {
 				gsap.fromTo(
 					panel,
 					{
-						autoAlpha: 0,
-						scale: 0.95,
+						autoAlpha: 1,
+						scale: 1,
 					},
 					{
 						autoAlpha: 1,
@@ -64,8 +64,8 @@ const Panels = ({ items, children }) => {
 						ease: 'easeOut',
 						scrollTrigger: {
 							trigger: panel,
-							start: 'top 80%',
-							end: 'bottom 80%',
+							start: 'top 50%',
+							end: 'bottom 50%',
 							onEnter: () => {
 								gsap.to(imgs.current[idx + 1], {
 									autoAlpha: 1,

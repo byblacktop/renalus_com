@@ -1,6 +1,5 @@
 import { Container, Section } from '@/components/Compose'
 import { Prose } from '@/components/Content'
-import { Parallax } from '@/components/Interactive'
 import { CoverImage } from '@/components/Media'
 import { bgColor, colorUtil } from '@/lib/helpers'
 import { cn } from '@/lib/utils'

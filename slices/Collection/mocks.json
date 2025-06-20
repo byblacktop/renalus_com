@@ -958,10 +958,8 @@
 										{
 											"type": "heading5",
 											"content": {
-												"text": "Chronic Kidney Disease",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Machine"
+											}
 										}
 									]
 								}
@@ -1011,10 +1009,8 @@
 										{
 											"type": "heading5",
 											"content": {
-												"text": "Proteinuria and Hematuria",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Dinner"
+											}
 										}
 									]
 								}
@@ -1048,10 +1044,8 @@
 										{
 											"type": "heading5",
 											"content": {
-												"text": "Glomerular Diseases",
-												"spans": []
-											},
-											"direction": "ltr"
+												"text": "Vowel"
+											}
 										}
 									]
 								}
@@ -1321,6 +1315,538 @@
 					"url": "https://slicemachine.dev",
 					"text": "bound",
 					"variant": "Default"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "toggles",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Build Your Best Defense Against Future Kidney Problems",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Prevention isn't just about avoiding problems, but creating a foundation of health that lets you live confidently without constantly worrying about what might happen. The good news is that many of the most effective prevention strategies are also the ones that help you feel better day-to-day.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo 700"
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "How can I schedule an appointment?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Call our office or request an appointment online for a staff member to call you and schedule a visit. Visit our Locations page to find the most convenient office to call. You can also submit our quick Online Appointment Request Form and a staff member will contact you.",
+												"spans": [
+													{
+														"type": "hyperlink",
+														"start": 112,
+														"end": 121,
+														"data": {
+															"__TYPE__": "ExternalLink",
+															"url": "#",
+															"target": "_self"
+														}
+													},
+													{
+														"type": "strong",
+														"start": 112,
+														"end": 121
+													},
+													{
+														"type": "hyperlink",
+														"start": 201,
+														"end": 232,
+														"data": {
+															"__TYPE__": "ExternalLink",
+															"url": "#",
+															"target": "_self"
+														}
+													},
+													{
+														"type": "strong",
+														"start": 201,
+														"end": 232
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"links",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"key": "4ea7e9f1-311e-48d3-976c-ebf68756caf5",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "#",
+												"text": "Learn More",
+												"variant": "Call to Action"
+											}
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Please bring a valid picture ID, insurance card(s), a list of your current medications, and your previous prescription for glasses or contact lenses.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What should I bring to my eye exam?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "A routine eye exam typically takes 45 minutes to an hour.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "How long does an eye exam typically take?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We accept VSP, Davis Vision, EYEMED, Medicare, Spectera, Avesis, Superior, Tricare, Alabama Medicaid, VCP, BCBS, CIGNA, and Healthspring. VCI and FCE Members may only be seen in Florida locations. If your insurance is not listed, please call the office to inquire.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What insurance plans do you accept?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Our self-pay eye exams start at $99, and eyeglass packages start at $89. We offer a variety of frames to fit almost any budget.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What is the cost of an eye exam without insurance?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We accept cash, debit cards, Visa, MasterCard, Discover, American Express, and CareCredit at all locations.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "What types of payments do you accept?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "The Patient Portal gives you access to your records, orders, prescriptions, receipts, and more. ",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 4,
+														"end": 18
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "New Patients: Use the username and temporary password given at your appointment to log in.",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 13
+													}
+												]
+											},
+											"direction": "ltr"
+										},
+										{
+											"type": "list-item",
+											"content": {
+												"text": "Existing Patients: Use the credentials provided when scheduling. If you don’t have an appointment, call the office where you were last seen to receive your login details.",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 18
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading4",
+											"content": {
+												"text": "How do I log in to the Patient Portal?",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"links",
+								{
+									"__TYPE__": "RepeatableContent",
+									"type": "Link",
+									"value": [
+										{
+											"key": "2b3df717-d8b3-4b8a-9c44-0adf684b6958",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "/portal",
+												"target": "_blank",
+												"text": "Login to Patient Portal",
+												"variant": "Default"
+											}
+										},
+										{
+											"key": "814902f2-9de9-4a27-b6bd-1b3ea9475abf",
+											"__TYPE__": "LinkContent",
+											"value": {
+												"__TYPE__": "ExternalLink",
+												"url": "/contact",
+												"text": "Contact Us for Assistance",
+												"variant": "Default"
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"toggles": {
+				"__TYPE__": "TableContent",
+				"content": [
+					{
+						"key": "973bff9d-1309-473c-8ab6-7964af5ac171",
+						"type": "tableRow",
+						"content": [
+							{
+								"key": "472a1e36-af09-4f8a-b867-6d1d9c11bede",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "How can I schedule an appointment?",
+												"spans": [
+													{
+														"type": "strong",
+														"start": 0,
+														"end": 34
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							},
+							{
+								"key": "609d79a9-0610-4143-9bdb-7a138e294b09",
+								"type": "tableCell",
+								"content": {
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading5",
+						"content": {
+							"text": "Kidney Disease Prevention",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85&rect=0,1,4489,2987&w=768&h=511",
+				"alt": "man in yellow tank top running near shore",
+				"origin": {
+					"id": "z4WH11FMfIQ",
+					"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85",
+					"width": 4489,
+					"height": 2988
+				},
+				"width": 768,
+				"height": 511,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 1
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85&rect=751,0,2988,2988&w=16&h=16",
+						"alt": "man in yellow tank top running near shore",
+						"origin": {
+							"id": "z4WH11FMfIQ",
+							"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85",
+							"width": 4489,
+							"height": 2988
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 751,
+								"y": 0
+							}
+						},
+						"credits": null
+					}
 				}
 			}
 		},
@@ -5106,538 +5632,6 @@
 											"content": {
 												"text": "Labore elit amet sit."
 											}
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "How do I log in to the Patient Portal?",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"links",
-								{
-									"__TYPE__": "RepeatableContent",
-									"type": "Link",
-									"value": [
-										{
-											"key": "2b3df717-d8b3-4b8a-9c44-0adf684b6958",
-											"__TYPE__": "LinkContent",
-											"value": {
-												"__TYPE__": "ExternalLink",
-												"url": "/portal",
-												"target": "_blank",
-												"text": "Login to Patient Portal",
-												"variant": "Default"
-											}
-										},
-										{
-											"key": "814902f2-9de9-4a27-b6bd-1b3ea9475abf",
-											"__TYPE__": "LinkContent",
-											"value": {
-												"__TYPE__": "ExternalLink",
-												"url": "/contact",
-												"text": "Contact Us for Assistance",
-												"variant": "Default"
-											}
-										}
-									]
-								}
-							]
-						]
-					}
-				]
-			},
-			"toggles": {
-				"__TYPE__": "TableContent",
-				"content": [
-					{
-						"key": "973bff9d-1309-473c-8ab6-7964af5ac171",
-						"type": "tableRow",
-						"content": [
-							{
-								"key": "472a1e36-af09-4f8a-b867-6d1d9c11bede",
-								"type": "tableCell",
-								"content": {
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "How can I schedule an appointment?",
-												"spans": [
-													{
-														"type": "strong",
-														"start": 0,
-														"end": 34
-													}
-												]
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							},
-							{
-								"key": "609d79a9-0610-4143-9bdb-7a138e294b09",
-								"type": "tableCell",
-								"content": {
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							}
-						]
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading5",
-						"content": {
-							"text": "Kidney Disease Prevention",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"img": {
-				"provider": "imgix",
-				"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85&rect=0,1,4489,2987&w=768&h=511",
-				"alt": "man in yellow tank top running near shore",
-				"origin": {
-					"id": "z4WH11FMfIQ",
-					"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85",
-					"width": 4489,
-					"height": 2988
-				},
-				"width": 768,
-				"height": 511,
-				"edit": {
-					"background": "transparent",
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 1
-					}
-				},
-				"credits": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {
-					"blur": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85&rect=751,0,2988,2988&w=16&h=16",
-						"alt": "man in yellow tank top running near shore",
-						"origin": {
-							"id": "z4WH11FMfIQ",
-							"url": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyM3x8cnVubmluZ3xlbnwwfHx8fDE3NTAzNTU5Mzl8MA&ixlib=rb-4.1.0&q=85",
-							"width": 4489,
-							"height": 2988
-						},
-						"width": 16,
-						"height": 16,
-						"edit": {
-							"background": "transparent",
-							"zoom": 1,
-							"crop": {
-								"x": 751,
-								"y": 0
-							}
-						},
-						"credits": null
-					}
-				}
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "toggles",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Build Your Best Defense Against Future Kidney Problems",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Prevention isn't just about avoiding problems, but creating a foundation of health that lets you live confidently without constantly worrying about what might happen. The good news is that many of the most effective prevention strategies are also the ones that help you feel better day-to-day.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Indigo 700"
-			},
-			"items": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "How can I schedule an appointment?",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Call our office or request an appointment online for a staff member to call you and schedule a visit. Visit our Locations page to find the most convenient office to call. You can also submit our quick Online Appointment Request Form and a staff member will contact you.",
-												"spans": [
-													{
-														"type": "hyperlink",
-														"start": 112,
-														"end": 121,
-														"data": {
-															"__TYPE__": "ExternalLink",
-															"url": "#",
-															"target": "_self"
-														}
-													},
-													{
-														"type": "strong",
-														"start": 112,
-														"end": 121
-													},
-													{
-														"type": "hyperlink",
-														"start": 201,
-														"end": 232,
-														"data": {
-															"__TYPE__": "ExternalLink",
-															"url": "#",
-															"target": "_self"
-														}
-													},
-													{
-														"type": "strong",
-														"start": 201,
-														"end": 232
-													}
-												]
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"links",
-								{
-									"__TYPE__": "RepeatableContent",
-									"type": "Link",
-									"value": [
-										{
-											"key": "4ea7e9f1-311e-48d3-976c-ebf68756caf5",
-											"__TYPE__": "LinkContent",
-											"value": {
-												"__TYPE__": "ExternalLink",
-												"url": "#",
-												"text": "Learn More",
-												"variant": "Call to Action"
-											}
-										}
-									]
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Please bring a valid picture ID, insurance card(s), a list of your current medications, and your previous prescription for glasses or contact lenses.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "What should I bring to my eye exam?",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "A routine eye exam typically takes 45 minutes to an hour.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "How long does an eye exam typically take?",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "We accept VSP, Davis Vision, EYEMED, Medicare, Spectera, Avesis, Superior, Tricare, Alabama Medicaid, VCP, BCBS, CIGNA, and Healthspring. VCI and FCE Members may only be seen in Florida locations. If your insurance is not listed, please call the office to inquire.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "What insurance plans do you accept?",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Our self-pay eye exams start at $99, and eyeglass packages start at $89. We offer a variety of frames to fit almost any budget.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "What is the cost of an eye exam without insurance?",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "We accept cash, debit cards, Visa, MasterCard, Discover, American Express, and CareCredit at all locations.",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							],
-							[
-								"title",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "heading4",
-											"content": {
-												"text": "What types of payments do you accept?",
-												"spans": []
-											},
-											"direction": "ltr"
-										}
-									]
-								}
-							]
-						]
-					},
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"body",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "The Patient Portal gives you access to your records, orders, prescriptions, receipts, and more. ",
-												"spans": [
-													{
-														"type": "strong",
-														"start": 4,
-														"end": 18
-													}
-												]
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "New Patients: Use the username and temporary password given at your appointment to log in.",
-												"spans": [
-													{
-														"type": "strong",
-														"start": 0,
-														"end": 13
-													}
-												]
-											},
-											"direction": "ltr"
-										},
-										{
-											"type": "list-item",
-											"content": {
-												"text": "Existing Patients: Use the credentials provided when scheduling. If you don’t have an appointment, call the office where you were last seen to receive your login details.",
-												"spans": [
-													{
-														"type": "strong",
-														"start": 0,
-														"end": 18
-													}
-												]
-											},
-											"direction": "ltr"
 										}
 									]
 								}

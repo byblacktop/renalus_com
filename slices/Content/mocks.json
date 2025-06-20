@@ -516,7 +516,7 @@
 					{
 						"type": "heading3",
 						"content": {
-							"text": "Fostering trust through genuine connections and mutual respect, ensuring our clients feel secure and valued in every interaction.",
+							"text": "Sustain the Energy and Confidence That Come from Healthy Living",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -526,7 +526,7 @@
 			"color": {
 				"__TYPE__": "FieldContent",
 				"type": "Select",
-				"value": "Indigo"
+				"value": "Indigo 700"
 			},
 			"close": {
 				"__TYPE__": "BooleanContent",
@@ -535,6 +535,32 @@
 			"transition": {
 				"__TYPE__": "BooleanContent",
 				"value": true
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Your health needs and life circumstances will change over time, and your approach to healthy living should adapt accordingly. This flexibility helps you maintain your commitment to health through different seasons of life.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Your health needs and life circumstances will change over time, and your approach to healthy living should adapt accordingly. This flexibility helps you maintain your commitment to health through different seasons of life.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"position": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Right"
 			}
 		},
 		"items": [

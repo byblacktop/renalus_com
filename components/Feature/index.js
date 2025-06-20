@@ -1,4 +1,3 @@
-export * from './Highlight'
-export * from './Banner'
-export * from './Split'
-export * from './Statement'
+export { FeatureBanner } from './Banner'
+export { FeatureSplit } from './Split'
+export { FeatureStatement } from './Statement'
