@@ -1,4 +1,14 @@
 {
 	"dimensions": false,
-	"memo": true
+	"memo": true,
+	"svgoConfig": {
+		"plugins": [
+      {
+				"name": "prefixIds",
+				"params": {
+					"prefixClassNames": false
+				}
+			}
+    ]
+  }
 }

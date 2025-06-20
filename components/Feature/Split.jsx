@@ -13,9 +13,9 @@ const FeatureSplit = ({ color, img, dataset, ...contentProps }) => (
 		<div className='__bg'>
 			<Container
 				layout='grid'
-				className='py-0 grid-cols-1 md:grid-cols-2'
+				className='__xs grid-cols-1 md:grid-cols-2'
 			>
-				<div className='__xl max-lg:pt-16 pt pb-16 space-y-8 max-md:order-2'>
+				<div className='max-lg:pt-16 pt pb-16 space-y-8 max-md:order-2'>
 					{/* Content */}
 					<Thread
 						{...contentProps}
@@ -30,21 +30,17 @@ const FeatureSplit = ({ color, img, dataset, ...contentProps }) => (
 					/>
 				</div>
 
-				<Parallax
-					speed={0.5}
-					position='reverse'
-					className='relative max-md:order-1'
-				>
-					<AspectImage
-						img={img}
-						h={12}
-						className={cn(
-							'md:absolute overflow-hidden',
-							'rounded-2xl xl:rounded-2xl',
-							'md:aspect-w-3 md:aspect-h-4',
-						)}
-					/>
-				</Parallax>
+				<AspectImage
+					img={img}
+					h={12}
+					className={{
+						figure: cn(
+							'max-md:order-1 overflow-hidden',
+							'md:aspect-w-7 md:aspect-h-8',
+						),
+						img: 'rounded-2xl xl:rounded-2xl',
+					}}
+				/>
 			</Container>
 		</div>
 	</Section>

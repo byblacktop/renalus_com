@@ -62,11 +62,7 @@ export const createClient = (config = {}) => {
 		...config,
 	})
 
-	enableAutoPreviews({
-		client,
-		previewData: config.previewData,
-		req: config.req,
-	})
+	enableAutoPreviews({ client })
 
 	return client
 }

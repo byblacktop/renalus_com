@@ -10,8 +10,6 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<Providers>
-				{/* Animations */}
-				<GSAP />
 				<ReactTempus patch />
 
 				{/* Header */}
@@ -24,8 +22,8 @@ export default function Layout({ children }) {
 				<Footer />
 			</Providers>
 
-			{/* GSAP */}
-			{/* <GSAP scrollTrigger={true} markers={false} /> */}
+			{/* Animations */}
+			<GSAP />
 
 			{/* Lenis Smooth Scroll */}
 			<Lenis

@@ -16,6 +16,7 @@ const CollectionToggles = ({
 		<>
 			<Section {...dataset} className={getTheme(color).className}>
 				<Container className='pb-fluid-x'>
+					{/* Content */}
 					<ProseSplit
 						{...contentProps}
 						position='Left'
@@ -25,14 +26,24 @@ const CollectionToggles = ({
 						className={{ lead: 'grow-1' }}
 					/>
 				</Container>
+
+				{/* Divider */}
 				<div className='h-px bg-slate-300/30' />
-				<Container cols={2} gap='lg' className='pt-fluid-x'>
+
+				{/* Image + Toggles */}
+				<Container
+					cols={2}
+					gap='lg'
+					className='pt-fluid-x'
+					align='center'
+				>
 					<AspectImage
 						img={img}
 						w={7}
 						h={8}
 						className='rounded-3xl overflow-hidden'
 					/>
+
 					<Toggles items={items} color={color} />
 				</Container>
 			</Section>

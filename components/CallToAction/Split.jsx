@@ -80,6 +80,7 @@ const CtaItem = ({ img, link, color, idx, ...contentProps }) => {
 		>
 			<Prose
 				wrap={true}
+				as={{ title: 'h3' }}
 				className={{
 					prose: cn(
 						'__lg relative z-10',

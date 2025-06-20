@@ -39,7 +39,6 @@ const ToggleDom = ({
 	children,
 	...props
 }) => {
-	console.log(color, getTheme(color).scheme)
 	return (
 		<Disclosure
 			{...props}

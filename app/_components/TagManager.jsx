@@ -16,7 +16,7 @@ const TagManager = () => {
 
 	// TODO: Add when no longer in development
 	// const isStaging = process.env.NODE_ENV === 'staging'
-	const isStaging = true
+	const isStaging = false
 
 	// const referer = headers().get('referer')
 	// const showToolbar = !referer?.includes(
@@ -31,10 +31,10 @@ const TagManager = () => {
 			<PrismicPreview repositoryName={repositoryName} />
 			{/* Google — TagManager */}
 			{/* TODO: Implement */}
-			<GoogleTagManager gtmId={GOOGLE_TAG_MANAGER_ID} />
+			{/* <GoogleTagManager gtmId={GOOGLE_TAG_MANAGER_ID} /> */}
 			{/* Vercel — Analytics & Toolbar */}
-			<Analytics />
-			{isStaging && <VercelToolbar />}
+			{/* <Analytics /> */}
+			{/* {isStaging && <VercelToolbar />} */}
 		</>
 	)
 }

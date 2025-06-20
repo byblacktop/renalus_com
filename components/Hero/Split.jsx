@@ -30,8 +30,6 @@ const HeroSplit = ({
 }) => {
 	const { bg, accent, className: themeClass } = getTheme(color)
 
-	console.log(color, contrastUtil(color))
-
 	return (
 		<Section
 			className={cn(

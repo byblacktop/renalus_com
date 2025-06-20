@@ -22,7 +22,7 @@ const themes = {
 	},
 	light: {
 		color: 'fill-white',
-		// accent: 'var(--color-red)',
+		accent: 'var(--color-red)',
 	},
 }
 
