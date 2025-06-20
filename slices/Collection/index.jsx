@@ -10,7 +10,6 @@ import {
 	CollectionPopovers,
 	CollectionPreviews,
 	CollectionProse,
-	CollectionSpread,
 	CollectionToggles,
 } from '@/components/Collection'
 import { Shell } from '@/components/Compose'
@@ -28,7 +27,6 @@ const layouts = {
 	previews: CollectionPreviews,
 	popovers: CollectionPopovers,
 	alpha: CollectionAlpha,
-	spread: CollectionSpread,
 	faq: CollectionFaqs,
 	highlight: CollectionHighlight,
 }

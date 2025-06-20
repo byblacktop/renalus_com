@@ -74,7 +74,7 @@ const Panel = ({ setPanel, img, layout, title, subtitle, body }) => {
 	const plx = layout === 'collection'
 
 	return (
-		<dd className={cn('md:sticky md:top-0', 'bg-indigo')}>
+		<dd className={cn('md:sticky md:-top-1/4', 'bg-indigo-900')}>
 			<div ref={setPanel} className='relative z-2 bg-bg'>
 				<div className='grid grid-cols-12 md:gap-12 xl:gap-20'>
 					<div
@@ -118,7 +118,7 @@ const Panel = ({ setPanel, img, layout, title, subtitle, body }) => {
 
 const Deco = ({ img }) => (
 	<Parallax
-		speed={-1}
+		speed={-0.5}
 		variant='bg'
 		className={{
 			trigger: 'relative w-full h-full min-h-50vh overflow-hidden',
