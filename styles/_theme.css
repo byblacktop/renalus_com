@@ -58,19 +58,6 @@
 	--color-slate-900: oklch(20.95% 0.016 218.31);
 	--color-slate-950: oklch(17.28% 0.011 229.83);
 
-	--color-stone: oklch(87.71% 0.004 67.78);
-	--color-stone-50: oklch(96.99% 0.001 106.42);
-	--color-stone-100: oklch(93.86% 0.002 17.2);
-	--color-stone-200: oklch(87.71% 0.004 67.78);
-	--color-stone-300: oklch(81.36% 0.005 48.67);
-	--color-stone-400: oklch(74.97% 0.007 67.71);
-	--color-stone-500: oklch(68.36% 0.009 56.25);
-	--color-stone-600: oklch(59.87% 0.012 54.37);
-	--color-stone-700: oklch(51.1% 0.01 56.17);
-	--color-stone-800: oklch(41.94% 0.007 59.5);
-	--color-stone-900: oklch(32.24% 0.005 67.67);
-	--color-stone-950: oklch(27% 0.005 67.63);
-
 	/* Brand */
 	--color-red: oklch(66.8% 0.184 17.77);
 	--color-red-50: oklch(96.86% 0.014 12.01);

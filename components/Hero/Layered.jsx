@@ -29,7 +29,7 @@ const HeroLayered = ({
 						{...contentProps}
 						as={{ subtitle: 'h6' }}
 						className={{
-							prose: '*:text-stone-100',
+							prose: '*:text-zinc-100',
 							subtitle: '__label __brief text-indigo-200',
 							body: 'max-w-md',
 						}}

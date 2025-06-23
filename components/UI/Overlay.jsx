@@ -19,7 +19,6 @@ const variants = cva('', {
 			black: 'bg-black',
 			slate: 'bg-slate',
 			zinc: 'bg-zinc',
-			stone: 'bg-stone',
 			indigo: 'bg-indigo',
 			soft: 'bg-indigo-500',
 			blue: 'bg-blue',

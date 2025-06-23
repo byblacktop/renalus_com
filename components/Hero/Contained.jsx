@@ -43,7 +43,7 @@ const HeroContained = ({
 			<Container
 				layout='grid'
 				cols={2}
-				gap='2xl'
+				gap='lg'
 				className={cn(
 					'__xs max-w-screen-5xl',
 					// TODO: Import variable too replace hardcoded "Zinc 50"
@@ -54,7 +54,7 @@ const HeroContained = ({
 				<Flex
 					layout='stack'
 					justify='between'
-					className='w-full max-w-lg mx-auto'
+					className='w-full max-w-xl mx-auto'
 				>
 					<Title
 						title={subtitle}
@@ -66,7 +66,8 @@ const HeroContained = ({
 						gap={{ prose: 'xs' }}
 						className={{
 							prose: 'content-start',
-							title: 'd2',
+							title: 'text-balance',
+							body: 'max-w-lg',
 							links: 'mt-4 lg:mt-6',
 						}}
 						linkProps={{
@@ -94,7 +95,7 @@ const HeroContained = ({
 					/>
 
 					{/* Empty div to control the min-height */}
-					<div className={cn('h-0 aspect-w-8', variants({ size }))} />
+					<div className={cn('h-0 aspect-w-9', variants({ size }))} />
 				</div>
 			</Container>
 		</Section>

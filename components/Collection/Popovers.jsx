@@ -117,7 +117,7 @@ const Item = ({ img, cta, ...contentProps }) => {
 				transition
 				anchor='top'
 				className={cn(
-					'p-3 md:p-5 bg-stone-100',
+					'p-3 md:p-5 bg-zinc-100',
 					'rounded-2xl shadow-2xl',
 					'transition duration-300 ease-out origin-bottom',
 					'data-closed:scale-95 data-closed:opacity-0',

@@ -1065,61 +1065,6 @@ export interface CollectionSliceFaqPrimaryItemsItem {
 }
 
 /**
- * Item in *Collection → Cards Spread → Primary → Items*
- */
-export interface CollectionSliceSpreadPrimaryItemsItem {
-	/**
-	 * Image field in *Collection → Cards Spread → Primary → Items*
-	 *
-	 * - **Field Type**: Image
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: collection.spread.primary.items[].img
-	 * - **Documentation**: https://prismic.io/docs/field#image
-	 */
-	img: prismic.ImageField<"lg" | "sm" | "blur">;
-	
-	/**
-	 * Label field in *Collection → Cards Spread → Primary → Items*
-	 *
-	 * - **Field Type**: Title
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: collection.spread.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	subtitle: prismic.TitleField;
-	
-	/**
-	 * Title field in *Collection → Cards Spread → Primary → Items*
-	 *
-	 * - **Field Type**: Title
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: collection.spread.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	title: prismic.TitleField;
-	
-	/**
-	 * Body field in *Collection → Cards Spread → Primary → Items*
-	 *
-	 * - **Field Type**: Rich Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: collection.spread.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	body: prismic.RichTextField;
-	
-	/**
-	 * Link field in *Collection → Cards Spread → Primary → Items*
-	 *
-	 * - **Field Type**: Link
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: collection.spread.primary.items[].link
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-	 */
-	link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
-}
-
-/**
  * Item in *Collection → Previews → Primary → Items*
  */
 export interface CollectionSlicePreviewsPrimaryItemsItem {
@@ -1867,92 +1812,6 @@ export interface CollectionSliceFaqPrimary {
 export type CollectionSliceFaq = prismic.SharedSliceVariation<"faq", Simplify<CollectionSliceFaqPrimary>, never>;
 
 /**
- * Primary content in *Collection → Cards Spread → Primary*
- */
-export interface CollectionSliceSpreadPrimary {
-	/**
-	 * Label field in *Collection → Cards Spread → Primary*
-	 *
-	 * - **Field Type**: Title
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: collection.spread.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	subtitle: prismic.TitleField;
-	
-	/**
-	 * Title field in *Collection → Cards Spread → Primary*
-	 *
-	 * - **Field Type**: Title
-	 * - **Placeholder**: Main Heading
-	 * - **API ID Path**: collection.spread.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	title: prismic.TitleField;
-	
-	/**
-	 * Intro Content field in *Collection → Cards Spread → Primary*
-	 *
-	 * - **Field Type**: Rich Text
-	 * - **Placeholder**: Introduce the Collection
-	 * - **API ID Path**: collection.spread.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	body: prismic.RichTextField;
-	
-	/**
-	 * Link field in *Collection → Cards Spread → Primary*
-	 *
-	 * - **Field Type**: Link
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: collection.spread.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-	 */
-	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
-	
-	/**
-	 * Content Position field in *Collection → Cards Spread → Primary*
-	 *
-	 * - **Field Type**: Select
-	 * - **Placeholder**: *None*
-	 * - **Default Value**: Right
-	 * - **API ID Path**: collection.spread.primary.position
-	 * - **Documentation**: https://prismic.io/docs/field#select
-	 */
-	position: prismic.SelectField<"Right" | "Left", "filled">;
-	
-	/**
-	 * Background Color field in *Collection → Cards Spread → Primary*
-	 *
-	 * - **Field Type**: Select
-	 * - **Placeholder**: *None*
-	 * - **Default Value**: None
-	 * - **API ID Path**: collection.spread.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
-	 */
-	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
-	
-	/**
-	 * Items field in *Collection → Cards Spread → Primary*
-	 *
-	 * - **Field Type**: Group
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: collection.spread.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
-	 */
-	items: prismic.GroupField<Simplify<CollectionSliceSpreadPrimaryItemsItem>>;
-}
-
-/**
- * Cards Spread variation for Collection Slice
- *
- * - **API ID**: `spread`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type CollectionSliceSpread = prismic.SharedSliceVariation<"spread", Simplify<CollectionSliceSpreadPrimary>, never>;
-
-/**
  * Primary content in *Collection → Previews → Primary*
  */
 export interface CollectionSlicePreviewsPrimary {
@@ -2265,7 +2124,7 @@ export type CollectionSliceHighlight = prismic.SharedSliceVariation<"highlight",
 /**
  * Slice variation for *Collection*
  */
-type CollectionSliceVariation = CollectionSliceDefault | CollectionSliceCards | CollectionSliceList | CollectionSliceColumns | CollectionSliceFeatured | CollectionSliceToggles | CollectionSliceFaq | CollectionSliceSpread | CollectionSlicePreviews | CollectionSlicePopovers | CollectionSliceAlpha | CollectionSliceHighlight
+type CollectionSliceVariation = CollectionSliceDefault | CollectionSliceCards | CollectionSliceList | CollectionSliceColumns | CollectionSliceFeatured | CollectionSliceToggles | CollectionSliceFaq | CollectionSlicePreviews | CollectionSlicePopovers | CollectionSliceAlpha | CollectionSliceHighlight
 
 /**
  * Collection Shared Slice
@@ -4345,8 +4204,6 @@ declare module "@prismicio/client" {
 			CollectionSliceTogglesPrimary,
 			CollectionSliceFaqPrimaryItemsItem,
 			CollectionSliceFaqPrimary,
-			CollectionSliceSpreadPrimaryItemsItem,
-			CollectionSliceSpreadPrimary,
 			CollectionSlicePreviewsPrimaryItemsItem,
 			CollectionSlicePreviewsPrimary,
 			CollectionSlicePopoversPrimaryItemsItem,
@@ -4363,7 +4220,6 @@ declare module "@prismicio/client" {
 			CollectionSliceFeatured,
 			CollectionSliceToggles,
 			CollectionSliceFaq,
-			CollectionSliceSpread,
 			CollectionSlicePreviews,
 			CollectionSlicePopovers,
 			CollectionSliceAlpha,
