@@ -46,7 +46,7 @@ const SubNav = ({ link, className }) => {
 				/>
 			</PopoverButton>
 
-			{link.text === 'Resources' && (
+			{open && (
 				<PopoverPanel
 					onPointerLeave={() => setOpen(false)}
 					static
