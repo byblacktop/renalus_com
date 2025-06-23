@@ -13,7 +13,6 @@ const FeatureStatement = ({
 	dataset,
 	...contentProps
 }) => {
-	console.log(position, contentProps)
 	return (
 		<Section
 			className={cn('pl-8 md:pl-16 xl:pl-24 z-2', bgColor(color))}
