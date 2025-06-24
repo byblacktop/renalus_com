@@ -16,7 +16,7 @@ const HeroLayered = ({
 	const { className: themeClass } = getTheme(color)
 
 	return (
-		<Section className={cn(themeClass, className)} {...dataset}>
+		<Section className={cn(themeClass, className)} dataset={dataset}>
 			<Spacer size={1} split={true} />
 			<Container className='pb-48'>
 				{/* Content */}
@@ -28,6 +28,7 @@ const HeroLayered = ({
 					<Prose
 						{...contentProps}
 						as={{ subtitle: 'h6' }}
+						width='sm'
 						className={{
 							prose: '*:text-zinc-100',
 							subtitle: '__label __brief text-indigo-200',
@@ -35,7 +36,6 @@ const HeroLayered = ({
 						}}
 						linkProps={{
 							variant: ['outline', 'stroke'],
-							// color: ['notice', 'white'],
 							color: [contrastUtil(color)],
 							arrow: [
 								{

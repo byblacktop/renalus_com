@@ -12,7 +12,7 @@ const CollectionCards = ({
 	dataset,
 	...contentProps
 }) => (
-	<Section {...dataset}>
+	<Section dataset={dataset}>
 		<article>
 			<Container
 				as='div'
@@ -20,7 +20,7 @@ const CollectionCards = ({
 			>
 				<Spacer size={3} split={true} />
 				<Prose
-					width='sm'
+					width='2xs'
 					className={{
 						subtitle: '__label __brief __xs text-indigo-200',
 					}}

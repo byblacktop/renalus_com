@@ -803,6 +803,13 @@
                     "Call to Action"
                   ]
                 }
+              },
+              "group": {
+                "type": "Text",
+                "config": {
+                  "label": "Group",
+                  "placeholder": ""
+                }
               }
             }
           }
@@ -842,7 +849,7 @@
             "label": "Intro Content",
             "placeholder": "Introduce the Collection",
             "allowTargetBlank": true,
-            "multi": "paragraph,heading5,heading6,strong,em,list-item,o-list-item"
+            "multi": "paragraph,heading5,heading6,strong,em,list-item,o-list-item,hyperlink"
           }
         },
         "color": {
@@ -895,13 +902,6 @@
                   "multi": "paragraph,heading5,heading6,strong,em,hyperlink,list-item,o-list-item,heading4"
                 }
               },
-              "group": {
-                "type": "Text",
-                "config": {
-                  "label": "Group",
-                  "placeholder": ""
-                }
-              },
               "links": {
                 "type": "Link",
                 "config": {
@@ -915,6 +915,13 @@
                     "Default",
                     "Call to Action"
                   ]
+                }
+              },
+              "group": {
+                "type": "Text",
+                "config": {
+                  "label": "Group",
+                  "placeholder": ""
                 }
               }
             }

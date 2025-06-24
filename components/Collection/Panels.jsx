@@ -10,7 +10,7 @@ const CollectionPanels = ({
 	dataset,
 	...contentProps
 }) => (
-	<Section className={cn(bgColor(color))} {...dataset}>
+	<Section className={cn(bgColor(color))} dataset={dataset}>
 		<Container cols={2} className='max-w-[2080px]'>
 			<ProseSplit
 				{...contentProps}

@@ -14,7 +14,10 @@ const CollectionCore = ({
 	...contentProps
 }) => {
 	return (
-		<Section className={cn(getTheme(color).className)} {...dataset}>
+		<Section
+			className={cn(getTheme(color).className)}
+			dataset={dataset}
+		>
 			<Container
 				layout='grid'
 				gap='prose'

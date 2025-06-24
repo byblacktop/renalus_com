@@ -39,7 +39,7 @@ const CollectionPopovers = ({
 	}
 
 	return (
-		<Section className={cn('overflow-hidden')} {...dataset}>
+		<Section className={cn('overflow-hidden')} dataset={dataset}>
 			<Container
 				layout='grid'
 				cols={4}

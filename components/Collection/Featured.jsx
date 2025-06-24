@@ -12,7 +12,7 @@ const CollectionFeatured = ({
 	...contentProps
 }) => {
 	return (
-		<Section {...dataset}>
+		<Section dataset={dataset}>
 			<Container gap='lg'>
 				<ProseSplit
 					className={{

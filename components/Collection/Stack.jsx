@@ -4,7 +4,7 @@ import { Stack } from '@/components/Interactive'
 import { invalidProse } from '@/helpers/data'
 
 const CollectionStack = ({ items, dataset, ...contentProps }) => (
-	<Section {...dataset}>
+	<Section dataset={dataset}>
 		<Intro {...contentProps} />
 
 		<Stack items={items} layout='collection' />

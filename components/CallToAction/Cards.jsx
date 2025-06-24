@@ -3,6 +3,7 @@ import { Lead, Thread } from '@/components/Content'
 import { CoverImage } from '@/components/Media'
 import {
 	Flex,
+	getBackdrop,
 	Grid,
 	LinkArrow,
 	Overlay,
@@ -20,7 +21,11 @@ const CtaCards = ({
 	...contentProps
 }) => {
 	return (
-		<Section {...dataset}>
+		<Section
+			dataset={dataset}
+			data-theme='dark'
+			className={cn('__dark bg-bg rounded-t-3xl md:rounded-t-4xl')}
+		>
 			<Container
 				width='lg'
 				layout='grid'
@@ -46,13 +51,7 @@ const CtaCards = ({
 				</Grid>
 			</Container>
 
-			<CoverImage
-				img={img}
-				className={cn(
-					'inset-1.5 md:inset-2 3xl:inset-3',
-					'rounded-4xl overflow-hidden',
-				)}
-			>
+			<CoverImage img={img} className={getBackdrop('cover')}>
 				<Overlay gradient='dark' blend='multiply' />
 			</CoverImage>
 		</Section>

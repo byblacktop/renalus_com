@@ -1,5 +1,9 @@
 import { Contact } from '@/components/CallToAction'
-import { getSliceData } from '@/lib/utils'
+import { getSliceData, resolveProps } from '@/lib/utils'
+
+const resolver = {
+	color: 'None',
+}
 
 const FormIntake = ({
 	slice: { primary, variation, slice_type },
@@ -7,8 +11,8 @@ const FormIntake = ({
 }) => {
 	return (
 		<Contact
-			{...getSliceData(slice_type, variation)}
-			{...primary}
+			{...getSliceData(slice_type, variation, primary.color)}
+			{...resolveProps(primary, resolver)}
 			{...context}
 		/>
 	)

@@ -16,19 +16,26 @@ const Thread = ({
 			color={color}
 			flow={contentProps.flow}
 			className={cn('__thread', cp(className, 'thread', true))}
-			{...dataset}
+			dataset={dataset}
 		>
 			<Prose color={color} className={className} {...contentProps} />
 		</Shell>
 	)
 }
 
-const ContentThread = ({ color, flow, className, children }) => (
+const ContentThread = ({
+	color,
+	flow,
+	className,
+	children,
+	...props
+}) => (
 	<Section
 		className={cn(
 			getTheme(color).className,
 			cp(className, 'section'),
 		)}
+		{...props}
 	>
 		<Container
 			className={cn(

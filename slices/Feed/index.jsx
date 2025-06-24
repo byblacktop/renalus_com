@@ -42,14 +42,17 @@ const Feed = ({
 		primary?.color,
 	)
 
+	console.log(dataset)
+
 	if (variation === 'team')
-		return <TeamGrid {...dataset} {...primary} />
+		return <TeamGrid dataset={dataset} {...primary} />
 
 	const type = getType(primary?.feed)
 	const links = [primary?.links].flat()
 
 	return (
 		<Section
+			dataset={dataset}
 			className={cn(
 				getTheme(primary?.color).isDark ? '__dark' : '',
 				'relative z-10 rounded-3xl md:rounded-4xl overflow-hidden',
@@ -57,7 +60,6 @@ const Feed = ({
 				bgColor(primary?.color),
 			)}
 			{...props}
-			{...dataset}
 		>
 			<Container gap='prose'>
 				<ProseSplit
@@ -104,16 +106,6 @@ const Feed = ({
 					)}
 				</div>
 			</Container>
-
-			{/* <Backdrop
-				color={primary?.color}
-				offset='boxed'
-				className={
-					type === 'post' &&
-					validArrObjectData(links) &&
-					'bottom-12 md:bottom-16 2xl:bottom-24'
-				}
-			/> */}
 		</Section>
 	)
 }

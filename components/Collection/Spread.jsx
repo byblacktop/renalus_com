@@ -39,7 +39,7 @@ const CollectionSpread = ({
 				'overflow-hidden-mb-8 pb-8',
 				getTheme(color).className,
 			)}
-			{...dataset}
+			dataset={dataset}
 		>
 			<Container>
 				<ProseSplit color={color} align='end' {...contentProps} />

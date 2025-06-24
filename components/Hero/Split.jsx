@@ -40,7 +40,7 @@ const HeroSplit = ({
 				'bg-bg',
 				className,
 			)}
-			{...dataset}
+			dataset={dataset}
 			data-theme='light'
 		>
 			<Container

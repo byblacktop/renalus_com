@@ -1,6 +1,6 @@
 import { ContentSplitProse } from '@/components/Content'
 import { CoverImage } from '@/components/Media'
-import { Overlay } from '@/components/UI'
+import { getBackdrop, Overlay } from '@/components/UI'
 import { bgColor, getTheme } from '@/lib/helpers'
 import { cn, cp } from '@/lib/utils'
 
@@ -37,8 +37,9 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 			img={img}
 			priority
 			className={cn(
-				'rounded-4xl overflow-hidden',
-				'inset-2 md:inset-3 2xl:inset-4',
+				// 'rounded-4xl overflow-hidden',
+				// 'inset-1.5 md:inset-2 xl:inset-3',
+				getBackdrop('cover'),
 				'top-[var(--h-header)]',
 				'md:top-[var(--h-header)]',
 				'2xl:top-[var(--h-header)]',

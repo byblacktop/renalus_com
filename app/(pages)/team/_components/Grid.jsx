@@ -5,51 +5,64 @@ import { Container, Section, Shell } from '@/components/Compose'
 import { Lead } from '@/components/Content'
 import { DynamicFeed } from '@/components/Feed'
 import { AspectImage } from '@/components/Media'
-import { Backdrop, Button, Flex, Grid } from '@/components/UI'
+import { Button, Flex, getBackdrop, Grid } from '@/components/UI'
 import { getTheme } from '@/lib/helpers'
 import { cn, kn } from '@/lib/utils'
 
 const TeamGrid = ({ title, body, color, team, cols, dataset }) => {
 	const isDark = getTheme(color).isDark
 
+	console.log(dataset)
+
 	return (
-		<Section {...dataset} className={cn(isDark && '__dark')}>
-			<Container className='px-fluid-y'>
-				<Grid cols={3} gap={team === 'Staff' ? 'sm' : 'lg'}>
-					<Lead
-						title={title}
-						subtitle={body}
-						layout='stack'
-						gap='prose'
-						className={{
-							lead: 'self-start',
-							title: cn(
-								isDark && 'text-slate-300',
-								'after:absolute after:-bottom-5 after:left-0',
-								'after:w-16 after:h-1',
-								isDark ? 'after:bg-slate-300' : 'after:bg-indigo',
-							),
-							subtitle: '__sm',
+		<Section
+			container
+			className={{
+				section: cn(
+					isDark && '__dark',
+					getTheme(color).className,
+					getBackdrop('default'),
+				),
+				// container: 'px-fluid-y',
+			}}
+			dataset={dataset}
+		>
+			{/* <Container className='px-fluid-y'> */}
+			<Grid cols={3} gap={team === 'Staff' ? 'sm' : 'lg'}>
+				<Lead
+					title={title}
+					subtitle={body}
+					layout='stack'
+					gap='prose'
+					className={{
+						lead: 'self-start',
+						title: cn(
+							isDark && 'text-slate-300',
+							'after:absolute after:-bottom-5 after:left-0',
+							'after:w-16 after:h-1',
+							isDark ? 'after:bg-slate-300' : 'after:bg-indigo',
+						),
+						subtitle: '__sm',
+					}}
+				/>
+
+				{/* Team Query */}
+				<Shell
+					as={team === 'Staff' ? 'div' : false}
+					className='col-span-2 grid grid-cols-2 gap-4'
+				>
+					<DynamicFeed
+						type='team'
+						group={team}
+						qry={{
+							filters: [filter.at('my.team.team', team)],
 						}}
 					/>
+				</Shell>
+			</Grid>
+			{/* </Container> */}
 
-					{/* Team Query */}
-					<Shell
-						as={team === 'Staff' ? 'div' : false}
-						className='col-span-2 grid grid-cols-2 gap-4'
-					>
-						<DynamicFeed
-							type='team'
-							group={team}
-							qry={{
-								filters: [filter.at('my.team.team', team)],
-							}}
-						/>
-					</Shell>
-				</Grid>
-			</Container>
-
-			<Backdrop color={color} offset='boxed' />
+			{/* <Backdrop color={color} offset='boxed' /> */}
 		</Section>
 	)
 }

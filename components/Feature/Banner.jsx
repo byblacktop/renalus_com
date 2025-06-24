@@ -17,7 +17,7 @@ const FeatureBanner = ({
 			'pl-8 md:pl-16 2xl:pl-24',
 			'pt-8 md:pt-16 2xl:pt-24',
 		)}
-		{...dataset}
+		dataset={dataset}
 		data-theme='dark'
 	>
 		<div

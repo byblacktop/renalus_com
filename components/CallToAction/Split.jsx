@@ -42,7 +42,7 @@ const CtaSplit = ({ items, dataset, ...contentProps }) => {
 				'-mt-8 z-999 bg-bg',
 				'rounded-4xl md:rounded-5xl overflow-hidden',
 			)}
-			{...dataset}
+			dataset={dataset}
 		>
 			{hasIntro && (
 				<Container className='__sm pb-8'>

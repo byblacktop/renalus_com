@@ -32,11 +32,11 @@ const ContentSplitProse = ({
 }) => {
 	return (
 		<Section
+			dataset={dataset}
 			className={cn(
 				color && getTheme(color).className,
 				cp(className, 'section', true),
 			)}
-			{...dataset}
 		>
 			<Container
 				gap='sm'

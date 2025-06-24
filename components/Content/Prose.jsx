@@ -6,7 +6,6 @@ import { ButtonGroup } from '@/components/UI'
 import {
 	validArrObjectData,
 	validContent,
-	validObjectData,
 	validObjectKeys,
 } from '@/lib/helpers'
 import { tw } from '@/lib/tw'
@@ -24,7 +23,9 @@ const variants = cva('__prose', {
 
 		width: {
 			default: 'max-w-4xl',
-			sm: 'max-w-md',
+			sm: 'max-w-2xl',
+			xs: 'max-w-lg',
+			'2xs': 'max-w-md',
 		},
 
 		gap: tw.gap,

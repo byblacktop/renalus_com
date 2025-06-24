@@ -17,7 +17,7 @@ const ContentSplit = ({
 }) => (
 	<Section
 		className={cn('__content __split', getTheme(color).className)}
-		{...dataset}
+		dataset={dataset}
 	>
 		<Container layout='grid' cols={12} gap='xl'>
 			<div

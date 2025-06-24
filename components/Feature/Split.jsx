@@ -15,7 +15,7 @@ const FeatureSplit = ({
 	return (
 		<Section
 			className={cn('pl-8 md:pl-16 xl:pl-24 z-2', bgColor(color))}
-			{...dataset}
+			dataset={dataset}
 		>
 			<div className='__bg'>
 				<Container layout='grid' cols={2} className='__xs' gap='lg'>

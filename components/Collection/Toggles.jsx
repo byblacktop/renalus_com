@@ -14,7 +14,10 @@ const CollectionToggles = ({
 }) => {
 	return (
 		<>
-			<Section {...dataset} className={getTheme(color).className}>
+			<Section
+				dataset={dataset}
+				className={getTheme(color).className}
+			>
 				<Container className='pb-fluid-x'>
 					{/* Content */}
 					<ProseSplit

@@ -22,7 +22,7 @@ const CollectionProse = ({
 				'm-4 md:m-6 mb-0 md:mb-0',
 				getTheme(color).className,
 			)}
-			{...dataset}
+			dataset={dataset}
 		>
 			<Container
 				layout='grid'

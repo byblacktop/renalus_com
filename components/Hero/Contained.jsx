@@ -38,7 +38,7 @@ const HeroContained = ({
 				themeClass,
 				className,
 			)}
-			{...dataset}
+			dataset={dataset}
 		>
 			<Container
 				layout='grid'

@@ -16,7 +16,7 @@ const CollectionHighlight = ({
 	return (
 		<>
 			<Section
-				{...dataset}
+				dataset={dataset}
 				className={cn(getTheme(color).className, 'mt-24')}
 			>
 				<Container cols={2} gap='lg' align='center' className='py-0'>

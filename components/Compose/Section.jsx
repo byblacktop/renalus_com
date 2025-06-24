@@ -3,8 +3,14 @@ import { forwardRef } from 'react'
 import { Container } from '@/components/Compose'
 import { cp } from '@/lib/utils'
 
-const Section = ({ container = false, ...props }) => {
-	return container ? <Segment {...props} /> : <section {...props} />
+const Section = ({ container = false, dataset, ...props }) => {
+	console.log(dataset)
+
+	return container ? (
+		<Segment dataset={dataset} {...props} />
+	) : (
+		<section {...dataset} {...props} />
+	)
 }
 
 const Segment = forwardRef(

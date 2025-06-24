@@ -26,15 +26,12 @@ const Hero = ({
 	slice: { primary, variation, slice_type },
 	context,
 }) => {
-	const props = resolveProps(primary, resolver, true)
-	const dataset = getSliceData(slice_type, variation, props.color)
-
 	return (
 		<Shell
 			as={layouts[variation] ?? layouts.default}
 			className='__hero'
-			{...props}
-			{...dataset}
+			{...getSliceData(slice_type, variation, primary.color)}
+			{...resolveProps(primary, resolver)}
 			{...context}
 		/>
 	)

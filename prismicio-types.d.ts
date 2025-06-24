@@ -1017,6 +1017,16 @@ export interface CollectionSliceTogglesPrimaryItemsItem {
 	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call to Action">>;
+	
+	/**
+	 * Group field in *Collection → Toggles → Primary → Items*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: collection.toggles.primary.items[].group
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	group: prismic.KeyTextField;
 }
 
 /**
@@ -1044,16 +1054,6 @@ export interface CollectionSliceFaqPrimaryItemsItem {
 	body: prismic.RichTextField;
 	
 	/**
-	 * Group field in *Collection → FAQ → Primary → Items*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: collection.faq.primary.items[].group
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
-	 */
-	group: prismic.KeyTextField;
-	
-	/**
 	 * Links field in *Collection → FAQ → Primary → Items*
 	 *
 	 * - **Field Type**: Link
@@ -1062,6 +1062,16 @@ export interface CollectionSliceFaqPrimaryItemsItem {
 	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call to Action">>;
+	
+	/**
+	 * Group field in *Collection → FAQ → Primary → Items*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: collection.faq.primary.items[].group
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	group: prismic.KeyTextField;
 }
 
 /**
