@@ -236,8 +236,8 @@
                 "config": {
                   "label": "Image",
                   "constraint": {
-                    "width": 1200,
-                    "height": null
+                    "width": 1280,
+                    "height": 1312
                   },
                   "thumbnails": [
                     {
