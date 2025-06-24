@@ -111,7 +111,7 @@ export const TogglesNav = ({ groups, className }) => {
 				layout='stack'
 				gap='sm'
 				className={cn(
-					'sticky top-24',
+					'md:sticky md:top-24',
 					'rounded-xl bg-slate-100/70',
 					'p-2 md:p-4 xl:p-6',
 					className,

@@ -68,7 +68,7 @@ const Avatar = ({ img }) => (
 	<div className='relative md:col-span-4 max-md:pt-6'>
 		<div
 			className={cn(
-				'relative z-2 md:sticky md:top-20',
+				'relative z-2 md:sticky md:top-24',
 				'md:pt-0 md:pb-16',
 				'max-w-2xs md:max-w-96',
 				'flex flex-col items-center',

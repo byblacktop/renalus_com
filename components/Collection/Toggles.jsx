@@ -44,7 +44,10 @@ const CollectionToggles = ({
 						img={img}
 						w={7}
 						h={8}
-						className='rounded-3xl overflow-hidden'
+						className={{
+							figure: 'md:sticky md:top-24',
+							img: 'rounded-3xl',
+						}}
 					/>
 
 					<Toggles items={items} color={color} />
