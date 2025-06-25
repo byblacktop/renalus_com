@@ -1,4 +1,4 @@
-import { MapPinIcon } from '@heroicons/react/24/outline'
+import { MapPinIcon, PrinterIcon } from '@heroicons/react/24/outline'
 
 import { LinkShell } from '@/components/Compose'
 import { Lead, Title } from '@/components/Content'
@@ -47,7 +47,7 @@ const CardUtility = ({
 	)
 }
 
-const LocationData = ({ address, phone, hours }) => {
+const LocationData = ({ address, phone, hours, faxes }) => {
 	return (
 		<Flex layout='stack' gap='2xs'>
 			<Flex align='start' gap='3xs'>
@@ -56,6 +56,24 @@ const LocationData = ({ address, phone, hours }) => {
 			</Flex>
 
 			<LocationMeta phone={phone} hours={hours} />
+
+			{faxes.length > 0 && (
+				<Flex align='start' gap='3xs'>
+					<PrinterIcon className='size-4 shrink-0 text-slate' />
+					<p className='__xs'>{faxes[0].number}</p>
+				</Flex>
+			)}
+
+			{/* {faxes.map(f => (
+				<Flex align='start' gap='3xs'>
+					<PrinterIcon className='size-4 shrink-0 text-slate' />
+					<p className='__xs'>{f.number}</p>
+				</Flex>
+			))} */}
+			{/* <Flex align='start' gap='3xs'>
+				<MapPinIcon className='size-4 shrink-0 text-slate' />
+				<p className='__xs'>{address?.text}</p>
+			</Flex> */}
 		</Flex>
 	)
 }
