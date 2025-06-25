@@ -20,54 +20,52 @@ const Contact = ({ items, ...contentProps }) => {
 	return (
 		<Section className='__hero'>
 			{/* Intro Content */}
-			<Container>
-				<Grid cols={2} gap='2xl'>
-					<div className='max-w-lg mx-auto'>
+			<Container width='xs'>
+				<Flex gap={0} className='divide-x divide-slate-400/50'>
+					<div className='max-w-2xl md:pr-16'>
 						<Prose
 							leadProps={{ layout: 'reverse' }}
 							{...contentProps}
 						/>
-						{/* Separator */}
-						<div className='col-span-12 h-px border-b border-500/20 mb-8 md:mb-10 pb-8 md:pb-10' />
-
-						<div className={cn('grid', gap.prose)}>
-							{items.map((item, i) => (
-								<ContactInfo
-									key={kn(item)}
-									arrow={
-										i === items.length - 1
-											? arrows.scroll
-											: arrows.default
-									}
-									{...item}
-								/>
-							))}
-						</div>
 					</div>
 
-					<div className='max-w-xl bg-slate-100 rounded-xl overflow-hidden'>
-						<EmailForm
-							cols={1}
-							className='p-8 md:p-12 h-full'
-							{...contact}
-						/>
-					</div>
-				</Grid>
+					{/* Separator */}
+					{/* <div className='w-full h-px bg-slate-400/50' /> */}
+
+					<Flex layout='stack' gap='base' className='md:pl-16'>
+						{items.map((item, i) => (
+							<ContactInfo
+								key={kn(item)}
+								arrow={{
+									default: true,
+								}}
+								{...item}
+							/>
+						))}
+					</Flex>
+				</Flex>
 			</Container>
 		</Section>
 	)
 }
 
 const ContactInfo = ({ links, title, arrow }) => {
-	if (invalidArrObjectData(links)) return
+	// if (invalidArrObjectData(links)) return
 
 	return (
 		<Flex layout='stack' gap='3xs'>
 			<h6 className='__label __xs text-slate/70'>{title}</h6>
 
-			{links.map((link, i) => (
+			{links?.map((link, i) => (
 				<div key={kn(link)}>
-					<Button link={link} variant='stroke' arrow={arrow} />
+					{/* <pre>{JSON.stringify(link, null, 2)}</pre> */}
+					{link.url ? (
+						<Button link={link} variant='stroke' arrow={arrow} />
+					) : (
+						<span className='btn btn-stroke btn-primary'>
+							{link.text}
+						</span>
+					)}
 				</div>
 			))}
 		</Flex>

@@ -111,7 +111,7 @@ const Card = ({ name, degree, img, link }) => {
 					/>
 				</div>
 			</AspectImage>
-			<h4 className='flex gap-1.5 items-end leading-none'>
+			<h4 className='flex gap-1.5 items-end leading-none text-indigo-50'>
 				<span>{name}</span>
 				{degree && (
 					<span className='text-red-400/80 fs-base font-main font-medium'>

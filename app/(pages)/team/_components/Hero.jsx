@@ -3,13 +3,20 @@ import { Suspense } from 'react'
 import { Container, Section } from '@/components/Compose'
 import { Lead } from '@/components/Content'
 import { AspectImage } from '@/components/Media'
-import { Backdrop, Button } from '@/components/UI'
+import { Backdrop, Button, Flex } from '@/components/UI'
 import { gap } from '@/lib/tw'
 import { cn } from '@/lib/utils'
 import { Contact } from '@/team/Contact'
 import { Controls } from '@/team/Controls'
 
-const Hero = ({ name, img, locations, priority, children }) => {
+const Hero = ({
+	name,
+	degree,
+	img,
+	locations,
+	priority,
+	children,
+}) => {
 	return (
 		<>
 			<Section className='__hero' data-theme='dark'>
@@ -28,17 +35,20 @@ const Hero = ({ name, img, locations, priority, children }) => {
 					<div className='md:col-span-8 lg:col-span-7 md:px-4 xl:px-8'>
 						<div className='__xs flex flex-col gap-2 lg:pt-fluid lg:h-[330px]'>
 							{/* Name */}
-							<Lead
-								title={name}
-								subtitle='Meet the Doctor'
-								layout='reverse'
-								gap='xl'
-								className={{
-									title: 'text-indigo-50',
-									subtitle: '__label text-blue-300',
-								}}
-								as={{ title: 'h1', subtitle: 'h6' }}
-							/>
+							<Flex layout='reverse' gap='xl' className=''>
+								<h1 className='flex gap-1.5 items-center leading-none text-indigo-50'>
+									<span>{name}</span>
+									{degree && (
+										<span className='text-red-400/80 fs-5xl font-main font-medium'>
+											{degree}
+										</span>
+									)}
+								</h1>
+
+								<h6 className='__label text-blue-300'>
+									Meet the Doctor
+								</h6>
+							</Flex>
 
 							{/* Titles */}
 							<Contact locations={locations} />
