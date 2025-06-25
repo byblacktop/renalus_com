@@ -190,7 +190,7 @@ const HeaderNav = ({ theme, hasScrolled }) => {
 					'relative z-2',
 					'p-1 xl:p-1.75 rounded-l-full',
 					'border border-r-0',
-					theme.isDark ? 'border-white/15' : 'border-slate-200',
+					theme.isDark ? 'border-white/15' : 'border-slate/20',
 					hasScrolled && 'bg-white/60 backdrop-blur',
 				)}
 			/>
@@ -214,7 +214,7 @@ const NavSecondary = ({ isDark, hasScrolled, breakpoint }) => {
 				'max-lg:pl-4 max-sm:pr-4',
 				'border lg:border-l-0',
 				'rounded-full lg:rounded-l-none',
-				isDark ? 'border-white/15' : 'border-slate-200',
+				isDark ? 'border-white/15' : 'border-slate/20',
 				hasScrolled && 'bg-white/60 backdrop-blur',
 			)}
 		>

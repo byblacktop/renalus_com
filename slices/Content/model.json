@@ -112,7 +112,7 @@
             "label": "Label",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading4,heading5,heading6,heading2,heading3"
+            "single": "heading5,heading6"
           }
         },
         "title": {

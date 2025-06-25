@@ -23,6 +23,7 @@ const icons = {
 const Info = ({
 	icon,
 	title,
+	label,
 	link,
 	as = 'p',
 	size = '__xs',
@@ -47,12 +48,28 @@ const Info = ({
 					as={as}
 					className={cn(
 						size,
-						'leading-4.5',
+						'leading-4.5 text-indigo',
 						cp(className, 'title', true),
 					)}
 				/>
+
+				{label && <h6 className='__xs'>{label}</h6>}
 			</Flex>
 		</LinkShell>
+	)
+}
+
+const Details = ({ title, icon, data, children, ...props }) => {
+	if (invalidContent(data) && !children) return
+
+	return (
+		<dd className='max-w-2xs space-y-4'>
+			<h5 className='__label __sm text-indigo-600'>{title}</h5>
+			<div className='p __xs space-y-1 md:space-y-2'>
+				<Info icon={icon} title={data} size='__sm' {...props} />
+				{children}
+			</div>
+		</dd>
 	)
 }
 
@@ -84,7 +101,6 @@ const Hours = ({ hours }) => {
 						title={cell.content}
 						className={{
 							info: '__th',
-							title: 'font-medium',
 						}}
 						size=''
 					/>
@@ -108,4 +124,4 @@ const Hours = ({ hours }) => {
 	)
 }
 
-export { Info, Hours }
+export { Info, Hours, Details }

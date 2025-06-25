@@ -12,8 +12,6 @@ import { cn, kn } from '@/lib/utils'
 const TeamGrid = ({ title, body, color, team, cols, dataset }) => {
 	const isDark = getTheme(color).isDark
 
-	console.log(dataset)
-
 	return (
 		<Section
 			container

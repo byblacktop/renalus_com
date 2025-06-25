@@ -4,8 +4,6 @@ import { Container } from '@/components/Compose'
 import { cp } from '@/lib/utils'
 
 const Section = ({ container = false, dataset, ...props }) => {
-	console.log(dataset)
-
 	return container ? (
 		<Segment dataset={dataset} {...props} />
 	) : (

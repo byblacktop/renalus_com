@@ -42,8 +42,6 @@ const Feed = ({
 		primary?.color,
 	)
 
-	console.log(dataset)
-
 	if (variation === 'team')
 		return <TeamGrid dataset={dataset} {...primary} />
 

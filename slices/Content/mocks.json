@@ -124,12 +124,10 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "heading2",
+						"type": "heading5",
 						"content": {
-							"text": "Personally Vetted Expert Witnesses",
-							"spans": []
-						},
-						"direction": "ltr"
+							"text": "Television"
+						}
 					}
 				]
 			},

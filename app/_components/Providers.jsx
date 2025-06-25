@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
+import { filter } from '@prismicio/client'
 import {
 	createStore,
 	Provider as StoreProvider,
@@ -38,6 +39,7 @@ const Globals = ({ children }) => {
 	try {
 		client
 			.getAllByType('location', {
+				filters: [filter.at('document.tags', ['Primary'])],
 				orderings: [
 					{
 						field: 'my.location.priority',

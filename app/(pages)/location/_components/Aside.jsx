@@ -1,65 +1,39 @@
 import { Title } from '@/components/Content'
 import { AspectImage } from '@/components/Media'
-import { Box, Button, Flex } from '@/components/UI'
+import { Box, Button, Flex, Grid } from '@/components/UI'
 import {
 	invalidContent,
 	invalidObjectData,
 	slugify,
 } from '@/lib/helpers'
-import { Hours, Info } from './Info'
+import { Details, Hours, Info } from './Info'
 
-const Aside = ({ hours, ...contact }) => (
-	<Flex as='aside' layout='grid' columns={2} gap='md'>
-		<Contact {...contact} />
+const Aside = ({ hours, address, phone, faxes }) => (
+	<Flex gap='lg' justify='between'>
 		<Open hours={hours} />
+		<Details title='Contact' icon='phone' data={phone} />
+
+		<Details title='Fax'>
+			{faxes.map(f => (
+				<Flex key={f.label} layout='stack' gap='2xs'>
+					<Info
+						icon='fax'
+						title={f.number}
+						label={f.label}
+						size='__sm'
+					/>
+				</Flex>
+			))}
+		</Details>
 	</Flex>
 )
-
-const Contact = ({ title, address, phone, fax, link }) => {
-	return (
-		<div className='max-w-2xs space-y-4'>
-			<h5 className='__label __sm'>Contact</h5>
-
-			{/* Contact details */}
-			<dl className='p __xs space-y-1 md:space-y-2'>
-				{/* Location label */}
-				<dd>
-					<Title title={title} as='h5' className='__sm' />
-				</dd>
-
-				{/* Location details */}
-				<Details
-					title='Address'
-					icon='address'
-					data={address.text}
-					link={address}
-				/>
-				<Details title='Phone' icon='phone' data={phone} />
-				<Details title='Fax' icon='fax' data={fax} />
-			</dl>
-		</div>
-	)
-}
-
-const Details = ({ title, icon, data, ...props }) => {
-	if (invalidContent(data)) return
-
-	return (
-		<>
-			<dt className='sr-only'>{title}</dt>
-			<dd>
-				<Info icon={icon} title={data} size='__sm' {...props} />
-			</dd>
-		</>
-	)
-}
 
 const Open = ({ hours }) => {
 	if (invalidObjectData(hours)) return
 
 	return (
 		<div className='max-w-2xs space-y-4'>
-			<h5 className='__label __sm'>Hours</h5>
+			<h5 className='__label __sm text-indigo-600'>Hours</h5>
 			<Hours hours={hours} />
 		</div>
 	)

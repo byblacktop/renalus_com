@@ -63,17 +63,19 @@ const SubNavLocations = () => {
 	if (invalidArrObjectData(locations)) return null
 
 	return (
-		<dl className='columns-3 gap-0 pb-2'>
-			{locations.map(location => (
-				<LocationCard
-					key={kn(location)}
-					{...location}
-					variant='subnav'
-				/>
-			))}
-		</dl>
+		<>
+			<h5 className='__sm pl-2.5 text-slate'>Primary Locations</h5>
+			<dl className='columns-2 gap-0 pb-2'>
+				{locations.map(location => (
+					<LocationCard
+						key={kn(location)}
+						{...location}
+						variant='subnav'
+					/>
+				))}
+			</dl>
+		</>
 	)
 }
 
 export { SubNavItems, SubNavGroups, SubNavLocations }
-//
