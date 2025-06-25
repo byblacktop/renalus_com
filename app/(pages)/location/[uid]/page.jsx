@@ -21,7 +21,7 @@ const Location = async ({ params }) => {
 						Location Overview
 					</h6>
 					<h1 className='d2'>{title} Office</h1>
-					<Info icon='address' title={address.text} size='__sm' />
+					<Info icon='address' title={address.text} size='__base' />
 				</Flex>
 
 				<div className='w-full h-px bg-slate-400/50' />
