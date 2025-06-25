@@ -74,7 +74,7 @@ const TeamCards = ({ results, group }) =>
 		/>
 	))
 
-const Card = ({ name, img, link }) => {
+const Card = ({ name, degree, img, link }) => {
 	return (
 		<Link
 			href={link}
@@ -111,7 +111,14 @@ const Card = ({ name, img, link }) => {
 					/>
 				</div>
 			</AspectImage>
-			<h4>{name}</h4>
+			<h4 className='flex gap-1.5 items-end leading-none'>
+				<span>{name}</span>
+				{degree && (
+					<span className='text-red-400/80 fs-base font-main font-medium'>
+						{degree}
+					</span>
+				)}
+			</h4>
 		</Link>
 	)
 }
