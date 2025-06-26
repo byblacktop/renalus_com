@@ -36,14 +36,15 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 		<CoverImage
 			img={img}
 			priority
-			className={cn(
-				// 'rounded-4xl overflow-hidden',
-				// 'inset-1.5 md:inset-2 xl:inset-3',
-				getBackdrop('cover'),
-				'top-[var(--h-header)]',
-				'md:top-[var(--h-header)]',
-				'2xl:top-[var(--h-header)]',
-			)}
+			className={{
+				figure: cn(
+					getBackdrop('cover'),
+					'top-[var(--h-header)]',
+					'md:top-[var(--h-header)]',
+					'2xl:top-[var(--h-header)]',
+				),
+				img: cn('object-bottom'),
+			}}
 		>
 			<Overlay gradient='smoke' />
 		</CoverImage>

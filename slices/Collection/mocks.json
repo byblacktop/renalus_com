@@ -1279,28 +1279,67 @@
 				]
 			},
 			"img": {
-				"provider": "imgix",
-				"url": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxudXRyaXRpb258ZW58MHx8fHwxNzQ5ODQ3ODEzfDA&ixlib=rb-4.1.0&q=85",
-				"alt": "poached egg with vegetables and tomatoes on blue plate",
+				"__TYPE__": "ImageContent",
 				"origin": {
-					"id": "jUPOXXRNdcA",
-					"url": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxudXRyaXRpb258ZW58MHx8fHwxNzQ5ODQ3ODEzfDA&ixlib=rb-4.1.0&q=85",
-					"width": 5503,
-					"height": 3745
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+					"width": 3456,
+					"height": 3456
 				},
-				"width": 5503,
-				"height": 3745,
+				"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?rect=144%2C0%2C3168%2C3456&w=1100&h=1200",
+				"width": 1100,
+				"height": 1200,
 				"edit": {
-					"background": "transparent",
 					"zoom": 1,
 					"crop": {
-						"x": 0,
+						"x": 144,
 						"y": 0
-					}
+					},
+					"background": "transparent"
 				},
-				"credits": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
+				"alt": "return",
+				"thumbnails": {
+					"md": {
+						"origin": {
+							"id": "md",
+							"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+							"width": 12288,
+							"height": 16384
+						},
+						"url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?rect=0%2C1489%2C12288%2C13405&w=550&h=600",
+						"width": 550,
+						"height": 600,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 1489
+							},
+							"background": "transparent"
+						},
+						"alt": "immediately"
+					},
+					"blur": {
+						"origin": {
+							"id": "blur",
+							"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e",
+							"width": 6000,
+							"height": 4000
+						},
+						"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?rect=1000%2C0%2C4000%2C4000&w=16&h=16",
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"zoom": 1,
+							"crop": {
+								"x": 1000,
+								"y": 0
+							},
+							"background": "transparent"
+						},
+						"alt": "cheese"
+					}
+				}
 			},
 			"accent": {
 				"__TYPE__": "FieldContent",

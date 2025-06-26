@@ -4,6 +4,50 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
+
+type PickContentRelationshipFieldData<
+	TRelationship extends prismic.CustomTypeModelFetchCustomTypeLevel1 | prismic.CustomTypeModelFetchCustomTypeLevel2 | prismic.CustomTypeModelFetchGroupLevel1 | prismic.CustomTypeModelFetchGroupLevel2,
+	TData extends Record<string, prismic.AnyRegularField | prismic.GroupField | prismic.NestedGroupField | prismic.SliceZone>,
+	TLang extends string
+> = |
+	// Content relationship fields
+	{
+		[TSubRelationship in Extract<
+			TRelationship["fields"][number], prismic.CustomTypeModelFetchContentRelationshipLevel1
+		> as TSubRelationship["id"]]:
+			ContentRelationshipFieldWithData<TSubRelationship["customtypes"], TLang>;
+	} &
+	// Group
+	{
+		[TGroup in Extract<
+			TRelationship["fields"][number], prismic.CustomTypeModelFetchGroupLevel1 | prismic.CustomTypeModelFetchGroupLevel2
+		> as TGroup["id"]]:
+			TData[TGroup["id"]] extends prismic.GroupField<infer TGroupData>
+				? prismic.GroupField<PickContentRelationshipFieldData<TGroup, TGroupData, TLang>>
+				: never
+	} &
+	// Other fields
+	{
+		[TFieldKey in Extract<TRelationship["fields"][number], string>]:
+			TFieldKey extends keyof TData ? TData[TFieldKey] : never;
+	};
+
+type ContentRelationshipFieldWithData<
+	TCustomType extends readonly (prismic.CustomTypeModelFetchCustomTypeLevel1 | string)[] | readonly (prismic.CustomTypeModelFetchCustomTypeLevel2 | string)[],
+	TLang extends string = string
+> = {
+	[ID in Exclude<TCustomType[number], string>["id"]]:
+		prismic.ContentRelationshipField<
+			ID,
+			TLang,
+			PickContentRelationshipFieldData<
+				Extract<TCustomType[number], { id: ID }>,
+				Extract<prismic.Content.AllDocumentTypes, { type: ID }>["data"],
+				TLang
+			>
+		>
+}[Exclude<TCustomType[number], string>["id"]];
+
 type LocationDocumentDataSlicesSlice = never
 
 /**
@@ -16,7 +60,7 @@ export interface LocationDocumentDataFaxesItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: location.faxes[].label
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	label: prismic.KeyTextField;
 	
@@ -26,7 +70,7 @@ export interface LocationDocumentDataFaxesItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: location.faxes[].number
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	number: prismic.KeyTextField;
 }
@@ -42,7 +86,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: location.title
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	title: prismic.KeyTextField;
 	
@@ -53,7 +97,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: Location Description
 	 * - **API ID Path**: location.body
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -64,7 +108,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: location.slices[]
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#slices
+	 * - **Documentation**: https://prismic.io/docs/slices
 	 */
 	slices: prismic.SliceZone<LocationDocumentDataSlicesSlice>;/**
 	 * Address field in *Location*
@@ -73,7 +117,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: location.address
 	 * - **Tab**: Info
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	address: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 	
@@ -84,7 +128,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: Phone Number
 	 * - **API ID Path**: location.phone
 	 * - **Tab**: Info
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	phone: prismic.KeyTextField;
 	
@@ -95,7 +139,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: location.faxes[]
 	 * - **Tab**: Info
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	faxes: prismic.GroupField<Simplify<LocationDocumentDataFaxesItem>>;
 	
@@ -106,7 +150,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: location.hours
 	 * - **Tab**: Info
-	 * - **Documentation**: https://prismic.io/docs/field#table
+	 * - **Documentation**: https://prismic.io/docs/fields/table
 	 */
 	hours: prismic.TableField;/**
 	 * Region field in *Location*
@@ -116,7 +160,7 @@ interface LocationDocumentData {
 	 * - **Default Value**: Florida
 	 * - **API ID Path**: location.region
 	 * - **Tab**: Meta
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	region: prismic.SelectField<"Florida" | "Alabama", "filled">;
 	
@@ -127,7 +171,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: location.priority
 	 * - **Tab**: Meta
-	 * - **Documentation**: https://prismic.io/docs/field#number
+	 * - **Documentation**: https://prismic.io/docs/fields/number
 	 */
 	priority: prismic.NumberField;/**
 	 * Meta Title field in *Location*
@@ -136,7 +180,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: A title of the page used for social media and search engines
 	 * - **API ID Path**: location.meta_title
 	 * - **Tab**: SEO & Metadata
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_title: prismic.KeyTextField;
 	
@@ -147,7 +191,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: A brief summary of the page
 	 * - **API ID Path**: location.meta_description
 	 * - **Tab**: SEO & Metadata
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_description: prismic.KeyTextField;
 	
@@ -158,7 +202,7 @@ interface LocationDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: location.meta_image
 	 * - **Tab**: SEO & Metadata
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	meta_image: prismic.ImageField<never>;
 }
@@ -168,7 +212,7 @@ interface LocationDocumentData {
  *
  * - **API ID**: `location`
  * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
+ * - **Documentation**: https://prismic.io/docs/content-modeling
  *
  * @typeParam Lang - Language API ID of the document.
  */
@@ -187,7 +231,7 @@ interface PageDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: page.slices[]
 	 * - **Tab**: Page
-	 * - **Documentation**: https://prismic.io/docs/field#slices
+	 * - **Documentation**: https://prismic.io/docs/slices
 	 */
 	slices: prismic.SliceZone<PageDocumentDataSlicesSlice>;/**
 	 * Meta Social Image field in *Page*
@@ -196,7 +240,7 @@ interface PageDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: page.meta_image
 	 * - **Tab**: Meta & SEO
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	meta_image: prismic.ImageField<never>;
 	
@@ -207,7 +251,7 @@ interface PageDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: page.meta_title
 	 * - **Tab**: Meta & SEO
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_title: prismic.KeyTextField;
 	
@@ -218,7 +262,7 @@ interface PageDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: page.meta_description
 	 * - **Tab**: Meta & SEO
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_description: prismic.KeyTextField;
 	
@@ -229,7 +273,7 @@ interface PageDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: page.meta_social_title
 	 * - **Tab**: Meta & SEO
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_social_title: prismic.KeyTextField;
 	
@@ -240,7 +284,7 @@ interface PageDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: page.meta_social_description
 	 * - **Tab**: Meta & SEO
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_social_description: prismic.KeyTextField;
 }
@@ -250,7 +294,7 @@ interface PageDocumentData {
  *
  * - **API ID**: `page`
  * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
+ * - **Documentation**: https://prismic.io/docs/content-modeling
  *
  * @typeParam Lang - Language API ID of the document.
  */
@@ -269,7 +313,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: post.img
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<never>;
 	
@@ -280,7 +324,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: post.title
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	title: prismic.KeyTextField;
 	
@@ -291,7 +335,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: Date of Publication
 	 * - **API ID Path**: post.date
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#date
+	 * - **Documentation**: https://prismic.io/docs/fields/date
 	 */
 	date: prismic.DateField;
 	
@@ -302,7 +346,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: External Link (Newsletter, etc)
 	 * - **API ID Path**: post.links
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 	
@@ -313,7 +357,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: post.body
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -324,7 +368,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: post.slices[]
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#slices
+	 * - **Documentation**: https://prismic.io/docs/slices
 	 */
 	slices: prismic.SliceZone<PostDocumentDataSlicesSlice>;/**
 	 * Podcast (Audio) field in *Post*
@@ -333,7 +377,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: post.podcast
 	 * - **Tab**: Media
-	 * - **Documentation**: https://prismic.io/docs/field#embed
+	 * - **Documentation**: https://prismic.io/docs/fields/embed
 	 */
 	podcast: prismic.EmbedField
 	
@@ -344,7 +388,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: post.video
 	 * - **Tab**: Media
-	 * - **Documentation**: https://prismic.io/docs/field#embed
+	 * - **Documentation**: https://prismic.io/docs/fields/embed
 	 */
 	video: prismic.EmbedField/**
 	 * Meta Title field in *Post*
@@ -353,7 +397,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: A title of the page used for social media and search engines
 	 * - **API ID Path**: post.meta_title
 	 * - **Tab**: SEO & Metadata
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_title: prismic.KeyTextField;
 	
@@ -364,7 +408,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: A brief summary of the page
 	 * - **API ID Path**: post.meta_description
 	 * - **Tab**: SEO & Metadata
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_description: prismic.KeyTextField;
 	
@@ -375,7 +419,7 @@ interface PostDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: post.meta_image
 	 * - **Tab**: SEO & Metadata
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	meta_image: prismic.ImageField<never>;
 }
@@ -385,7 +429,7 @@ interface PostDocumentData {
  *
  * - **API ID**: `post`
  * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
+ * - **Documentation**: https://prismic.io/docs/content-modeling
  *
  * @typeParam Lang - Language API ID of the document.
  */
@@ -403,7 +447,7 @@ export interface TeamDocumentDataLocationsItem {
 	 * - **Field Type**: Content Relationship
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: team.locations[].location
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/content-relationship
 	 */
 	location: prismic.ContentRelationshipField<"location">;
 }
@@ -419,7 +463,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: team.img
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<never>;
 	
@@ -430,7 +474,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: Full Name
 	 * - **API ID Path**: team.name
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	name: prismic.KeyTextField;
 	
@@ -441,7 +485,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: team.degree
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	degree: prismic.KeyTextField;
 	
@@ -452,7 +496,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: team.bio
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	bio: prismic.RichTextField;
 	
@@ -463,7 +507,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: List Doctor's Academic and Relevant Affiliations
 	 * - **API ID Path**: team.affiliations
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	affiliations: prismic.RichTextField;
 	
@@ -474,7 +518,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: team.slices[]
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#slices
+	 * - **Documentation**: https://prismic.io/docs/slices
 	 */
 	slices: prismic.SliceZone<TeamDocumentDataSlicesSlice>;/**
 	 * Sort Order field in *Team*
@@ -483,7 +527,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: team.priority
 	 * - **Tab**: Meta
-	 * - **Documentation**: https://prismic.io/docs/field#number
+	 * - **Documentation**: https://prismic.io/docs/fields/number
 	 */
 	priority: prismic.NumberField;
 	
@@ -495,7 +539,7 @@ interface TeamDocumentData {
 	 * - **Default Value**: Doctor
 	 * - **API ID Path**: team.team
 	 * - **Tab**: Meta
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	team: prismic.SelectField<"Doctor" | "Provider" | "Staff", "filled">;
 	
@@ -506,7 +550,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: team.locations[]
 	 * - **Tab**: Meta
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	locations: prismic.GroupField<Simplify<TeamDocumentDataLocationsItem>>;/**
 	 * Meta Title field in *Team*
@@ -515,7 +559,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: A title of the page used for social media and search engines
 	 * - **API ID Path**: team.meta_title
 	 * - **Tab**: SEO & Metadata
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_title: prismic.KeyTextField;
 	
@@ -526,7 +570,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: A brief summary of the page
 	 * - **API ID Path**: team.meta_description
 	 * - **Tab**: SEO & Metadata
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	meta_description: prismic.KeyTextField;
 	
@@ -537,7 +581,7 @@ interface TeamDocumentData {
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: team.meta_image
 	 * - **Tab**: SEO & Metadata
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	meta_image: prismic.ImageField<never>;
 }
@@ -547,7 +591,7 @@ interface TeamDocumentData {
  *
  * - **API ID**: `team`
  * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
+ * - **Documentation**: https://prismic.io/docs/content-modeling
  *
  * @typeParam Lang - Language API ID of the document.
  */
@@ -562,12 +606,12 @@ export interface CallToActionSliceDefaultPrimaryItemsItem {
 	/**
 	 * Label field in *CallToAction → Cards → Primary → Links*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.default.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *CallToAction → Cards → Primary → Links*
@@ -575,7 +619,7 @@ export interface CallToActionSliceDefaultPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.default.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	title: prismic.RichTextField;
 	
@@ -585,7 +629,7 @@ export interface CallToActionSliceDefaultPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.default.primary.items[].link
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 	
@@ -596,7 +640,7 @@ export interface CallToActionSliceDefaultPrimaryItemsItem {
 	 * - **Placeholder**: Card Color
 	 * - **Default Value**: Indigo
 	 * - **API ID Path**: call_to_action.default.primary.items[].color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"Indigo" | "Blue" | "Green" | "Red" | "White" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 50" | "Zinc 100" | "Zinc 200", "filled">;
 }
@@ -611,29 +655,29 @@ export interface CallToActionSliceSplitPrimaryItemsItem {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.split.primary.items[].img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"md" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *CallToAction → Split → Primary → Links*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.split.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *CallToAction → Split → Primary → Links*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.split.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *CallToAction → Split → Primary → Links*
@@ -641,7 +685,7 @@ export interface CallToActionSliceSplitPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.split.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -651,7 +695,7 @@ export interface CallToActionSliceSplitPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.split.primary.items[].link
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 	
@@ -662,7 +706,7 @@ export interface CallToActionSliceSplitPrimaryItemsItem {
 	 * - **Placeholder**: Background Color
 	 * - **Default Value**: Indigo 800
 	 * - **API ID Path**: call_to_action.split.primary.items[].color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 }
@@ -677,29 +721,29 @@ export interface CallToActionSliceDefaultPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.default.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"blur">;
 	
 	/**
 	 * Label field in *CallToAction → Cards → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.default.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *CallToAction → Cards → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.default.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *CallToAction → Cards → Primary*
@@ -707,7 +751,7 @@ export interface CallToActionSliceDefaultPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.default.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -717,7 +761,7 @@ export interface CallToActionSliceDefaultPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.default.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CallToActionSliceDefaultPrimaryItemsItem>>;
 }
@@ -727,7 +771,7 @@ export interface CallToActionSliceDefaultPrimary {
  *
  * - **API ID**: `default`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CallToActionSliceDefault = prismic.SharedSliceVariation<"default", Simplify<CallToActionSliceDefaultPrimary>, never>;
 
@@ -738,22 +782,22 @@ export interface CallToActionSliceSplitPrimary {
 	/**
 	 * Label field in *CallToAction → Split → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.split.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *CallToAction → Split → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.split.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *CallToAction → Split → Primary*
@@ -761,7 +805,7 @@ export interface CallToActionSliceSplitPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.split.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -771,7 +815,7 @@ export interface CallToActionSliceSplitPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: call_to_action.split.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CallToActionSliceSplitPrimaryItemsItem>>;
 }
@@ -781,7 +825,7 @@ export interface CallToActionSliceSplitPrimary {
  *
  * - **API ID**: `split`
  * - **Description**: Split
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CallToActionSliceSplit = prismic.SharedSliceVariation<"split", Simplify<CallToActionSliceSplitPrimary>, never>;
 
@@ -795,7 +839,7 @@ type CallToActionSliceVariation = CallToActionSliceDefault | CallToActionSliceSp
  *
  * - **API ID**: `call_to_action`
  * - **Description**: CallToAction
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CallToActionSlice = prismic.SharedSlice<"call_to_action", CallToActionSliceVariation>;
 
@@ -806,22 +850,22 @@ export interface CollectionSliceDefaultPrimaryItemsItem {
 	/**
 	 * Label field in *Collection → Prose → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.default.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Prose → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.default.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → Prose → Primary → Items*
@@ -829,7 +873,7 @@ export interface CollectionSliceDefaultPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.default.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -839,7 +883,7 @@ export interface CollectionSliceDefaultPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.default.primary.items[].link
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
@@ -851,12 +895,12 @@ export interface CollectionSliceCardsPrimaryItemsItem {
 	/**
 	 * Title field in *Collection → Cards → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.cards.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → Cards → Primary → Items*
@@ -864,7 +908,7 @@ export interface CollectionSliceCardsPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.cards.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 }
@@ -876,22 +920,22 @@ export interface CollectionSliceListPrimaryItemsItem {
 	/**
 	 * Label field in *Collection → List → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.list.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → List → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.list.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → List → Primary → Items*
@@ -899,7 +943,7 @@ export interface CollectionSliceListPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.list.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -909,7 +953,7 @@ export interface CollectionSliceListPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.list.primary.items[].list
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	list: prismic.RichTextField;
 	
@@ -919,7 +963,7 @@ export interface CollectionSliceListPrimaryItemsItem {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.list.primary.items[].cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4" | "5" | "6">;
 }
@@ -931,22 +975,22 @@ export interface CollectionSliceColumnsPrimaryItemsItem {
 	/**
 	 * Label field in *Collection → Columns → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.columns.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Columns → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.columns.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → Columns → Primary → Items*
@@ -954,7 +998,7 @@ export interface CollectionSliceColumnsPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.columns.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 }
@@ -966,12 +1010,12 @@ export interface CollectionSliceFeaturedPrimaryItemsItem {
 	/**
 	 * Title field in *Collection → Featured Links → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.featured.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → Featured Links → Primary → Items*
@@ -979,7 +1023,7 @@ export interface CollectionSliceFeaturedPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.featured.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 }
@@ -991,12 +1035,12 @@ export interface CollectionSliceTogglesPrimaryItemsItem {
 	/**
 	 * Title field in *Collection → Toggles → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.toggles.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → Toggles → Primary → Items*
@@ -1004,7 +1048,7 @@ export interface CollectionSliceTogglesPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.toggles.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1014,7 +1058,7 @@ export interface CollectionSliceTogglesPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.toggles.primary.items[].links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call to Action">>;
 	
@@ -1024,7 +1068,7 @@ export interface CollectionSliceTogglesPrimaryItemsItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.toggles.primary.items[].group
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	group: prismic.KeyTextField;
 }
@@ -1036,12 +1080,12 @@ export interface CollectionSliceFaqPrimaryItemsItem {
 	/**
 	 * Title field in *Collection → FAQ → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.faq.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → FAQ → Primary → Items*
@@ -1049,7 +1093,7 @@ export interface CollectionSliceFaqPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.faq.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1059,7 +1103,7 @@ export interface CollectionSliceFaqPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.faq.primary.items[].links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call to Action">>;
 	
@@ -1069,7 +1113,7 @@ export interface CollectionSliceFaqPrimaryItemsItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.faq.primary.items[].group
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	group: prismic.KeyTextField;
 }
@@ -1081,22 +1125,22 @@ export interface CollectionSlicePreviewsPrimaryItemsItem {
 	/**
 	 * Label field in *Collection → Previews → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.previews.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Previews → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.previews.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → Previews → Primary → Items*
@@ -1104,7 +1148,7 @@ export interface CollectionSlicePreviewsPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.previews.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1114,7 +1158,7 @@ export interface CollectionSlicePreviewsPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.previews.primary.items[].list
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	list: prismic.RichTextField;
 	
@@ -1124,7 +1168,7 @@ export interface CollectionSlicePreviewsPrimaryItemsItem {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.previews.primary.items[].cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4" | "5" | "6">;
 }
@@ -1139,19 +1183,19 @@ export interface CollectionSlicePopoversPrimaryItemsItem {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.popovers.primary.items[].img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"sm" | "blur">;
 	
 	/**
 	 * Title field in *Collection → Popovers → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.popovers.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → Popovers → Primary → Items*
@@ -1159,7 +1203,7 @@ export interface CollectionSlicePopoversPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.popovers.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1169,7 +1213,7 @@ export interface CollectionSlicePopoversPrimaryItemsItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: Text to trigger popover
 	 * - **API ID Path**: collection.popovers.primary.items[].cta
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	cta: prismic.KeyTextField;
 	
@@ -1179,7 +1223,7 @@ export interface CollectionSlicePopoversPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.popovers.primary.items[].links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 }
@@ -1194,7 +1238,7 @@ export interface CollectionSliceAlphaPrimaryFeaturedItem {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.alpha.primary.featured[].img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"blur">;
 	
@@ -1204,7 +1248,7 @@ export interface CollectionSliceAlphaPrimaryFeaturedItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: Link to Brand Website
 	 * - **API ID Path**: collection.alpha.primary.featured[].link
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
@@ -1216,12 +1260,12 @@ export interface CollectionSliceHighlightPrimaryItemsItem {
 	/**
 	 * Title field in *Collection → Highlight → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.highlight.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Collection → Highlight → Primary → Items*
@@ -1229,7 +1273,7 @@ export interface CollectionSliceHighlightPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.highlight.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1239,7 +1283,7 @@ export interface CollectionSliceHighlightPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.highlight.primary.items[].links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call to Action">>;
 }
@@ -1251,22 +1295,22 @@ export interface CollectionSliceDefaultPrimary {
 	/**
 	 * Label field in *Collection → Prose → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.default.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Prose → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.default.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → Prose → Primary*
@@ -1274,7 +1318,7 @@ export interface CollectionSliceDefaultPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.default.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1284,7 +1328,7 @@ export interface CollectionSliceDefaultPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.default.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 	
@@ -1295,7 +1339,7 @@ export interface CollectionSliceDefaultPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Right
 	 * - **API ID Path**: collection.default.primary.position
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	position: prismic.SelectField<"Right" | "Left", "filled">;
 	
@@ -1306,7 +1350,7 @@ export interface CollectionSliceDefaultPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.default.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1316,7 +1360,7 @@ export interface CollectionSliceDefaultPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.default.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSliceDefaultPrimaryItemsItem>>;
 }
@@ -1326,7 +1370,7 @@ export interface CollectionSliceDefaultPrimary {
  *
  * - **API ID**: `default`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSliceDefault = prismic.SharedSliceVariation<"default", Simplify<CollectionSliceDefaultPrimary>, never>;
 
@@ -1340,29 +1384,29 @@ export interface CollectionSliceCardsPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.cards.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"lg" | "md" | "blur">;
 	
 	/**
 	 * Label field in *Collection → Cards → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.cards.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Cards → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.cards.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → Cards → Primary*
@@ -1370,7 +1414,7 @@ export interface CollectionSliceCardsPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.cards.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1380,7 +1424,7 @@ export interface CollectionSliceCardsPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.cards.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call to Action">;
 	
@@ -1390,7 +1434,7 @@ export interface CollectionSliceCardsPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.cards.primary.cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4">;
 	
@@ -1401,7 +1445,7 @@ export interface CollectionSliceCardsPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.cards.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1411,7 +1455,7 @@ export interface CollectionSliceCardsPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.cards.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSliceCardsPrimaryItemsItem>>;
 }
@@ -1421,7 +1465,7 @@ export interface CollectionSliceCardsPrimary {
  *
  * - **API ID**: `cards`
  * - **Description**: Cards
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSliceCards = prismic.SharedSliceVariation<"cards", Simplify<CollectionSliceCardsPrimary>, never>;
 
@@ -1432,22 +1476,22 @@ export interface CollectionSliceListPrimary {
 	/**
 	 * Label field in *Collection → List → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.list.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → List → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.list.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → List → Primary*
@@ -1455,7 +1499,7 @@ export interface CollectionSliceListPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.list.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1465,7 +1509,7 @@ export interface CollectionSliceListPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.list.primary.cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4" | "5" | "6">;
 	
@@ -1476,7 +1520,7 @@ export interface CollectionSliceListPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.list.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1486,7 +1530,7 @@ export interface CollectionSliceListPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.list.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSliceListPrimaryItemsItem>>;
 }
@@ -1496,7 +1540,7 @@ export interface CollectionSliceListPrimary {
  *
  * - **API ID**: `list`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSliceList = prismic.SharedSliceVariation<"list", Simplify<CollectionSliceListPrimary>, never>;
 
@@ -1507,22 +1551,22 @@ export interface CollectionSliceColumnsPrimary {
 	/**
 	 * Label field in *Collection → Columns → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.columns.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Columns → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.columns.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → Columns → Primary*
@@ -1530,7 +1574,7 @@ export interface CollectionSliceColumnsPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.columns.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1540,7 +1584,7 @@ export interface CollectionSliceColumnsPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.columns.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 	
@@ -1550,7 +1594,7 @@ export interface CollectionSliceColumnsPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.columns.primary.cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4" | "5" | "6">;
 	
@@ -1561,7 +1605,7 @@ export interface CollectionSliceColumnsPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.columns.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1571,7 +1615,7 @@ export interface CollectionSliceColumnsPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.columns.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSliceColumnsPrimaryItemsItem>>;
 }
@@ -1581,7 +1625,7 @@ export interface CollectionSliceColumnsPrimary {
  *
  * - **API ID**: `columns`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSliceColumns = prismic.SharedSliceVariation<"columns", Simplify<CollectionSliceColumnsPrimary>, never>;
 
@@ -1595,29 +1639,29 @@ export interface CollectionSliceFeaturedPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.featured.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
-	img: prismic.ImageField<never>;
+	img: prismic.ImageField<"md" | "blur">;
 	
 	/**
 	 * Label field in *Collection → Featured Links → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.featured.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Featured Links → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.featured.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → Featured Links → Primary*
@@ -1625,7 +1669,7 @@ export interface CollectionSliceFeaturedPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.featured.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1635,7 +1679,7 @@ export interface CollectionSliceFeaturedPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.featured.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call to Action">;
 	
@@ -1646,7 +1690,7 @@ export interface CollectionSliceFeaturedPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.featured.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1657,7 +1701,7 @@ export interface CollectionSliceFeaturedPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Slate 50
 	 * - **API ID Path**: collection.featured.primary.accent
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	accent: prismic.SelectField<"Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1667,7 +1711,7 @@ export interface CollectionSliceFeaturedPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.featured.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSliceFeaturedPrimaryItemsItem>>;
 }
@@ -1677,7 +1721,7 @@ export interface CollectionSliceFeaturedPrimary {
  *
  * - **API ID**: `featured`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSliceFeatured = prismic.SharedSliceVariation<"featured", Simplify<CollectionSliceFeaturedPrimary>, never>;
 
@@ -1691,29 +1735,29 @@ export interface CollectionSliceTogglesPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.toggles.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"blur">;
 	
 	/**
 	 * Label field in *Collection → Toggles → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.toggles.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Toggles → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.toggles.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → Toggles → Primary*
@@ -1721,7 +1765,7 @@ export interface CollectionSliceTogglesPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.toggles.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1732,7 +1776,7 @@ export interface CollectionSliceTogglesPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.toggles.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1742,7 +1786,7 @@ export interface CollectionSliceTogglesPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.toggles.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSliceTogglesPrimaryItemsItem>>;
 }
@@ -1752,7 +1796,7 @@ export interface CollectionSliceTogglesPrimary {
  *
  * - **API ID**: `toggles`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSliceToggles = prismic.SharedSliceVariation<"toggles", Simplify<CollectionSliceTogglesPrimary>, never>;
 
@@ -1763,22 +1807,22 @@ export interface CollectionSliceFaqPrimary {
 	/**
 	 * Label field in *Collection → FAQ → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.faq.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → FAQ → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.faq.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → FAQ → Primary*
@@ -1786,7 +1830,7 @@ export interface CollectionSliceFaqPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.faq.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1797,7 +1841,7 @@ export interface CollectionSliceFaqPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.faq.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1807,7 +1851,7 @@ export interface CollectionSliceFaqPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.faq.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSliceFaqPrimaryItemsItem>>;
 }
@@ -1817,7 +1861,7 @@ export interface CollectionSliceFaqPrimary {
  *
  * - **API ID**: `faq`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSliceFaq = prismic.SharedSliceVariation<"faq", Simplify<CollectionSliceFaqPrimary>, never>;
 
@@ -1828,22 +1872,22 @@ export interface CollectionSlicePreviewsPrimary {
 	/**
 	 * Label field in *Collection → Previews → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.previews.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Previews → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.previews.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → Previews → Primary*
@@ -1851,7 +1895,7 @@ export interface CollectionSlicePreviewsPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.previews.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1861,7 +1905,7 @@ export interface CollectionSlicePreviewsPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.previews.primary.cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4" | "5" | "6">;
 	
@@ -1872,7 +1916,7 @@ export interface CollectionSlicePreviewsPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.previews.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1882,7 +1926,7 @@ export interface CollectionSlicePreviewsPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.previews.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSlicePreviewsPrimaryItemsItem>>;
 }
@@ -1892,7 +1936,7 @@ export interface CollectionSlicePreviewsPrimary {
  *
  * - **API ID**: `previews`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSlicePreviews = prismic.SharedSliceVariation<"previews", Simplify<CollectionSlicePreviewsPrimary>, never>;
 
@@ -1903,22 +1947,22 @@ export interface CollectionSlicePopoversPrimary {
 	/**
 	 * Label field in *Collection → Popovers → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.popovers.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Popovers → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.popovers.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → Popovers → Primary*
@@ -1926,7 +1970,7 @@ export interface CollectionSlicePopoversPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.popovers.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -1937,7 +1981,7 @@ export interface CollectionSlicePopoversPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.popovers.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -1947,7 +1991,7 @@ export interface CollectionSlicePopoversPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.popovers.primary.cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4" | "5" | "6">;
 	
@@ -1957,7 +2001,7 @@ export interface CollectionSlicePopoversPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.popovers.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSlicePopoversPrimaryItemsItem>>;
 }
@@ -1967,7 +2011,7 @@ export interface CollectionSlicePopoversPrimary {
  *
  * - **API ID**: `popovers`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSlicePopovers = prismic.SharedSliceVariation<"popovers", Simplify<CollectionSlicePopoversPrimary>, never>;
 
@@ -1978,22 +2022,22 @@ export interface CollectionSliceAlphaPrimary {
 	/**
 	 * Label field in *Collection → Alpha Groups → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.alpha.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Alpha Groups → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.alpha.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Collection → Alpha Groups → Primary*
@@ -2001,7 +2045,7 @@ export interface CollectionSliceAlphaPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.alpha.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2011,7 +2055,7 @@ export interface CollectionSliceAlphaPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.alpha.primary.cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4" | "5" | "6">;
 	
@@ -2022,7 +2066,7 @@ export interface CollectionSliceAlphaPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.alpha.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -2032,7 +2076,7 @@ export interface CollectionSliceAlphaPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.alpha.primary.featured[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	featured: prismic.GroupField<Simplify<CollectionSliceAlphaPrimaryFeaturedItem>>;
 	
@@ -2042,7 +2086,7 @@ export interface CollectionSliceAlphaPrimary {
 	 * - **Field Type**: Table
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.alpha.primary.items
-	 * - **Documentation**: https://prismic.io/docs/field#table
+	 * - **Documentation**: https://prismic.io/docs/fields/table
 	 */
 	items: prismic.TableField;
 }
@@ -2052,7 +2096,7 @@ export interface CollectionSliceAlphaPrimary {
  *
  * - **API ID**: `alpha`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSliceAlpha = prismic.SharedSliceVariation<"alpha", Simplify<CollectionSliceAlphaPrimary>, never>;
 
@@ -2066,19 +2110,19 @@ export interface CollectionSliceHighlightPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.highlight.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"blur">;
 	
 	/**
 	 * Label field in *Collection → Highlight → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.highlight.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Collection → Highlight → Primary*
@@ -2086,7 +2130,7 @@ export interface CollectionSliceHighlightPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: collection.highlight.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	title: prismic.RichTextField;
 	
@@ -2096,7 +2140,7 @@ export interface CollectionSliceHighlightPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: collection.highlight.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2107,7 +2151,7 @@ export interface CollectionSliceHighlightPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: collection.highlight.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -2117,7 +2161,7 @@ export interface CollectionSliceHighlightPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: collection.highlight.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<CollectionSliceHighlightPrimaryItemsItem>>;
 }
@@ -2127,7 +2171,7 @@ export interface CollectionSliceHighlightPrimary {
  *
  * - **API ID**: `highlight`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSliceHighlight = prismic.SharedSliceVariation<"highlight", Simplify<CollectionSliceHighlightPrimary>, never>;
 
@@ -2141,7 +2185,7 @@ type CollectionSliceVariation = CollectionSliceDefault | CollectionSliceCards | 
  *
  * - **API ID**: `collection`
  * - **Description**: Collection
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type CollectionSlice = prismic.SharedSlice<"collection", CollectionSliceVariation>;
 
@@ -2152,22 +2196,22 @@ export interface ContentSliceDefaultPrimary {
 	/**
 	 * Label field in *Content → Thread → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.default.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Content → Thread → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.default.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Content → Thread → Primary*
@@ -2175,7 +2219,7 @@ export interface ContentSliceDefaultPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.default.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2186,7 +2230,7 @@ export interface ContentSliceDefaultPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: content.default.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -2197,7 +2241,7 @@ export interface ContentSliceDefaultPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: false
 	 * - **API ID Path**: content.default.primary.flow
-	 * - **Documentation**: https://prismic.io/docs/field#boolean
+	 * - **Documentation**: https://prismic.io/docs/fields/boolean
 	 */
 	flow: prismic.BooleanField;
 	
@@ -2207,7 +2251,7 @@ export interface ContentSliceDefaultPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.default.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 }
@@ -2217,7 +2261,7 @@ export interface ContentSliceDefaultPrimary {
  *
  * - **API ID**: `default`
  * - **Description**: Content
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ContentSliceDefault = prismic.SharedSliceVariation<"default", Simplify<ContentSliceDefaultPrimary>, never>;
 
@@ -2231,29 +2275,29 @@ export interface ContentSliceSplitPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.split.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<never>;
 	
 	/**
 	 * Label field in *Content → Split Image → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.split.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Content → Split Image → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.split.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Content → Split Image → Primary*
@@ -2261,7 +2305,7 @@ export interface ContentSliceSplitPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.split.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2272,7 +2316,7 @@ export interface ContentSliceSplitPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Right
 	 * - **API ID Path**: content.split.primary.position
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	position: prismic.SelectField<"Right" | "Left", "filled">;
 	
@@ -2283,7 +2327,7 @@ export interface ContentSliceSplitPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: content.split.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -2293,7 +2337,7 @@ export interface ContentSliceSplitPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.split.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 }
@@ -2303,7 +2347,7 @@ export interface ContentSliceSplitPrimary {
  *
  * - **API ID**: `split`
  * - **Description**: Content
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ContentSliceSplit = prismic.SharedSliceVariation<"split", Simplify<ContentSliceSplitPrimary>, never>;
 
@@ -2314,22 +2358,22 @@ export interface ContentSliceSplitProsePrimary {
 	/**
 	 * Label field in *Content → Split Thread → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.splitProse.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Content → Split Thread → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.splitProse.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Content → Split Thread → Primary*
@@ -2337,7 +2381,7 @@ export interface ContentSliceSplitProsePrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.splitProse.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2348,7 +2392,7 @@ export interface ContentSliceSplitProsePrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Left
 	 * - **API ID Path**: content.splitProse.primary.position
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	position: prismic.SelectField<"Left" | "Right", "filled">;
 	
@@ -2359,7 +2403,7 @@ export interface ContentSliceSplitProsePrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Label
 	 * - **API ID Path**: content.splitProse.primary.group
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	group: prismic.SelectField<"Label" | "Title" | "Body", "filled">;
 	
@@ -2370,7 +2414,7 @@ export interface ContentSliceSplitProsePrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: content.splitProse.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -2380,7 +2424,7 @@ export interface ContentSliceSplitProsePrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.splitProse.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 }
@@ -2390,7 +2434,7 @@ export interface ContentSliceSplitProsePrimary {
  *
  * - **API ID**: `splitProse`
  * - **Description**: Content
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ContentSliceSplitProse = prismic.SharedSliceVariation<"splitProse", Simplify<ContentSliceSplitProsePrimary>, never>;
 
@@ -2404,29 +2448,29 @@ export interface ContentSliceFeaturePrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.feature.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"lg" | "md" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *Content → Feature → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Subtitle
 	 * - **API ID Path**: content.feature.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Content → Feature → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Title
 	 * - **API ID Path**: content.feature.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Content → Feature → Primary*
@@ -2434,7 +2478,7 @@ export interface ContentSliceFeaturePrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Body
 	 * - **API ID Path**: content.feature.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2445,7 +2489,7 @@ export interface ContentSliceFeaturePrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Right
 	 * - **API ID Path**: content.feature.primary.position
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	position: prismic.SelectField<"Right" | "Left", "filled">;
 	
@@ -2456,7 +2500,7 @@ export interface ContentSliceFeaturePrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: content.feature.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -2466,7 +2510,7 @@ export interface ContentSliceFeaturePrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.feature.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 }
@@ -2476,7 +2520,7 @@ export interface ContentSliceFeaturePrimary {
  *
  * - **API ID**: `feature`
  * - **Description**: Content
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ContentSliceFeature = prismic.SharedSliceVariation<"feature", Simplify<ContentSliceFeaturePrimary>, never>;
 
@@ -2487,22 +2531,22 @@ export interface ContentSliceBannerPrimary {
 	/**
 	 * Label field in *Content → Banner → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Subtitle
 	 * - **API ID Path**: content.banner.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Content → Banner → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Title
 	 * - **API ID Path**: content.banner.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Content → Banner → Primary*
@@ -2510,7 +2554,7 @@ export interface ContentSliceBannerPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Body
 	 * - **API ID Path**: content.banner.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2521,7 +2565,7 @@ export interface ContentSliceBannerPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Indigo
 	 * - **API ID Path**: content.banner.primary.overlay
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	overlay: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -2532,7 +2576,7 @@ export interface ContentSliceBannerPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: content.banner.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -2542,7 +2586,7 @@ export interface ContentSliceBannerPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.banner.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<never>;
 	
@@ -2552,7 +2596,7 @@ export interface ContentSliceBannerPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.banner.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 }
@@ -2562,7 +2606,7 @@ export interface ContentSliceBannerPrimary {
  *
  * - **API ID**: `banner`
  * - **Description**: Content
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ContentSliceBanner = prismic.SharedSliceVariation<"banner", Simplify<ContentSliceBannerPrimary>, never>;
 
@@ -2576,29 +2620,29 @@ export interface ContentSliceStatementPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.statement.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"lg" | "md" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *Content → Statement → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Subtitle
 	 * - **API ID Path**: content.statement.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Content → Statement → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Title
 	 * - **API ID Path**: content.statement.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Content → Statement → Primary*
@@ -2606,7 +2650,7 @@ export interface ContentSliceStatementPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Body
 	 * - **API ID Path**: content.statement.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2617,7 +2661,7 @@ export interface ContentSliceStatementPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Right
 	 * - **API ID Path**: content.statement.primary.position
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	position: prismic.SelectField<"Right" | "Left", "filled">;
 	
@@ -2628,7 +2672,7 @@ export interface ContentSliceStatementPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: content.statement.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -2639,7 +2683,7 @@ export interface ContentSliceStatementPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: true
 	 * - **API ID Path**: content.statement.primary.transition
-	 * - **Documentation**: https://prismic.io/docs/field#boolean
+	 * - **Documentation**: https://prismic.io/docs/fields/boolean
 	 */
 	transition: prismic.BooleanField;
 	
@@ -2650,7 +2694,7 @@ export interface ContentSliceStatementPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: true
 	 * - **API ID Path**: content.statement.primary.close
-	 * - **Documentation**: https://prismic.io/docs/field#boolean
+	 * - **Documentation**: https://prismic.io/docs/fields/boolean
 	 */
 	close: prismic.BooleanField;
 	
@@ -2660,7 +2704,7 @@ export interface ContentSliceStatementPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: content.statement.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 }
@@ -2670,7 +2714,7 @@ export interface ContentSliceStatementPrimary {
  *
  * - **API ID**: `statement`
  * - **Description**: Content
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ContentSliceStatement = prismic.SharedSliceVariation<"statement", Simplify<ContentSliceStatementPrimary>, never>;
 
@@ -2684,7 +2728,7 @@ type ContentSliceVariation = ContentSliceDefault | ContentSliceSplit | ContentSl
  *
  * - **API ID**: `content`
  * - **Description**: Content Body
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type ContentSlice = prismic.SharedSlice<"content", ContentSliceVariation>;
 
@@ -2699,7 +2743,7 @@ export interface FeedSliceDefaultPrimaryFeedItem {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Posts
 	 * - **API ID Path**: feed.default.primary.feed[].type
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	type: prismic.SelectField<"Posts" | "Team" | "Locations", "filled">;
 	
@@ -2709,7 +2753,7 @@ export interface FeedSliceDefaultPrimaryFeedItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: (Optional) Filter results by tag
 	 * - **API ID Path**: feed.default.primary.feed[].tags
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	tags: prismic.KeyTextField;
 }
@@ -2725,7 +2769,7 @@ export interface FeedSliceListPrimaryFeedItem {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Posts
 	 * - **API ID Path**: feed.list.primary.feed[].type
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	type: prismic.SelectField<"Posts" | "Team" | "Locations", "filled">;
 	
@@ -2735,7 +2779,7 @@ export interface FeedSliceListPrimaryFeedItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: (Optional) Filter results by tag
 	 * - **API ID Path**: feed.list.primary.feed[].tags
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	tags: prismic.KeyTextField;
 }
@@ -2750,9 +2794,9 @@ export interface FeedSliceFeaturedPrimaryItemsItem {
 	 * - **Field Type**: Content Relationship
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.featured.primary.items[].item
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/content-relationship
 	 */
-	item: prismic.ContentRelationshipField<"location" | "post">;
+	item: prismic.ContentRelationshipField<"location"> | prismic.ContentRelationshipField<"post">;
 }
 
 /**
@@ -2762,22 +2806,22 @@ export interface FeedSliceDefaultPrimary {
 	/**
 	 * Label field in *Feed → Feed Grid → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.default.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Feed → Feed Grid → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.default.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Feed → Feed Grid → Primary*
@@ -2785,7 +2829,7 @@ export interface FeedSliceDefaultPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.default.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2795,7 +2839,7 @@ export interface FeedSliceDefaultPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.default.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call to Action">;
 	
@@ -2805,7 +2849,7 @@ export interface FeedSliceDefaultPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.default.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
 	
@@ -2815,7 +2859,7 @@ export interface FeedSliceDefaultPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.default.primary.cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4" | "5" | "6">;
 	
@@ -2825,7 +2869,7 @@ export interface FeedSliceDefaultPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.default.primary.feed[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	feed: prismic.GroupField<Simplify<FeedSliceDefaultPrimaryFeedItem>>;
 }
@@ -2835,7 +2879,7 @@ export interface FeedSliceDefaultPrimary {
  *
  * - **API ID**: `default`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type FeedSliceDefault = prismic.SharedSliceVariation<"default", Simplify<FeedSliceDefaultPrimary>, never>;
 
@@ -2849,29 +2893,29 @@ export interface FeedSliceListPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.list.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<never>;
 	
 	/**
 	 * Label field in *Feed → Info List → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.list.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Feed → Info List → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.list.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Feed → Info List → Primary*
@@ -2879,7 +2923,7 @@ export interface FeedSliceListPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.list.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2889,7 +2933,7 @@ export interface FeedSliceListPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: Call to Action
 	 * - **API ID Path**: feed.list.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call To Action">;
 	
@@ -2899,7 +2943,7 @@ export interface FeedSliceListPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.list.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
 	
@@ -2909,7 +2953,7 @@ export interface FeedSliceListPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.list.primary.feed[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	feed: prismic.GroupField<Simplify<FeedSliceListPrimaryFeedItem>>;
 }
@@ -2919,7 +2963,7 @@ export interface FeedSliceListPrimary {
  *
  * - **API ID**: `list`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type FeedSliceList = prismic.SharedSliceVariation<"list", Simplify<FeedSliceListPrimary>, never>;
 
@@ -2930,22 +2974,22 @@ export interface FeedSliceFeaturedPrimary {
 	/**
 	 * Label field in *Feed → Featured Posts → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.featured.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Feed → Featured Posts → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.featured.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Feed → Featured Posts → Primary*
@@ -2953,7 +2997,7 @@ export interface FeedSliceFeaturedPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.featured.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -2963,7 +3007,7 @@ export interface FeedSliceFeaturedPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.featured.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
 	
@@ -2973,7 +3017,7 @@ export interface FeedSliceFeaturedPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: Link to related page or resource
 	 * - **API ID Path**: feed.featured.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.LinkField<string, string, unknown, prismic.FieldState, "Default" | "Call to Action">;
 	
@@ -2983,7 +3027,7 @@ export interface FeedSliceFeaturedPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.featured.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<FeedSliceFeaturedPrimaryItemsItem>>;
 }
@@ -2993,7 +3037,7 @@ export interface FeedSliceFeaturedPrimary {
  *
  * - **API ID**: `featured`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type FeedSliceFeatured = prismic.SharedSliceVariation<"featured", Simplify<FeedSliceFeaturedPrimary>, never>;
 
@@ -3004,12 +3048,12 @@ export interface FeedSliceTeamPrimary {
 	/**
 	 * Title field in *Feed → Team → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.team.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Content Body field in *Feed → Team → Primary*
@@ -3017,7 +3061,7 @@ export interface FeedSliceTeamPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.team.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3027,7 +3071,7 @@ export interface FeedSliceTeamPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.team.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White">;
 	
@@ -3038,7 +3082,7 @@ export interface FeedSliceTeamPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Doctor
 	 * - **API ID Path**: feed.team.primary.team
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	team: prismic.SelectField<"Doctor" | "Provider" | "Staff", "filled">;
 	
@@ -3048,7 +3092,7 @@ export interface FeedSliceTeamPrimary {
 	 * - **Field Type**: Select
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: feed.team.primary.cols
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	cols: prismic.SelectField<"1" | "2" | "3" | "4">;
 }
@@ -3058,7 +3102,7 @@ export interface FeedSliceTeamPrimary {
  *
  * - **API ID**: `team`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type FeedSliceTeam = prismic.SharedSliceVariation<"team", Simplify<FeedSliceTeamPrimary>, never>;
 
@@ -3072,7 +3116,7 @@ type FeedSliceVariation = FeedSliceDefault | FeedSliceList | FeedSliceFeatured |
  *
  * - **API ID**: `feed`
  * - **Description**: Feed
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type FeedSlice = prismic.SharedSlice<"feed", FeedSliceVariation>;
 
@@ -3086,7 +3130,7 @@ export interface FormIntakeSliceDefaultPrimaryItemsItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: form_intake.default.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	title: prismic.KeyTextField;
 	
@@ -3096,7 +3140,7 @@ export interface FormIntakeSliceDefaultPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: form_intake.default.primary.items[].links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 }
@@ -3112,7 +3156,7 @@ export interface FormIntakeSliceDefaultPrimaryFieldsItem {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: text
 	 * - **API ID Path**: form_intake.default.primary.fields[].type
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	type: prismic.SelectField<"text" | "textarea" | "select" | "checkbox", "filled">;
 	
@@ -3122,7 +3166,7 @@ export interface FormIntakeSliceDefaultPrimaryFieldsItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: Field label
 	 * - **API ID Path**: form_intake.default.primary.fields[].label
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	label: prismic.KeyTextField;
 	
@@ -3132,7 +3176,7 @@ export interface FormIntakeSliceDefaultPrimaryFieldsItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: form_intake.default.primary.fields[].placeholder
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	placeholder: prismic.KeyTextField;
 	
@@ -3142,7 +3186,7 @@ export interface FormIntakeSliceDefaultPrimaryFieldsItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: Select Dropdown Field Options
 	 * - **API ID Path**: form_intake.default.primary.fields[].options
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	options: prismic.KeyTextField;
 	
@@ -3153,7 +3197,7 @@ export interface FormIntakeSliceDefaultPrimaryFieldsItem {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: false
 	 * - **API ID Path**: form_intake.default.primary.fields[].required
-	 * - **Documentation**: https://prismic.io/docs/field#boolean
+	 * - **Documentation**: https://prismic.io/docs/fields/boolean
 	 */
 	required: prismic.BooleanField;
 	
@@ -3163,7 +3207,7 @@ export interface FormIntakeSliceDefaultPrimaryFieldsItem {
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: form_intake.default.primary.fields[].uid
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	uid: prismic.KeyTextField;
 }
@@ -3175,22 +3219,22 @@ export interface FormIntakeSliceDefaultPrimary {
 	/**
 	 * Title field in *FormIntake → Default → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: form_intake.default.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Subtitle field in *FormIntake → Default → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: form_intake.default.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Body field in *FormIntake → Default → Primary*
@@ -3198,7 +3242,7 @@ export interface FormIntakeSliceDefaultPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: form_intake.default.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3208,7 +3252,7 @@ export interface FormIntakeSliceDefaultPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: form_intake.default.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<FormIntakeSliceDefaultPrimaryItemsItem>>;
 	
@@ -3218,7 +3262,7 @@ export interface FormIntakeSliceDefaultPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: form_intake.default.primary.fields[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	fields: prismic.GroupField<Simplify<FormIntakeSliceDefaultPrimaryFieldsItem>>;
 }
@@ -3228,7 +3272,7 @@ export interface FormIntakeSliceDefaultPrimary {
  *
  * - **API ID**: `default`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type FormIntakeSliceDefault = prismic.SharedSliceVariation<"default", Simplify<FormIntakeSliceDefaultPrimary>, never>;
 
@@ -3242,7 +3286,7 @@ type FormIntakeSliceVariation = FormIntakeSliceDefault
  *
  * - **API ID**: `form_intake`
  * - **Description**: FormIntake
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type FormIntakeSlice = prismic.SharedSlice<"form_intake", FormIntakeSliceVariation>;
 
@@ -3256,29 +3300,29 @@ export interface HeroSliceDefaultPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.default.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"lg" | "md" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *Hero → Default → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.default.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Main Headline field in *Hero → Default → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.default.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Hero → Default → Primary*
@@ -3286,7 +3330,7 @@ export interface HeroSliceDefaultPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.default.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3296,7 +3340,7 @@ export interface HeroSliceDefaultPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.default.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 	
@@ -3307,7 +3351,7 @@ export interface HeroSliceDefaultPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: hero.default.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 }
@@ -3317,7 +3361,7 @@ export interface HeroSliceDefaultPrimary {
  *
  * - **API ID**: `default`
  * - **Description**: Hero
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type HeroSliceDefault = prismic.SharedSliceVariation<"default", Simplify<HeroSliceDefaultPrimary>, never>;
 
@@ -3331,29 +3375,29 @@ export interface HeroSliceLeadPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.lead.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"lg" | "md" | "md" | "blur">;
 	
 	/**
 	 * Label field in *Hero → Lead → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.lead.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Main Headline field in *Hero → Lead → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.lead.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Hero → Lead → Primary*
@@ -3361,7 +3405,7 @@ export interface HeroSliceLeadPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.lead.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3371,7 +3415,7 @@ export interface HeroSliceLeadPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.lead.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 	
@@ -3382,7 +3426,7 @@ export interface HeroSliceLeadPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: hero.lead.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 }
@@ -3392,7 +3436,7 @@ export interface HeroSliceLeadPrimary {
  *
  * - **API ID**: `lead`
  * - **Description**: Hero
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type HeroSliceLead = prismic.SharedSliceVariation<"lead", Simplify<HeroSliceLeadPrimary>, never>;
 
@@ -3406,29 +3450,29 @@ export interface HeroSliceLayeredPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.layered.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"lg" | "md" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *Hero → Layered → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.layered.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Main Headline field in *Hero → Layered → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.layered.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Hero → Layered → Primary*
@@ -3436,7 +3480,7 @@ export interface HeroSliceLayeredPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.layered.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3446,7 +3490,7 @@ export interface HeroSliceLayeredPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.layered.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 	
@@ -3457,7 +3501,7 @@ export interface HeroSliceLayeredPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: hero.layered.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -3468,7 +3512,7 @@ export interface HeroSliceLayeredPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: hero.layered.primary.accent
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	accent: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 }
@@ -3478,7 +3522,7 @@ export interface HeroSliceLayeredPrimary {
  *
  * - **API ID**: `layered`
  * - **Description**: Hero
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type HeroSliceLayered = prismic.SharedSliceVariation<"layered", Simplify<HeroSliceLayeredPrimary>, never>;
 
@@ -3492,29 +3536,29 @@ export interface HeroSliceSplitPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.split.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"md" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *Hero → Split → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.split.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Main Headline field in *Hero → Split → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.split.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Hero → Split → Primary*
@@ -3522,7 +3566,7 @@ export interface HeroSliceSplitPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.split.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3532,7 +3576,7 @@ export interface HeroSliceSplitPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.split.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 	
@@ -3543,7 +3587,7 @@ export interface HeroSliceSplitPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: hero.split.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -3554,7 +3598,7 @@ export interface HeroSliceSplitPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Default
 	 * - **API ID Path**: hero.split.primary.size
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	size: prismic.SelectField<"Default" | "X Small" | "Small" | "Large" | "Fullscreen", "filled">;
 }
@@ -3564,7 +3608,7 @@ export interface HeroSliceSplitPrimary {
  *
  * - **API ID**: `split`
  * - **Description**: Hero
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type HeroSliceSplit = prismic.SharedSliceVariation<"split", Simplify<HeroSliceSplitPrimary>, never>;
 
@@ -3578,29 +3622,29 @@ export interface HeroSliceHighlightPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.highlight.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"md" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *Hero → Highlight → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.highlight.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Main Headline field in *Hero → Highlight → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.highlight.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Hero → Highlight → Primary*
@@ -3608,7 +3652,7 @@ export interface HeroSliceHighlightPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.highlight.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3618,7 +3662,7 @@ export interface HeroSliceHighlightPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.highlight.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 	
@@ -3629,7 +3673,7 @@ export interface HeroSliceHighlightPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: hero.highlight.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -3640,7 +3684,7 @@ export interface HeroSliceHighlightPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Default
 	 * - **API ID Path**: hero.highlight.primary.size
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	size: prismic.SelectField<"Default" | "Small" | "Large" | "Fullscreen", "filled">;
 }
@@ -3650,7 +3694,7 @@ export interface HeroSliceHighlightPrimary {
  *
  * - **API ID**: `highlight`
  * - **Description**: Hero
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type HeroSliceHighlight = prismic.SharedSliceVariation<"highlight", Simplify<HeroSliceHighlightPrimary>, never>;
 
@@ -3664,29 +3708,29 @@ export interface HeroSliceContainedPrimary {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.contained.primary.img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"md" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *Hero → Contained → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.contained.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Main Headline field in *Hero → Contained → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.contained.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Hero → Contained → Primary*
@@ -3694,7 +3738,7 @@ export interface HeroSliceContainedPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.contained.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3704,7 +3748,7 @@ export interface HeroSliceContainedPrimary {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: hero.contained.primary.links
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	links: prismic.Repeatable<prismic.LinkField<string, string, unknown, prismic.FieldState, never>>;
 	
@@ -3715,7 +3759,7 @@ export interface HeroSliceContainedPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: hero.contained.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -3726,7 +3770,7 @@ export interface HeroSliceContainedPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Default
 	 * - **API ID Path**: hero.contained.primary.size
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	size: prismic.SelectField<"Default" | "X Small" | "Small" | "Large" | "X Large", "filled">;
 }
@@ -3736,7 +3780,7 @@ export interface HeroSliceContainedPrimary {
  *
  * - **API ID**: `contained`
  * - **Description**: Hero
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type HeroSliceContained = prismic.SharedSliceVariation<"contained", Simplify<HeroSliceContainedPrimary>, never>;
 
@@ -3750,7 +3794,7 @@ type HeroSliceVariation = HeroSliceDefault | HeroSliceLead | HeroSliceLayered | 
  *
  * - **API ID**: `hero`
  * - **Description**: Hero
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
 
@@ -3764,29 +3808,29 @@ export interface InteractiveSliceDefaultPrimaryItemsItem {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.default.primary.items[].img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"lg" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *Interactive → Spread → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.default.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Interactive → Spread → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.default.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Interactive → Spread → Primary → Items*
@@ -3794,7 +3838,7 @@ export interface InteractiveSliceDefaultPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.default.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3804,7 +3848,7 @@ export interface InteractiveSliceDefaultPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.default.primary.items[].link
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
@@ -3819,29 +3863,29 @@ export interface InteractiveSlicePanelsPrimaryItemsItem {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.panels.primary.items[].img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"blur">;
 	
 	/**
 	 * Label field in *Interactive → Panels → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.panels.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Interactive → Panels → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.panels.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Interactive → Panels → Primary → Items*
@@ -3849,7 +3893,7 @@ export interface InteractiveSlicePanelsPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.panels.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3859,7 +3903,7 @@ export interface InteractiveSlicePanelsPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.panels.primary.items[].link
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
@@ -3874,29 +3918,29 @@ export interface InteractiveSliceStackPrimaryItemsItem {
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.stack.primary.items[].img
-	 * - **Documentation**: https://prismic.io/docs/field#image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	img: prismic.ImageField<"lg" | "sm" | "blur">;
 	
 	/**
 	 * Label field in *Interactive → Stack → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.stack.primary.items[].subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Interactive → Stack → Primary → Items*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.stack.primary.items[].title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Body field in *Interactive → Stack → Primary → Items*
@@ -3904,7 +3948,7 @@ export interface InteractiveSliceStackPrimaryItemsItem {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.stack.primary.items[].body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3914,7 +3958,7 @@ export interface InteractiveSliceStackPrimaryItemsItem {
 	 * - **Field Type**: Link
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.stack.primary.items[].link
-	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
@@ -3926,22 +3970,22 @@ export interface InteractiveSliceDefaultPrimary {
 	/**
 	 * Label field in *Interactive → Spread → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.default.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Interactive → Spread → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: interactive.default.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Interactive → Spread → Primary*
@@ -3949,7 +3993,7 @@ export interface InteractiveSliceDefaultPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: interactive.default.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -3960,7 +4004,7 @@ export interface InteractiveSliceDefaultPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Right
 	 * - **API ID Path**: interactive.default.primary.position
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	position: prismic.SelectField<"Right" | "Left", "filled">;
 	
@@ -3971,7 +4015,7 @@ export interface InteractiveSliceDefaultPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: interactive.default.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -3981,7 +4025,7 @@ export interface InteractiveSliceDefaultPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.default.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<InteractiveSliceDefaultPrimaryItemsItem>>;
 }
@@ -3991,7 +4035,7 @@ export interface InteractiveSliceDefaultPrimary {
  *
  * - **API ID**: `default`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type InteractiveSliceDefault = prismic.SharedSliceVariation<"default", Simplify<InteractiveSliceDefaultPrimary>, never>;
 
@@ -4002,22 +4046,22 @@ export interface InteractiveSlicePanelsPrimary {
 	/**
 	 * Label field in *Interactive → Panels → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.panels.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Interactive → Panels → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: interactive.panels.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Interactive → Panels → Primary*
@@ -4025,7 +4069,7 @@ export interface InteractiveSlicePanelsPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: interactive.panels.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -4036,7 +4080,7 @@ export interface InteractiveSlicePanelsPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Right
 	 * - **API ID Path**: interactive.panels.primary.position
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	position: prismic.SelectField<"Right" | "Left", "filled">;
 	
@@ -4047,7 +4091,7 @@ export interface InteractiveSlicePanelsPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: interactive.panels.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -4057,7 +4101,7 @@ export interface InteractiveSlicePanelsPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.panels.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<InteractiveSlicePanelsPrimaryItemsItem>>;
 }
@@ -4067,7 +4111,7 @@ export interface InteractiveSlicePanelsPrimary {
  *
  * - **API ID**: `panels`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type InteractiveSlicePanels = prismic.SharedSliceVariation<"panels", Simplify<InteractiveSlicePanelsPrimary>, never>;
 
@@ -4078,22 +4122,22 @@ export interface InteractiveSliceStackPrimary {
 	/**
 	 * Label field in *Interactive → Stack → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.stack.primary.subtitle
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	subtitle: prismic.TitleField;
+	subtitle: prismic.RichTextField;
 	
 	/**
 	 * Title field in *Interactive → Stack → Primary*
 	 *
-	 * - **Field Type**: Title
+	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Main Heading
 	 * - **API ID Path**: interactive.stack.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
-	title: prismic.TitleField;
+	title: prismic.RichTextField;
 	
 	/**
 	 * Intro Content field in *Interactive → Stack → Primary*
@@ -4101,7 +4145,7 @@ export interface InteractiveSliceStackPrimary {
 	 * - **Field Type**: Rich Text
 	 * - **Placeholder**: Introduce the Collection
 	 * - **API ID Path**: interactive.stack.primary.body
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	body: prismic.RichTextField;
 	
@@ -4112,7 +4156,7 @@ export interface InteractiveSliceStackPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: Right
 	 * - **API ID Path**: interactive.stack.primary.position
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	position: prismic.SelectField<"Right" | "Left", "filled">;
 	
@@ -4123,7 +4167,7 @@ export interface InteractiveSliceStackPrimary {
 	 * - **Placeholder**: *None*
 	 * - **Default Value**: None
 	 * - **API ID Path**: interactive.stack.primary.color
-	 * - **Documentation**: https://prismic.io/docs/field#select
+	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
 	
@@ -4133,7 +4177,7 @@ export interface InteractiveSliceStackPrimary {
 	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
 	 * - **API ID Path**: interactive.stack.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	items: prismic.GroupField<Simplify<InteractiveSliceStackPrimaryItemsItem>>;
 }
@@ -4143,7 +4187,7 @@ export interface InteractiveSliceStackPrimary {
  *
  * - **API ID**: `stack`
  * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type InteractiveSliceStack = prismic.SharedSliceVariation<"stack", Simplify<InteractiveSliceStackPrimary>, never>;
 
@@ -4157,7 +4201,7 @@ type InteractiveSliceVariation = InteractiveSliceDefault | InteractiveSlicePanel
  *
  * - **API ID**: `interactive`
  * - **Description**: Interactive
- * - **Documentation**: https://prismic.io/docs/slice
+ * - **Documentation**: https://prismic.io/docs/slices
  */
 export type InteractiveSlice = prismic.SharedSlice<"interactive", InteractiveSliceVariation>;
 

@@ -561,8 +561,22 @@
           "type": "Image",
           "config": {
             "label": "Image",
-            "constraint": {},
-            "thumbnails": []
+            "constraint": {
+              "width": 1100,
+              "height": 1200
+            },
+            "thumbnails": [
+              {
+                "name": "md",
+                "width": 550,
+                "height": 600
+              },
+              {
+                "name": "blur",
+                "width": 16,
+                "height": 16
+              }
+            ]
           }
         },
         "subtitle": {
