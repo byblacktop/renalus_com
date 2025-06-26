@@ -3,7 +3,7 @@
 import { getQryParams } from '@/lib/api'
 import {
 	invalidRequired,
-	normalizeResults,
+	normalizeDocs,
 	safeCatchArray,
 	singularize,
 } from '@/lib/helpers'
@@ -27,9 +27,9 @@ const DynamicItems = async ({ type, filter, qry = {}, children }) => {
 	const params = getQryParams(type, filter)
 
 	const results = await client
-		.getByType(singularize(type), mergeQry(params, qry))
+		.getAllByType(singularize(type), mergeQry(params, qry))
 		.catch(safeCatchArray)
-		.then(normalizeResults)
+		.then(normalizeDocs)
 
 	return children({ results })
 }

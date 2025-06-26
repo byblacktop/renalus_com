@@ -63,17 +63,6 @@ const LocationData = ({ address, phone, hours, faxes }) => {
 					<p className='__xs'>{faxes[0].number}</p>
 				</Flex>
 			)}
-
-			{/* {faxes.map(f => (
-				<Flex align='start' gap='3xs'>
-					<PrinterIcon className='size-4 shrink-0 text-slate' />
-					<p className='__xs'>{f.number}</p>
-				</Flex>
-			))} */}
-			{/* <Flex align='start' gap='3xs'>
-				<MapPinIcon className='size-4 shrink-0 text-slate' />
-				<p className='__xs'>{address?.text}</p>
-			</Flex> */}
 		</Flex>
 	)
 }

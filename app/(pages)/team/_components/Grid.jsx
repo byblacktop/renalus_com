@@ -52,6 +52,7 @@ const TeamGrid = ({ title, body, color, team, cols, dataset }) => {
 					<DynamicFeed
 						type='team'
 						group={team}
+						isDark={isDark}
 						qry={{
 							filters: [filter.at('my.team.team', team)],
 						}}
@@ -65,16 +66,17 @@ const TeamGrid = ({ title, body, color, team, cols, dataset }) => {
 	)
 }
 
-const TeamCards = ({ results, group }) =>
+const TeamCards = ({ results, group, ...props }) =>
 	results.map(result => (
 		<Shell
 			key={kn(result)}
 			as={group === 'Staff' ? Avatar : Card}
+			{...props}
 			{...result}
 		/>
 	))
 
-const Card = ({ name, degree, img, link }) => {
+const Card = ({ name, degree, img, link, isDark }) => {
 	return (
 		<Link
 			href={link}
@@ -111,10 +113,15 @@ const Card = ({ name, degree, img, link }) => {
 					/>
 				</div>
 			</AspectImage>
-			<h4 className='flex gap-1.5 items-end leading-none text-indigo-50'>
+			<h4 className='flex gap-1.5 items-end leading-none'>
 				<span>{name}</span>
 				{degree && (
-					<span className='text-red-400/80 fs-base font-main font-medium'>
+					<span
+						className={cn(
+							'fs-sm font-main font-medium leading-sm',
+							isDark ? 'text-red-400/80' : 'text-red/80',
+						)}
+					>
 						{degree}
 					</span>
 				)}
