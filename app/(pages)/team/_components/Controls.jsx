@@ -5,7 +5,7 @@ import { LinkArrow } from '@/components/UI'
 import { getFilteredDocs } from '@/lib/api'
 import { cn } from '@/lib/utils'
 
-const getTeamNav = async curr => {
+const getTeamNav = async (curr, team) => {
 	const getNext = getFilteredDocs('team', {
 		filters: [
 			{
@@ -16,7 +16,7 @@ const getTeamNav = async curr => {
 			{
 				fn: 'at',
 				path: 'my.team.team',
-				value: 'Doctor',
+				value: team || 'Doctor',
 			},
 		],
 		pageSize: 1,
@@ -41,7 +41,7 @@ const getTeamNav = async curr => {
 			{
 				fn: 'at',
 				path: 'my.team.team',
-				value: 'Doctor',
+				value: team || 'Doctor',
 			},
 		],
 		pageSize: 1,
@@ -60,8 +60,8 @@ const getTeamNav = async curr => {
 
 	return { next, prev }
 }
-const Controls = async ({ priority }) => {
-	const { next, prev } = await getTeamNav(priority)
+const Controls = async ({ priority, team }) => {
+	const { next, prev } = await getTeamNav(priority, team)
 
 	return (
 		<aside className='col-span-full lg:col-span-1'>

@@ -177,8 +177,6 @@ const Card = ({ img, bounds, title, body, link, activeIndex }) => {
 
 		const rect = element.getBoundingClientRect()
 
-		console.log(element, rect, bounds)
-
 		if (rect.left < bounds.left) {
 			const diff = bounds.left - rect.left
 			const percent = diff / rect.width

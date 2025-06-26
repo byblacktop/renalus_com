@@ -10,9 +10,10 @@ import { Contact } from '@/team/Contact'
 import { Controls } from '@/team/Controls'
 
 const Hero = ({
-	name,
-	degree,
 	img,
+	name,
+	team,
+	degree,
 	locations,
 	priority,
 	children,
@@ -39,7 +40,7 @@ const Hero = ({
 								<h1 className='flex gap-1.5 items-center leading-none text-indigo-50'>
 									<span>{name}</span>
 									{degree && (
-										<span className='text-red-400/80 fs-5xl font-main font-medium'>
+										<span className='text-red-400/80 fs-3xl font-main font-medium'>
 											{degree}
 										</span>
 									)}
@@ -59,7 +60,7 @@ const Hero = ({
 
 					{/* 1 Col */}
 					<Suspense>
-						<Controls priority={priority} />
+						<Controls priority={priority} team={team} />
 					</Suspense>
 				</Container>
 
