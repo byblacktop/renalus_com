@@ -186,7 +186,8 @@ const NavArrow = ({
 		className={cn(
 			'relative z-2 group',
 			'flex justify-center items-center shrink-0',
-			'size-12 lg:size-14 2xl:size-16',
+			// 'size-12 lg:size-14 2xl:size-16',
+			'size-8 lg:size-10 2xl:size-12',
 			'cursor-pointer',
 			circle && 'rounded-full overflow-hidden',
 			bgColor(bg),

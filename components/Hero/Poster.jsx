@@ -43,7 +43,10 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 					'md:top-[var(--h-header)]',
 					'2xl:top-[var(--h-header)]',
 				),
-				img: cn('object-bottom'),
+				img: cn(
+					// 'object-[50%_88%]',
+					'object-bottom',
+				),
 			}}
 		>
 			<Overlay gradient='smoke' />
