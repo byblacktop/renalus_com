@@ -50,7 +50,10 @@ const HeroLead = ({
 			<article className='max-w-(--breakpoint-5xl) mx-auto px-fluid __sm'>
 				<AspectImage
 					img={img}
-					className='rounded-3xl overflow-hidden'
+					className={{
+						figure: 'rounded-3xl overflow-hidden',
+						img: 'object-bottom',
+					}}
 					priority
 				/>
 			</article>

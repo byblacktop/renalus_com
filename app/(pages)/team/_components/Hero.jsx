@@ -47,7 +47,9 @@ const Hero = ({
 								</h1>
 
 								<h6 className='__label text-blue-300'>
-									Meet the Doctor
+									{team === 'Doctor'
+										? 'Meet the Doctor'
+										: 'Meet the Team'}
 								</h6>
 							</Flex>
 

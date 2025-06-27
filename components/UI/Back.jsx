@@ -2,7 +2,6 @@
 
 // TODO: See why this throws errors on not-found
 import { useRouter } from 'next/navigation'
-import { ArrowLeftIcon } from '@heroicons/react/24/outline'
 
 import { Button } from '@/components/UI'
 
