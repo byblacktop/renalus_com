@@ -4,7 +4,13 @@ import { getBackdrop, Overlay } from '@/components/UI'
 import { bgColor, getTheme } from '@/lib/helpers'
 import { cn, cp } from '@/lib/utils'
 
-const HeroPoster = ({ img, color, className, ...contentProps }) => (
+const HeroPoster = ({
+	img,
+	color,
+	imgOrigin,
+	className,
+	...contentProps
+}) => (
 	<ContentSplitProse
 		{...contentProps}
 		color='indigo' // TODO: Refactor more appropriately... forcing indigo to trigger dark theme for inner content
@@ -43,10 +49,10 @@ const HeroPoster = ({ img, color, className, ...contentProps }) => (
 					'md:top-[var(--h-header)]',
 					'2xl:top-[var(--h-header)]',
 				),
-				img: cn(
-					// 'object-[50%_88%]',
-					'object-bottom',
-				),
+				img: cn({
+					'object-bottom': imgOrigin === 'Bottom',
+					'object-top': imgOrigin === 'Top',
+				}),
 			}}
 		>
 			<Overlay gradient='smoke' />

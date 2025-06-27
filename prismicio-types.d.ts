@@ -3354,6 +3354,17 @@ export interface HeroSliceDefaultPrimary {
 	 * - **Documentation**: https://prismic.io/docs/fields/select
 	 */
 	color: prismic.SelectField<"None" | "Indigo 50" | "Indigo 100" | "Indigo 200" | "Indigo 700" | "Indigo 800" | "Indigo 900" | "Slate 50" | "Slate 100" | "Slate 200" | "Zinc 100" | "Zinc 200" | "Blue" | "Green" | "Red" | "White", "filled">;
+	
+	/**
+	 * Image Anchor field in *Hero → Default → Primary*
+	 *
+	 * - **Field Type**: Select
+	 * - **Placeholder**: *None*
+	 * - **Default Value**: Center
+	 * - **API ID Path**: hero.default.primary.imgOrigin
+	 * - **Documentation**: https://prismic.io/docs/fields/select
+	 */
+	imgOrigin: prismic.SelectField<"Center" | "Top" | "Bottom", "filled">;
 }
 
 /**

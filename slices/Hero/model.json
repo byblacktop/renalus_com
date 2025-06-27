@@ -106,6 +106,19 @@
             ],
             "default_value": "None"
           }
+        },
+        "imgOrigin": {
+          "type": "Select",
+          "config": {
+            "label": "Image Anchor",
+            "placeholder": "",
+            "options": [
+              "Center",
+              "Top",
+              "Bottom"
+            ],
+            "default_value": "Center"
+          }
         }
       },
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
