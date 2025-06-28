@@ -15,8 +15,7 @@ const TagManager = () => {
 	// if (process.env.NODE_ENV === 'development') return
 
 	// TODO: Add when no longer in development
-	// const isStaging = process.env.NODE_ENV === 'staging'
-	const isStaging = true
+	const isStaging = process.env.NODE_ENV === 'staging'
 
 	// const referer = headers().get('referer')
 	// const showToolbar = !referer?.includes(
