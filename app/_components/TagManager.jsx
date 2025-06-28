@@ -11,7 +11,9 @@ import { repositoryName } from '@/prismicio'
 // const GOOGLE_TAG_MANAGER_ID = process.env.NEXT_PUBLIC_GTM_CONTAINER_ID
 
 const TagManager = () => {
-	const isStaging = process.env.NODE_ENV === 'staging'
+	const isStaging = ['staging', 'development'].includes(
+		process.env.NODE_ENV,
+	)
 
 	return (
 		<>
