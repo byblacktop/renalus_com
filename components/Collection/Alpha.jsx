@@ -126,7 +126,7 @@ const GroupHeading = ({ heading }) => {
 	)
 }
 
-const Group = ({ label, content, heading }) => {
+const Group = ({ label, content }) => {
 	return (
 		<Popover key={label}>
 			<PopoverButton

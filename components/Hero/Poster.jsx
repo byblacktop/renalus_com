@@ -37,6 +37,7 @@ const HeroPoster = ({
 					direction: 'downRight',
 				},
 			],
+			className: 'max-md:mt-2',
 		}}
 	>
 		<CoverImage
@@ -50,7 +51,7 @@ const HeroPoster = ({
 					'2xl:top-[var(--h-header)]',
 				),
 				img: cn({
-					'object-bottom': imgOrigin === 'Bottom',
+					'object-[50%_78%]': imgOrigin === 'Bottom',
 					'object-top': imgOrigin === 'Top',
 				}),
 			}}

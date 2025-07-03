@@ -1,6 +1,7 @@
 import { Lead } from '@/components/Content'
 import { ButtonGroup, Flex } from '@/components/UI'
 import { getTheme, invalidContent } from '@/lib/helpers'
+import { gap } from '@/lib/tw'
 import { cn, cp } from '@/lib/utils'
 
 const getProse = ({ title, subtitle, body, group }) => {
@@ -45,11 +46,11 @@ const getProse = ({ title, subtitle, body, group }) => {
 const getGrowClass = ({ body, group, accent }) => {
 	if (invalidContent(body)) return ['grow-6', 'grow-4']
 
-	if (group === 'Title') return ['grow-6 shrink-0', 'grow-1']
+	if (group === 'Title') return ['grow-6 shrink-0', 'grow-2']
 
 	const grow = accent ? false : body.length > 1 || group === 'Body'
 
-	return grow ? ['grow-1', 'grow-1'] : ['grow-6', 'grow-1']
+	return grow ? ['grow-1', 'grow-1'] : ['grow-6', 'grow-4']
 }
 
 const ProseSplit = ({
@@ -81,8 +82,8 @@ const ProseSplit = ({
 			align={align}
 			layout={position === 'Right' ? 'reverse' : undefined}
 			className={cn(
-				'gap-2 md:gap-4',
-				'max-sm:flex-col',
+				'gap-2 md:gap-6',
+				'max-md:flex-col',
 				position === 'Right' && 'lg:flex-row-reverse',
 				cp(className, 'prose', true),
 			)}
@@ -137,7 +138,7 @@ const ProseSplit = ({
 				}}
 			>
 				{accent && (
-					<div className='max-sm:hidden w-20 h-1 bg-indigo-400' />
+					<div className='max-md:hidden w-20 h-1 bg-indigo-400' />
 				)}
 				{children}
 			</Lead>
