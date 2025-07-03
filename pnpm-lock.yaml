@@ -94,8 +94,8 @@ importers:
         specifier: ^4.4.1
         version: 4.4.2(prettier@3.5.3)
       '@slicemachine/adapter-next':
-        specifier: ^0.3.79
-        version: 0.3.79(next@15.3.3(@babel/core@7.27.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+        specifier: ^0.3.80
+        version: 0.3.80(next@15.3.3(@babel/core@7.27.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       '@svgr/webpack':
         specifier: ^8.1.0
         version: 8.1.0(typescript@5.8.3)
@@ -142,8 +142,8 @@ importers:
         specifier: ^16.3.0
         version: 16.4.2(typescript@5.8.3)
       slice-machine-ui:
-        specifier: ^2.17.0
-        version: 2.17.0
+        specifier: ^2.17.1
+        version: 2.17.1
       tailwind-merge:
         specifier: ^3.0.2
         version: 3.3.1
@@ -1254,15 +1254,15 @@ packages:
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
 
-  '@slicemachine/adapter-next@0.3.79':
-    resolution: {integrity: sha512-4ybgIqRN2Ku+MUuGXQJmyHmyMrSG9diXN/5oU7v1RNAZVQmR3HC2tir1R2SqjNiwjCeiGn6ggED7EAeZrRo1SQ==}
+  '@slicemachine/adapter-next@0.3.80':
+    resolution: {integrity: sha512-XOFyJ22yuAYKH27ef1H89lGRr8wb4/YjxknTY41gxPTNhGbdZBbWMzqBOdVX3CkWs+YUUbFyqtyz+Yek4aEnfQ==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       next: ^11 || ^12 || ^13 || ^14 || ^15.0.0-rc.0
       react: ^17 || ^18 || ^19.0.0-rc.0
 
-  '@slicemachine/manager@0.25.0':
-    resolution: {integrity: sha512-SpAliRmWdq5OR9ftI2xRMDwvfaDvAwqWrH7n8MD/r9/M1DXFeQeC6NOvy5/biHMD7xznPUNgf84LSavVZjaNRA==}
+  '@slicemachine/manager@0.25.1':
+    resolution: {integrity: sha512-/qjJTFFXKojjB37GUZc/6JUupsNSu0SQLn78oMp9sTYpb+WNdk2YuZZ4unCXJtCbKR2/9UPc3s3ulNM+9r9d6w==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       msw: ^1.1.0
@@ -1270,8 +1270,8 @@ packages:
       msw:
         optional: true
 
-  '@slicemachine/plugin-kit@0.4.78':
-    resolution: {integrity: sha512-M5uGpJtKjs99GLyzNtahxotJqoZqy/b2dYXxiRJCYilFVRptZnMD4ZQk3TM/t2y/27J/+s6mN0US74uOeqxCAg==}
+  '@slicemachine/plugin-kit@0.4.79':
+    resolution: {integrity: sha512-RRYV2yvcT7ypSs9LQHiBEAfgHvSCfE7CCOhb8aaHvQbEa0v0DxfMUSXOwSn/sDXxBpT9CbmJ6u49MYV3ymwZSQ==}
     engines: {node: '>=14.15.0'}
 
   '@svgr/babel-plugin-add-jsx-attribute@8.0.0':
@@ -4262,8 +4262,8 @@ packages:
     resolution: {integrity: sha512-bSiSngZ/jWeX93BqeIAbImyTbEihizcwNjFoRUIY/T1wWQsfsm2Vw1agPKylXvQTU7iASGdHhyqRlqQzfz+Htg==}
     engines: {node: '>=18'}
 
-  slice-machine-ui@2.17.0:
-    resolution: {integrity: sha512-XqoUIMXe5pzdQ2JAHuA0Ri2oUV3JNIiJMGqA8LJr5kCO9A5K4tyFAZq42iJCYE2PpgTm5i4BoAbcXU9zrY0DtA==}
+  slice-machine-ui@2.17.1:
+    resolution: {integrity: sha512-KTWJ//2/FCwHcpk+h1fAF9PmOl7bh0ab0PEUVZQSHTDxfKieOXR+q1Np6nH030g1Q+nYNAJJoBLrOQVTqqt0sw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4296,8 +4296,8 @@ packages:
   stable-hash@0.0.5:
     resolution: {integrity: sha512-+L3ccpzibovGXFK+Ap/f8LOS0ahMrHTf3xu7mMLSpEGU0EO9ucaysSylKo9eRDFNhWve/y275iPmIZ4z39a9iA==}
 
-  start-slicemachine@0.12.58:
-    resolution: {integrity: sha512-8ZNsdzNx+h++YqXGhnVgCSqvHjsNMBohHT87ChTp3h0uZ+nNHoEz1qLZOZL9PmxzgTBeLxBV/19CBS5tdmWuew==}
+  start-slicemachine@0.12.59:
+    resolution: {integrity: sha512-vm/0BBSKDZSQCSNA7zUZE+2aQ9R0B2aonAGyBjzXrAmqbxAF2QbCPd8znUITnoATmzpZe2bRmqMj4KHUBA5LIA==}
     engines: {node: '>=14.15.0'}
     hasBin: true
 
@@ -5993,11 +5993,11 @@ snapshots:
 
   '@sinclair/typebox@0.27.8': {}
 
-  '@slicemachine/adapter-next@0.3.79(next@15.3.3(@babel/core@7.27.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
+  '@slicemachine/adapter-next@0.3.80(next@15.3.3(@babel/core@7.27.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@prismicio/simulator': 0.1.4
       '@prismicio/types-internal': 3.11.2(fp-ts@2.16.10)(io-ts-types@0.5.19(fp-ts@2.16.10)(io-ts@2.2.22(fp-ts@2.16.10))(monocle-ts@2.3.13(fp-ts@2.16.10))(newtype-ts@0.3.5(fp-ts@2.16.10)(monocle-ts@2.3.13(fp-ts@2.16.10))))(io-ts@2.2.22(fp-ts@2.16.10))
-      '@slicemachine/plugin-kit': 0.4.78
+      '@slicemachine/plugin-kit': 0.4.79
       common-tags: 1.8.2
       fp-ts: 2.16.10
       io-ts: 2.2.22(fp-ts@2.16.10)
@@ -6011,7 +6011,7 @@ snapshots:
     transitivePeerDependencies:
       - '@prismicio/types'
 
-  '@slicemachine/manager@0.25.0':
+  '@slicemachine/manager@0.25.1':
     dependencies:
       '@antfu/ni': 0.20.0
       '@prismicio/client': 7.17.0
@@ -6019,7 +6019,7 @@ snapshots:
       '@prismicio/mocks': 2.14.0
       '@prismicio/types-internal': 3.11.2(fp-ts@2.16.10)(io-ts-types@0.5.19(fp-ts@2.16.10)(io-ts@2.2.22(fp-ts@2.16.10))(monocle-ts@2.3.13(fp-ts@2.16.10))(newtype-ts@0.3.5(fp-ts@2.16.10)(monocle-ts@2.3.13(fp-ts@2.16.10))))(io-ts@2.2.22(fp-ts@2.16.10))
       '@segment/analytics-node': 2.2.1
-      '@slicemachine/plugin-kit': 0.4.78
+      '@slicemachine/plugin-kit': 0.4.79
       cookie: 1.0.2
       cors: 2.8.5
       execa: 7.2.0
@@ -6043,7 +6043,7 @@ snapshots:
       - '@prismicio/types'
       - encoding
 
-  '@slicemachine/plugin-kit@0.4.78':
+  '@slicemachine/plugin-kit@0.4.79':
     dependencies:
       '@prismicio/client': 7.17.0
       common-tags: 1.8.2
@@ -9281,10 +9281,10 @@ snapshots:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 5.0.0
 
-  slice-machine-ui@2.17.0:
+  slice-machine-ui@2.17.1:
     dependencies:
-      '@slicemachine/manager': 0.25.0
-      start-slicemachine: 0.12.58
+      '@slicemachine/manager': 0.25.1
+      start-slicemachine: 0.12.59
     transitivePeerDependencies:
       - '@prismicio/types'
       - '@types/express'
@@ -9323,11 +9323,11 @@ snapshots:
 
   stable-hash@0.0.5: {}
 
-  start-slicemachine@0.12.58:
+  start-slicemachine@0.12.59:
     dependencies:
       '@prismicio/mocks': 2.14.0
       '@prismicio/types-internal': 3.11.2(fp-ts@2.16.10)(io-ts-types@0.5.19(fp-ts@2.16.10)(io-ts@2.2.22(fp-ts@2.16.10))(monocle-ts@2.3.13(fp-ts@2.16.10))(newtype-ts@0.3.5(fp-ts@2.16.10)(monocle-ts@2.3.13(fp-ts@2.16.10))))(io-ts@2.2.22(fp-ts@2.16.10))
-      '@slicemachine/manager': 0.25.0
+      '@slicemachine/manager': 0.25.1
       body-parser: 1.20.3
       chalk: 4.1.2
       cors: 2.8.5

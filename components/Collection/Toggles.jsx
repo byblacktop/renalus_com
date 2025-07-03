@@ -38,7 +38,7 @@ const CollectionToggles = ({
 					cols={2}
 					gap='lg'
 					className='pt-fluid-x'
-					align='center'
+					align='start'
 				>
 					<AspectImage
 						img={img}

@@ -492,19 +492,19 @@
           "config": {
             "label": "Image",
             "constraint": {
-              "width": 1260,
-              "height": 1200
+              "width": 1920,
+              "height": null
             },
             "thumbnails": [
               {
                 "name": "md",
                 "width": 840,
-                "height": 800
+                "height": null
               },
               {
                 "name": "sm",
                 "width": 420,
-                "height": 400
+                "height": null
               },
               {
                 "name": "blur",

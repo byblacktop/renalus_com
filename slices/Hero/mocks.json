@@ -1,6 +1,206 @@
 [
 	{
 		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "We transform your vision into clear reality.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "With a passion for precision and a commitment to excellence, we transform your vision into a clear picture perfect reality to enrich your world.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "b22019e7-9d0a-472a-82cc-2e278563f383",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "https://prismic.io",
+							"text": "About  Us"
+						}
+					},
+					{
+						"key": "d4f01725-7521-4693-8bf7-0083ce997b2c",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "#next",
+							"text": "Learn More"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading6",
+						"content": {
+							"text": "Angry"
+						}
+					}
+				]
+			},
+			"img": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=0,0,5472,3648&w=1920&h=1280",
+				"alt": "woman standing under tree",
+				"origin": {
+					"id": "FVh_yqLR9eA",
+					"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
+					"width": 5472,
+					"height": 3648
+				},
+				"width": 1920,
+				"height": 1280,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {
+					"lg": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=0,0,5472,3648&w=1440&h=960",
+						"alt": "woman standing under tree",
+						"origin": {
+							"id": "FVh_yqLR9eA",
+							"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 1440,
+						"height": 960,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							}
+						},
+						"credits": null
+					},
+					"md": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=0,0,5472,3648&w=960&h=640",
+						"alt": "woman standing under tree",
+						"origin": {
+							"id": "FVh_yqLR9eA",
+							"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 960,
+						"height": 640,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							}
+						},
+						"credits": null
+					},
+					"sm": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=0,0,5472,3648&w=480&h=320",
+						"alt": "woman standing under tree",
+						"origin": {
+							"id": "FVh_yqLR9eA",
+							"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 480,
+						"height": 320,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 0,
+								"y": 0
+							}
+						},
+						"credits": null
+					},
+					"blur": {
+						"provider": "imgix",
+						"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=912,0,3648,3648&w=16&h=16",
+						"alt": "woman standing under tree",
+						"origin": {
+							"id": "FVh_yqLR9eA",
+							"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
+							"width": 5472,
+							"height": 3648
+						},
+						"width": 16,
+						"height": 16,
+						"edit": {
+							"background": "transparent",
+							"zoom": 1,
+							"crop": {
+								"x": 912,
+								"y": 0
+							}
+						},
+						"credits": null
+					}
+				}
+			},
+			"color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Indigo 700"
+			},
+			"imgOrigin": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Center"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
 		"variation": "lead",
 		"primary": {
 			"title": {
@@ -484,93 +684,85 @@
 		"variation": "highlight",
 		"primary": {
 			"img": {
-				"provider": "imgix",
-				"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,955,3487,3321&w=1260&h=1200",
-				"alt": "adult black pug",
+				"__TYPE__": "ImageContent",
 				"origin": {
-					"id": "pOUA8Xay514",
-					"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-					"width": 3487,
-					"height": 5230
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+					"width": 4380,
+					"height": 2895
 				},
-				"width": 1260,
-				"height": 1200,
+				"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?rect=0%2C0%2C4380%2C2895&w=1920&h=1269",
+				"width": 1920,
+				"height": 1269,
 				"edit": {
-					"background": "transparent",
 					"zoom": 1,
 					"crop": {
 						"x": 0,
-						"y": 955
-					}
+						"y": 0
+					},
+					"background": "transparent"
 				},
-				"credits": null,
-				"__TYPE__": "ImageContent",
+				"alt": "greater",
 				"thumbnails": {
 					"md": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,955,3487,3321&w=840&h=800",
-						"alt": "adult black pug",
 						"origin": {
-							"id": "pOUA8Xay514",
-							"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-							"width": 3487,
-							"height": 5230
+							"id": "md",
+							"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+							"width": 6000,
+							"height": 4000
 						},
+						"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?rect=0%2C0%2C6000%2C4000&w=840&h=560",
 						"width": 840,
-						"height": 800,
+						"height": 560,
 						"edit": {
-							"background": "transparent",
 							"zoom": 1,
 							"crop": {
 								"x": 0,
-								"y": 955
-							}
+								"y": 0
+							},
+							"background": "transparent"
 						},
-						"credits": null
+						"alt": "folks"
 					},
 					"sm": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,955,3487,3321&w=420&h=400",
-						"alt": "adult black pug",
 						"origin": {
-							"id": "pOUA8Xay514",
-							"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-							"width": 3487,
-							"height": 5230
+							"id": "sm",
+							"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+							"width": 4160,
+							"height": 3120
 						},
+						"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?rect=0%2C0%2C4160%2C3120&w=420&h=315",
 						"width": 420,
-						"height": 400,
+						"height": 315,
 						"edit": {
-							"background": "transparent",
 							"zoom": 1,
 							"crop": {
 								"x": 0,
-								"y": 955
-							}
+								"y": 0
+							},
+							"background": "transparent"
 						},
-						"credits": null
+						"alt": "property"
 					},
 					"blur": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85&rect=0,872,3487,3487&w=16&h=16",
-						"alt": "adult black pug",
 						"origin": {
-							"id": "pOUA8Xay514",
-							"url": "https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Z2xhc3Nlc3xlbnwwfHx8fDE3NDM2Njk1MjV8MA&ixlib=rb-4.0.3&q=85",
-							"width": 3487,
-							"height": 5230
+							"id": "blur",
+							"url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
+							"width": 3958,
+							"height": 3958
 						},
+						"url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?rect=0%2C0%2C3958%2C3958&w=16&h=16",
 						"width": 16,
 						"height": 16,
 						"edit": {
-							"background": "transparent",
 							"zoom": 1,
 							"crop": {
 								"x": 0,
-								"y": 872
-							}
+								"y": 0
+							},
+							"background": "transparent"
 						},
-						"credits": null
+						"alt": "morning"
 					}
 				}
 			},
@@ -805,201 +997,6 @@
 			}
 		},
 		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "default",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "We transform your vision into clear reality.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "With a passion for precision and a commitment to excellence, we transform your vision into a clear picture perfect reality to enrich your world.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"links": {
-				"__TYPE__": "RepeatableContent",
-				"type": "Link",
-				"value": [
-					{
-						"key": "b22019e7-9d0a-472a-82cc-2e278563f383",
-						"__TYPE__": "LinkContent",
-						"value": {
-							"__TYPE__": "ExternalLink",
-							"url": "https://prismic.io",
-							"text": "About  Us"
-						}
-					},
-					{
-						"key": "d4f01725-7521-4693-8bf7-0083ce997b2c",
-						"__TYPE__": "LinkContent",
-						"value": {
-							"__TYPE__": "ExternalLink",
-							"url": "#next",
-							"text": "Learn More"
-						}
-					}
-				]
-			},
-			"subtitle": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading6",
-						"content": {
-							"text": "Angry"
-						}
-					}
-				]
-			},
-			"img": {
-				"__TYPE__": "ImageContent",
-				"provider": "imgix",
-				"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=0,0,5472,3648&w=1920&h=1280",
-				"alt": "woman standing under tree",
-				"origin": {
-					"id": "FVh_yqLR9eA",
-					"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
-					"width": 5472,
-					"height": 3648
-				},
-				"width": 1920,
-				"height": 1280,
-				"edit": {
-					"background": "transparent",
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				"thumbnails": {
-					"lg": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=0,0,5472,3648&w=1440&h=960",
-						"alt": "woman standing under tree",
-						"origin": {
-							"id": "FVh_yqLR9eA",
-							"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
-							"width": 5472,
-							"height": 3648
-						},
-						"width": 1440,
-						"height": 960,
-						"edit": {
-							"background": "transparent",
-							"zoom": 1,
-							"crop": {
-								"x": 0,
-								"y": 0
-							}
-						}
-					},
-					"md": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=0,0,5472,3648&w=960&h=640",
-						"alt": "woman standing under tree",
-						"origin": {
-							"id": "FVh_yqLR9eA",
-							"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
-							"width": 5472,
-							"height": 3648
-						},
-						"width": 960,
-						"height": 640,
-						"edit": {
-							"background": "transparent",
-							"zoom": 1,
-							"crop": {
-								"x": 0,
-								"y": 0
-							}
-						}
-					},
-					"sm": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=0,0,5472,3648&w=480&h=320",
-						"alt": "woman standing under tree",
-						"origin": {
-							"id": "FVh_yqLR9eA",
-							"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
-							"width": 5472,
-							"height": 3648
-						},
-						"width": 480,
-						"height": 320,
-						"edit": {
-							"background": "transparent",
-							"zoom": 1,
-							"crop": {
-								"x": 0,
-								"y": 0
-							}
-						}
-					},
-					"blur": {
-						"provider": "imgix",
-						"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85&rect=912,0,3648,3648&w=16&h=16",
-						"alt": "woman standing under tree",
-						"origin": {
-							"id": "FVh_yqLR9eA",
-							"url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yfGVufDB8fHx8MTc1MDk1MDk3M3ww&ixlib=rb-4.1.0&q=85",
-							"width": 5472,
-							"height": 3648
-						},
-						"width": 16,
-						"height": 16,
-						"edit": {
-							"background": "transparent",
-							"zoom": 1,
-							"crop": {
-								"x": 912,
-								"y": 0
-							}
-						}
-					}
-				}
-			},
-			"color": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Indigo 700"
-			},
-			"imgOrigin": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "Center"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			},
 			{
 				"__TYPE__": "GroupItemContent",
 				"value": []
