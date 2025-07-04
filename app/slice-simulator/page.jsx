@@ -12,7 +12,7 @@ export default async function SliceSimulatorPage({ searchParams }) {
 
 	return (
 		<SliceSimulator>
-			<main className='overflow-y-visible'>
+			<main className='main overflow-y-visible'>
 				<SliceZone slices={slices} components={components} />
 			</main>
 		</SliceSimulator>

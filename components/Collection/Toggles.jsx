@@ -59,7 +59,12 @@ const CollectionToggles = ({
 
 const Toggles = ({ items, color }) => {
 	return (
-		<dl className={cn('divide-y divide-slate-300/30')}>
+		<dl
+			className={cn(
+				'divide-y divide-slate-300/30',
+				'md:sticky md:top-24',
+			)}
+		>
 			{items.map(({ title, body, links }, iidx) => (
 				<Toggle
 					key={kn({ title })}
