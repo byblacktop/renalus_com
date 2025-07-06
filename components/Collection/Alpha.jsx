@@ -128,9 +128,10 @@ const Group = ({ label, content }) => {
 			<PopoverButton
 				key={`${label}__trigger`}
 				className={cn(
-					'group relative w-[calc(100%+1rem)] -mx-2 px-2 py-0.5',
-					'rounded-lg whitespace-nowrap',
-					'bg-slate-50/0 hover:bg-slate-50',
+					'group relative p-2 -mx-2',
+					'fs-2xs text-left leading-sm',
+					'w-[calc(100%+1rem)] rounded-lg',
+					'bg-indigo-500/0 hover:bg-indigo-500/10',
 					'flex items-center justify-between',
 					'focus:outline-none data-focus:outline data-focus:outline-transparent',
 					gap['2xs'],
@@ -139,7 +140,7 @@ const Group = ({ label, content }) => {
 				<span>{label}</span>
 				<PlusIcon
 					className={cn(
-						'size-4.5 p-0.5 bg-white rounded-full',
+						'size-4.5 p-0.5 bg-white rounded-full shrink-0',
 						'opacity-0 group-hover:opacity-100',
 						'-rotate-90 group-hover:rotate-0',
 						'transition-all',
@@ -149,17 +150,15 @@ const Group = ({ label, content }) => {
 
 			<PopoverPanel
 				key={`${label}__panel`}
-				// transition
 				anchor='bottom'
 				className={cn(
 					'p-3 md:p-4',
 					'bg-white rounded-2xl shadow-2xl',
-					// 'duration-300 ease-out origin-top',
 					'data-closed:scale-95 data-closed:opacity-0',
 					'[--anchor-gap:--spacing(0.5)] data-closed:-translate-y-1',
 				)}
 			>
-				<div className='w-full max-w-sm'>
+				<div className='w-full max-w-sm fs-xs'>
 					<Body body={content} />
 				</div>
 			</PopoverPanel>
