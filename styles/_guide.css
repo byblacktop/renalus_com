@@ -1,0 +1,78 @@
+@theme {
+	--color-zinc-50: #f4f2f2;
+	--color-zinc-100: #ebe7e8;
+	--color-zinc-200: #c8d1d5;
+	--color-zinc-300: #a2b1b9;
+	--color-zinc-400: #738995;
+	--color-zinc-500: #6a7f8b;
+	--color-zinc-600: #5f727d;
+	--color-zinc-700: #54656e;
+	--color-zinc-800: #44525a;
+	--color-zinc-900: #303a40;
+	--color-zinc-950: #21282c;
+
+	--color-slate: #2a414b;
+	--color-slate-50: #e0ecf0;
+	--color-slate-100: #d2e3e9;
+	--color-slate-200: #c8dce4;
+	--color-slate-300: #83a9ba;
+	--color-slate-400: #5b8ea4;
+	--color-slate-500: #446a7a;
+	--color-slate-600: #375562;
+	--color-slate-700: #2a414b;
+	--color-slate-800: #1d2d34;
+	--color-slate-900: #101a1d;
+	--color-slate-950: #0b1114;
+
+	--color-red: #f05a69;
+	--color-red-50: #fef1f2;
+	--color-red-100: #fce3e6;
+	--color-red-200: #faccd0;
+	--color-red-300: #f8b0b7;
+	--color-red-400: #f58f99;
+	--color-red-500: #f05a69;
+	--color-red-600: #ee3f51;
+	--color-red-700: #ea152b;
+	--color-red-800: #c91225;
+	--color-red-900: #a8101f;
+	--color-red-950: #8c0e1a;
+
+	--color-indigo: #264a5e;
+	--color-indigo-50: #f8f0f2;
+	--color-indigo-100: #d7e7ef;
+	--color-indigo-200: #b3d0e0;
+	--color-indigo-300: #8bb8d0;
+	--color-indigo-400: #66a2c1;
+	--color-indigo-500: #4587ab;
+	--color-indigo-600: #356783;
+	--color-indigo-700: #264a5e;
+	--color-indigo-800: #203f50;
+	--color-indigo-900: #1c3745;
+	--color-indigo-950: #19313e;
+
+	--color-blue: #1a7ebc;
+	--color-blue-50: #fdf5f7;
+	--color-blue-100: #e0f0fb;
+	--color-blue-200: #c0e2f6;
+	--color-blue-300: #a1d3f2;
+	--color-blue-400: #82c4ed;
+	--color-blue-500: #63b5e9;
+	--color-blue-600: #2d9ce1;
+	--color-blue-700: #1a7ebc;
+	--color-blue-800: #135a86;
+	--color-blue-900: #0c3955;
+	--color-blue-950: #08273a;
+
+	--color-green: #bdf0e1;
+	--color-green-50: #eefbf7;
+	--color-green-100: #ccf6ea;
+	--color-green-200: #bdf0e1;
+	--color-green-300: #97e7cf;
+	--color-green-400: #6edebc;
+	--color-green-500: #48d5ab;
+	--color-green-600: #2cbf93;
+	--color-green-700: #229a76;
+	--color-green-800: #197056;
+	--color-green-900: #104b39;
+	--color-green-950: #0c362a;
+}
