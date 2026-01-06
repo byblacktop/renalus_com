@@ -1,5 +1,11 @@
 import { Contact } from '@/components/CallToAction'
+import { LocationsMap } from '@/components/Map'
 import { getSliceData, resolveProps } from '@/lib/utils'
+
+const layouts = {
+	default: Contact,
+	locationsMap: LocationsMap,
+}
 
 const resolver = {
 	color: 'None',
