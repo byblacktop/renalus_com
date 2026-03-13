@@ -5,6 +5,7 @@ import { GSAP } from '@/components/Interactive'
 import { Header } from '@/components/Nav/Header'
 import { Providers } from '@/components/Providers'
 import { Lenis } from '@/lib/lenis'
+import { Banner } from '@/components/Banner'
 
 export default function Layout({ children }) {
 	return (
@@ -13,6 +14,9 @@ export default function Layout({ children }) {
 				{/* Animations */}
 				<GSAP />
 				<ReactTempus patch />
+
+				{/* Announcement Banner */}
+				<Banner />
 
 				{/* Header */}
 				<Header />

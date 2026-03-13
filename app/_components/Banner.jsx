@@ -22,16 +22,15 @@ const Banner = () => {
 		>
 			<Flex align='center' wrap className='pb-8'>
 				<p className='__sm'>
-					<strong>Now Open in Navarre! </strong>
+					<strong>Now Open in Freeport! </strong>
 					Our newest location is ready for business.
 				</p>
 				<Button
 					link={{
-						href: '/location/navarre',
+						href: '/location/freeport',
 						text: 'View Location',
 					}}
 					size='xs'
-					// variant='outline'
 					color='highlight'
 					arrow={{
 						direction: 'upRight',
@@ -41,8 +40,8 @@ const Banner = () => {
 			</Flex>
 
 			{/* Gradient backdrop */}
-			<Burst className='left-[max(-7rem,calc(50%-52rem))]' />
-			<Burst className='left-[max(45rem,calc(50%+8rem))]' />
+			<Burst className='left-[7%] -scale-x-100' />
+			<Burst className='right-[7%]' />
 		</Show>
 	)
 }
@@ -52,16 +51,12 @@ const Burst = ({ className }) => {
 		<div
 			aria-hidden='true'
 			className={cn(
-				'absolute top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl',
+				'absolute w-[40%] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl',
 				className,
 			)}
 		>
 			<div
-				style={{
-					clipPath:
-						'polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)',
-				}}
-				className='aspect-1 w-xl bg-gradient-to-r from-slate via-green to-slate-300 opacity-50'
+				className='aspect-1 bg-gradient-to-r from-blue-200/70 via-red-200 to-green-300/90 opacity-70'
 			/>
 		</div>
 	)

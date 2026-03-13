@@ -123,7 +123,8 @@ footer.footer {
 
 /* TODO: Validate this doesn't break position: sticky the same way that overflow-x-hidden does */
 section {
-	@apply overflow-x-clip;
+	@apply relative
+		overflow-x-clip;
 }
 
 /** Headings */
